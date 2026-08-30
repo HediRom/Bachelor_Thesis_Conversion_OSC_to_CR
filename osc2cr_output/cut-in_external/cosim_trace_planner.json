@@ -1,0 +1,144 @@
+{
+ "scenario": "cut-in_external",
+ "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_external",
+ "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/cut-in_external.xosc",
+ "driver": "planner",
+ "dt": 0.1,
+ "id_to_name": {
+  "8": "Ego",
+  "9": "OverTaker"
+ },
+ "ego": "Ego",
+ "entities": [
+  "Ego",
+  "OverTaker"
+ ],
+ "externalization": {
+  "ego": "Ego",
+  "xosc_out": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_external/external/resources/xosc/cut-in_external_external.xosc",
+  "controller_replaced": "externalController",
+  "activate_action_added": false,
+  "voided_maneuver_groups": [],
+  "absolutized_paths": 4
+ },
+ "planner": {
+  "status": "goal-already-satisfied"
+ },
+ "events": [],
+ "collisions": [],
+ "ego_trajectory": [],
+ "storyboard_elements": [],
+ "entity_trajectories": {},
+ "entity_shapes": {},
+ "steps": 0,
+ "esmini_conditions": [],
+ "shadow_conditions": [],
+ "timeline": {
+  "dt": 0.1,
+  "time_steps": [],
+  "conditions": [
+   {
+    "key": "CutInAndBrakeAct::CutInActStart::0",
+    "name": "CutInActStart",
+    "type": "SimulationTimeCondition",
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "",
+    "scope": "act_start",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "OverTakerStartSpeedEvent::OverTakerStartSpeedCondition::1",
+    "name": "OverTakerStartSpeedCondition",
+    "type": "StoryboardElementStateCondition",
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "OverTakerStartSpeedEvent",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "CutInEvent::CutInStartCondition::2",
+    "name": "CutInStartCondition",
+    "type": "TimeHeadwayCondition",
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "CutInEvent",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "OvertakerBrakeEvent::BrakeCondition::3",
+    "name": "BrakeCondition",
+    "type": "TimeHeadwayCondition",
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "OvertakerBrakeEvent",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "::StopCondition::4",
+    "name": "StopCondition",
+    "type": "StoryboardElementStateCondition",
+    "story": "",
+    "act": "",
+    "event": "",
+    "scope": "storyboard_stop",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "::StopSimulationCondition::5",
+    "name": "StopSimulationCondition",
+    "type": "SimulationTimeCondition",
+    "story": "",
+    "act": "",
+    "event": "",
+    "scope": "storyboard_stop",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   }
+  ]
+ },
+ "differential": {
+  "summary": {
+   "compared": 0,
+   "conclusive": 0,
+   "agreement_pct": null,
+   "divergent_declaring_delay": 0
+  },
+  "conditions": []
+ },
+ "unevaluable": [],
+ "written_to": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_external/cosim_trace_planner.json",
+ "commonroad": {}
+}

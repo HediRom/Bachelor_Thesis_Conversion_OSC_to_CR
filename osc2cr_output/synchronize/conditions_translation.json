@@ -1,0 +1,32 @@
+{
+  "Synchronize_Condition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.1,
+      "end": null
+    },
+    "time_step_interval": [
+      1,
+      999999
+    ]
+  },
+  "StopSimulationCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 1200.1,
+      "end": null
+    },
+    "time_step_interval": [
+      12000,
+      999999
+    ]
+  },
+  "EndCondition1": {
+    "status": "skipped",
+    "reason": "entity traveled distance \u2014 no CR goal analogue"
+  },
+  "EndCondition2": {
+    "status": "skipped",
+    "reason": "StandStillCondition \u2014 not yet handled"
+  }
+}

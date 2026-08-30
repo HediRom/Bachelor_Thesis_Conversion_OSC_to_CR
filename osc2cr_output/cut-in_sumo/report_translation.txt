@@ -1,0 +1,8 @@
+=== Translation Report ===
+Time goals (4):
+  'starttrigger' → time_step ∈ [1, 999999]  ([0.1, ∞])
+  'starttrigger' → time_step ∈ [131, 999999]  ([13.1, ∞])
+  'starttrigger' → time_step ∈ [131, 999999]  ([13.1, ∞])
+  'stop_simulation' → time_step ∈ [401, 999999]  ([40.1, ∞])
+Skipped (1):
+  'redtrigger' — ByEntity — needs runtime state comparison (→ Interpretation)

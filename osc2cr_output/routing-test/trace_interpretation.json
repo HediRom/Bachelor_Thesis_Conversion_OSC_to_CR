@@ -1,0 +1,26 @@
+[
+  {
+    "time_s": 25.5,
+    "time_step": 255,
+    "story": "Story",
+    "act": "AquirePosition act",
+    "event": "AquirePosition event",
+    "actors": [
+      "Ego"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  },
+  {
+    "time_s": 38.3,
+    "time_step": 383,
+    "story": "Story",
+    "act": "AquirePosition act",
+    "event": "Stop event",
+    "actors": [
+      "Ego"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

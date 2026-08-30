@@ -1,0 +1,17 @@
+{
+  "start_trigger ": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 10.1,
+      "end": null
+    },
+    "time_step_interval": [
+      100,
+      999999
+    ]
+  },
+  "CutOutStartCondition": {
+    "status": "skipped",
+    "reason": "ReachPositionCondition \u2014 not yet handled"
+  }
+}

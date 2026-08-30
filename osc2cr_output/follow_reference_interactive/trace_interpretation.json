@@ -1,0 +1,14 @@
+[
+  {
+    "time_s": 15.0,
+    "time_step": 150,
+    "story": "Story",
+    "act": "Act",
+    "event": "Event1",
+    "actors": [
+      "Ego"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

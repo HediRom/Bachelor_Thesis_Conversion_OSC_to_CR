@@ -1,0 +1,40 @@
+{
+  "SetTargetSpeedEvent": {
+    "story": "Story",
+    "act": "TargetAct",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "TimeToCollisionCondition",
+        "name": "SyncConditionTarget",
+        "delay_s": 0.0,
+        "edge": "none",
+        "triggering_entity": "Ego",
+        "reference_entity": "",
+        "value": 10.0,
+        "freespace": true,
+        "rule": "lessThan"
+      }
+    ]
+  },
+  "SyncEvent": {
+    "story": "Story",
+    "act": "TargetAct",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "SyncConditionTarget",
+        "delay_s": 0.0,
+        "edge": "none",
+        "element_ref": "SetTargetSpeedEvent",
+        "element_type": "event",
+        "state": "endTransition"
+      }
+    ]
+  }
+}

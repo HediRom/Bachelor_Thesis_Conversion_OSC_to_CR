@@ -1,0 +1,53 @@
+{
+  "LateralDistanceMaxSpeedEvent": {
+    "story": "LateralDistanceStory",
+    "act": "LateralDistanceAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "LateralDistanceStartCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 1.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "LateralDistanceMaxSpeedAndAccEvent": {
+    "story": "LateralDistanceStory",
+    "act": "LateralDistanceAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "LateralDistanceSwitchSideCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 4.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "LateralDistanceMaxAccEvent": {
+    "story": "LateralDistanceStory",
+    "act": "LateralDistanceAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "LateralDistanceFinalSnapCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 8.0,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

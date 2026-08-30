@@ -1,0 +1,76 @@
+{
+  "name": "lane_change",
+  "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/lane_change.xosc",
+  "ok": true,
+  "error": null,
+  "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane_change",
+  "timings_s": {
+    "cr_conversion": 1.111,
+    "storyboard_parse": 0.0017,
+    "strategy_transcription": 0.0,
+    "strategy_translation": 0.0,
+    "strategy_interpretation": 0.0,
+    "interpretation_replay": 0.0043,
+    "trigger_merge": 0.0006,
+    "timeline": 0.0032,
+    "write_embed": 0.2975,
+    "total": 1.4205,
+    "trigger_preservation": 0.0099
+  },
+  "discarded_cosim": [],
+  "stats": {
+    "dt": 0.1,
+    "obstacles": 2,
+    "lanelets": 2,
+    "time_steps": 171,
+    "duration_s": 17.0,
+    "events": 5,
+    "conditions": 5,
+    "translation_mapped": 2,
+    "translation_skipped": 4,
+    "interpretation_fired": 2,
+    "timeline_conditions": 7,
+    "entity_refs_resolved": 1,
+    "entity_refs_unresolved": [],
+    "coverage": {
+      "source_conditions": 7,
+      "parsed_conditions": 7,
+      "source_types": {
+        "SimulationTimeCondition": 3,
+        "StoryboardElementStateCondition": 2,
+        "OffroadCondition": 1,
+        "ParameterCondition": 1
+      },
+      "unsupported": {},
+      "unsupported_conditions": 0,
+      "declared_only": {
+        "OffroadCondition": 1
+      },
+      "declared_conditions": 1,
+      "modelled_conditions": 6,
+      "preserved_pct": 100.0,
+      "evaluable_pct": 85.7,
+      "declared_reasons": {
+        "OffroadCondition": "needs lane-level containment against the source OpenDRIVE, not the converted lanelets"
+      },
+      "events_without_trigger": [],
+      "unconditional_fires_possible": false
+    },
+    "road_network": {
+      "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/jolengatan.xodr",
+      "error": null,
+      "repairs": []
+    },
+    "interpretation_fired_unconditional": 0
+  },
+  "files": {
+    "triggers_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane_change/triggers.json",
+    "conditions_transcription_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane_change/conditions_transcription.json",
+    "conditions_translation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane_change/conditions_translation.json",
+    "report_translation_txt": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane_change/report_translation.txt",
+    "trace_interpretation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane_change/trace_interpretation.json",
+    "timeline_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane_change/timeline.json",
+    "scenario_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane_change/scenario.xml",
+    "scenario_plain_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane_change/scenario_plain.xml"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "ped_walk_event": {
+    "story": "LTAPStory",
+    "act": "LTAPActNPC",
+    "actors": [
+      "pedestrian_adult"
+    ],
+    "conditions": [
+      {
+        "type": "EntityTraveledDistanceCondition",
+        "name": "ped_walk_event",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "entity_ref": "Ego",
+        "value_m": 1.0
+      }
+    ]
+  },
+  "ped_collide_event": {
+    "story": "LTAPStory",
+    "act": "LTAPActNPC",
+    "actors": [
+      "pedestrian_adult"
+    ],
+    "conditions": [
+      {
+        "type": "CollisionCondition",
+        "name": "ped_fall_condition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "extension": true,
+        "entity_ref": "Ego",
+        "target_entity": "pedestrian_adult",
+        "target_type": null,
+        "text": "Ego collides with pedestrian_adult"
+      }
+    ]
+  },
+  "ped_raise_event": {
+    "story": "LTAPStory",
+    "act": "LTAPActNPC",
+    "actors": [
+      "pedestrian_adult"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "ped_raise_condition",
+        "delay_s": 0.8,
+        "edge": "rising",
+        "element_ref": "be_still_action",
+        "element_type": "action",
+        "state": "endTransition"
+      }
+    ]
+  }
+}

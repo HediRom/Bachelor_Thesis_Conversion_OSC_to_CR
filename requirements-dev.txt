@@ -1,0 +1,6 @@
+# Test suite.  `python tests/ui_test.py` additionally needs a browser:
+#     playwright install chromium
+# and the viewer smoke test needs Node:  npm install jsdom  (jsdom <= 24 on Node 20)
+
+pytest==9.0.3
+playwright==1.61.0

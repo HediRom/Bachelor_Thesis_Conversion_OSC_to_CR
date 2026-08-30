@@ -1,0 +1,75 @@
+{
+  "name": "acc-toggle",
+  "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/acc-toggle.xosc",
+  "ok": true,
+  "error": null,
+  "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/acc-toggle",
+  "timings_s": {
+    "cr_conversion": 2.4803,
+    "storyboard_parse": 0.0017,
+    "strategy_transcription": 0.0,
+    "strategy_translation": 0.0,
+    "strategy_interpretation": 0.0,
+    "interpretation_replay": 0.0132,
+    "trigger_merge": 0.0005,
+    "timeline": 0.0089,
+    "write_embed": 0.6414,
+    "total": 3.1498,
+    "trigger_preservation": 0.0244
+  },
+  "discarded_cosim": [],
+  "stats": {
+    "dt": 0.1,
+    "obstacles": 2,
+    "lanelets": 2,
+    "time_steps": 600,
+    "duration_s": 59.9,
+    "events": 4,
+    "conditions": 4,
+    "translation_mapped": 2,
+    "translation_skipped": 3,
+    "interpretation_fired": 3,
+    "timeline_conditions": 5,
+    "entity_refs_resolved": 0,
+    "entity_refs_unresolved": [],
+    "coverage": {
+      "source_conditions": 5,
+      "parsed_conditions": 5,
+      "source_types": {
+        "TimeHeadwayCondition": 2,
+        "SimulationTimeCondition": 2,
+        "EndOfRoadCondition": 1
+      },
+      "unsupported": {},
+      "unsupported_conditions": 0,
+      "declared_only": {
+        "EndOfRoadCondition": 1
+      },
+      "declared_conditions": 1,
+      "modelled_conditions": 4,
+      "preserved_pct": 100.0,
+      "evaluable_pct": 80.0,
+      "declared_reasons": {
+        "EndOfRoadCondition": "needs OpenDRIVE road topology; a CommonRoad lanelet network does not record where a road ends versus where the map is simply cut off"
+      },
+      "events_without_trigger": [],
+      "unconditional_fires_possible": false
+    },
+    "road_network": {
+      "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/curves_elevation.xodr",
+      "error": null,
+      "repairs": []
+    },
+    "interpretation_fired_unconditional": 0
+  },
+  "files": {
+    "triggers_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/acc-toggle/triggers.json",
+    "conditions_transcription_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/acc-toggle/conditions_transcription.json",
+    "conditions_translation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/acc-toggle/conditions_translation.json",
+    "report_translation_txt": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/acc-toggle/report_translation.txt",
+    "trace_interpretation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/acc-toggle/trace_interpretation.json",
+    "timeline_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/acc-toggle/timeline.json",
+    "scenario_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/acc-toggle/scenario.xml",
+    "scenario_plain_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/acc-toggle/scenario_plain.xml"
+  }
+}

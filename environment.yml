@@ -1,0 +1,17 @@
+# Bare Python 3.11 environment for osc2cr_extended.
+#
+#     conda env create -f environment.yml
+#     conda activate osc2cr
+#     ./setup.sh
+#
+# Deliberately empty apart from the interpreter: setup.sh installs everything
+# else, because the two patched dependencies in ./deps must be pip-installed
+# from source and conda cannot express that.
+#
+# Python 3.11 is not a preference — see README.md ("Why Python 3.11").
+name: osc2cr
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip

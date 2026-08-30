@@ -1,0 +1,11 @@
+=== Translation Report ===
+Time goals (1):
+  'CutInActStart' → time_step ∈ [1, 999999]  ([0.1, ∞])
+Skipped (7):
+  'Lane change condition' — ReachPositionCondition — not yet handled
+  'End Of Road condition' — DeclaredCondition — not yet handled
+  'End Of Road condition' — DeclaredCondition — not yet handled
+  'QuitCondition' — storyboard meta-condition — no CR analogue
+  'Lane change condition' — ReachPositionCondition — not yet handled
+  'End Of Road condition' — DeclaredCondition — not yet handled
+  'QuitCondition' — storyboard meta-condition — no CR analogue

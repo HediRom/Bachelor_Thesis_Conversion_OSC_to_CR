@@ -1,0 +1,50 @@
+{
+  "ChangeSpeedEvent": {
+    "story": "Velodrome story",
+    "act": "Velodrome act",
+    "actors": [
+      "Car2"
+    ],
+    "conditions": [
+      {
+        "type": "TimeHeadwayCondition",
+        "name": "ChangeSpeedCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "triggering_entity": "Car2",
+        "reference_entity": "Car1",
+        "value": 0.65,
+        "freespace": false,
+        "rule": "greaterOrEqual"
+      }
+    ]
+  },
+  "ChangeLaneEvent": {
+    "story": "Velodrome story",
+    "act": "Velodrome act",
+    "actors": [
+      "Car3"
+    ],
+    "conditions": [
+      {
+        "type": "ReachPositionCondition",
+        "name": "ChangeLaneStartCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "extension": true,
+        "entity_ref": "Car3",
+        "tolerance_m": 5.0,
+        "position": {
+          "kind": "LanePosition",
+          "x": -101.3508071899414,
+          "y": 252.30691528320312,
+          "road_id": 1,
+          "lane_id": -3,
+          "s": 1600.0,
+          "resolved": true
+        },
+        "text": "Car3 reaches road 1 lane -3 at s=1600.0 m \u2192 (-101.4, 252.3) (tolerance 5.0 m)"
+      }
+    ]
+  }
+}

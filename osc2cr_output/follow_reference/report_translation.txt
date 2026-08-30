@@ -1,0 +1,11 @@
+=== Translation Report ===
+Time goals (2):
+  'ActStartTrigger' → time_step ∈ [0, 999999]  ([0.0, ∞])
+  'startTrigger1' → time_step ∈ [0, 999999]  ([0.0, ∞])
+Skipped (6):
+  'startTrigger2' — storyboard meta-condition — no CR analogue
+  'startTrigger3' — storyboard meta-condition — no CR analogue
+  'startTrigger4' — storyboard meta-condition — no CR analogue
+  'ActStartTrigger' — storyboard meta-condition — no CR analogue
+  'startTrigger6' — storyboard meta-condition — no CR analogue
+  'StopTrigger' — storyboard meta-condition — no CR analogue

@@ -1,0 +1,7 @@
+=== Translation Report ===
+Time goals (1):
+  'LtapActStartConditionTarget' → time_step ∈ [1, 999999]  ([0.1, ∞])
+Skipped (3):
+  'SyncConditionTarget' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'SyncConditionTarget' — storyboard meta-condition — no CR analogue
+  'QuitCondition' — ReachPositionCondition — not yet handled

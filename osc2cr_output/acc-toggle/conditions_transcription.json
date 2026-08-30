@@ -1,0 +1,76 @@
+{
+  "ActivateACCEvent": {
+    "story": "ControllerStory",
+    "act": "ControllerAct",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "TimeHeadwayCondition",
+        "name": "ActivateACCCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "triggering_entity": "Ego",
+        "reference_entity": "Target",
+        "value": 3.0,
+        "freespace": false,
+        "rule": "lessThan"
+      }
+    ]
+  },
+  "ActivateInteractiveDriverEvent": {
+    "story": "ControllerStory",
+    "act": "ControllerAct",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "TimeHeadwayCondition",
+        "name": "ActivateInteractiveDriverCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "triggering_entity": "Ego",
+        "reference_entity": "Target",
+        "value": 5.0,
+        "freespace": false,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "TargetChangeSpeedEvent": {
+    "story": "ControllerStory",
+    "act": "ControllerAct",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "TargetChangeSpeedCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 10.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "TargetChangeSpeedEvent2": {
+    "story": "ControllerStory",
+    "act": "ControllerAct",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "TargetChangeSpeedCondition2",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 20.0,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

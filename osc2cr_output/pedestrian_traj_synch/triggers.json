@@ -1,0 +1,155 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "pedestrian_traj_synch",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/pedestrian_traj_synch.xosc",
+  "generated_at": "2026-08-18T07:49:18+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 3,
+    "conditions": 2,
+    "translation_mapped": 3,
+    "translation_skipped": 1,
+    "interpretation_fired": 3,
+    "interpretation_fired_unconditional": 1
+  },
+  "events": [
+    {
+      "name": "ped_synch_event",
+      "story": "LTAPStory",
+      "act": "LTAPActNPC",
+      "actors": [
+        "pedestrian_adult"
+      ],
+      "conditions": [],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 0.1,
+            "time_step": 1,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "ped_follow_trajectory",
+      "story": "LTAPStory",
+      "act": "LTAPActNPC",
+      "actors": [
+        "pedestrian_adult"
+      ],
+      "conditions": [
+        {
+          "name": "ped_follow_trajectory_condition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 0.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 0.1,
+              "end": null
+            },
+            "time_step_interval": [
+              1,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 0.1,
+            "time_step": 1,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "drive_Event",
+      "story": "LTAPStory",
+      "act": "LTAPActNPC",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "drive_ManeuverCondition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 0.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 0.1,
+              "end": null
+            },
+            "time_step_interval": [
+              1,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 0.1,
+            "time_step": 1,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "ActStartCondition",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "QuitCondition",
+      "translation": {
+        "status": "skipped",
+        "reason": "ReachPositionCondition \u2014 not yet handled"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 4,
+    "parsed_conditions": 4,
+    "source_types": {
+      "SimulationTimeCondition": 3,
+      "ReachPositionCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 4,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [
+      "ped_synch_event"
+    ],
+    "unconditional_fires_possible": false
+  }
+}

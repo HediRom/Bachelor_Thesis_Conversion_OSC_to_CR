@@ -1,0 +1,32 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "pedestrian",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/commonroad-openscenario-converter/scenarios/from_esmini/xosc/pedestrian.xosc",
+  "generated_at": "2026-08-18T07:49:06+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 0,
+    "conditions": 0,
+    "translation_mapped": 0,
+    "translation_skipped": 0,
+    "interpretation_fired": 0,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [],
+  "storyboard_triggers": [],
+  "coverage": {
+    "source_conditions": 0,
+    "parsed_conditions": 0,
+    "source_types": {},
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 0,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

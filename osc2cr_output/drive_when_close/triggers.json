@@ -1,0 +1,92 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "drive_when_close",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/drive_when_close.xosc",
+  "generated_at": "2026-08-18T07:45:30+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 2,
+    "conditions": 2,
+    "translation_mapped": 0,
+    "translation_skipped": 2,
+    "interpretation_fired": 1,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "DriveEvent",
+      "story": "MyStory",
+      "act": "MyAct",
+      "actors": [
+        "Target"
+      ],
+      "conditions": [
+        {
+          "name": "DriveCondition",
+          "type": "RelativeDistanceCondition",
+          "text": "Ego vs Target: distance lessThan 30.0 m (longitudinal)",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "StopEvent",
+      "story": "MyStory",
+      "act": "MyAct",
+      "actors": [
+        "Target"
+      ],
+      "conditions": [
+        {
+          "name": "StopCondition",
+          "type": "RelativeDistanceCondition",
+          "text": "Ego vs Target: distance greaterThan 30.0 m (longitudinal)",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 0.0,
+            "time_step": 0,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [],
+  "coverage": {
+    "source_conditions": 3,
+    "parsed_conditions": 3,
+    "source_types": {
+      "RelativeDistanceCondition": 2,
+      "SimulationTimeCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 3,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

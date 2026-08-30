@@ -1,0 +1,14 @@
+[
+  {
+    "time_s": 0.1,
+    "time_step": 1,
+    "story": "StoryPlaceholder",
+    "act": "Lane change",
+    "event": "Lane change",
+    "actors": [
+      "OverTaker"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

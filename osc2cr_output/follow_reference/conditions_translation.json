@@ -1,0 +1,37 @@
+{
+  "ActStartTrigger": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "startTrigger1": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.0,
+      "end": null
+    },
+    "time_step_interval": [
+      0,
+      999999
+    ]
+  },
+  "startTrigger2": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "startTrigger3": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "startTrigger4": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "startTrigger6": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "StopTrigger": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  }
+}

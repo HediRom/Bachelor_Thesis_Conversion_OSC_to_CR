@@ -1,0 +1,71 @@
+{
+  "name": "cut-in_sloppy",
+  "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/cut-in_sloppy.xosc",
+  "ok": true,
+  "error": null,
+  "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_sloppy",
+  "timings_s": {
+    "cr_conversion": 4.3691,
+    "storyboard_parse": 0.0018,
+    "strategy_transcription": 0.0,
+    "strategy_translation": 0.0,
+    "strategy_interpretation": 0.0,
+    "interpretation_replay": 0.0054,
+    "trigger_merge": 0.0004,
+    "timeline": 0.0044,
+    "write_embed": 1.4494,
+    "total": 5.8329,
+    "trigger_preservation": 0.0121
+  },
+  "discarded_cosim": [],
+  "stats": {
+    "dt": 0.1,
+    "obstacles": 2,
+    "lanelets": 6,
+    "time_steps": 276,
+    "duration_s": 27.5,
+    "events": 3,
+    "conditions": 3,
+    "translation_mapped": 1,
+    "translation_skipped": 4,
+    "interpretation_fired": 2,
+    "timeline_conditions": 5,
+    "entity_refs_resolved": 3,
+    "entity_refs_unresolved": [],
+    "coverage": {
+      "source_conditions": 5,
+      "parsed_conditions": 5,
+      "source_types": {
+        "StoryboardElementStateCondition": 2,
+        "TimeHeadwayCondition": 2,
+        "SimulationTimeCondition": 1
+      },
+      "unsupported": {},
+      "unsupported_conditions": 0,
+      "declared_only": {},
+      "declared_conditions": 0,
+      "modelled_conditions": 5,
+      "preserved_pct": 100.0,
+      "evaluable_pct": 100.0,
+      "declared_reasons": {},
+      "events_without_trigger": [],
+      "unconditional_fires_possible": false
+    },
+    "road_network": {
+      "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/e6mini.xodr",
+      "error": null,
+      "repairs": []
+    },
+    "interpretation_fired_unconditional": 0
+  },
+  "files": {
+    "triggers_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_sloppy/triggers.json",
+    "conditions_transcription_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_sloppy/conditions_transcription.json",
+    "conditions_translation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_sloppy/conditions_translation.json",
+    "report_translation_txt": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_sloppy/report_translation.txt",
+    "trace_interpretation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_sloppy/trace_interpretation.json",
+    "timeline_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_sloppy/timeline.json",
+    "scenario_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_sloppy/scenario.xml",
+    "scenario_plain_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_sloppy/scenario_plain.xml"
+  }
+}

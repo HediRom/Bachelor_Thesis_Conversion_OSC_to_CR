@@ -1,0 +1,181 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "acc-toggle",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/acc-toggle.xosc",
+  "generated_at": "2026-08-18T07:43:01+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 4,
+    "conditions": 4,
+    "translation_mapped": 2,
+    "translation_skipped": 3,
+    "interpretation_fired": 3,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "ActivateACCEvent",
+      "story": "ControllerStory",
+      "act": "ControllerAct",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "ActivateACCCondition",
+          "type": "TimeHeadwayCondition",
+          "text": "Ego vs Target: headway lessThan 3.0 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "ActivateInteractiveDriverEvent",
+      "story": "ControllerStory",
+      "act": "ControllerAct",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "ActivateInteractiveDriverCondition",
+          "type": "TimeHeadwayCondition",
+          "text": "Ego vs Target: headway greaterThan 5.0 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 0.0,
+            "time_step": 0,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "TargetChangeSpeedEvent",
+      "story": "ControllerStory",
+      "act": "ControllerAct",
+      "actors": [
+        "Target"
+      ],
+      "conditions": [
+        {
+          "name": "TargetChangeSpeedCondition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 10.0 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 10.1,
+              "end": null
+            },
+            "time_step_interval": [
+              100,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 10.1,
+            "time_step": 101,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "TargetChangeSpeedEvent2",
+      "story": "ControllerStory",
+      "act": "ControllerAct",
+      "actors": [
+        "Target"
+      ],
+      "conditions": [
+        {
+          "name": "TargetChangeSpeedCondition2",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 20.0 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 20.1,
+              "end": null
+            },
+            "time_step_interval": [
+              201,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 20.1,
+            "time_step": 201,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "EndOfRoadCondition",
+      "translation": {
+        "status": "skipped",
+        "reason": "DeclaredCondition \u2014 not yet handled"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 5,
+    "parsed_conditions": 5,
+    "source_types": {
+      "TimeHeadwayCondition": 2,
+      "SimulationTimeCondition": 2,
+      "EndOfRoadCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {
+      "EndOfRoadCondition": 1
+    },
+    "declared_conditions": 1,
+    "modelled_conditions": 4,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 80.0,
+    "declared_reasons": {
+      "EndOfRoadCondition": "needs OpenDRIVE road topology; a CommonRoad lanelet network does not record where a road ends versus where the map is simply cut off"
+    },
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

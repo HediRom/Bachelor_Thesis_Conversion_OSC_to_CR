@@ -1,0 +1,7 @@
+esmini:
+  min_time: 5.0
+  max_time: 15.0
+
+scenario:
+  dt_cr: 0.1
+  keep_ego_vehicle: false

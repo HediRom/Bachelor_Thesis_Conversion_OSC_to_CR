@@ -1,0 +1,8 @@
+=== Translation Report ===
+Time goals (1):
+  'CutInActStart' → time_step ∈ [1, 999999]  ([0.1, ∞])
+Skipped (4):
+  'OverTakerStartSpeedCondition' — storyboard meta-condition — no CR analogue
+  'CutInStartCondition' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'BrakeCondition' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'StopCondition' — storyboard meta-condition — no CR analogue

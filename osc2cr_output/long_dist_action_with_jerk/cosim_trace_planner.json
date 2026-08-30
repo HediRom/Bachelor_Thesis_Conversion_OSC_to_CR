@@ -1,0 +1,201 @@
+{
+ "scenario": "long_dist_action_with_jerk",
+ "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/long_dist_action_with_jerk",
+ "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/long_dist_action_with_jerk.xosc",
+ "driver": "planner",
+ "dt": 0.1,
+ "id_to_name": {
+  "6": "Ego",
+  "7": "Target",
+  "8": "ego jerk"
+ },
+ "ego": "Ego",
+ "entities": [
+  "Ego",
+  "Target",
+  "ego jerk"
+ ],
+ "externalization": {
+  "ego": "Ego",
+  "xosc_out": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/long_dist_action_with_jerk/external/resources/xosc/long_dist_action_with_jerk_external.xosc",
+  "controller_replaced": null,
+  "activate_action_added": true,
+  "voided_maneuver_groups": [
+   "Ego mangr"
+  ],
+  "absolutized_paths": 2
+ },
+ "planner": {
+  "status": "infeasible",
+  "reason": "no feasible trajectory at step 0",
+  "steps": 0
+ },
+ "events": [],
+ "collisions": [
+  {
+   "time_s": 0.1,
+   "with": [
+    "ego jerk"
+   ]
+  }
+ ],
+ "ego_trajectory": [],
+ "storyboard_elements": [],
+ "entity_trajectories": {
+  "Ego": [
+   {
+    "step": 1,
+    "t": 0.1,
+    "x": 21.45,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 20.0
+   }
+  ],
+  "ego jerk": [
+   {
+    "step": 1,
+    "t": 0.1,
+    "x": 23.4,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 20.0
+   }
+  ],
+  "Target": [
+   {
+    "step": 1,
+    "t": 0.1,
+    "x": 82.3,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 10.0
+   }
+  ]
+ },
+ "entity_shapes": {
+  "Ego": {
+   "length": 5.04,
+   "width": 2.0
+  },
+  "ego jerk": {
+   "length": 5.04,
+   "width": 2.0
+  },
+  "Target": {
+   "length": 4.5,
+   "width": 1.8
+  }
+ },
+ "steps": 0,
+ "esmini_conditions": [],
+ "shadow_conditions": [
+  {
+   "name": "act_start",
+   "time_s": 0.1
+  }
+ ],
+ "timeline": {
+  "dt": 0.1,
+  "time_steps": [
+   1
+  ],
+  "conditions": [
+   {
+    "key": "act::act_start::0",
+    "name": "act_start",
+    "type": "SimulationTimeCondition",
+    "story": "story_act",
+    "act": "act",
+    "event": "",
+    "scope": "act_start",
+    "values": [
+     1
+    ],
+    "first_true_step": 1,
+    "true_steps": 1,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "Egoevent::triggerEgo::1",
+    "name": "triggerEgo",
+    "type": "RelativeDistanceCondition",
+    "story": "story_act",
+    "act": "act",
+    "event": "Egoevent",
+    "scope": "event",
+    "values": [
+     0
+    ],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "ego jerkevent::triggerego jerk::2",
+    "name": "triggerego jerk",
+    "type": "RelativeDistanceCondition",
+    "story": "story_act",
+    "act": "act",
+    "event": "ego jerkevent",
+    "scope": "event",
+    "values": [
+     0
+    ],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "::stop_simulation::3",
+    "name": "stop_simulation",
+    "type": "SimulationTimeCondition",
+    "story": "",
+    "act": "",
+    "event": "",
+    "scope": "storyboard_stop",
+    "values": [
+     0
+    ],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   }
+  ]
+ },
+ "differential": {
+  "summary": {
+   "compared": 1,
+   "inconclusive_at_end": 1,
+   "conclusive": 0,
+   "agreement_pct": null,
+   "divergent_declaring_delay": 0
+  },
+  "conditions": [
+   {
+    "name": "act_start",
+    "verdict": "inconclusive_at_end",
+    "esmini_fires": [],
+    "shadow_fires": [
+     0.1
+    ],
+    "max_delta_s": 0.0,
+    "delay_s": 0.0,
+    "declares_delay": false
+   }
+  ]
+ },
+ "unevaluable": [],
+ "written_to": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/long_dist_action_with_jerk/cosim_trace_planner.json",
+ "commonroad": {
+  "cosim_planner_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/long_dist_action_with_jerk/cosim_planner.xml"
+ }
+}

@@ -1,0 +1,15 @@
+esmini_v*
+.idea
+__pycache__
+**/.ipynb_checkpoints
+log.txt
+*.xml
+*.pickle
+*.tga
+/output
+/results
+build/*
+dist/*
+*.egg-info/
+
+docs/sphinx/build

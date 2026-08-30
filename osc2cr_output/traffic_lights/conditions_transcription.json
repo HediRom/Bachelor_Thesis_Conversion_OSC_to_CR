@@ -1,0 +1,208 @@
+{
+  "StopLightEvent": {
+    "story": "DummyStory",
+    "act": "StopLightsAct",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "DistanceCondition",
+        "name": "PositionCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "extension": true,
+        "entity_ref": "Ego",
+        "value_m": 50.0,
+        "rule": "lessThan",
+        "freespace": false,
+        "position": {
+          "kind": "LanePosition",
+          "x": 12.989810943603516,
+          "y": -6.3412628173828125,
+          "road_id": 3,
+          "lane_id": -1,
+          "s": 109.0,
+          "resolved": true
+        },
+        "text": "Ego: distance to road 3 lane -1 at s=109.0 m \u2192 (13.0, -6.3) lessThan 50.0 m"
+      }
+    ]
+  },
+  "StopLightEvent2": {
+    "story": "DummyStory",
+    "act": "StopLightsAct",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "TrafficSignalCondition",
+        "name": "TrafficLightYellow",
+        "delay_s": 3.0,
+        "edge": "none",
+        "extension": true,
+        "unevaluable_reason": "the converter does not carry esmini's traffic-signal state into the CommonRoad scenario",
+        "attributes": {
+          "name": "1",
+          "state": "$TrafficLightYellow"
+        },
+        "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)"
+      }
+    ]
+  },
+  "StopLightEvent3": {
+    "story": "DummyStory",
+    "act": "StopLightsAct",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "TrafficSignalCondition",
+        "name": "TrafficLightRed",
+        "delay_s": 10.0,
+        "edge": "none",
+        "extension": true,
+        "unevaluable_reason": "the converter does not carry esmini's traffic-signal state into the CommonRoad scenario",
+        "attributes": {
+          "name": "1",
+          "state": "$TrafficLightRed"
+        },
+        "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)"
+      }
+    ]
+  },
+  "PedestrianLightEvent": {
+    "story": "DummyStory",
+    "act": "StopLightsAct",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "TrafficSignalCondition",
+        "name": "TrafficLightRed",
+        "delay_s": 3.0,
+        "edge": "none",
+        "extension": true,
+        "unevaluable_reason": "the converter does not carry esmini's traffic-signal state into the CommonRoad scenario",
+        "attributes": {
+          "name": "1",
+          "state": "$TrafficLightRed"
+        },
+        "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)"
+      }
+    ]
+  },
+  "PedestrianLightEvent2": {
+    "story": "DummyStory",
+    "act": "StopLightsAct",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "TrafficSignalCondition",
+        "name": "TrafficLightRed2",
+        "delay_s": 9.0,
+        "edge": "none",
+        "extension": true,
+        "unevaluable_reason": "the converter does not carry esmini's traffic-signal state into the CommonRoad scenario",
+        "attributes": {
+          "name": "1",
+          "state": "$TrafficLightRed"
+        },
+        "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)"
+      }
+    ]
+  },
+  "StopOnRedEvent": {
+    "story": "DummyStory",
+    "act": "StopLightsAct",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "TrafficSignalCondition",
+        "name": "TrafficLightYellow",
+        "delay_s": 0.0,
+        "edge": "none",
+        "extension": true,
+        "unevaluable_reason": "the converter does not carry esmini's traffic-signal state into the CommonRoad scenario",
+        "attributes": {
+          "name": "1",
+          "state": "$TrafficLightYellow"
+        },
+        "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)"
+      }
+    ]
+  },
+  "DriveOnGreenEvent": {
+    "story": "DummyStory",
+    "act": "StopLightsAct",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "TrafficSignalCondition",
+        "name": "TrafficLightGreen",
+        "delay_s": 0.5,
+        "edge": "rising",
+        "extension": true,
+        "unevaluable_reason": "the converter does not carry esmini's traffic-signal state into the CommonRoad scenario",
+        "attributes": {
+          "name": "1",
+          "state": "$TrafficLightGreen"
+        },
+        "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)"
+      }
+    ]
+  },
+  "WalkOnGreenEvent1": {
+    "story": "DummyStory",
+    "act": "StopLightsAct",
+    "actors": [
+      "Pedestrian_1"
+    ],
+    "conditions": [
+      {
+        "type": "TrafficSignalCondition",
+        "name": "PedestrianLightGreen",
+        "delay_s": 0.5,
+        "edge": "none",
+        "extension": true,
+        "unevaluable_reason": "the converter does not carry esmini's traffic-signal state into the CommonRoad scenario",
+        "attributes": {
+          "name": "3",
+          "state": "$PedestrianLightGreen"
+        },
+        "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)"
+      }
+    ]
+  },
+  "WalkOnGreenEvent2": {
+    "story": "DummyStory",
+    "act": "StopLightsAct",
+    "actors": [
+      "Pedestrian_2"
+    ],
+    "conditions": [
+      {
+        "type": "TrafficSignalCondition",
+        "name": "PedestrianLightGreen",
+        "delay_s": 1.0,
+        "edge": "none",
+        "extension": true,
+        "unevaluable_reason": "the converter does not carry esmini's traffic-signal state into the CommonRoad scenario",
+        "attributes": {
+          "name": "2",
+          "state": "$PedestrianLightGreen"
+        },
+        "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)"
+      }
+    ]
+  }
+}

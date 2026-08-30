@@ -1,0 +1,240 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "acc-test",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/commonroad-openscenario-converter/scenarios/from_esmini/xosc/acc-test.xosc",
+  "generated_at": "2026-08-18T07:42:54+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 5,
+    "conditions": 5,
+    "translation_mapped": 5,
+    "translation_skipped": 0,
+    "interpretation_fired": 5,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "LaneChange1Event",
+      "story": "CutInAndBrakeStory",
+      "act": "CutInAndBrakeAct",
+      "actors": [
+        "Target"
+      ],
+      "conditions": [
+        {
+          "name": "LaneChange1Condition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 5.0 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 5.1,
+              "end": null
+            },
+            "time_step_interval": [
+              50,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 5.1,
+            "time_step": 51,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "LaneChange2Event",
+      "story": "CutInAndBrakeStory",
+      "act": "CutInAndBrakeAct",
+      "actors": [
+        "Target"
+      ],
+      "conditions": [
+        {
+          "name": "LaneChange2Condition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 7.0 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 7.1,
+              "end": null
+            },
+            "time_step_interval": [
+              70,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 7.1,
+            "time_step": 71,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "TargetBrakeEvent",
+      "story": "CutInAndBrakeStory",
+      "act": "CutInAndBrakeAct",
+      "actors": [
+        "Target"
+      ],
+      "conditions": [
+        {
+          "name": "BrakeCondition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 11.0 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 17.1,
+              "end": null
+            },
+            "time_step_interval": [
+              171,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 11.1,
+            "time_step": 111,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "TargetAccelerateEvent",
+      "story": "CutInAndBrakeStory",
+      "act": "CutInAndBrakeAct",
+      "actors": [
+        "Target"
+      ],
+      "conditions": [
+        {
+          "name": "BrakeCondition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 17.0 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 17.1,
+              "end": null
+            },
+            "time_step_interval": [
+              171,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 17.1,
+            "time_step": 171,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "TargetBrake2Event",
+      "story": "CutInAndBrakeStory",
+      "act": "CutInAndBrakeAct",
+      "actors": [
+        "Target"
+      ],
+      "conditions": [
+        {
+          "name": "Brake2Condition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 20.0 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 20.1,
+              "end": null
+            },
+            "time_step_interval": [
+              201,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 20.1,
+            "time_step": 201,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "CutInActStart",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 6,
+    "parsed_conditions": 6,
+    "source_types": {
+      "SimulationTimeCondition": 6
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 6,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

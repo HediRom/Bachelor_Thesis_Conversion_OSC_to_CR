@@ -1,0 +1,44 @@
+{
+  "DriveEvent": {
+    "story": "MyStory",
+    "act": "MyAct",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "RelativeDistanceCondition",
+        "name": "DriveCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "triggering_entity": "Ego",
+        "reference_entity": "Target",
+        "distance_type": "longitudinal",
+        "value": 30.0,
+        "freespace": false,
+        "rule": "lessThan"
+      }
+    ]
+  },
+  "StopEvent": {
+    "story": "MyStory",
+    "act": "MyAct",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "RelativeDistanceCondition",
+        "name": "StopCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "triggering_entity": "Ego",
+        "reference_entity": "Target",
+        "distance_type": "longitudinal",
+        "value": 30.0,
+        "freespace": false,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

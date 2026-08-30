@@ -1,0 +1,71 @@
+{
+  "name": "trajectory-test",
+  "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/trajectory-test.xosc",
+  "ok": true,
+  "error": null,
+  "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/trajectory-test",
+  "timings_s": {
+    "cr_conversion": 1.6852,
+    "storyboard_parse": 0.0021,
+    "strategy_transcription": 0.0,
+    "strategy_translation": 0.0,
+    "strategy_interpretation": 0.0,
+    "interpretation_replay": 0.0063,
+    "trigger_merge": 0.0007,
+    "timeline": 0.0049,
+    "write_embed": 0.4734,
+    "total": 2.1751,
+    "trigger_preservation": 0.014
+  },
+  "discarded_cosim": [],
+  "stats": {
+    "dt": 0.1,
+    "obstacles": 2,
+    "lanelets": 2,
+    "time_steps": 293,
+    "duration_s": 29.2,
+    "events": 4,
+    "conditions": 4,
+    "translation_mapped": 1,
+    "translation_skipped": 4,
+    "interpretation_fired": 1,
+    "timeline_conditions": 6,
+    "entity_refs_resolved": 1,
+    "entity_refs_unresolved": [],
+    "coverage": {
+      "source_conditions": 6,
+      "parsed_conditions": 6,
+      "source_types": {
+        "TimeHeadwayCondition": 1,
+        "StoryboardElementStateCondition": 4,
+        "SimulationTimeCondition": 1
+      },
+      "unsupported": {},
+      "unsupported_conditions": 0,
+      "declared_only": {},
+      "declared_conditions": 0,
+      "modelled_conditions": 6,
+      "preserved_pct": 100.0,
+      "evaluable_pct": 100.0,
+      "declared_reasons": {},
+      "events_without_trigger": [],
+      "unconditional_fires_possible": false
+    },
+    "road_network": {
+      "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/curves_elevation.xodr",
+      "error": null,
+      "repairs": []
+    },
+    "interpretation_fired_unconditional": 0
+  },
+  "files": {
+    "triggers_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/trajectory-test/triggers.json",
+    "conditions_transcription_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/trajectory-test/conditions_transcription.json",
+    "conditions_translation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/trajectory-test/conditions_translation.json",
+    "report_translation_txt": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/trajectory-test/report_translation.txt",
+    "trace_interpretation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/trajectory-test/trace_interpretation.json",
+    "timeline_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/trajectory-test/timeline.json",
+    "scenario_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/trajectory-test/scenario.xml",
+    "scenario_plain_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/trajectory-test/scenario_plain.xml"
+  }
+}

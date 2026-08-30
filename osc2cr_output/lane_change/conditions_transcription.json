@@ -1,0 +1,97 @@
+{
+  "Lane change Ego event": {
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "Lane change Ego condition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 4.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "EgoGoOffRoadEvent": {
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "EgoGoOffRoadCondition",
+        "delay_s": 1.0,
+        "edge": "rising",
+        "element_ref": "Lane change Ego event",
+        "element_type": "event",
+        "state": "endTransition"
+      }
+    ]
+  },
+  "EgoGoOnRoadEvent": {
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "OffroadCondition",
+        "name": "EgoGoOnRoadCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "extension": true,
+        "entity_ref": "Ego",
+        "unevaluable_reason": "needs lane-level containment against the source OpenDRIVE, not the converted lanelets",
+        "attributes": {
+          "duration": "2.5"
+        },
+        "text": "Ego: OffroadCondition (declared, not evaluable \u2014 needs lane-level containment against the source OpenDRIVE, not the converted lanelets)"
+      }
+    ]
+  },
+  "Lane change Target event": {
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "actors": [
+      "Truck"
+    ],
+    "conditions": [
+      {
+        "type": "ParameterCondition",
+        "name": "Lane change Target condition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "extension": true,
+        "parameter_ref": "DummyParameter",
+        "value": "10",
+        "rule": "greaterThan",
+        "resolved": "2",
+        "text": "parameter $DummyParameter (2) greaterThan 10"
+      }
+    ]
+  },
+  "Dummy parameter event": {
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "actors": [
+      "Truck"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "Lane change Target condition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 3.0,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+ESMINI_GIT_REV="v3.1.0-0-a8e18fce"
+ESMINI_GIT_TAG="v3.1.0"
+ESMINI_GIT_BRANCH="tags/v3.1.0^0"
+ESMINI_BUILD_VERSION="N/A - client build"

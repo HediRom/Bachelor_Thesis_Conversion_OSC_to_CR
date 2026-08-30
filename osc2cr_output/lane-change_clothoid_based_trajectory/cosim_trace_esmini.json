@@ -1,0 +1,1471 @@
+{
+ "scenario": "lane-change_clothoid_based_trajectory",
+ "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane-change_clothoid_based_trajectory",
+ "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/lane-change_clothoid_based_trajectory.xosc",
+ "driver": "esmini",
+ "dt": 0.1,
+ "id_to_name": {
+  "6": "Car"
+ },
+ "ego": "Car",
+ "entities": [
+  "Car"
+ ],
+ "externalization": null,
+ "planner": {
+  "status": "not-requested"
+ },
+ "events": [
+  {
+   "story": "LaneChangeStory",
+   "act": "LaneChangeAct",
+   "event": "LaneChangeEvent1",
+   "actors": [
+    "Car"
+   ],
+   "fire_count": 1,
+   "time_s": 2.1,
+   "time_step": 21,
+   "unconditional": false
+  }
+ ],
+ "collisions": [],
+ "ego_trajectory": [],
+ "storyboard_elements": [
+  {
+   "name": "LaneChangeManeuver",
+   "type": "Maneuver",
+   "state": "running",
+   "time_s": 0.1
+  },
+  {
+   "name": "LaneChangeManeuverGroup",
+   "type": "ManeuverGroup",
+   "state": "running",
+   "time_s": 0.1
+  },
+  {
+   "name": "LaneChangeAct",
+   "type": "Act",
+   "state": "running",
+   "time_s": 0.1
+  },
+  {
+   "name": "LaneChangeAction1",
+   "type": "Action",
+   "state": "running",
+   "time_s": 2.2
+  },
+  {
+   "name": "LaneChangeEvent1",
+   "type": "Event",
+   "state": "running",
+   "time_s": 2.2
+  },
+  {
+   "name": "LaneChangeAction1",
+   "type": "Action",
+   "state": "complete",
+   "time_s": 3.2
+  },
+  {
+   "name": "LaneChangeEvent1",
+   "type": "Event",
+   "state": "complete",
+   "time_s": 3.2
+  },
+  {
+   "name": "LaneChangeAction2",
+   "type": "Action",
+   "state": "running",
+   "time_s": 3.3
+  },
+  {
+   "name": "LaneChangeEvent2",
+   "type": "Event",
+   "state": "running",
+   "time_s": 3.3
+  },
+  {
+   "name": "LaneChangeAction2",
+   "type": "Action",
+   "state": "complete",
+   "time_s": 3.6
+  },
+  {
+   "name": "LaneChangeEvent2",
+   "type": "Event",
+   "state": "complete",
+   "time_s": 3.6
+  },
+  {
+   "name": "LaneChangeAction3",
+   "type": "Action",
+   "state": "running",
+   "time_s": 3.7
+  },
+  {
+   "name": "LaneChangeEvent3",
+   "type": "Event",
+   "state": "running",
+   "time_s": 3.7
+  },
+  {
+   "name": "LaneChangeAction3",
+   "type": "Action",
+   "state": "complete",
+   "time_s": 4.7
+  },
+  {
+   "name": "LaneChangeEvent3",
+   "type": "Event",
+   "state": "complete",
+   "time_s": 4.7
+  },
+  {
+   "name": "LaneChangeManeuver",
+   "type": "Maneuver",
+   "state": "complete",
+   "time_s": 4.8
+  },
+  {
+   "name": "LaneChangeManeuverGroup",
+   "type": "ManeuverGroup",
+   "state": "complete",
+   "time_s": 4.8
+  }
+ ],
+ "entity_trajectories": {
+  "Car": [
+   {
+    "step": 1,
+    "t": 0.1,
+    "x": 52.7889,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 2,
+    "t": 0.2,
+    "x": 54.1778,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 3,
+    "t": 0.3,
+    "x": 55.5667,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 4,
+    "t": 0.4,
+    "x": 56.9556,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 5,
+    "t": 0.5,
+    "x": 58.3444,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 6,
+    "t": 0.6,
+    "x": 59.7333,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 7,
+    "t": 0.7,
+    "x": 61.1222,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 8,
+    "t": 0.8,
+    "x": 62.5111,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 9,
+    "t": 0.9,
+    "x": 63.9,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 10,
+    "t": 1.0,
+    "x": 65.2889,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 11,
+    "t": 1.1,
+    "x": 66.6778,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 12,
+    "t": 1.2,
+    "x": 68.0667,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 13,
+    "t": 1.3,
+    "x": 69.4556,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 14,
+    "t": 1.4,
+    "x": 70.8444,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 15,
+    "t": 1.5,
+    "x": 72.2333,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 16,
+    "t": 1.6,
+    "x": 73.6222,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 17,
+    "t": 1.7,
+    "x": 75.0111,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 18,
+    "t": 1.8,
+    "x": 76.4,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 19,
+    "t": 1.9,
+    "x": 77.7889,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 20,
+    "t": 2.0,
+    "x": 79.1778,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 21,
+    "t": 2.1,
+    "x": 80.5667,
+    "y": -1.535,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 22,
+    "t": 2.2,
+    "x": 81.9554,
+    "y": -1.5059,
+    "h": 0.01389,
+    "v": 13.8889
+   },
+   {
+    "step": 23,
+    "t": 2.3,
+    "x": 83.3435,
+    "y": -1.4575,
+    "h": 0.02778,
+    "v": 13.8889
+   },
+   {
+    "step": 24,
+    "t": 2.4,
+    "x": 84.7309,
+    "y": -1.3899,
+    "h": 0.04167,
+    "v": 13.8889
+   },
+   {
+    "step": 25,
+    "t": 2.5,
+    "x": 86.1172,
+    "y": -1.303,
+    "h": 0.05556,
+    "v": 13.8889
+   },
+   {
+    "step": 26,
+    "t": 2.6,
+    "x": 87.5022,
+    "y": -1.1968,
+    "h": 0.06944,
+    "v": 13.8889
+   },
+   {
+    "step": 27,
+    "t": 2.7,
+    "x": 88.8855,
+    "y": -1.0714,
+    "h": 0.08333,
+    "v": 13.8889
+   },
+   {
+    "step": 28,
+    "t": 2.8,
+    "x": 90.267,
+    "y": -0.9269,
+    "h": 0.09722,
+    "v": 13.8889
+   },
+   {
+    "step": 29,
+    "t": 2.9,
+    "x": 91.6463,
+    "y": -0.7631,
+    "h": 0.11111,
+    "v": 13.8889
+   },
+   {
+    "step": 30,
+    "t": 3.0,
+    "x": 93.0232,
+    "y": -0.5802,
+    "h": 0.125,
+    "v": 13.8889
+   },
+   {
+    "step": 31,
+    "t": 3.1,
+    "x": 94.3975,
+    "y": -0.3782,
+    "h": 0.13889,
+    "v": 13.8889
+   },
+   {
+    "step": 32,
+    "t": 3.2,
+    "x": 95.7694,
+    "y": -0.1614,
+    "h": 0.15,
+    "v": 13.8889
+   },
+   {
+    "step": 33,
+    "t": 3.3,
+    "x": 97.1427,
+    "y": 0.0462,
+    "h": 0.15,
+    "v": 13.8889
+   },
+   {
+    "step": 34,
+    "t": 3.4,
+    "x": 98.516,
+    "y": 0.2537,
+    "h": 0.15,
+    "v": 13.8889
+   },
+   {
+    "step": 35,
+    "t": 3.5,
+    "x": 99.8893,
+    "y": 0.4613,
+    "h": 0.15,
+    "v": 13.8889
+   },
+   {
+    "step": 36,
+    "t": 3.6,
+    "x": 101.2626,
+    "y": 0.6688,
+    "h": 0.15,
+    "v": 13.8889
+   },
+   {
+    "step": 37,
+    "t": 3.7,
+    "x": 102.6401,
+    "y": 0.8476,
+    "h": 0.13611,
+    "v": 13.8889
+   },
+   {
+    "step": 38,
+    "t": 3.8,
+    "x": 104.0199,
+    "y": 1.0072,
+    "h": 0.12222,
+    "v": 13.8889
+   },
+   {
+    "step": 39,
+    "t": 3.9,
+    "x": 105.4018,
+    "y": 1.1476,
+    "h": 0.10833,
+    "v": 13.8889
+   },
+   {
+    "step": 40,
+    "t": 4.0,
+    "x": 106.7855,
+    "y": 1.2689,
+    "h": 0.09444,
+    "v": 13.8889
+   },
+   {
+    "step": 41,
+    "t": 4.1,
+    "x": 108.1707,
+    "y": 1.3709,
+    "h": 0.08056,
+    "v": 13.8889
+   },
+   {
+    "step": 42,
+    "t": 4.2,
+    "x": 109.5573,
+    "y": 1.4536,
+    "h": 0.06667,
+    "v": 13.8889
+   },
+   {
+    "step": 43,
+    "t": 4.3,
+    "x": 110.9448,
+    "y": 1.5171,
+    "h": 0.05278,
+    "v": 13.8889
+   },
+   {
+    "step": 44,
+    "t": 4.4,
+    "x": 112.3332,
+    "y": 1.5613,
+    "h": 0.03889,
+    "v": 13.8889
+   },
+   {
+    "step": 45,
+    "t": 4.5,
+    "x": 113.722,
+    "y": 1.5863,
+    "h": 0.025,
+    "v": 13.8889
+   },
+   {
+    "step": 46,
+    "t": 4.6,
+    "x": 115.111,
+    "y": 1.5919,
+    "h": 0.01111,
+    "v": 13.8889
+   },
+   {
+    "step": 47,
+    "t": 4.7,
+    "x": 116.4999,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 48,
+    "t": 4.8,
+    "x": 117.8888,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 49,
+    "t": 4.9,
+    "x": 119.2777,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 50,
+    "t": 5.0,
+    "x": 120.6666,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 51,
+    "t": 5.1,
+    "x": 122.0555,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 52,
+    "t": 5.2,
+    "x": 123.4443,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 53,
+    "t": 5.3,
+    "x": 124.8332,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 54,
+    "t": 5.4,
+    "x": 126.2221,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 55,
+    "t": 5.5,
+    "x": 127.611,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 56,
+    "t": 5.6,
+    "x": 128.9999,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 57,
+    "t": 5.7,
+    "x": 130.3888,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 58,
+    "t": 5.8,
+    "x": 131.7777,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 59,
+    "t": 5.9,
+    "x": 133.1666,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 60,
+    "t": 6.0,
+    "x": 134.5555,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 61,
+    "t": 6.1,
+    "x": 135.9443,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 62,
+    "t": 6.2,
+    "x": 137.3332,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 63,
+    "t": 6.3,
+    "x": 138.7221,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 64,
+    "t": 6.4,
+    "x": 140.111,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 65,
+    "t": 6.5,
+    "x": 141.4999,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 66,
+    "t": 6.6,
+    "x": 142.8888,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 67,
+    "t": 6.7,
+    "x": 144.2777,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 68,
+    "t": 6.8,
+    "x": 145.6666,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 69,
+    "t": 6.9,
+    "x": 147.0555,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 70,
+    "t": 7.0,
+    "x": 148.4443,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 71,
+    "t": 7.1,
+    "x": 149.8332,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 72,
+    "t": 7.2,
+    "x": 151.2221,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 73,
+    "t": 7.3,
+    "x": 152.611,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 74,
+    "t": 7.4,
+    "x": 153.9999,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 75,
+    "t": 7.5,
+    "x": 155.3888,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 76,
+    "t": 7.6,
+    "x": 156.7777,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 77,
+    "t": 7.7,
+    "x": 158.1666,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 78,
+    "t": 7.8,
+    "x": 159.5555,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 79,
+    "t": 7.9,
+    "x": 160.9443,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   },
+   {
+    "step": 80,
+    "t": 8.0,
+    "x": 162.3332,
+    "y": 1.5825,
+    "h": 0.0,
+    "v": 13.8889
+   }
+  ]
+ },
+ "entity_shapes": {
+  "Car": {
+   "length": 5.04,
+   "width": 2.0
+  }
+ },
+ "steps": 80,
+ "esmini_conditions": [
+  {
+   "name": "CutInActStart",
+   "time_s": 0.1
+  },
+  {
+   "name": "LaneChangeCondition1",
+   "time_s": 2.1
+  },
+  {
+   "name": "LaneChangeCondition2",
+   "time_s": 3.2
+  },
+  {
+   "name": "LaneChangeCondition3",
+   "time_s": 3.6
+  },
+  {
+   "name": "StopCondition",
+   "time_s": 8.0
+  }
+ ],
+ "shadow_conditions": [
+  {
+   "name": "CutInActStart",
+   "time_s": 0.1
+  },
+  {
+   "name": "LaneChangeCondition1",
+   "time_s": 2.1
+  },
+  {
+   "name": "StopCondition",
+   "time_s": 7.0
+  }
+ ],
+ "timeline": {
+  "dt": 0.1,
+  "time_steps": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52,
+   53,
+   54,
+   55,
+   56,
+   57,
+   58,
+   59,
+   60,
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   67,
+   68,
+   69,
+   70,
+   71,
+   72,
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   80
+  ],
+  "conditions": [
+   {
+    "key": "LaneChangeAct::CutInActStart::0",
+    "name": "CutInActStart",
+    "type": "SimulationTimeCondition",
+    "story": "LaneChangeStory",
+    "act": "LaneChangeAct",
+    "event": "",
+    "scope": "act_start",
+    "values": [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "first_true_step": 1,
+    "true_steps": 1,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "LaneChangeEvent1::LaneChangeCondition1::1",
+    "name": "LaneChangeCondition1",
+    "type": "SimulationTimeCondition",
+    "story": "LaneChangeStory",
+    "act": "LaneChangeAct",
+    "event": "LaneChangeEvent1",
+    "scope": "event",
+    "values": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "first_true_step": 21,
+    "true_steps": 60,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "LaneChangeEvent2::LaneChangeCondition2::2",
+    "name": "LaneChangeCondition2",
+    "type": "StoryboardElementStateCondition",
+    "story": "LaneChangeStory",
+    "act": "LaneChangeAct",
+    "event": "LaneChangeEvent2",
+    "scope": "event",
+    "values": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "LaneChangeEvent3::LaneChangeCondition3::3",
+    "name": "LaneChangeCondition3",
+    "type": "StoryboardElementStateCondition",
+    "story": "LaneChangeStory",
+    "act": "LaneChangeAct",
+    "event": "LaneChangeEvent3",
+    "scope": "event",
+    "values": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "::StopCondition::4",
+    "name": "StopCondition",
+    "type": "SimulationTimeCondition",
+    "story": "",
+    "act": "",
+    "event": "",
+    "scope": "storyboard_stop",
+    "values": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "first_true_step": 1,
+    "true_steps": 69,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   }
+  ]
+ },
+ "differential": {
+  "summary": {
+   "compared": 5,
+   "agree": 2,
+   "esmini_only": 2,
+   "time_mismatch": 1,
+   "conclusive": 5,
+   "agreement_pct": 40.0,
+   "divergent_declaring_delay": 1
+  },
+  "conditions": [
+   {
+    "name": "CutInActStart",
+    "verdict": "agree",
+    "esmini_fires": [
+     0.1
+    ],
+    "shadow_fires": [
+     0.1
+    ],
+    "max_delta_s": 0.0,
+    "delay_s": 0.0,
+    "declares_delay": false
+   },
+   {
+    "name": "LaneChangeCondition1",
+    "verdict": "agree",
+    "esmini_fires": [
+     2.1
+    ],
+    "shadow_fires": [
+     2.1
+    ],
+    "max_delta_s": 0.0,
+    "delay_s": 0.0,
+    "declares_delay": false
+   },
+   {
+    "name": "LaneChangeCondition2",
+    "verdict": "esmini_only",
+    "esmini_fires": [
+     3.2
+    ],
+    "shadow_fires": [],
+    "max_delta_s": 0.0,
+    "delay_s": 0.0,
+    "declares_delay": false
+   },
+   {
+    "name": "LaneChangeCondition3",
+    "verdict": "esmini_only",
+    "esmini_fires": [
+     3.6
+    ],
+    "shadow_fires": [],
+    "max_delta_s": 0.0,
+    "delay_s": 0.0,
+    "declares_delay": false
+   },
+   {
+    "name": "StopCondition",
+    "verdict": "time_mismatch",
+    "esmini_fires": [
+     8.0
+    ],
+    "shadow_fires": [
+     7.0
+    ],
+    "max_delta_s": 0.0,
+    "delay_s": 1.0,
+    "declares_delay": true
+   }
+  ]
+ },
+ "unevaluable": [],
+ "written_to": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane-change_clothoid_based_trajectory/cosim_trace_esmini.json",
+ "commonroad": {
+  "cosim_esmini_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane-change_clothoid_based_trajectory/cosim_esmini.xml"
+ }
+}

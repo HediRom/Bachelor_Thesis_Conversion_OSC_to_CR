@@ -1,0 +1,10 @@
+{
+  "StopCondition": {
+    "status": "skipped",
+    "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+  },
+  "DriveCondition": {
+    "status": "skipped",
+    "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+  }
+}

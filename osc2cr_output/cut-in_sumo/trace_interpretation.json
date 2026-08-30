@@ -1,0 +1,38 @@
+[
+  {
+    "time_s": 0.1,
+    "time_step": 1,
+    "story": "mystory",
+    "act": "my act",
+    "event": "first_lane_change",
+    "actors": [
+      "Target1"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  },
+  {
+    "time_s": 13.1,
+    "time_step": 131,
+    "story": "mystory",
+    "act": "my act",
+    "event": "targetspeedincrease",
+    "actors": [
+      "Target1"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  },
+  {
+    "time_s": 13.1,
+    "time_step": 131,
+    "story": "mystory",
+    "act": "my act",
+    "event": "egospeedincrease",
+    "actors": [
+      "Ego"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

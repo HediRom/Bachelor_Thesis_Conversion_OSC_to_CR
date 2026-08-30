@@ -1,0 +1,69 @@
+{
+  "name": "truck_with_rotating_axle",
+  "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/truck_with_rotating_axle.xosc",
+  "ok": true,
+  "error": null,
+  "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/truck_with_rotating_axle",
+  "timings_s": {
+    "cr_conversion": 0.4701,
+    "storyboard_parse": 0.0008,
+    "strategy_transcription": 0.0,
+    "strategy_translation": 0.0,
+    "strategy_interpretation": 0.0,
+    "interpretation_replay": 0.0021,
+    "trigger_merge": 0.0004,
+    "timeline": 0.0025,
+    "write_embed": 0.0566,
+    "total": 0.5346,
+    "trigger_preservation": 0.0059
+  },
+  "discarded_cosim": [],
+  "stats": {
+    "dt": 0.1,
+    "obstacles": 1,
+    "lanelets": 0,
+    "time_steps": 381,
+    "duration_s": 38.0,
+    "events": 0,
+    "conditions": 0,
+    "translation_mapped": 1,
+    "translation_skipped": 0,
+    "interpretation_fired": 0,
+    "timeline_conditions": 1,
+    "entity_refs_resolved": 0,
+    "entity_refs_unresolved": [],
+    "coverage": {
+      "source_conditions": 1,
+      "parsed_conditions": 1,
+      "source_types": {
+        "SimulationTimeCondition": 1
+      },
+      "unsupported": {},
+      "unsupported_conditions": 0,
+      "declared_only": {},
+      "declared_conditions": 0,
+      "modelled_conditions": 1,
+      "preserved_pct": 100.0,
+      "evaluable_pct": 100.0,
+      "declared_reasons": {},
+      "events_without_trigger": [],
+      "unconditional_fires_possible": false
+    },
+    "road_network": {
+      "xodr_file": null,
+      "error": null,
+      "repairs": []
+    },
+    "interpretation_fired_unconditional": 0
+  },
+  "files": {
+    "triggers_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/truck_with_rotating_axle/triggers.json",
+    "conditions_transcription_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/truck_with_rotating_axle/conditions_transcription.json",
+    "conditions_translation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/truck_with_rotating_axle/conditions_translation.json",
+    "report_translation_txt": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/truck_with_rotating_axle/report_translation.txt",
+    "trace_interpretation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/truck_with_rotating_axle/trace_interpretation.json",
+    "timeline_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/truck_with_rotating_axle/timeline.json",
+    "scenario_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/truck_with_rotating_axle/scenario.xml",
+    "scenario_plain_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/truck_with_rotating_axle/scenario_plain.xml"
+  }
+}

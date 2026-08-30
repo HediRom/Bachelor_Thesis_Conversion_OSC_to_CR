@@ -1,0 +1,87 @@
+{
+  "SloppyDriverEvent": {
+    "story": "Story",
+    "act": "Act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "SloppyDriverCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 2.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "LateralnteractiveEvent": {
+    "story": "Story",
+    "act": "Act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "InteractiveDriverLateralCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 10.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "LongitudinalInteractiveInteractiveEvent": {
+    "story": "Story",
+    "act": "Act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "InteractiveDriverLongitudinalCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 20.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "BetterSloppyDriverEvent": {
+    "story": "Story",
+    "act": "Act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "BetterSloppyDriverCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 30.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "DefaultControllerEvent": {
+    "story": "Story",
+    "act": "Act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "DefaultControllerCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 40.0,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

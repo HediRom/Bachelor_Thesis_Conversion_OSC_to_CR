@@ -1,0 +1,124 @@
+{
+ "scenario": "synchronize",
+ "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/synchronize",
+ "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/synchronize.xosc",
+ "driver": "planner",
+ "dt": 0.1,
+ "id_to_name": {
+  "8": "Ego",
+  "9": "MS1",
+  "10": "MS2",
+  "11": "NPC1",
+  "12": "NPC2",
+  "13": "NPC3",
+  "14": "NPC4"
+ },
+ "ego": "Ego",
+ "entities": [
+  "Ego",
+  "MS1",
+  "MS2",
+  "NPC1",
+  "NPC2",
+  "NPC3",
+  "NPC4"
+ ],
+ "externalization": {
+  "ego": "Ego",
+  "xosc_out": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/synchronize/external/resources/xosc/synchronize_external.xosc",
+  "controller_replaced": "interactiveDriver",
+  "activate_action_added": false,
+  "voided_maneuver_groups": [],
+  "absolutized_paths": 5
+ },
+ "planner": {
+  "status": "goal-already-satisfied"
+ },
+ "events": [],
+ "collisions": [],
+ "ego_trajectory": [],
+ "storyboard_elements": [],
+ "entity_trajectories": {},
+ "entity_shapes": {},
+ "steps": 0,
+ "esmini_conditions": [],
+ "shadow_conditions": [],
+ "timeline": {
+  "dt": 0.1,
+  "time_steps": [],
+  "conditions": [
+   {
+    "key": "Synchronize_Act::Synchronize_Condition::0",
+    "name": "Synchronize_Condition",
+    "type": "SimulationTimeCondition",
+    "story": "Synchronize_Story",
+    "act": "Synchronize_Act",
+    "event": "",
+    "scope": "act_start",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "::EndCondition1::1",
+    "name": "EndCondition1",
+    "type": "EntityTraveledDistanceCondition",
+    "story": "",
+    "act": "",
+    "event": "",
+    "scope": "storyboard_stop",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "::EndCondition2::2",
+    "name": "EndCondition2",
+    "type": "StandStillCondition",
+    "story": "",
+    "act": "",
+    "event": "",
+    "scope": "storyboard_stop",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "::StopSimulationCondition::3",
+    "name": "StopSimulationCondition",
+    "type": "SimulationTimeCondition",
+    "story": "",
+    "act": "",
+    "event": "",
+    "scope": "storyboard_stop",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   }
+  ]
+ },
+ "differential": {
+  "summary": {
+   "compared": 0,
+   "conclusive": 0,
+   "agreement_pct": null,
+   "divergent_declaring_delay": 0
+  },
+  "conditions": []
+ },
+ "unevaluable": [],
+ "written_to": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/synchronize/cosim_trace_planner.json",
+ "commonroad": {}
+}

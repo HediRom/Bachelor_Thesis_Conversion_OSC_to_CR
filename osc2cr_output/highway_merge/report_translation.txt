@@ -1,0 +1,9 @@
+=== Translation Report ===
+Time goals (2):
+  '' → time_step ∈ [1, 999999]  ([0.1, ∞])
+  'StopSimulationCondition' → time_step ∈ [201, 999999]  ([20.1, ∞])
+Skipped (4):
+  'EgoLaneChangeCondition' — ReachPositionCondition — not yet handled
+  'A2DistCondition' — storyboard meta-condition — no CR analogue
+  'A2DistCondition' — storyboard meta-condition — no CR analogue
+  'StoryBoardStopCondition' — ReachPositionCondition — not yet handled

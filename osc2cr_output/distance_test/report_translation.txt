@@ -1,0 +1,6 @@
+=== Translation Report ===
+Time goals (1):
+  'StopSimulationCondition' → time_step ∈ [12000, 999999]  ([1200.1, ∞])
+Skipped (2):
+  'OverTakerStartSpeedCondition' — ReachPositionCondition — not yet handled
+  'QuitCondition' — storyboard meta-condition — no CR analogue

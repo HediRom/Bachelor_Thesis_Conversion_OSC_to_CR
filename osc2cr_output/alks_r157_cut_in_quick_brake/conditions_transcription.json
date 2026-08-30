@@ -1,0 +1,37 @@
+{
+  "LaneChange1Event": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "LaneChange1Condition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 2.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "TargetreduceSpeedEvent": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "BrakeCondition",
+        "delay_s": 2.0,
+        "edge": "rising",
+        "element_ref": "LaneChange1Event",
+        "element_type": "event",
+        "state": "startTransition"
+      }
+    ]
+  }
+}

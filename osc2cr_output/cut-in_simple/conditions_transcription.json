@@ -1,0 +1,42 @@
+{
+  "CutInEvent": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "TimeHeadwayCondition",
+        "name": "CutInStartCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "triggering_entity": "Ego",
+        "reference_entity": "OverTaker",
+        "value": 0.4,
+        "freespace": true,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "BrakeEvent": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "TimeHeadwayCondition",
+        "name": "BrakeCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "triggering_entity": "Ego",
+        "reference_entity": "OverTaker",
+        "value": 1.0,
+        "freespace": true,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

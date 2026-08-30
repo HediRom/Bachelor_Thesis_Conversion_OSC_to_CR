@@ -1,0 +1,88 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "follow_reference_interactive",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/follow_reference_interactive.xosc",
+  "generated_at": "2026-08-18T07:45:56+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 1,
+    "conditions": 1,
+    "translation_mapped": 2,
+    "translation_skipped": 0,
+    "interpretation_fired": 1,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "Event1",
+      "story": "Story",
+      "act": "Act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "start_trigger1",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterOrEqual 15.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 15.0,
+              "end": null
+            },
+            "time_step_interval": [
+              150,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 15.0,
+            "time_step": 150,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "StopTrigger",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 120.0,
+          "end": null
+        },
+        "time_step_interval": [
+          1200,
+          null
+        ]
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 2,
+    "parsed_conditions": 2,
+    "source_types": {
+      "SimulationTimeCondition": 2
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 2,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

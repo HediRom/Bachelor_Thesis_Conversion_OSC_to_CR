@@ -1,0 +1,35 @@
+{
+  "EventTrigger1": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 2.0,
+      "end": null
+    },
+    "time_step_interval": [
+      20,
+      999999
+    ]
+  },
+  "EventTrigger2": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 2.0,
+      "end": null
+    },
+    "time_step_interval": [
+      20,
+      999999
+    ]
+  },
+  "StopSimulationCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 14.1,
+      "end": null
+    },
+    "time_step_interval": [
+      141,
+      999999
+    ]
+  }
+}

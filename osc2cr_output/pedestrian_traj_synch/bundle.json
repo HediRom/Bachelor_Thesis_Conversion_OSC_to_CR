@@ -1,0 +1,72 @@
+{
+  "name": "pedestrian_traj_synch",
+  "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/pedestrian_traj_synch.xosc",
+  "ok": true,
+  "error": null,
+  "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_traj_synch",
+  "timings_s": {
+    "cr_conversion": 1.4305,
+    "storyboard_parse": 0.0021,
+    "strategy_transcription": 0.0,
+    "strategy_translation": 0.0,
+    "strategy_interpretation": 0.0,
+    "interpretation_replay": 0.0021,
+    "trigger_merge": 0.0007,
+    "timeline": 0.0021,
+    "write_embed": 0.4493,
+    "total": 1.8896,
+    "trigger_preservation": 0.0071
+  },
+  "discarded_cosim": [],
+  "stats": {
+    "dt": 0.1,
+    "obstacles": 2,
+    "lanelets": 28,
+    "time_steps": 107,
+    "duration_s": 10.6,
+    "events": 3,
+    "conditions": 2,
+    "translation_mapped": 3,
+    "translation_skipped": 1,
+    "interpretation_fired": 3,
+    "timeline_conditions": 4,
+    "entity_refs_resolved": 0,
+    "entity_refs_unresolved": [],
+    "coverage": {
+      "source_conditions": 4,
+      "parsed_conditions": 4,
+      "source_types": {
+        "SimulationTimeCondition": 3,
+        "ReachPositionCondition": 1
+      },
+      "unsupported": {},
+      "unsupported_conditions": 0,
+      "declared_only": {},
+      "declared_conditions": 0,
+      "modelled_conditions": 4,
+      "preserved_pct": 100.0,
+      "evaluable_pct": 100.0,
+      "declared_reasons": {},
+      "events_without_trigger": [
+        "ped_synch_event"
+      ],
+      "unconditional_fires_possible": false
+    },
+    "road_network": {
+      "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/fabriksgatan.xodr",
+      "error": null,
+      "repairs": []
+    },
+    "interpretation_fired_unconditional": 1
+  },
+  "files": {
+    "triggers_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_traj_synch/triggers.json",
+    "conditions_transcription_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_traj_synch/conditions_transcription.json",
+    "conditions_translation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_traj_synch/conditions_translation.json",
+    "report_translation_txt": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_traj_synch/report_translation.txt",
+    "trace_interpretation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_traj_synch/trace_interpretation.json",
+    "timeline_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_traj_synch/timeline.json",
+    "scenario_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_traj_synch/scenario.xml",
+    "scenario_plain_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_traj_synch/scenario_plain.xml"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "cut-in_sloppy",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/cut-in_sloppy.xosc",
+  "generated_at": "2026-08-18T07:44:47+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 3,
+    "conditions": 3,
+    "translation_mapped": 1,
+    "translation_skipped": 4,
+    "interpretation_fired": 2,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "OverTakerStartSpeedEvent",
+      "story": "CutInAndBrakeStory",
+      "act": "CutInAndBrakeAct",
+      "actors": [
+        "OverTaker"
+      ],
+      "conditions": [
+        {
+          "name": "OverTakerStartSpeedCondition",
+          "type": "StoryboardElementStateCondition",
+          "text": "act 'CutInAndBrakeAct' reaches state startTransition",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "CutInEvent",
+      "story": "CutInAndBrakeStory",
+      "act": "CutInAndBrakeAct",
+      "actors": [
+        "OverTaker"
+      ],
+      "conditions": [
+        {
+          "name": "CutInStartCondition",
+          "type": "TimeHeadwayCondition",
+          "text": "Ego vs OverTaker: headway greaterThan 0.4 s (freespace)",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 7.9,
+            "time_step": 79,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "OvertakerBrakeEvent",
+      "story": "CutInAndBrakeStory",
+      "act": "CutInAndBrakeAct",
+      "actors": [
+        "OverTaker"
+      ],
+      "conditions": [
+        {
+          "name": "BrakeCondition",
+          "type": "TimeHeadwayCondition",
+          "text": "Ego vs OverTaker: headway greaterThan 2.7 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 13.6,
+            "time_step": 136,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "CutInActStart",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "StopCondition",
+      "translation": {
+        "status": "skipped",
+        "reason": "storyboard meta-condition \u2014 no CR analogue"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 5,
+    "parsed_conditions": 5,
+    "source_types": {
+      "StoryboardElementStateCondition": 2,
+      "TimeHeadwayCondition": 2,
+      "SimulationTimeCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 5,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

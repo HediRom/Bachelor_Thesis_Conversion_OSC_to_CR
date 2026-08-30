@@ -1,0 +1,208 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "lane_change",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/lane_change.xosc",
+  "generated_at": "2026-08-18T07:47:01+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 5,
+    "conditions": 5,
+    "translation_mapped": 2,
+    "translation_skipped": 4,
+    "interpretation_fired": 2,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "Lane change Ego event",
+      "story": "Lane change story",
+      "act": "Lane change act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "Lane change Ego condition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 4.0 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 4.1,
+              "end": null
+            },
+            "time_step_interval": [
+              40,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 4.1,
+            "time_step": 41,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "EgoGoOffRoadEvent",
+      "story": "Lane change story",
+      "act": "Lane change act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "EgoGoOffRoadCondition",
+          "type": "StoryboardElementStateCondition",
+          "text": "event 'Lane change Ego event' reaches state endTransition",
+          "edge": "rising",
+          "delay_s": 1.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "EgoGoOnRoadEvent",
+      "story": "Lane change story",
+      "act": "Lane change act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "EgoGoOnRoadCondition",
+          "type": "OffroadCondition",
+          "text": "Ego: OffroadCondition (declared, not evaluable \u2014 needs lane-level containment against the source OpenDRIVE, not the converted lanelets)",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "DeclaredCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "Lane change Target event",
+      "story": "Lane change story",
+      "act": "Lane change act",
+      "actors": [
+        "Truck"
+      ],
+      "conditions": [
+        {
+          "name": "Lane change Target condition",
+          "type": "ParameterCondition",
+          "text": "parameter $DummyParameter (2) greaterThan 10",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ParameterCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "Dummy parameter event",
+      "story": "Lane change story",
+      "act": "Lane change act",
+      "actors": [
+        "Truck"
+      ],
+      "conditions": [
+        {
+          "name": "Lane change Target condition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 3.0 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ParameterCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 3.1,
+            "time_step": 31,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "CutInActStart",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "QuitCondition",
+      "translation": {
+        "status": "skipped",
+        "reason": "storyboard meta-condition \u2014 no CR analogue"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 7,
+    "parsed_conditions": 7,
+    "source_types": {
+      "SimulationTimeCondition": 3,
+      "StoryboardElementStateCondition": 2,
+      "OffroadCondition": 1,
+      "ParameterCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {
+      "OffroadCondition": 1
+    },
+    "declared_conditions": 1,
+    "modelled_conditions": 6,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 85.7,
+    "declared_reasons": {
+      "OffroadCondition": "needs lane-level containment against the source OpenDRIVE, not the converted lanelets"
+    },
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

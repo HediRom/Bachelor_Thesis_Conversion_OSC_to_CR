@@ -1,0 +1,71 @@
+{
+  "name": "ltap-od",
+  "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/ltap-od.xosc",
+  "ok": true,
+  "error": null,
+  "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/ltap-od",
+  "timings_s": {
+    "cr_conversion": 3.3195,
+    "storyboard_parse": 0.0016,
+    "strategy_transcription": 0.0,
+    "strategy_translation": 0.0,
+    "strategy_interpretation": 0.0,
+    "interpretation_replay": 0.0078,
+    "trigger_merge": 0.0006,
+    "timeline": 0.0085,
+    "write_embed": 0.6551,
+    "total": 3.9971,
+    "trigger_preservation": 0.0185
+  },
+  "discarded_cosim": [],
+  "stats": {
+    "dt": 0.1,
+    "obstacles": 2,
+    "lanelets": 28,
+    "time_steps": 600,
+    "duration_s": 59.9,
+    "events": 1,
+    "conditions": 1,
+    "translation_mapped": 2,
+    "translation_skipped": 2,
+    "interpretation_fired": 0,
+    "timeline_conditions": 4,
+    "entity_refs_resolved": 0,
+    "entity_refs_unresolved": [],
+    "coverage": {
+      "source_conditions": 5,
+      "parsed_conditions": 4,
+      "source_types": {
+        "StoryboardElementStateCondition": 2,
+        "SimulationTimeCondition": 2,
+        "SpeedCondition": 1
+      },
+      "unsupported": {},
+      "unsupported_conditions": 0,
+      "declared_only": {},
+      "declared_conditions": 0,
+      "modelled_conditions": 5,
+      "preserved_pct": 80.0,
+      "evaluable_pct": 100.0,
+      "declared_reasons": {},
+      "events_without_trigger": [],
+      "unconditional_fires_possible": false
+    },
+    "road_network": {
+      "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/fabriksgatan.xodr",
+      "error": null,
+      "repairs": []
+    },
+    "interpretation_fired_unconditional": 0
+  },
+  "files": {
+    "triggers_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/ltap-od/triggers.json",
+    "conditions_transcription_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/ltap-od/conditions_transcription.json",
+    "conditions_translation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/ltap-od/conditions_translation.json",
+    "report_translation_txt": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/ltap-od/report_translation.txt",
+    "trace_interpretation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/ltap-od/trace_interpretation.json",
+    "timeline_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/ltap-od/timeline.json",
+    "scenario_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/ltap-od/scenario.xml",
+    "scenario_plain_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/ltap-od/scenario_plain.xml"
+  }
+}

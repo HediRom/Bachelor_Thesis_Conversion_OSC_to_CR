@@ -1,0 +1,163 @@
+{
+ "scenario": "lane_change_simple",
+ "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane_change_simple",
+ "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/lane_change_simple.xosc",
+ "driver": "planner",
+ "dt": 0.1,
+ "id_to_name": {
+  "4": "Ego"
+ },
+ "ego": "Ego",
+ "entities": [
+  "Ego"
+ ],
+ "externalization": null,
+ "planner": {
+  "status": "failed",
+  "reason": "planner setup failed (ValueError: Planner <commonroad_route_planner.planners.networkx.NetworkxRoutePlanner object at 0x7c0b69f6cc10> could not find a single route)"
+ },
+ "events": [],
+ "collisions": [],
+ "ego_trajectory": [],
+ "storyboard_elements": [],
+ "entity_trajectories": {},
+ "entity_shapes": {},
+ "esmini_conditions": [],
+ "shadow_conditions": [],
+ "timeline": {
+  "dt": 0.1,
+  "time_steps": [],
+  "conditions": [
+   {
+    "key": "Lane change act::CutInActStart::0",
+    "name": "CutInActStart",
+    "type": "SimulationTimeCondition",
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "event": "",
+    "scope": "act_start",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "Lane change event::Lane change condition::1",
+    "name": "Lane change condition",
+    "type": "ReachPositionCondition",
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "event": "Lane change event",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "End Of Road teleport event::End Of Road condition::2",
+    "name": "End Of Road condition",
+    "type": "EndOfRoadCondition",
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "event": "End Of Road teleport event",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "End Of Road speed event::End Of Road condition::3",
+    "name": "End Of Road condition",
+    "type": "EndOfRoadCondition",
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "event": "End Of Road speed event",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "Lane change act 2::QuitCondition::4",
+    "name": "QuitCondition",
+    "type": "StoryboardElementStateCondition",
+    "story": "Lane change story",
+    "act": "Lane change act 2",
+    "event": "",
+    "scope": "act_start",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "Act 2 Lane change event::Lane change condition::5",
+    "name": "Lane change condition",
+    "type": "ReachPositionCondition",
+    "story": "Lane change story",
+    "act": "Lane change act 2",
+    "event": "Act 2 Lane change event",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "Act 2 End Of Road teleport event::End Of Road condition::6",
+    "name": "End Of Road condition",
+    "type": "EndOfRoadCondition",
+    "story": "Lane change story",
+    "act": "Lane change act 2",
+    "event": "Act 2 End Of Road teleport event",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "::QuitCondition::7",
+    "name": "QuitCondition",
+    "type": "StoryboardElementStateCondition",
+    "story": "",
+    "act": "",
+    "event": "",
+    "scope": "storyboard_stop",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   }
+  ]
+ },
+ "differential": {
+  "summary": {
+   "compared": 0,
+   "agreement_pct": 0.0
+  },
+  "conditions": []
+ },
+ "unevaluable": [],
+ "written_to": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane_change_simple/cosim_trace_planner.json",
+ "commonroad": {}
+}

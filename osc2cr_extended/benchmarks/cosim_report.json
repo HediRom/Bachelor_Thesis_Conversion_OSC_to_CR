@@ -1,0 +1,9687 @@
+{
+  "esmini": {
+    "per_scenario": {
+      "acc-test": {
+        "agreement_pct": 100.0,
+        "compared": 5,
+        "agree": 5,
+        "conclusive": 5,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "LaneChange1Event",
+            5.1
+          ],
+          [
+            "LaneChange2Event",
+            7.1
+          ],
+          [
+            "TargetBrakeEvent",
+            11.1
+          ],
+          [
+            "TargetAccelerateEvent",
+            17.1
+          ],
+          [
+            "TargetBrake2Event",
+            20.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 620
+      },
+      "acc-toggle": {
+        "agreement_pct": 50.0,
+        "compared": 4,
+        "agree": 2,
+        "conclusive": 4,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "TargetChangeSpeedEvent",
+            10.1
+          ],
+          [
+            "TargetChangeSpeedEvent2",
+            20.1
+          ],
+          [
+            "ActivateACCEvent",
+            24.4
+          ],
+          [
+            "ActivateInteractiveDriverEvent",
+            46.8
+          ]
+        ],
+        "collisions": 0,
+        "steps": 620
+      },
+      "alks-test": {
+        "agreement_pct": 100.0,
+        "compared": 6,
+        "agree": 5,
+        "conclusive": 5,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "LaneChange1Event",
+            5.1
+          ],
+          [
+            "LaneChange2Event",
+            7.1
+          ],
+          [
+            "TargetBrakeEvent",
+            11.1
+          ],
+          [
+            "TargetAccelerateEvent",
+            17.1
+          ],
+          [
+            "TargetBrake2Event",
+            20.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 284
+      },
+      "alks_cut-in": {
+        "agreement_pct": 50.0,
+        "compared": 2,
+        "agree": 1,
+        "conclusive": 2,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 8,
+        "steps": 101
+      },
+      "alks_cut-out": {
+        "agreement_pct": 100.0,
+        "compared": 2,
+        "agree": 2,
+        "conclusive": 2,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "CutOutEvent",
+            2.2
+          ]
+        ],
+        "collisions": 0,
+        "steps": 101
+      },
+      "alks_decelerate": {
+        "agreement_pct": 100.0,
+        "compared": 2,
+        "agree": 2,
+        "conclusive": 2,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "DecelerateEvent",
+            2.1
+          ]
+        ],
+        "collisions": 47,
+        "steps": 101
+      },
+      "alks_pedestrian": {
+        "agreement_pct": 100.0,
+        "compared": 2,
+        "agree": 2,
+        "conclusive": 2,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "PedestrianWalkEvent",
+            2.1
+          ]
+        ],
+        "collisions": 7,
+        "steps": 101
+      },
+      "alks_r157_cut_in_quick_brake": {
+        "agreement_pct": 66.7,
+        "compared": 4,
+        "agree": 2,
+        "conclusive": 3,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "LaneChange1Event",
+            2.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 100
+      },
+      "controller_test": {
+        "agreement_pct": 100.0,
+        "compared": 7,
+        "agree": 6,
+        "conclusive": 6,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "SloppyDriverEvent",
+            2.1
+          ],
+          [
+            "LateralnteractiveEvent",
+            10.1
+          ],
+          [
+            "LongitudinalInteractiveInteractiveEvent",
+            20.1
+          ],
+          [
+            "BetterSloppyDriverEvent",
+            30.1
+          ],
+          [
+            "DefaultControllerEvent",
+            40.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 503
+      },
+      "cut-in_cr": {
+        "agreement_pct": 66.7,
+        "compared": 3,
+        "agree": 2,
+        "conclusive": 3,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "OverTakerStartSpeedEvent",
+            0.1
+          ],
+          [
+            "LaneChangeEvent",
+            3.2
+          ],
+          [
+            "CutInEvent",
+            11.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 620
+      },
+      "cut-in_external": {
+        "agreement_pct": 50.0,
+        "compared": 2,
+        "agree": 1,
+        "conclusive": 2,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 0,
+        "steps": 620
+      },
+      "cut-in_interactive": {
+        "agreement_pct": 50.0,
+        "compared": 2,
+        "agree": 1,
+        "conclusive": 2,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 0,
+        "steps": 620
+      },
+      "cut-in_simple": {
+        "agreement_pct": 100.0,
+        "compared": 5,
+        "agree": 4,
+        "conclusive": 4,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "CutInEvent",
+            6.6
+          ],
+          [
+            "BrakeEvent",
+            9.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 103
+      },
+      "cut-in_sloppy": {
+        "agreement_pct": 75.0,
+        "compared": 5,
+        "agree": 3,
+        "conclusive": 4,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "CutInEvent",
+            7.8
+          ],
+          [
+            "OvertakerBrakeEvent",
+            13.5
+          ]
+        ],
+        "collisions": 3,
+        "steps": 275
+      },
+      "cut-in_sumo": {
+        "agreement_pct": 66.7,
+        "compared": 3,
+        "agree": 2,
+        "conclusive": 3,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "targetspeedincrease",
+            13.1
+          ],
+          [
+            "egospeedincrease",
+            13.1
+          ],
+          [
+            "first_lane_change",
+            21.4
+          ]
+        ],
+        "collisions": 0,
+        "steps": 401
+      },
+      "cut-in_visibility": {
+        "agreement_pct": 85.7,
+        "compared": 8,
+        "agree": 6,
+        "conclusive": 7,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "VisibilityHideForSensorsEvent",
+            4.1
+          ],
+          [
+            "VisibilityHideEvent",
+            7.1
+          ],
+          [
+            "CutInEvent",
+            7.7
+          ],
+          [
+            "OvertakerBrakeEvent",
+            9.2
+          ],
+          [
+            "VisibilityReappearEvent",
+            10.1
+          ]
+        ],
+        "collisions": 7,
+        "steps": 232
+      },
+      "distance_test": {
+        "agreement_pct": null,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "ContinuousDistEvent",
+            0.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 620
+      },
+      "drive_when_close": {
+        "agreement_pct": 100.0,
+        "compared": 1,
+        "agree": 1,
+        "conclusive": 1,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 0,
+        "steps": 401
+      },
+      "drop-bike": {
+        "agreement_pct": 100.0,
+        "compared": 3,
+        "agree": 3,
+        "conclusive": 3,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "drop of bike",
+            5.1
+          ]
+        ],
+        "collisions": 2,
+        "steps": 101
+      },
+      "follow_ghost": {
+        "agreement_pct": 0.0,
+        "compared": 4,
+        "agree": 0,
+        "conclusive": 4,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 0,
+        "steps": 197
+      },
+      "follow_reference": {
+        "agreement_pct": 0.0,
+        "compared": 2,
+        "agree": 0,
+        "conclusive": 2,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "Event1",
+            0.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 620
+      },
+      "follow_reference_interactive": {
+        "agreement_pct": 0.0,
+        "compared": 1,
+        "agree": 0,
+        "conclusive": 1,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "Event1",
+            15.0
+          ]
+        ],
+        "collisions": 620,
+        "steps": 620
+      },
+      "highway_merge": {
+        "agreement_pct": 25.0,
+        "compared": 4,
+        "agree": 1,
+        "conclusive": 4,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "EgoLaneChangeEvent",
+            7.0
+          ]
+        ],
+        "collisions": 0,
+        "steps": 163
+      },
+      "highway_merge_advanced": {
+        "agreement_pct": 25.0,
+        "compared": 4,
+        "agree": 1,
+        "conclusive": 4,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "A3OpenEvent",
+            0.1
+          ],
+          [
+            "A3OpenEvent",
+            0.2
+          ],
+          [
+            "A3OpenEvent",
+            0.3
+          ]
+        ],
+        "collisions": 0,
+        "steps": 620
+      },
+      "keep_lateral_distance": {
+        "agreement_pct": 60.0,
+        "compared": 5,
+        "agree": 3,
+        "conclusive": 5,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "LaneChange1Event",
+            0.1
+          ],
+          [
+            "LateralDistanceMaxSpeedEvent",
+            1.1
+          ],
+          [
+            "LaneChange2Event",
+            8.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 620
+      },
+      "keep_lateral_distance_external": {
+        "agreement_pct": 100.0,
+        "compared": 5,
+        "agree": 4,
+        "conclusive": 4,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "LateralDistanceMaxSpeedEvent",
+            1.1
+          ],
+          [
+            "LateralDistanceMaxSpeedAndAccEvent",
+            4.1
+          ],
+          [
+            "LateralDistanceMaxAccEvent",
+            8.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 133
+      },
+      "lane-change_clothoid_based_trajectory": {
+        "agreement_pct": 40.0,
+        "compared": 5,
+        "agree": 2,
+        "conclusive": 5,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "LaneChangeEvent1",
+            2.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 80
+      },
+      "lane_change": {
+        "agreement_pct": 40.0,
+        "compared": 6,
+        "agree": 2,
+        "conclusive": 5,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "Dummy parameter event",
+            3.1
+          ],
+          [
+            "Lane change Ego event",
+            4.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 175
+      },
+      "lane_change_crest": {
+        "agreement_pct": 50.0,
+        "compared": 3,
+        "agree": 1,
+        "conclusive": 2,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "LaneChangeEvent",
+            4.5
+          ]
+        ],
+        "collisions": 0,
+        "steps": 121
+      },
+      "lane_change_simple": {
+        "agreement_pct": 33.3,
+        "compared": 3,
+        "agree": 1,
+        "conclusive": 3,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "Lane change event",
+            4.5
+          ]
+        ],
+        "collisions": 0,
+        "steps": 620
+      },
+      "left-hand-traffic_by_heading": {
+        "agreement_pct": 100.0,
+        "compared": 1,
+        "agree": 1,
+        "conclusive": 1,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 0,
+        "steps": 620
+      },
+      "left-hand-traffic_using_road_rule": {
+        "agreement_pct": 100.0,
+        "compared": 3,
+        "agree": 2,
+        "conclusive": 2,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "Lane change",
+            3.8
+          ]
+        ],
+        "collisions": 0,
+        "steps": 99
+      },
+      "long_dist_action_with_jerk": {
+        "agreement_pct": 50.0,
+        "compared": 4,
+        "agree": 2,
+        "conclusive": 4,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "Egoevent",
+            1.0
+          ],
+          [
+            "ego jerkevent",
+            1.0
+          ]
+        ],
+        "collisions": 201,
+        "steps": 201
+      },
+      "ltap-od": {
+        "agreement_pct": 50.0,
+        "compared": 2,
+        "agree": 1,
+        "conclusive": 2,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 0,
+        "steps": 620
+      },
+      "ltap-od-relative-speed": {
+        "agreement_pct": 50.0,
+        "compared": 2,
+        "agree": 1,
+        "conclusive": 2,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 0,
+        "steps": 620
+      },
+      "override_bb": {
+        "agreement_pct": null,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 0,
+        "steps": 620
+      },
+      "parking_lot": {
+        "agreement_pct": 0.0,
+        "compared": 1,
+        "agree": 0,
+        "conclusive": 1,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 0,
+        "steps": 620
+      },
+      "pedestrian": {
+        "agreement_pct": null,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 0,
+        "steps": 620
+      },
+      "pedestrian_collision": {
+        "agreement_pct": 75.0,
+        "compared": 5,
+        "agree": 3,
+        "conclusive": 4,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "ped_walk_event",
+            0.2
+          ],
+          [
+            "ped_collide_event",
+            5.5
+          ]
+        ],
+        "collisions": 6,
+        "steps": 97
+      },
+      "pedestrian_collision_udp": {
+        "agreement_pct": 100.0,
+        "compared": 1,
+        "agree": 1,
+        "conclusive": 1,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 0,
+        "steps": 620
+      },
+      "pedestrian_traj_synch": {
+        "agreement_pct": 100.0,
+        "compared": 4,
+        "agree": 4,
+        "conclusive": 4,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "ped_synch_event",
+            0.1
+          ],
+          [
+            "ped_follow_trajectory",
+            0.1
+          ],
+          [
+            "drive_Event",
+            0.1
+          ]
+        ],
+        "collisions": 6,
+        "steps": 108
+      },
+      "pedestrian_udp": {
+        "agreement_pct": 75.0,
+        "compared": 5,
+        "agree": 3,
+        "conclusive": 4,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "ped_walk_event",
+            0.2
+          ],
+          [
+            "ped_collide_event",
+            5.5
+          ]
+        ],
+        "collisions": 6,
+        "steps": 97
+      },
+      "routing-test": {
+        "agreement_pct": 100.0,
+        "compared": 4,
+        "agree": 3,
+        "conclusive": 3,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "AquirePosition event",
+            25.5
+          ],
+          [
+            "Stop event",
+            38.3
+          ]
+        ],
+        "collisions": 0,
+        "steps": 475
+      },
+      "slow-lead-vehicle": {
+        "agreement_pct": 50.0,
+        "compared": 3,
+        "agree": 1,
+        "conclusive": 2,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 0,
+        "steps": 114
+      },
+      "speed-profile": {
+        "agreement_pct": 100.0,
+        "compared": 3,
+        "agree": 3,
+        "conclusive": 3,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "SpeedProfileEvent1",
+            2.0
+          ],
+          [
+            "SpeedProfileEvent",
+            2.0
+          ]
+        ],
+        "collisions": 0,
+        "steps": 141
+      },
+      "straight_500m": {
+        "agreement_pct": 100.0,
+        "compared": 2,
+        "agree": 2,
+        "conclusive": 2,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 5,
+        "steps": 301
+      },
+      "straight_500m_pedestrian": {
+        "agreement_pct": 100.0,
+        "compared": 2,
+        "agree": 2,
+        "conclusive": 2,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 16,
+        "steps": 301
+      },
+      "synch_with_steady_state": {
+        "agreement_pct": 66.7,
+        "compared": 3,
+        "agree": 2,
+        "conclusive": 3,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 5,
+        "steps": 147
+      },
+      "synchronize": {
+        "agreement_pct": 33.3,
+        "compared": 3,
+        "agree": 1,
+        "conclusive": 3,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 0,
+        "steps": 620
+      },
+      "traffic_lights": {
+        "agreement_pct": 66.7,
+        "compared": 3,
+        "agree": 2,
+        "conclusive": 3,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "StopLightEvent",
+            3.5
+          ]
+        ],
+        "collisions": 0,
+        "steps": 301
+      },
+      "trailers": {
+        "agreement_pct": 100.0,
+        "compared": 1,
+        "agree": 1,
+        "conclusive": 1,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 0,
+        "steps": 151
+      },
+      "trajectory-test": {
+        "agreement_pct": 40.0,
+        "compared": 5,
+        "agree": 2,
+        "conclusive": 5,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "FollowTrajectoryPLineEvent",
+            1.9
+          ]
+        ],
+        "collisions": 0,
+        "steps": 292
+      },
+      "truck_with_rotating_axle": {
+        "agreement_pct": 100.0,
+        "compared": 1,
+        "agree": 1,
+        "conclusive": 1,
+        "planner_status": "not-requested",
+        "events": [],
+        "collisions": 0,
+        "steps": 381
+      },
+      "velodrome": {
+        "agreement_pct": 33.3,
+        "compared": 3,
+        "agree": 1,
+        "conclusive": 3,
+        "planner_status": "not-requested",
+        "events": [
+          [
+            "ChangeSpeedEvent",
+            20.7
+          ],
+          [
+            "ChangeLaneEvent",
+            32.7
+          ]
+        ],
+        "collisions": 0,
+        "steps": 465
+      }
+    },
+    "verdict_counts": {
+      "agree": 104,
+      "shadow_only": 7,
+      "inconclusive_at_end": 14,
+      "esmini_only": 26,
+      "time_mismatch": 8,
+      "count_mismatch": 9,
+      "not_modelled": 1
+    },
+    "delay_tagged": 26,
+    "totals": {
+      "compared": 169,
+      "agree": 104,
+      "conclusive": 155,
+      "agreement_pct": 67.1
+    },
+    "status_counts": {
+      "not-requested": 54
+    },
+    "collisions_by_scenario": {
+      "alks_cut-in": [
+        {
+          "time_s": 5.0,
+          "with": [
+            "TargetCutIn"
+          ]
+        },
+        {
+          "time_s": 5.1,
+          "with": [
+            "TargetCutIn"
+          ]
+        },
+        {
+          "time_s": 5.2,
+          "with": [
+            "TargetCutIn"
+          ]
+        },
+        {
+          "time_s": 5.3,
+          "with": [
+            "TargetCutIn"
+          ]
+        },
+        {
+          "time_s": 5.4,
+          "with": [
+            "TargetCutIn"
+          ]
+        },
+        {
+          "time_s": 5.5,
+          "with": [
+            "TargetCutIn"
+          ]
+        },
+        {
+          "time_s": 5.6,
+          "with": [
+            "TargetCutIn"
+          ]
+        },
+        {
+          "time_s": 5.7,
+          "with": [
+            "TargetCutIn"
+          ]
+        }
+      ],
+      "alks_decelerate": [
+        {
+          "time_s": 5.5,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 5.6,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 5.7,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 5.8,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 5.9,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 6.0,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 6.1,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 6.2,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 6.3,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 6.4,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 6.5,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 6.6,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 6.7,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 6.8,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 6.9,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 7.0,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 7.1,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 7.2,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 7.3,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 7.4,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 7.5,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 7.6,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 7.7,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 7.8,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 7.9,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 8.0,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 8.1,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 8.2,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 8.3,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 8.4,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 8.5,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 8.6,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 8.7,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 8.8,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 8.9,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 9.0,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 9.1,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 9.2,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 9.3,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 9.4,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 9.5,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 9.6,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 9.7,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 9.8,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 9.9,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 10.0,
+          "with": [
+            "TargetDecelerate"
+          ]
+        },
+        {
+          "time_s": 10.1,
+          "with": [
+            "TargetDecelerate"
+          ]
+        }
+      ],
+      "alks_pedestrian": [
+        {
+          "time_s": 5.3,
+          "with": [
+            "Pedestrian"
+          ]
+        },
+        {
+          "time_s": 5.4,
+          "with": [
+            "Pedestrian"
+          ]
+        },
+        {
+          "time_s": 5.5,
+          "with": [
+            "Pedestrian"
+          ]
+        },
+        {
+          "time_s": 5.6,
+          "with": [
+            "Pedestrian"
+          ]
+        },
+        {
+          "time_s": 5.7,
+          "with": [
+            "Pedestrian"
+          ]
+        },
+        {
+          "time_s": 5.8,
+          "with": [
+            "Pedestrian"
+          ]
+        },
+        {
+          "time_s": 5.9,
+          "with": [
+            "Pedestrian"
+          ]
+        }
+      ],
+      "cut-in_sloppy": [
+        {
+          "time_s": 23.9,
+          "with": [
+            "OverTaker"
+          ]
+        },
+        {
+          "time_s": 24.0,
+          "with": [
+            "OverTaker"
+          ]
+        },
+        {
+          "time_s": 24.1,
+          "with": [
+            "OverTaker"
+          ]
+        }
+      ],
+      "cut-in_visibility": [
+        {
+          "time_s": 14.3,
+          "with": [
+            "OverTaker"
+          ]
+        },
+        {
+          "time_s": 14.4,
+          "with": [
+            "OverTaker"
+          ]
+        },
+        {
+          "time_s": 14.5,
+          "with": [
+            "OverTaker"
+          ]
+        },
+        {
+          "time_s": 14.6,
+          "with": [
+            "OverTaker"
+          ]
+        },
+        {
+          "time_s": 14.7,
+          "with": [
+            "OverTaker"
+          ]
+        },
+        {
+          "time_s": 14.8,
+          "with": [
+            "OverTaker"
+          ]
+        },
+        {
+          "time_s": 14.9,
+          "with": [
+            "OverTaker"
+          ]
+        }
+      ],
+      "drop-bike": [
+        {
+          "time_s": 6.1,
+          "with": [
+            "bike"
+          ]
+        },
+        {
+          "time_s": 6.2,
+          "with": [
+            "bike"
+          ]
+        }
+      ],
+      "follow_reference_interactive": [
+        {
+          "time_s": 0.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 0.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 0.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 0.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 0.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 0.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 0.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 0.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 0.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 1.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 1.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 1.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 1.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 1.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 1.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 1.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 1.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 1.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 1.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 2.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 2.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 2.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 2.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 2.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 2.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 2.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 2.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 2.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 2.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 3.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 3.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 3.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 3.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 3.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 3.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 3.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 3.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 3.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 3.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 4.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 4.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 4.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 4.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 4.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 4.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 4.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 4.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 4.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 4.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 5.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 5.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 5.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 5.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 5.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 5.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 5.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 5.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 5.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 5.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 6.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 6.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 6.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 6.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 6.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 6.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 6.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 6.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 6.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 6.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 7.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 7.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 7.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 7.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 7.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 7.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 7.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 7.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 7.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 7.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 8.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 8.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 8.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 8.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 8.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 8.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 8.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 8.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 8.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 8.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 9.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 9.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 9.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 9.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 9.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 9.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 9.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 9.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 9.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 9.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 10.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 10.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 10.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 10.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 10.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 10.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 10.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 10.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 10.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 10.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 11.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 11.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 11.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 11.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 11.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 11.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 11.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 11.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 11.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 11.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 12.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 12.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 12.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 12.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 12.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 12.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 12.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 12.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 12.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 12.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 13.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 13.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 13.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 13.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 13.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 13.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 13.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 13.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 13.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 13.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 14.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 14.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 14.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 14.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 14.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 14.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 14.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 14.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 14.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 14.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 15.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 15.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 15.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 15.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 15.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 15.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 15.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 15.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 15.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 15.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 16.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 16.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 16.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 16.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 16.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 16.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 16.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 16.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 16.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 16.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 17.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 17.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 17.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 17.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 17.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 17.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 17.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 17.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 17.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 17.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 18.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 18.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 18.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 18.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 18.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 18.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 18.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 18.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 18.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 18.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 19.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 19.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 19.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 19.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 19.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 19.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 19.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 19.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 19.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 19.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 20.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 20.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 20.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 20.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 20.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 20.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 20.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 20.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 20.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 20.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 21.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 21.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 21.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 21.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 21.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 21.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 21.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 21.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 21.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 21.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 22.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 22.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 22.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 22.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 22.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 22.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 22.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 22.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 22.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 22.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 23.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 23.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 23.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 23.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 23.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 23.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 23.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 23.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 23.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 23.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 24.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 24.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 24.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 24.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 24.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 24.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 24.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 24.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 24.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 24.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 25.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 25.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 25.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 25.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 25.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 25.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 25.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 25.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 25.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 25.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 26.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 26.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 26.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 26.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 26.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 26.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 26.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 26.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 26.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 26.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 27.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 27.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 27.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 27.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 27.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 27.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 27.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 27.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 27.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 27.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 28.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 28.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 28.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 28.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 28.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 28.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 28.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 28.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 28.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 28.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 29.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 29.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 29.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 29.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 29.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 29.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 29.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 29.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 29.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 29.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 30.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 30.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 30.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 30.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 30.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 30.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 30.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 30.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 30.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 30.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 31.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 31.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 31.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 31.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 31.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 31.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 31.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 31.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 31.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 31.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 32.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 32.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 32.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 32.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 32.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 32.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 32.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 32.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 32.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 32.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 33.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 33.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 33.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 33.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 33.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 33.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 33.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 33.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 33.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 33.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 34.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 34.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 34.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 34.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 34.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 34.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 34.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 34.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 34.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 34.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 35.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 35.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 35.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 35.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 35.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 35.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 35.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 35.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 35.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 35.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 36.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 36.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 36.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 36.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 36.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 36.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 36.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 36.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 36.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 36.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 37.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 37.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 37.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 37.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 37.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 37.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 37.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 37.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 37.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 37.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 38.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 38.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 38.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 38.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 38.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 38.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 38.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 38.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 38.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 38.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 39.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 39.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 39.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 39.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 39.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 39.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 39.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 39.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 39.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 39.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 40.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 40.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 40.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 40.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 40.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 40.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 40.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 40.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 40.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 40.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 41.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 41.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 41.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 41.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 41.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 41.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 41.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 41.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 41.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 41.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 42.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 42.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 42.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 42.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 42.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 42.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 42.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 42.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 42.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 42.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 43.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 43.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 43.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 43.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 43.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 43.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 43.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 43.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 43.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 43.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 44.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 44.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 44.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 44.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 44.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 44.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 44.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 44.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 44.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 44.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 45.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 45.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 45.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 45.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 45.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 45.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 45.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 45.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 45.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 45.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 46.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 46.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 46.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 46.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 46.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 46.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 46.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 46.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 46.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 46.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 47.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 47.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 47.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 47.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 47.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 47.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 47.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 47.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 47.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 47.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 48.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 48.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 48.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 48.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 48.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 48.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 48.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 48.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 48.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 48.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 49.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 49.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 49.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 49.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 49.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 49.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 49.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 49.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 49.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 49.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 50.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 50.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 50.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 50.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 50.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 50.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 50.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 50.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 50.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 50.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 51.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 51.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 51.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 51.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 51.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 51.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 51.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 51.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 51.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 51.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 52.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 52.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 52.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 52.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 52.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 52.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 52.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 52.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 52.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 52.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 53.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 53.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 53.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 53.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 53.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 53.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 53.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 53.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 53.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 53.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 54.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 54.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 54.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 54.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 54.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 54.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 54.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 54.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 54.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 54.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 55.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 55.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 55.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 55.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 55.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 55.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 55.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 55.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 55.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 55.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 56.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 56.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 56.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 56.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 56.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 56.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 56.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 56.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 56.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 56.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 57.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 57.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 57.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 57.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 57.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 57.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 57.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 57.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 57.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 57.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 58.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 58.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 58.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 58.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 58.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 58.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 58.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 58.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 58.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 58.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 59.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 59.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 59.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 59.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 59.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 59.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 59.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 59.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 59.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 59.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 60.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 60.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 60.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 60.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 60.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 60.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 60.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 60.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 60.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 60.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 61.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 61.1,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 61.2,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 61.3,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 61.4,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 61.5,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 61.6,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 61.7,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 61.8,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 61.9,
+          "with": [
+            "ReferenceCar"
+          ]
+        },
+        {
+          "time_s": 62.0,
+          "with": [
+            "ReferenceCar"
+          ]
+        }
+      ],
+      "long_dist_action_with_jerk": [
+        {
+          "time_s": 0.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 0.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 0.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 0.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 0.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 0.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 0.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 0.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 0.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 1.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 1.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 1.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 1.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 1.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 1.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 1.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 1.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 1.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 1.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 2.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 2.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 2.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 2.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 2.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 2.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 2.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 2.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 2.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 2.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 3.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 3.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 3.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 3.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 3.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 3.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 3.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 3.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 3.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 3.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 4.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 4.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 4.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 4.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 4.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 4.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 4.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 4.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 4.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 4.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 5.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 5.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 5.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 5.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 5.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 5.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 5.6,
+          "with": [
+            "ego jerk",
+            "Target"
+          ]
+        },
+        {
+          "time_s": 5.7,
+          "with": [
+            "ego jerk",
+            "Target"
+          ]
+        },
+        {
+          "time_s": 5.8,
+          "with": [
+            "ego jerk",
+            "Target"
+          ]
+        },
+        {
+          "time_s": 5.9,
+          "with": [
+            "ego jerk",
+            "Target"
+          ]
+        },
+        {
+          "time_s": 6.0,
+          "with": [
+            "ego jerk",
+            "Target"
+          ]
+        },
+        {
+          "time_s": 6.1,
+          "with": [
+            "ego jerk",
+            "Target"
+          ]
+        },
+        {
+          "time_s": 6.2,
+          "with": [
+            "ego jerk",
+            "Target"
+          ]
+        },
+        {
+          "time_s": 6.3,
+          "with": [
+            "ego jerk",
+            "Target"
+          ]
+        },
+        {
+          "time_s": 6.4,
+          "with": [
+            "ego jerk",
+            "Target"
+          ]
+        },
+        {
+          "time_s": 6.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 6.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 6.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 6.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 6.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 7.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 7.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 7.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 7.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 7.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 7.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 7.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 7.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 7.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 7.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 8.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 8.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 8.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 8.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 8.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 8.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 8.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 8.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 8.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 8.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 9.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 9.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 9.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 9.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 9.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 9.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 9.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 9.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 9.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 9.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 10.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 10.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 10.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 10.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 10.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 10.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 10.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 10.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 10.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 10.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 11.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 11.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 11.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 11.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 11.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 11.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 11.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 11.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 11.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 11.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 12.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 12.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 12.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 12.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 12.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 12.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 12.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 12.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 12.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 12.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 13.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 13.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 13.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 13.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 13.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 13.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 13.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 13.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 13.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 13.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 14.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 14.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 14.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 14.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 14.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 14.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 14.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 14.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 14.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 14.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 15.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 15.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 15.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 15.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 15.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 15.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 15.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 15.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 15.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 15.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 16.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 16.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 16.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 16.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 16.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 16.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 16.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 16.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 16.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 16.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 17.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 17.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 17.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 17.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 17.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 17.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 17.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 17.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 17.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 17.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 18.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 18.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 18.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 18.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 18.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 18.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 18.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 18.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 18.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 18.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 19.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 19.1,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 19.2,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 19.3,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 19.4,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 19.5,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 19.6,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 19.7,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 19.8,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 19.9,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 20.0,
+          "with": [
+            "ego jerk"
+          ]
+        },
+        {
+          "time_s": 20.1,
+          "with": [
+            "ego jerk"
+          ]
+        }
+      ],
+      "pedestrian_collision": [
+        {
+          "time_s": 5.5,
+          "with": [
+            "pedestrian_adult"
+          ]
+        },
+        {
+          "time_s": 5.6,
+          "with": [
+            "pedestrian_adult"
+          ]
+        },
+        {
+          "time_s": 5.7,
+          "with": [
+            "pedestrian_adult"
+          ]
+        },
+        {
+          "time_s": 5.8,
+          "with": [
+            "pedestrian_adult"
+          ]
+        },
+        {
+          "time_s": 5.9,
+          "with": [
+            "pedestrian_adult"
+          ]
+        },
+        {
+          "time_s": 6.0,
+          "with": [
+            "pedestrian_adult"
+          ]
+        }
+      ],
+      "pedestrian_traj_synch": [
+        {
+          "time_s": 6.1,
+          "with": [
+            "pedestrian_adult"
+          ]
+        },
+        {
+          "time_s": 6.2,
+          "with": [
+            "pedestrian_adult"
+          ]
+        },
+        {
+          "time_s": 6.3,
+          "with": [
+            "pedestrian_adult"
+          ]
+        },
+        {
+          "time_s": 6.4,
+          "with": [
+            "pedestrian_adult"
+          ]
+        },
+        {
+          "time_s": 6.5,
+          "with": [
+            "pedestrian_adult"
+          ]
+        },
+        {
+          "time_s": 6.6,
+          "with": [
+            "pedestrian_adult"
+          ]
+        }
+      ],
+      "pedestrian_udp": [
+        {
+          "time_s": 5.5,
+          "with": [
+            "pedestrian_adult"
+          ]
+        },
+        {
+          "time_s": 5.6,
+          "with": [
+            "pedestrian_adult"
+          ]
+        },
+        {
+          "time_s": 5.7,
+          "with": [
+            "pedestrian_adult"
+          ]
+        },
+        {
+          "time_s": 5.8,
+          "with": [
+            "pedestrian_adult"
+          ]
+        },
+        {
+          "time_s": 5.9,
+          "with": [
+            "pedestrian_adult"
+          ]
+        },
+        {
+          "time_s": 6.0,
+          "with": [
+            "pedestrian_adult"
+          ]
+        }
+      ],
+      "straight_500m": [
+        {
+          "time_s": 14.8,
+          "with": [
+            "Target"
+          ]
+        },
+        {
+          "time_s": 14.9,
+          "with": [
+            "Target"
+          ]
+        },
+        {
+          "time_s": 15.0,
+          "with": [
+            "Target"
+          ]
+        },
+        {
+          "time_s": 15.1,
+          "with": [
+            "Target"
+          ]
+        },
+        {
+          "time_s": 15.2,
+          "with": [
+            "Target"
+          ]
+        }
+      ],
+      "straight_500m_pedestrian": [
+        {
+          "time_s": 4.6,
+          "with": [
+            "Cyclist"
+          ]
+        },
+        {
+          "time_s": 4.7,
+          "with": [
+            "Cyclist"
+          ]
+        },
+        {
+          "time_s": 4.8,
+          "with": [
+            "Cyclist"
+          ]
+        },
+        {
+          "time_s": 4.9,
+          "with": [
+            "Cyclist"
+          ]
+        },
+        {
+          "time_s": 5.0,
+          "with": [
+            "Cyclist"
+          ]
+        },
+        {
+          "time_s": 5.1,
+          "with": [
+            "Cyclist"
+          ]
+        },
+        {
+          "time_s": 8.0,
+          "with": [
+            "Pedestrian"
+          ]
+        },
+        {
+          "time_s": 8.1,
+          "with": [
+            "Pedestrian"
+          ]
+        },
+        {
+          "time_s": 8.2,
+          "with": [
+            "Pedestrian"
+          ]
+        },
+        {
+          "time_s": 8.3,
+          "with": [
+            "Pedestrian"
+          ]
+        },
+        {
+          "time_s": 8.4,
+          "with": [
+            "Pedestrian"
+          ]
+        },
+        {
+          "time_s": 14.8,
+          "with": [
+            "Target"
+          ]
+        },
+        {
+          "time_s": 14.9,
+          "with": [
+            "Target"
+          ]
+        },
+        {
+          "time_s": 15.0,
+          "with": [
+            "Target"
+          ]
+        },
+        {
+          "time_s": 15.1,
+          "with": [
+            "Target"
+          ]
+        },
+        {
+          "time_s": 15.2,
+          "with": [
+            "Target"
+          ]
+        }
+      ],
+      "synch_with_steady_state": [
+        {
+          "time_s": 10.6,
+          "with": [
+            "Target"
+          ]
+        },
+        {
+          "time_s": 10.7,
+          "with": [
+            "Target"
+          ]
+        },
+        {
+          "time_s": 10.8,
+          "with": [
+            "Target"
+          ]
+        },
+        {
+          "time_s": 10.9,
+          "with": [
+            "Target"
+          ]
+        },
+        {
+          "time_s": 11.0,
+          "with": [
+            "Target"
+          ]
+        }
+      ]
+    },
+    "voided_groups": {},
+    "open_findings": [
+      {
+        "scenario": "acc-toggle",
+        "condition": "ActivateACCCondition",
+        "verdict": "shadow_only",
+        "esmini_fires": [],
+        "shadow_fires": [
+          24.4
+        ]
+      },
+      {
+        "scenario": "acc-toggle",
+        "condition": "ActivateInteractiveDriverCondition",
+        "verdict": "shadow_only",
+        "esmini_fires": [],
+        "shadow_fires": [
+          46.8
+        ]
+      },
+      {
+        "scenario": "alks_cut-in",
+        "condition": "CutInStartCondition",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          2.2
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "cut-in_cr",
+        "condition": "LaneChangeCondition",
+        "verdict": "time_mismatch",
+        "esmini_fires": [
+          3.4
+        ],
+        "shadow_fires": [
+          3.2
+        ]
+      },
+      {
+        "scenario": "cut-in_external",
+        "condition": "OverTakerStartSpeedCondition",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          0.1
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "cut-in_interactive",
+        "condition": "OverTakerStartSpeedCondition",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          0.1
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "cut-in_sloppy",
+        "condition": "OverTakerStartSpeedCondition",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          0.1
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "cut-in_visibility",
+        "condition": "OverTakerStartSpeedCondition",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          0.1
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "follow_ghost",
+        "condition": "LaneChangeCondition1",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          3.6
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "follow_ghost",
+        "condition": "LaneChangeCondition2",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          6.6
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "follow_ghost",
+        "condition": "SpeedCondition1",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          9.6
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "follow_reference_interactive",
+        "condition": "start_trigger1",
+        "verdict": "count_mismatch",
+        "esmini_fires": [
+          15.0,
+          15.1,
+          15.2,
+          15.3,
+          15.4,
+          15.5,
+          15.6,
+          15.7,
+          15.8,
+          15.9,
+          16.0,
+          16.1,
+          16.2,
+          16.3,
+          16.4,
+          16.5,
+          16.6,
+          16.7,
+          16.8,
+          16.9,
+          17.0,
+          17.1,
+          17.2,
+          17.3,
+          17.4,
+          17.5,
+          17.6,
+          17.7,
+          17.8,
+          17.9,
+          18.0,
+          18.1,
+          18.2,
+          18.3,
+          18.4,
+          18.5,
+          18.6,
+          18.7,
+          18.8,
+          18.9,
+          19.0,
+          19.1,
+          19.2,
+          19.3,
+          19.4,
+          19.5,
+          19.6,
+          19.7,
+          19.8,
+          19.9,
+          20.0,
+          20.1,
+          20.2,
+          20.3,
+          20.4,
+          20.5,
+          20.6,
+          20.7,
+          20.8,
+          20.9,
+          21.0,
+          21.1,
+          21.2,
+          21.3,
+          21.4,
+          21.5,
+          21.6,
+          21.7,
+          21.8,
+          21.9,
+          22.0,
+          22.1,
+          22.2,
+          22.3,
+          22.4,
+          22.5,
+          22.6,
+          22.7,
+          22.8,
+          22.9,
+          23.0,
+          23.1,
+          23.2,
+          23.3,
+          23.4,
+          23.5,
+          23.6,
+          23.7,
+          23.8,
+          23.9,
+          24.0,
+          24.1,
+          24.2,
+          24.3,
+          24.4,
+          24.5,
+          24.6,
+          24.7,
+          24.8,
+          24.9,
+          25.0,
+          25.1,
+          25.2,
+          25.3,
+          25.4,
+          25.5,
+          25.6,
+          25.7,
+          25.8,
+          25.9,
+          26.0,
+          26.1,
+          26.2,
+          26.3,
+          26.4,
+          26.5,
+          26.6,
+          26.7,
+          26.8,
+          26.9,
+          27.0,
+          27.1,
+          27.2,
+          27.3,
+          27.4,
+          27.5,
+          27.6,
+          27.7,
+          27.8,
+          27.9,
+          28.0,
+          28.1,
+          28.2,
+          28.3,
+          28.4,
+          28.5,
+          28.6,
+          28.7,
+          28.8,
+          28.9,
+          29.0,
+          29.1,
+          29.2,
+          29.3,
+          29.4,
+          29.5,
+          29.6,
+          29.7,
+          29.8,
+          29.9,
+          30.0,
+          30.1,
+          30.2,
+          30.3,
+          30.4,
+          30.5,
+          30.6,
+          30.7,
+          30.8,
+          30.9,
+          31.0,
+          31.1,
+          31.2,
+          31.3,
+          31.4,
+          31.5,
+          31.6,
+          31.7,
+          31.8,
+          31.9,
+          32.0,
+          32.1,
+          32.2,
+          32.3,
+          32.4,
+          32.5,
+          32.6,
+          32.7,
+          32.8,
+          32.9,
+          33.0,
+          33.1,
+          33.2,
+          33.3,
+          33.4,
+          33.5,
+          33.6,
+          33.7,
+          33.8,
+          33.9,
+          34.0,
+          34.1,
+          34.2,
+          34.3,
+          34.4,
+          34.5,
+          34.6,
+          34.7,
+          34.8,
+          34.9,
+          35.0,
+          35.1,
+          35.2,
+          35.3,
+          35.4,
+          35.5,
+          35.6,
+          35.7,
+          35.8,
+          35.9,
+          36.0,
+          36.1,
+          36.2,
+          36.3,
+          36.4,
+          36.5,
+          36.6,
+          36.7,
+          36.8,
+          36.9,
+          37.0,
+          37.1,
+          37.2,
+          37.3,
+          37.4,
+          37.5,
+          37.6,
+          37.7,
+          37.8,
+          37.9,
+          38.0,
+          38.1,
+          38.2,
+          38.3,
+          38.4,
+          38.5,
+          38.6,
+          38.7,
+          38.8,
+          38.9,
+          39.0,
+          39.1,
+          39.2,
+          39.3,
+          39.4,
+          39.5,
+          39.6,
+          39.7,
+          39.8,
+          39.9,
+          40.0,
+          40.1,
+          40.2,
+          40.3,
+          40.4,
+          40.5,
+          40.6,
+          40.7,
+          40.8,
+          40.9,
+          41.0,
+          41.1,
+          41.2,
+          41.3,
+          41.4,
+          41.5,
+          41.6,
+          41.7,
+          41.8,
+          41.9,
+          42.0,
+          42.1,
+          42.2,
+          42.3,
+          42.4,
+          42.5,
+          42.6,
+          42.7,
+          42.8,
+          42.9,
+          43.0,
+          43.1,
+          43.2,
+          43.3,
+          43.4,
+          43.5,
+          43.6,
+          43.7,
+          43.8,
+          43.9,
+          44.0,
+          44.1,
+          44.2,
+          44.3,
+          44.4,
+          44.5,
+          44.6,
+          44.7,
+          44.8,
+          44.9,
+          45.0,
+          45.1,
+          45.2,
+          45.3,
+          45.4,
+          45.5,
+          45.6,
+          45.7,
+          45.8,
+          45.9,
+          46.0,
+          46.1,
+          46.2,
+          46.3,
+          46.4,
+          46.5,
+          46.6,
+          46.7,
+          46.8,
+          46.9,
+          47.0,
+          47.1,
+          47.2,
+          47.3,
+          47.4,
+          47.5,
+          47.6,
+          47.7,
+          47.8,
+          47.9,
+          48.0,
+          48.1,
+          48.2,
+          48.3,
+          48.4,
+          48.5,
+          48.6,
+          48.7,
+          48.8,
+          48.9,
+          49.0,
+          49.1,
+          49.2,
+          49.3,
+          49.4,
+          49.5,
+          49.6,
+          49.7,
+          49.8,
+          49.9,
+          50.0,
+          50.1,
+          50.2,
+          50.3,
+          50.4,
+          50.5,
+          50.6,
+          50.7,
+          50.8,
+          50.9,
+          51.0,
+          51.1,
+          51.2,
+          51.3,
+          51.4,
+          51.5,
+          51.6,
+          51.7,
+          51.8,
+          51.9,
+          52.0,
+          52.1,
+          52.2,
+          52.3,
+          52.4,
+          52.5,
+          52.6,
+          52.7,
+          52.8,
+          52.9,
+          53.0,
+          53.1,
+          53.2,
+          53.3,
+          53.4,
+          53.5,
+          53.6,
+          53.7,
+          53.8,
+          53.9,
+          54.0,
+          54.1,
+          54.2,
+          54.3,
+          54.4,
+          54.5,
+          54.6,
+          54.7,
+          54.8,
+          54.9,
+          55.0,
+          55.1,
+          55.2,
+          55.3,
+          55.4,
+          55.5,
+          55.6,
+          55.7,
+          55.8,
+          55.9,
+          56.0,
+          56.1,
+          56.2,
+          56.3,
+          56.4,
+          56.5,
+          56.6,
+          56.7,
+          56.8,
+          56.9,
+          57.0,
+          57.1,
+          57.2,
+          57.3,
+          57.4,
+          57.5,
+          57.6,
+          57.7,
+          57.8,
+          57.9,
+          58.0,
+          58.1,
+          58.2,
+          58.3,
+          58.4,
+          58.5,
+          58.6,
+          58.7,
+          58.8,
+          58.9,
+          59.0,
+          59.1,
+          59.2,
+          59.3,
+          59.4,
+          59.5,
+          59.6,
+          59.7,
+          59.8,
+          59.9,
+          60.0,
+          60.1,
+          60.2,
+          60.3,
+          60.4,
+          60.5,
+          60.6,
+          60.7,
+          60.8,
+          60.9,
+          61.0,
+          61.1,
+          61.2,
+          61.3,
+          61.4,
+          61.5,
+          61.6,
+          61.7,
+          61.8,
+          61.9
+        ],
+        "shadow_fires": [
+          15.0
+        ]
+      },
+      {
+        "scenario": "highway_merge",
+        "condition": "A2DistCondition",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          0.1,
+          0.1
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "highway_merge",
+        "condition": "EgoLaneChangeCondition",
+        "verdict": "shadow_only",
+        "esmini_fires": [],
+        "shadow_fires": [
+          7.0
+        ]
+      },
+      {
+        "scenario": "highway_merge_advanced",
+        "condition": "A3CloseGapStartCondition",
+        "verdict": "shadow_only",
+        "esmini_fires": [],
+        "shadow_fires": [
+          4.3,
+          4.4,
+          4.5,
+          4.6,
+          4.7,
+          4.8,
+          4.9,
+          5.0,
+          5.1
+        ]
+      },
+      {
+        "scenario": "highway_merge_advanced",
+        "condition": "A3OpenGapStartCondition",
+        "verdict": "count_mismatch",
+        "esmini_fires": [
+          0.1
+        ],
+        "shadow_fires": [
+          0.1,
+          0.2,
+          0.3
+        ]
+      },
+      {
+        "scenario": "highway_merge_advanced",
+        "condition": "LongitudinalDistanceCondition",
+        "verdict": "count_mismatch",
+        "esmini_fires": [
+          0.1
+        ],
+        "shadow_fires": [
+          0.1,
+          0.1,
+          0.2,
+          0.2,
+          0.3,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0,
+          2.1,
+          2.2,
+          2.3,
+          2.4,
+          2.5,
+          2.6
+        ]
+      },
+      {
+        "scenario": "lane-change_clothoid_based_trajectory",
+        "condition": "LaneChangeCondition2",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          3.2
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "lane-change_clothoid_based_trajectory",
+        "condition": "LaneChangeCondition3",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          3.6
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "lane_change",
+        "condition": "EgoGoOnRoadCondition",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          11.4
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "lane_change",
+        "condition": "Lane change Target condition",
+        "verdict": "count_mismatch",
+        "esmini_fires": [
+          3.1,
+          3.2
+        ],
+        "shadow_fires": [
+          3.1
+        ]
+      },
+      {
+        "scenario": "lane_change_crest",
+        "condition": "CutInStartCondition",
+        "verdict": "time_mismatch",
+        "esmini_fires": [
+          4.2
+        ],
+        "shadow_fires": [
+          4.5
+        ]
+      },
+      {
+        "scenario": "lane_change_simple",
+        "condition": "End Of Road condition",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          35.6,
+          35.6
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "lane_change_simple",
+        "condition": "Lane change condition",
+        "verdict": "count_mismatch",
+        "esmini_fires": [
+          4.5,
+          37.3
+        ],
+        "shadow_fires": [
+          4.5
+        ]
+      },
+      {
+        "scenario": "long_dist_action_with_jerk",
+        "condition": "triggerEgo",
+        "verdict": "count_mismatch",
+        "esmini_fires": [
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0,
+          2.1,
+          2.2,
+          2.3,
+          2.4,
+          2.5,
+          2.6,
+          2.7,
+          2.8,
+          2.9,
+          3.0,
+          3.1,
+          3.2,
+          3.3,
+          3.4,
+          3.5,
+          3.6,
+          3.7,
+          3.8,
+          3.9,
+          4.0,
+          4.1,
+          4.2,
+          4.3,
+          4.4,
+          4.5,
+          4.6,
+          4.7,
+          4.8,
+          4.9,
+          5.0,
+          5.1,
+          5.2,
+          5.3,
+          5.4,
+          5.5,
+          5.6,
+          5.7,
+          5.8,
+          5.9,
+          6.0,
+          6.1,
+          6.2,
+          6.3,
+          6.4,
+          6.5,
+          6.6,
+          6.7,
+          6.8,
+          6.9,
+          7.0,
+          7.1,
+          7.2,
+          7.3,
+          7.4,
+          7.5,
+          7.6,
+          7.7,
+          7.8,
+          7.9,
+          8.0,
+          8.1,
+          8.2,
+          8.3,
+          8.4,
+          8.5,
+          8.6,
+          8.7,
+          8.8,
+          8.9,
+          9.0,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.6,
+          9.7,
+          9.8,
+          9.9,
+          10.0,
+          10.1,
+          10.2,
+          10.3,
+          10.4,
+          10.5,
+          10.6,
+          10.7,
+          10.8,
+          10.9
+        ],
+        "shadow_fires": [
+          1.0
+        ]
+      },
+      {
+        "scenario": "long_dist_action_with_jerk",
+        "condition": "triggerego jerk",
+        "verdict": "count_mismatch",
+        "esmini_fires": [
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0,
+          2.1,
+          2.2,
+          2.3,
+          2.4,
+          2.5,
+          2.6,
+          2.7,
+          2.8,
+          2.9,
+          3.0,
+          3.1,
+          3.2,
+          3.3,
+          3.4,
+          3.5,
+          3.6,
+          3.7,
+          3.8,
+          3.9,
+          4.0,
+          4.1,
+          4.2,
+          4.3,
+          4.4,
+          4.5,
+          4.6,
+          4.7,
+          4.8,
+          4.9,
+          5.0,
+          5.1,
+          5.2,
+          5.3,
+          5.4,
+          5.5,
+          5.6,
+          5.7,
+          5.8,
+          5.9,
+          6.0,
+          6.1,
+          6.2,
+          6.3,
+          6.4,
+          6.5,
+          6.6,
+          6.7,
+          6.8,
+          6.9,
+          7.0,
+          7.1,
+          7.2,
+          7.3,
+          7.4,
+          7.5,
+          7.6,
+          7.7,
+          7.8,
+          7.9,
+          8.0,
+          8.1,
+          8.2,
+          8.3,
+          8.4,
+          8.5,
+          8.6,
+          8.7,
+          8.8,
+          8.9,
+          9.0,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.6,
+          9.7,
+          9.8,
+          9.9,
+          10.0,
+          10.1,
+          10.2,
+          10.3,
+          10.4,
+          10.5,
+          10.6,
+          10.7,
+          10.8,
+          10.9
+        ],
+        "shadow_fires": [
+          1.0
+        ]
+      },
+      {
+        "scenario": "ltap-od",
+        "condition": "SyncConditionNPC",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          0.1
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "ltap-od-relative-speed",
+        "condition": "SyncConditionNPC",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          0.1
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "parking_lot",
+        "condition": "StartTrigger",
+        "verdict": "shadow_only",
+        "esmini_fires": [],
+        "shadow_fires": [
+          0.1
+        ]
+      },
+      {
+        "scenario": "slow-lead-vehicle",
+        "condition": "brake_Condition",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          2.5
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "synch_with_steady_state",
+        "condition": "SyncConditionTarget",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          0.2,
+          0.3
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "synchronize",
+        "condition": "EndCondition2",
+        "verdict": "shadow_only",
+        "esmini_fires": [],
+        "shadow_fires": [
+          2.0,
+          2.1,
+          2.2,
+          2.3,
+          2.4,
+          2.5,
+          2.6,
+          2.7,
+          2.8,
+          2.9,
+          3.0,
+          3.1,
+          3.2,
+          3.3,
+          3.4,
+          3.5,
+          3.6,
+          3.7,
+          3.8,
+          3.9,
+          4.0,
+          4.1,
+          4.2,
+          4.3,
+          4.4,
+          4.5,
+          4.6,
+          4.7,
+          4.8,
+          4.9,
+          5.0,
+          5.1,
+          5.2,
+          5.3,
+          5.4,
+          5.5,
+          5.6,
+          5.7,
+          5.8,
+          5.9,
+          6.0,
+          6.1,
+          6.2,
+          6.3,
+          6.4,
+          6.5,
+          6.6,
+          6.7,
+          6.8,
+          6.9,
+          7.0,
+          7.1,
+          7.2,
+          7.3,
+          7.4,
+          7.5,
+          7.6,
+          7.7,
+          7.8,
+          7.9,
+          8.0,
+          8.1,
+          8.2,
+          8.3,
+          8.4,
+          8.5,
+          8.6,
+          8.7,
+          8.8,
+          8.9,
+          9.0,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.6,
+          9.7,
+          9.8,
+          9.9,
+          10.0,
+          10.1,
+          10.2,
+          10.3,
+          10.4,
+          10.5,
+          10.6,
+          10.7,
+          10.8,
+          10.9,
+          11.0,
+          11.1,
+          11.2,
+          11.3,
+          11.4,
+          11.5,
+          11.6,
+          11.7,
+          11.8,
+          11.9,
+          12.0,
+          12.1,
+          12.2,
+          12.3,
+          12.4,
+          12.5,
+          12.6,
+          12.7,
+          12.8,
+          12.9,
+          13.0,
+          13.1,
+          13.2,
+          13.3,
+          13.4,
+          13.5,
+          13.6,
+          13.7,
+          13.8,
+          13.9,
+          14.0,
+          14.1,
+          14.2,
+          14.3,
+          14.4,
+          14.5,
+          14.6,
+          14.7,
+          14.8,
+          14.9,
+          15.0,
+          15.1,
+          15.2,
+          15.3,
+          15.4,
+          15.5,
+          15.6,
+          15.7,
+          15.8,
+          15.9,
+          16.0,
+          16.1,
+          16.2,
+          16.3,
+          16.4,
+          16.5,
+          16.6,
+          16.7,
+          16.8,
+          16.9,
+          17.0,
+          17.1,
+          17.2,
+          17.3,
+          17.4,
+          17.5,
+          17.6,
+          17.7,
+          17.8,
+          17.9,
+          18.0,
+          18.1,
+          18.2,
+          18.3,
+          18.4,
+          18.5,
+          18.6,
+          18.7,
+          18.8,
+          18.9,
+          19.0,
+          19.1,
+          19.2,
+          19.3,
+          19.4,
+          19.5,
+          19.6,
+          19.7,
+          19.8,
+          19.9,
+          20.0,
+          20.1,
+          20.2,
+          20.3,
+          20.4,
+          20.5,
+          20.6,
+          20.7,
+          20.8,
+          20.9,
+          21.0,
+          21.1,
+          21.2,
+          21.3,
+          21.4,
+          21.5,
+          21.6,
+          21.7,
+          21.8,
+          21.9,
+          22.0,
+          22.1,
+          22.2,
+          22.3,
+          22.4,
+          22.5,
+          22.6,
+          22.7,
+          22.8,
+          22.9,
+          23.0,
+          23.1,
+          23.2,
+          23.3,
+          23.4,
+          23.5,
+          23.6,
+          23.7,
+          23.8,
+          23.9,
+          24.0,
+          24.1,
+          24.2,
+          24.3,
+          24.4,
+          24.5,
+          24.6,
+          24.7,
+          24.8,
+          24.9,
+          25.0,
+          25.1,
+          25.2,
+          25.3,
+          25.4,
+          25.5,
+          25.6,
+          25.7,
+          25.8,
+          25.9,
+          26.0,
+          26.1,
+          26.2,
+          26.3,
+          26.4,
+          26.5,
+          26.6,
+          26.7,
+          26.8,
+          26.9,
+          27.0,
+          27.1,
+          27.2,
+          27.3,
+          27.4,
+          27.5,
+          27.6,
+          27.7,
+          27.8,
+          27.9,
+          28.0,
+          28.1,
+          28.2,
+          28.3,
+          28.4,
+          28.5,
+          28.6,
+          28.7,
+          28.8,
+          28.9,
+          29.0,
+          29.1,
+          29.2,
+          29.3,
+          29.4,
+          29.5,
+          29.6,
+          29.7,
+          29.8,
+          29.9,
+          30.0,
+          30.1,
+          30.2,
+          30.3,
+          30.4,
+          30.5,
+          30.6,
+          30.7,
+          30.8,
+          30.9,
+          31.0,
+          31.1,
+          31.2,
+          31.3,
+          31.4,
+          31.5,
+          31.6,
+          31.7,
+          31.8,
+          31.9,
+          32.0,
+          32.1,
+          32.2,
+          32.3,
+          32.4,
+          32.5,
+          32.6,
+          32.7,
+          32.8,
+          32.9,
+          33.0,
+          33.1,
+          33.2,
+          33.3,
+          33.4,
+          33.5,
+          33.6,
+          33.7,
+          33.8,
+          33.9,
+          34.0,
+          34.1,
+          34.2,
+          34.3,
+          34.4,
+          34.5,
+          34.6,
+          34.7,
+          34.8,
+          34.9,
+          35.0,
+          35.1,
+          35.2,
+          35.3,
+          35.4,
+          35.5,
+          35.6,
+          35.7,
+          35.8,
+          35.9,
+          36.0,
+          36.1,
+          36.2,
+          36.3,
+          36.4,
+          36.5,
+          36.6,
+          36.7,
+          36.8,
+          36.9,
+          37.0,
+          37.1,
+          37.2,
+          37.3,
+          37.4,
+          37.5,
+          37.6,
+          37.7,
+          37.8,
+          37.9,
+          38.0,
+          38.1,
+          38.2,
+          38.3,
+          38.4,
+          38.5,
+          38.6,
+          38.7,
+          38.8,
+          38.9,
+          39.0,
+          39.1,
+          39.2,
+          39.3,
+          39.4,
+          39.5,
+          39.6,
+          39.7,
+          39.8,
+          39.9,
+          40.0,
+          40.1,
+          40.2,
+          40.3,
+          40.4,
+          40.5,
+          40.6,
+          40.7,
+          40.8,
+          40.9,
+          41.0,
+          41.1,
+          41.2,
+          41.3,
+          41.4,
+          41.5,
+          41.6,
+          41.7,
+          41.8,
+          41.9,
+          42.0,
+          42.1,
+          42.2,
+          42.3,
+          42.4,
+          42.5,
+          42.6,
+          42.7,
+          42.8,
+          42.9,
+          43.0,
+          43.1,
+          43.2,
+          43.3,
+          43.4,
+          43.5,
+          43.6,
+          43.7,
+          43.8,
+          43.9,
+          44.0,
+          44.1,
+          44.2,
+          44.3,
+          44.4,
+          44.5,
+          44.6,
+          44.7,
+          44.8,
+          44.9,
+          45.0,
+          45.1,
+          45.2,
+          45.3,
+          45.4,
+          45.5,
+          45.6,
+          45.7,
+          45.8,
+          45.9,
+          46.0,
+          46.1,
+          46.2,
+          46.3,
+          46.4,
+          46.5,
+          46.6,
+          46.7,
+          46.8,
+          46.9,
+          47.0,
+          47.1,
+          47.2,
+          47.3,
+          47.4,
+          47.5,
+          47.6,
+          47.7,
+          47.8,
+          47.9,
+          48.0,
+          48.1,
+          48.2,
+          48.3,
+          48.4,
+          48.5,
+          48.6,
+          48.7,
+          48.8,
+          48.9,
+          49.0,
+          49.1,
+          49.2,
+          49.3,
+          49.4,
+          49.5,
+          49.6,
+          49.7,
+          49.8,
+          49.9,
+          50.0,
+          50.1,
+          50.2,
+          50.3,
+          50.4,
+          50.5,
+          50.6,
+          50.7,
+          50.8,
+          50.9,
+          51.0,
+          51.1,
+          51.2,
+          51.3,
+          51.4,
+          51.5,
+          51.6,
+          51.7,
+          51.8,
+          51.9,
+          52.0,
+          52.1,
+          52.2,
+          52.3,
+          52.4,
+          52.5,
+          52.6,
+          52.7,
+          52.8,
+          52.9,
+          53.0,
+          53.1,
+          53.2,
+          53.3,
+          53.4,
+          53.5,
+          53.6,
+          53.7,
+          53.8,
+          53.9,
+          54.0,
+          54.1,
+          54.2,
+          54.3,
+          54.4,
+          54.5,
+          54.6,
+          54.7,
+          54.8,
+          54.9,
+          55.0,
+          55.1,
+          55.2,
+          55.3,
+          55.4,
+          55.5,
+          55.6,
+          55.7,
+          55.8,
+          55.9,
+          56.0,
+          56.1,
+          56.2,
+          56.3,
+          56.4,
+          56.5,
+          56.6,
+          56.7,
+          56.8,
+          56.9,
+          57.0,
+          57.1,
+          57.2,
+          57.3,
+          57.4,
+          57.5,
+          57.6,
+          57.7,
+          57.8,
+          57.9,
+          58.0,
+          58.1,
+          58.2,
+          58.3,
+          58.4,
+          58.5,
+          58.6,
+          58.7,
+          58.8,
+          58.9,
+          59.0,
+          59.1,
+          59.2,
+          59.3,
+          59.4,
+          59.5,
+          59.6,
+          59.7,
+          59.8,
+          59.9,
+          60.0,
+          60.1,
+          60.2,
+          60.3,
+          60.4,
+          60.5,
+          60.6,
+          60.7,
+          60.8,
+          60.9,
+          61.0,
+          61.1,
+          61.2,
+          61.3,
+          61.4,
+          61.5,
+          61.6,
+          61.7,
+          61.8,
+          61.9,
+          62.0
+        ]
+      },
+      {
+        "scenario": "synchronize",
+        "condition": "Synchronize_NPC_Action_Condition",
+        "verdict": "not_modelled",
+        "esmini_fires": [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "traffic_lights",
+        "condition": "PositionCondition",
+        "verdict": "count_mismatch",
+        "esmini_fires": [
+          3.6,
+          3.7,
+          3.8,
+          3.9,
+          4.0,
+          4.1,
+          4.2,
+          4.3,
+          4.4,
+          4.5,
+          4.6,
+          4.7,
+          4.8,
+          4.9,
+          5.0,
+          5.1,
+          5.2,
+          5.3,
+          5.4,
+          5.5,
+          5.6,
+          5.7,
+          5.8,
+          5.9,
+          6.0,
+          6.1,
+          6.2,
+          6.3,
+          6.4,
+          6.5,
+          6.6,
+          6.7,
+          6.8,
+          6.9,
+          7.0,
+          7.1,
+          7.2,
+          7.3,
+          7.4,
+          7.5,
+          7.6,
+          7.7,
+          7.8,
+          7.9,
+          8.0,
+          8.1,
+          8.2,
+          8.3,
+          8.4,
+          8.5,
+          8.6,
+          8.7,
+          8.8,
+          8.9,
+          9.0,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.6,
+          9.7,
+          9.8,
+          9.9,
+          10.0,
+          10.1,
+          10.2,
+          10.3,
+          10.4,
+          10.5,
+          10.6,
+          10.7
+        ],
+        "shadow_fires": [
+          3.5
+        ]
+      },
+      {
+        "scenario": "trajectory-test",
+        "condition": "AlignHeadingTrigger",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          24.2
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "trajectory-test",
+        "condition": "FollowTrajectoryClothoidTrigger",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          8.0
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "velodrome",
+        "condition": "ChangeSpeedCondition",
+        "verdict": "time_mismatch",
+        "esmini_fires": [
+          20.5
+        ],
+        "shadow_fires": [
+          20.7
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "planner": {
+    "per_scenario": {
+      "acc-test": {
+        "agreement_pct": null,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "goal-already-satisfied",
+        "events": [],
+        "collisions": 0,
+        "steps": 0
+      },
+      "acc-toggle": {
+        "agreement_pct": 50.0,
+        "compared": 2,
+        "agree": 1,
+        "conclusive": 2,
+        "planner_status": "goal-reached",
+        "events": [
+          [
+            "TargetChangeSpeedEvent",
+            10.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 159
+      },
+      "alks-test": {
+        "agreement_pct": 100.0,
+        "compared": 6,
+        "agree": 5,
+        "conclusive": 5,
+        "planner_status": "completed",
+        "events": [
+          [
+            "LaneChange1Event",
+            5.1
+          ],
+          [
+            "LaneChange2Event",
+            7.1
+          ],
+          [
+            "TargetBrakeEvent",
+            11.1
+          ],
+          [
+            "TargetAccelerateEvent",
+            17.1
+          ],
+          [
+            "TargetBrake2Event",
+            20.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 284
+      },
+      "alks_cut-in": {
+        "agreement_pct": 100.0,
+        "compared": 1,
+        "agree": 1,
+        "conclusive": 1,
+        "planner_status": "completed",
+        "events": [],
+        "collisions": 0,
+        "steps": 101
+      },
+      "alks_cut-out": {
+        "agreement_pct": 100.0,
+        "compared": 2,
+        "agree": 2,
+        "conclusive": 2,
+        "planner_status": "completed",
+        "events": [
+          [
+            "CutOutEvent",
+            2.2
+          ]
+        ],
+        "collisions": 0,
+        "steps": 101
+      },
+      "alks_decelerate": {
+        "agreement_pct": 100.0,
+        "compared": 2,
+        "agree": 2,
+        "conclusive": 2,
+        "planner_status": "completed",
+        "events": [
+          [
+            "DecelerateEvent",
+            2.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 101
+      },
+      "alks_pedestrian": {
+        "agreement_pct": 100.0,
+        "compared": 2,
+        "agree": 2,
+        "conclusive": 2,
+        "planner_status": "completed",
+        "events": [
+          [
+            "PedestrianWalkEvent",
+            2.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 101
+      },
+      "alks_r157_cut_in_quick_brake": {
+        "agreement_pct": 66.7,
+        "compared": 4,
+        "agree": 2,
+        "conclusive": 3,
+        "planner_status": "completed",
+        "events": [
+          [
+            "LaneChange1Event",
+            2.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 100
+      },
+      "controller_test": {
+        "agreement_pct": 100.0,
+        "compared": 6,
+        "agree": 6,
+        "conclusive": 6,
+        "planner_status": "completed",
+        "events": [
+          [
+            "SloppyDriverEvent",
+            2.1
+          ],
+          [
+            "LateralnteractiveEvent",
+            10.1
+          ],
+          [
+            "LongitudinalInteractiveInteractiveEvent",
+            20.1
+          ],
+          [
+            "BetterSloppyDriverEvent",
+            30.1
+          ],
+          [
+            "DefaultControllerEvent",
+            40.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 620
+      },
+      "cut-in_cr": {
+        "agreement_pct": 50.0,
+        "compared": 2,
+        "agree": 1,
+        "conclusive": 2,
+        "planner_status": "infeasible",
+        "events": [
+          [
+            "OverTakerStartSpeedEvent",
+            0.1
+          ],
+          [
+            "LaneChangeEvent",
+            3.8
+          ]
+        ],
+        "collisions": 0,
+        "steps": 57
+      },
+      "cut-in_external": {
+        "agreement_pct": null,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "goal-already-satisfied",
+        "events": [],
+        "collisions": 0,
+        "steps": 0
+      },
+      "cut-in_interactive": {
+        "agreement_pct": null,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "goal-already-satisfied",
+        "events": [],
+        "collisions": 0,
+        "steps": 0
+      },
+      "cut-in_simple": {
+        "agreement_pct": 100.0,
+        "compared": 3,
+        "agree": 3,
+        "conclusive": 3,
+        "planner_status": "goal-reached",
+        "events": [
+          [
+            "CutInEvent",
+            6.4
+          ],
+          [
+            "BrakeEvent",
+            8.6
+          ]
+        ],
+        "collisions": 0,
+        "steps": 89
+      },
+      "cut-in_sloppy": {
+        "agreement_pct": 75.0,
+        "compared": 4,
+        "agree": 3,
+        "conclusive": 4,
+        "planner_status": "goal-reached",
+        "events": [
+          [
+            "CutInEvent",
+            7.9
+          ],
+          [
+            "OvertakerBrakeEvent",
+            13.6
+          ]
+        ],
+        "collisions": 1,
+        "steps": 273
+      },
+      "cut-in_sumo": {
+        "agreement_pct": 50.0,
+        "compared": 2,
+        "agree": 1,
+        "conclusive": 2,
+        "planner_status": "goal-reached",
+        "events": [
+          [
+            "targetspeedincrease",
+            13.1
+          ],
+          [
+            "egospeedincrease",
+            13.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 261
+      },
+      "cut-in_visibility": {
+        "agreement_pct": 85.7,
+        "compared": 7,
+        "agree": 6,
+        "conclusive": 7,
+        "planner_status": "goal-reached",
+        "events": [
+          [
+            "VisibilityHideForSensorsEvent",
+            4.1
+          ],
+          [
+            "VisibilityHideEvent",
+            7.1
+          ],
+          [
+            "CutInEvent",
+            8.3
+          ],
+          [
+            "OvertakerBrakeEvent",
+            9.8
+          ],
+          [
+            "VisibilityReappearEvent",
+            10.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 223
+      },
+      "distance_test": {
+        "agreement_pct": 0.0,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "failed",
+        "events": [],
+        "collisions": 0,
+        "steps": null
+      },
+      "drive_when_close": {
+        "agreement_pct": 100.0,
+        "compared": 2,
+        "agree": 2,
+        "conclusive": 2,
+        "planner_status": "completed",
+        "events": [
+          [
+            "DriveEvent",
+            21.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 401
+      },
+      "drop-bike": {
+        "agreement_pct": 100.0,
+        "compared": 2,
+        "agree": 2,
+        "conclusive": 2,
+        "planner_status": "goal-reached",
+        "events": [
+          [
+            "drop of bike",
+            5.1
+          ]
+        ],
+        "collisions": 2,
+        "steps": 92
+      },
+      "follow_ghost": {
+        "agreement_pct": 0.0,
+        "compared": 6,
+        "agree": 0,
+        "conclusive": 6,
+        "planner_status": "completed",
+        "events": [],
+        "collisions": 0,
+        "steps": 213
+      },
+      "follow_reference": {
+        "agreement_pct": 0.0,
+        "compared": 2,
+        "agree": 0,
+        "conclusive": 2,
+        "planner_status": "goal-reached",
+        "events": [
+          [
+            "Event1",
+            0.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 356
+      },
+      "follow_reference_interactive": {
+        "agreement_pct": 0.0,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "failed",
+        "events": [],
+        "collisions": 0,
+        "steps": null
+      },
+      "highway_merge": {
+        "agreement_pct": 0.0,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "failed",
+        "events": [],
+        "collisions": 0,
+        "steps": null
+      },
+      "highway_merge_advanced": {
+        "agreement_pct": 0.0,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "failed",
+        "events": [],
+        "collisions": 0,
+        "steps": null
+      },
+      "keep_lateral_distance": {
+        "agreement_pct": 75.0,
+        "compared": 4,
+        "agree": 3,
+        "conclusive": 4,
+        "planner_status": "goal-reached",
+        "events": [
+          [
+            "LaneChange1Event",
+            0.1
+          ],
+          [
+            "LateralDistanceMaxSpeedEvent",
+            1.1
+          ],
+          [
+            "LaneChange2Event",
+            8.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 470
+      },
+      "keep_lateral_distance_external": {
+        "agreement_pct": null,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "goal-already-satisfied",
+        "events": [],
+        "collisions": 0,
+        "steps": 0
+      },
+      "lane-change_clothoid_based_trajectory": {
+        "agreement_pct": 0.0,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "failed",
+        "events": [],
+        "collisions": 0,
+        "steps": null
+      },
+      "lane_change": {
+        "agreement_pct": 0.0,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "failed",
+        "events": [],
+        "collisions": 0,
+        "steps": null
+      },
+      "lane_change_crest": {
+        "agreement_pct": 50.0,
+        "compared": 2,
+        "agree": 1,
+        "conclusive": 2,
+        "planner_status": "goal-reached",
+        "events": [
+          [
+            "LaneChangeEvent",
+            4.5
+          ]
+        ],
+        "collisions": 0,
+        "steps": 111
+      },
+      "lane_change_simple": {
+        "agreement_pct": 0.0,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "failed",
+        "events": [],
+        "collisions": 0,
+        "steps": null
+      },
+      "left-hand-traffic_using_road_rule": {
+        "agreement_pct": 100.0,
+        "compared": 2,
+        "agree": 2,
+        "conclusive": 2,
+        "planner_status": "goal-reached",
+        "events": [
+          [
+            "Lane change",
+            4.2
+          ]
+        ],
+        "collisions": 0,
+        "steps": 93
+      },
+      "long_dist_action_with_jerk": {
+        "agreement_pct": null,
+        "compared": 1,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "infeasible",
+        "events": [],
+        "collisions": 1,
+        "steps": 0
+      },
+      "ltap-od": {
+        "agreement_pct": null,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "goal-already-satisfied",
+        "events": [],
+        "collisions": 0,
+        "steps": 0
+      },
+      "ltap-od-relative-speed": {
+        "agreement_pct": null,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "goal-already-satisfied",
+        "events": [],
+        "collisions": 0,
+        "steps": 0
+      },
+      "override_bb": {
+        "agreement_pct": null,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "infeasible",
+        "events": [],
+        "collisions": 0,
+        "steps": 159
+      },
+      "parking_lot": {
+        "agreement_pct": 0.0,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "failed",
+        "events": [],
+        "collisions": 0,
+        "steps": null
+      },
+      "pedestrian": {
+        "agreement_pct": null,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "infeasible",
+        "events": [],
+        "collisions": 0,
+        "steps": 183
+      },
+      "pedestrian_collision": {
+        "agreement_pct": 66.7,
+        "compared": 3,
+        "agree": 2,
+        "conclusive": 3,
+        "planner_status": "goal-reached",
+        "events": [
+          [
+            "ped_walk_event",
+            0.2
+          ],
+          [
+            "ped_collide_event",
+            5.7
+          ]
+        ],
+        "collisions": 0,
+        "steps": 72
+      },
+      "pedestrian_collision_udp": {
+        "agreement_pct": 0.0,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "failed",
+        "events": [],
+        "collisions": 0,
+        "steps": null
+      },
+      "pedestrian_traj_synch": {
+        "agreement_pct": 100.0,
+        "compared": 3,
+        "agree": 3,
+        "conclusive": 3,
+        "planner_status": "goal-reached",
+        "events": [
+          [
+            "ped_synch_event",
+            0.1
+          ],
+          [
+            "ped_follow_trajectory",
+            0.1
+          ],
+          [
+            "drive_Event",
+            0.1
+          ]
+        ],
+        "collisions": 0,
+        "steps": 89
+      },
+      "pedestrian_udp": {
+        "agreement_pct": 66.7,
+        "compared": 3,
+        "agree": 2,
+        "conclusive": 3,
+        "planner_status": "goal-reached",
+        "events": [
+          [
+            "ped_walk_event",
+            0.2
+          ],
+          [
+            "ped_collide_event",
+            5.7
+          ]
+        ],
+        "collisions": 0,
+        "steps": 72
+      },
+      "routing-test": {
+        "agreement_pct": 100.0,
+        "compared": 1,
+        "agree": 1,
+        "conclusive": 1,
+        "planner_status": "infeasible",
+        "events": [],
+        "collisions": 0,
+        "steps": 15
+      },
+      "slow-lead-vehicle": {
+        "agreement_pct": 0.0,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "failed",
+        "events": [],
+        "collisions": 0,
+        "steps": null
+      },
+      "speed-profile": {
+        "agreement_pct": 100.0,
+        "compared": 2,
+        "agree": 2,
+        "conclusive": 2,
+        "planner_status": "goal-reached",
+        "events": [
+          [
+            "SpeedProfileEvent1",
+            2.0
+          ],
+          [
+            "SpeedProfileEvent",
+            2.0
+          ]
+        ],
+        "collisions": 0,
+        "steps": 72
+      },
+      "straight_500m": {
+        "agreement_pct": 100.0,
+        "compared": 1,
+        "agree": 1,
+        "conclusive": 1,
+        "planner_status": "goal-reached",
+        "events": [],
+        "collisions": 2,
+        "steps": 215
+      },
+      "straight_500m_pedestrian": {
+        "agreement_pct": 100.0,
+        "compared": 1,
+        "agree": 1,
+        "conclusive": 1,
+        "planner_status": "goal-reached",
+        "events": [],
+        "collisions": 5,
+        "steps": 215
+      },
+      "synch_with_steady_state": {
+        "agreement_pct": 50.0,
+        "compared": 2,
+        "agree": 1,
+        "conclusive": 2,
+        "planner_status": "goal-reached",
+        "events": [],
+        "collisions": 2,
+        "steps": 124
+      },
+      "synchronize": {
+        "agreement_pct": null,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "goal-already-satisfied",
+        "events": [],
+        "collisions": 0,
+        "steps": 0
+      },
+      "traffic_lights": {
+        "agreement_pct": 100.0,
+        "compared": 2,
+        "agree": 2,
+        "conclusive": 2,
+        "planner_status": "infeasible",
+        "events": [
+          [
+            "StopLightEvent",
+            3.5
+          ]
+        ],
+        "collisions": 0,
+        "steps": 57
+      },
+      "trailers": {
+        "agreement_pct": 100.0,
+        "compared": 1,
+        "agree": 1,
+        "conclusive": 1,
+        "planner_status": "completed",
+        "events": [],
+        "collisions": 0,
+        "steps": 151
+      },
+      "trajectory-test": {
+        "agreement_pct": 40.0,
+        "compared": 5,
+        "agree": 2,
+        "conclusive": 5,
+        "planner_status": "completed",
+        "events": [
+          [
+            "FollowTrajectoryPLineEvent",
+            1.9
+          ]
+        ],
+        "collisions": 0,
+        "steps": 292
+      },
+      "truck_with_rotating_axle": {
+        "agreement_pct": 0.0,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "failed",
+        "events": [],
+        "collisions": 0,
+        "steps": null
+      },
+      "velodrome": {
+        "agreement_pct": null,
+        "compared": 0,
+        "agree": 0,
+        "conclusive": 0,
+        "planner_status": "infeasible",
+        "events": [],
+        "collisions": 0,
+        "steps": 168
+      }
+    },
+    "verdict_counts": {
+      "esmini_only": 15,
+      "agree": 63,
+      "inconclusive_at_end": 3,
+      "time_mismatch": 3,
+      "count_mismatch": 1,
+      "shadow_only": 3
+    },
+    "delay_tagged": 9,
+    "totals": {
+      "compared": 88,
+      "agree": 63,
+      "conclusive": 85,
+      "agreement_pct": 74.1
+    },
+    "status_counts": {
+      "goal-already-satisfied": 7,
+      "goal-reached": 17,
+      "completed": 11,
+      "infeasible": 7,
+      "failed": 11
+    },
+    "collisions_by_scenario": {
+      "cut-in_sloppy": [
+        {
+          "time_s": 24.2,
+          "with": [
+            "OverTaker"
+          ]
+        }
+      ],
+      "drop-bike": [
+        {
+          "time_s": 6.2,
+          "with": [
+            "bike"
+          ]
+        },
+        {
+          "time_s": 6.3,
+          "with": [
+            "bike"
+          ]
+        }
+      ],
+      "long_dist_action_with_jerk": [
+        {
+          "time_s": 0.1,
+          "with": [
+            "ego jerk"
+          ]
+        }
+      ],
+      "straight_500m": [
+        {
+          "time_s": 15.3,
+          "with": [
+            "Target"
+          ]
+        },
+        {
+          "time_s": 15.4,
+          "with": [
+            "Target"
+          ]
+        }
+      ],
+      "straight_500m_pedestrian": [
+        {
+          "time_s": 5.1,
+          "with": [
+            "Cyclist"
+          ]
+        },
+        {
+          "time_s": 5.2,
+          "with": [
+            "Cyclist"
+          ]
+        },
+        {
+          "time_s": 8.5,
+          "with": [
+            "Pedestrian"
+          ]
+        },
+        {
+          "time_s": 15.3,
+          "with": [
+            "Target"
+          ]
+        },
+        {
+          "time_s": 15.4,
+          "with": [
+            "Target"
+          ]
+        }
+      ],
+      "synch_with_steady_state": [
+        {
+          "time_s": 10.9,
+          "with": [
+            "Target"
+          ]
+        },
+        {
+          "time_s": 11.0,
+          "with": [
+            "Target"
+          ]
+        }
+      ]
+    },
+    "voided_groups": {
+      "acc-toggle": [
+        "ControllerMG"
+      ],
+      "controller_test": [
+        "EgoManueverGroup"
+      ],
+      "cut-in_sumo": [
+        "mangroup_ego"
+      ],
+      "follow_ghost": [
+        "Sequence"
+      ],
+      "follow_reference": [
+        "ManeuverGroup1",
+        "ManeuverGroup3"
+      ],
+      "keep_lateral_distance": [
+        "LaneChangeSequence"
+      ],
+      "long_dist_action_with_jerk": [
+        "Ego mangr"
+      ],
+      "pedestrian_traj_synch": [
+        "brake-for-ped_mangroup"
+      ],
+      "routing-test": [
+        "AquirePosition maneuver group"
+      ],
+      "speed-profile": [
+        "SpeedProfileManeuverGroup1"
+      ],
+      "straight_500m": [
+        "DummyManueverGroup"
+      ],
+      "straight_500m_pedestrian": [
+        "DummyManueverGroup"
+      ],
+      "traffic_lights": [
+        "StopLightsManueverGroup"
+      ]
+    },
+    "open_findings": [
+      {
+        "scenario": "acc-toggle",
+        "condition": "ActivateInteractiveDriverCondition",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          0.2
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "cut-in_cr",
+        "condition": "LaneChangeCondition",
+        "verdict": "time_mismatch",
+        "esmini_fires": [
+          4.0
+        ],
+        "shadow_fires": [
+          3.8
+        ]
+      },
+      {
+        "scenario": "cut-in_sloppy",
+        "condition": "OverTakerStartSpeedCondition",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          0.1
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "cut-in_visibility",
+        "condition": "OverTakerStartSpeedCondition",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          0.1
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "follow_ghost",
+        "condition": "ActStart",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          0.0
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "follow_ghost",
+        "condition": "FirstSpeedCondition",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          0.1
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "follow_ghost",
+        "condition": "LaneChangeCondition1",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          6.1
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "follow_ghost",
+        "condition": "LaneChangeCondition2",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          9.1
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "follow_ghost",
+        "condition": "SpeedCondition1",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          12.1
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "lane_change_crest",
+        "condition": "CutInStartCondition",
+        "verdict": "time_mismatch",
+        "esmini_fires": [
+          4.2
+        ],
+        "shadow_fires": [
+          4.5
+        ]
+      },
+      {
+        "scenario": "pedestrian_collision",
+        "condition": "ped_fall_condition",
+        "verdict": "shadow_only",
+        "esmini_fires": [],
+        "shadow_fires": [
+          5.7
+        ]
+      },
+      {
+        "scenario": "pedestrian_udp",
+        "condition": "ped_fall_condition",
+        "verdict": "shadow_only",
+        "esmini_fires": [],
+        "shadow_fires": [
+          5.7
+        ]
+      },
+      {
+        "scenario": "synch_with_steady_state",
+        "condition": "SyncConditionTarget",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          0.2,
+          0.3
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "trajectory-test",
+        "condition": "AlignHeadingTrigger",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          24.2
+        ],
+        "shadow_fires": []
+      },
+      {
+        "scenario": "trajectory-test",
+        "condition": "FollowTrajectoryClothoidTrigger",
+        "verdict": "esmini_only",
+        "esmini_fires": [
+          8.0
+        ],
+        "shadow_fires": []
+      }
+    ],
+    "missing": [
+      "left-hand-traffic_by_heading"
+    ]
+  },
+  "retiming": [
+    {
+      "scenario": "acc-toggle",
+      "event": "TargetChangeSpeedEvent",
+      "esmini_s": 10.1,
+      "planner_s": 10.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "alks-test",
+      "event": "LaneChange1Event",
+      "esmini_s": 5.1,
+      "planner_s": 5.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "alks-test",
+      "event": "LaneChange2Event",
+      "esmini_s": 7.1,
+      "planner_s": 7.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "alks-test",
+      "event": "TargetBrakeEvent",
+      "esmini_s": 11.1,
+      "planner_s": 11.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "alks-test",
+      "event": "TargetAccelerateEvent",
+      "esmini_s": 17.1,
+      "planner_s": 17.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "alks-test",
+      "event": "TargetBrake2Event",
+      "esmini_s": 20.1,
+      "planner_s": 20.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "alks_cut-out",
+      "event": "CutOutEvent",
+      "esmini_s": 2.2,
+      "planner_s": 2.2,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "alks_decelerate",
+      "event": "DecelerateEvent",
+      "esmini_s": 2.1,
+      "planner_s": 2.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "alks_pedestrian",
+      "event": "PedestrianWalkEvent",
+      "esmini_s": 2.1,
+      "planner_s": 2.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "alks_r157_cut_in_quick_brake",
+      "event": "LaneChange1Event",
+      "esmini_s": 2.1,
+      "planner_s": 2.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "controller_test",
+      "event": "SloppyDriverEvent",
+      "esmini_s": 2.1,
+      "planner_s": 2.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "controller_test",
+      "event": "LateralnteractiveEvent",
+      "esmini_s": 10.1,
+      "planner_s": 10.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "controller_test",
+      "event": "LongitudinalInteractiveInteractiveEvent",
+      "esmini_s": 20.1,
+      "planner_s": 20.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "controller_test",
+      "event": "BetterSloppyDriverEvent",
+      "esmini_s": 30.1,
+      "planner_s": 30.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "controller_test",
+      "event": "DefaultControllerEvent",
+      "esmini_s": 40.1,
+      "planner_s": 40.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "cut-in_cr",
+      "event": "OverTakerStartSpeedEvent",
+      "esmini_s": 0.1,
+      "planner_s": 0.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "cut-in_cr",
+      "event": "LaneChangeEvent",
+      "esmini_s": 3.2,
+      "planner_s": 3.8,
+      "shift_s": 0.6
+    },
+    {
+      "scenario": "cut-in_simple",
+      "event": "CutInEvent",
+      "esmini_s": 6.6,
+      "planner_s": 6.4,
+      "shift_s": -0.2
+    },
+    {
+      "scenario": "cut-in_simple",
+      "event": "BrakeEvent",
+      "esmini_s": 9.1,
+      "planner_s": 8.6,
+      "shift_s": -0.5
+    },
+    {
+      "scenario": "cut-in_sloppy",
+      "event": "CutInEvent",
+      "esmini_s": 7.8,
+      "planner_s": 7.9,
+      "shift_s": 0.1
+    },
+    {
+      "scenario": "cut-in_sloppy",
+      "event": "OvertakerBrakeEvent",
+      "esmini_s": 13.5,
+      "planner_s": 13.6,
+      "shift_s": 0.1
+    },
+    {
+      "scenario": "cut-in_sumo",
+      "event": "targetspeedincrease",
+      "esmini_s": 13.1,
+      "planner_s": 13.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "cut-in_sumo",
+      "event": "egospeedincrease",
+      "esmini_s": 13.1,
+      "planner_s": 13.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "cut-in_visibility",
+      "event": "VisibilityHideForSensorsEvent",
+      "esmini_s": 4.1,
+      "planner_s": 4.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "cut-in_visibility",
+      "event": "VisibilityHideEvent",
+      "esmini_s": 7.1,
+      "planner_s": 7.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "cut-in_visibility",
+      "event": "CutInEvent",
+      "esmini_s": 7.7,
+      "planner_s": 8.3,
+      "shift_s": 0.6
+    },
+    {
+      "scenario": "cut-in_visibility",
+      "event": "OvertakerBrakeEvent",
+      "esmini_s": 9.2,
+      "planner_s": 9.8,
+      "shift_s": 0.6
+    },
+    {
+      "scenario": "cut-in_visibility",
+      "event": "VisibilityReappearEvent",
+      "esmini_s": 10.1,
+      "planner_s": 10.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "drop-bike",
+      "event": "drop of bike",
+      "esmini_s": 5.1,
+      "planner_s": 5.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "follow_reference",
+      "event": "Event1",
+      "esmini_s": 0.1,
+      "planner_s": 0.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "keep_lateral_distance",
+      "event": "LaneChange1Event",
+      "esmini_s": 0.1,
+      "planner_s": 0.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "keep_lateral_distance",
+      "event": "LateralDistanceMaxSpeedEvent",
+      "esmini_s": 1.1,
+      "planner_s": 1.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "keep_lateral_distance",
+      "event": "LaneChange2Event",
+      "esmini_s": 8.1,
+      "planner_s": 8.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "lane_change_crest",
+      "event": "LaneChangeEvent",
+      "esmini_s": 4.5,
+      "planner_s": 4.5,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "left-hand-traffic_using_road_rule",
+      "event": "Lane change",
+      "esmini_s": 3.8,
+      "planner_s": 4.2,
+      "shift_s": 0.4
+    },
+    {
+      "scenario": "pedestrian_collision",
+      "event": "ped_walk_event",
+      "esmini_s": 0.2,
+      "planner_s": 0.2,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "pedestrian_collision",
+      "event": "ped_collide_event",
+      "esmini_s": 5.5,
+      "planner_s": 5.7,
+      "shift_s": 0.2
+    },
+    {
+      "scenario": "pedestrian_traj_synch",
+      "event": "ped_synch_event",
+      "esmini_s": 0.1,
+      "planner_s": 0.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "pedestrian_traj_synch",
+      "event": "ped_follow_trajectory",
+      "esmini_s": 0.1,
+      "planner_s": 0.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "pedestrian_traj_synch",
+      "event": "drive_Event",
+      "esmini_s": 0.1,
+      "planner_s": 0.1,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "pedestrian_udp",
+      "event": "ped_walk_event",
+      "esmini_s": 0.2,
+      "planner_s": 0.2,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "pedestrian_udp",
+      "event": "ped_collide_event",
+      "esmini_s": 5.5,
+      "planner_s": 5.7,
+      "shift_s": 0.2
+    },
+    {
+      "scenario": "speed-profile",
+      "event": "SpeedProfileEvent1",
+      "esmini_s": 2.0,
+      "planner_s": 2.0,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "speed-profile",
+      "event": "SpeedProfileEvent",
+      "esmini_s": 2.0,
+      "planner_s": 2.0,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "traffic_lights",
+      "event": "StopLightEvent",
+      "esmini_s": 3.5,
+      "planner_s": 3.5,
+      "shift_s": 0.0
+    },
+    {
+      "scenario": "trajectory-test",
+      "event": "FollowTrajectoryPLineEvent",
+      "esmini_s": 1.9,
+      "planner_s": 1.9,
+      "shift_s": 0.0
+    }
+  ]
+}

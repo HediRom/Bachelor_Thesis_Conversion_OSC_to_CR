@@ -1,0 +1,44 @@
+{
+  "ped_synch_event": {
+    "story": "LTAPStory",
+    "act": "LTAPActNPC",
+    "actors": [
+      "pedestrian_adult"
+    ],
+    "conditions": []
+  },
+  "ped_follow_trajectory": {
+    "story": "LTAPStory",
+    "act": "LTAPActNPC",
+    "actors": [
+      "pedestrian_adult"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "ped_follow_trajectory_condition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 0.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "drive_Event": {
+    "story": "LTAPStory",
+    "act": "LTAPActNPC",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "drive_ManeuverCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 0.0,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "drop-bike",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/commonroad-openscenario-converter/scenarios/from_esmini/xosc/drop-bike.xosc",
+  "generated_at": "2026-08-18T07:45:35+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 1,
+    "conditions": 1,
+    "translation_mapped": 3,
+    "translation_skipped": 0,
+    "interpretation_fired": 1,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "drop of bike",
+      "story": "story_act_maneuvuergroup_drop maneuver",
+      "act": "act_maneuvuergroup_drop maneuver",
+      "actors": [
+        "bike"
+      ],
+      "conditions": [
+        {
+          "name": "drop trigger",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 5.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 5.1,
+              "end": null
+            },
+            "time_step_interval": [
+              50,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 5.1,
+            "time_step": 51,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "act_start",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "start_trigger ",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 10.1,
+          "end": null
+        },
+        "time_step_interval": [
+          100,
+          null
+        ]
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 3,
+    "parsed_conditions": 3,
+    "source_types": {
+      "SimulationTimeCondition": 3
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 3,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

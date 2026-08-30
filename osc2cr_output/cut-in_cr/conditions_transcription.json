@@ -1,0 +1,50 @@
+{
+  "OverTakerStartSpeedEvent": {
+    "story": "CutInStory",
+    "act": "CutInAct",
+    "actors": [
+      "Truck"
+    ],
+    "conditions": []
+  },
+  "LaneChangeEvent": {
+    "story": "CutInStory",
+    "act": "CutInAct",
+    "actors": [
+      "Truck"
+    ],
+    "conditions": [
+      {
+        "type": "TimeHeadwayCondition",
+        "name": "LaneChangeCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "triggering_entity": "Truck",
+        "reference_entity": "Ego",
+        "value": 1.0,
+        "freespace": false,
+        "rule": "lessThan"
+      }
+    ]
+  },
+  "CutInEvent": {
+    "story": "CutInStory",
+    "act": "CutInAct",
+    "actors": [
+      "Truck"
+    ],
+    "conditions": [
+      {
+        "type": "TimeHeadwayCondition",
+        "name": "CutInCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "triggering_entity": "Ego",
+        "reference_entity": "Truck",
+        "value": 1.2,
+        "freespace": false,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

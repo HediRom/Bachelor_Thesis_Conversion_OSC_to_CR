@@ -1,0 +1,99 @@
+{
+  "Event1": {
+    "story": "Story",
+    "act": "Act1",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "startTrigger1",
+        "delay_s": 2.0,
+        "edge": "none",
+        "value_s": 0.0,
+        "rule": "greaterOrEqual"
+      }
+    ]
+  },
+  "Event2": {
+    "story": "Story",
+    "act": "Act1",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "startTrigger2",
+        "delay_s": 4.0,
+        "edge": "none",
+        "element_ref": "Event1",
+        "element_type": "event",
+        "state": "endTransition"
+      }
+    ]
+  },
+  "Event3": {
+    "story": "Story",
+    "act": "Act1",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "startTrigger3",
+        "delay_s": 2.0,
+        "edge": "none",
+        "element_ref": "Event2",
+        "element_type": "event",
+        "state": "endTransition"
+      }
+    ]
+  },
+  "Event4": {
+    "story": "Story",
+    "act": "Act1",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "startTrigger4",
+        "delay_s": 2.0,
+        "edge": "none",
+        "element_ref": "Event3",
+        "element_type": "event",
+        "state": "endTransition"
+      }
+    ]
+  },
+  "EventSpeedChange1": {
+    "story": "Story",
+    "act": "Act2",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": []
+  },
+  "EventSpeedChange2": {
+    "story": "Story",
+    "act": "Act2",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "startTrigger6",
+        "delay_s": 2.0,
+        "edge": "none",
+        "element_ref": "EventSpeedChange1",
+        "element_type": "event",
+        "state": "endTransition"
+      }
+    ]
+  }
+}

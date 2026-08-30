@@ -1,0 +1,36 @@
+{
+  "CutInActStart": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.1,
+      "end": null
+    },
+    "time_step_interval": [
+      1,
+      999999
+    ]
+  },
+  "LaneChange1Condition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 2.1,
+      "end": null
+    },
+    "time_step_interval": [
+      21,
+      999999
+    ]
+  },
+  "BrakeCondition": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "ActStopCondition": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "CollisionCondition": {
+    "status": "skipped",
+    "reason": "CollisionCondition \u2014 not yet handled"
+  }
+}

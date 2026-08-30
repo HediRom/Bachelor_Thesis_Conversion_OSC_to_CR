@@ -1,0 +1,14 @@
+[
+  {
+    "time_s": 0.0,
+    "time_step": 0,
+    "story": "MyStory",
+    "act": "MyAct",
+    "event": "StopEvent",
+    "actors": [
+      "Target"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

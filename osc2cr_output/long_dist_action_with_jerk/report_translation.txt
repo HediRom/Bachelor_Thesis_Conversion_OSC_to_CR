@@ -1,0 +1,7 @@
+=== Translation Report ===
+Time goals (2):
+  'act_start' → time_step ∈ [1, 999999]  ([0.1, ∞])
+  'stop_simulation' → time_step ∈ [201, 999999]  ([20.1, ∞])
+Skipped (2):
+  'triggerEgo' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'triggerego jerk' — ByEntity — needs runtime state comparison (→ Interpretation)

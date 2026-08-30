@@ -1,0 +1,14 @@
+{
+  "ChangeSpeedCondition": {
+    "status": "skipped",
+    "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+  },
+  "ChangeLaneStartCondition": {
+    "status": "skipped",
+    "reason": "ReachPositionCondition \u2014 not yet handled"
+  },
+  "QuitTrigger": {
+    "status": "skipped",
+    "reason": "ReachPositionCondition \u2014 not yet handled"
+  }
+}

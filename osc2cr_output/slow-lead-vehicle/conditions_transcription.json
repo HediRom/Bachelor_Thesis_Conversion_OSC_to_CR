@@ -1,0 +1,22 @@
+{
+  "brake_Event": {
+    "story": "brake-for-slow-lead-vehicle_Story",
+    "act": "brake-for-slow-lead-vehicle_Act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "TimeToCollisionCondition",
+        "name": "brake_Condition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "triggering_entity": "Ego",
+        "reference_entity": "",
+        "value": 2.7,
+        "freespace": false,
+        "rule": "lessThan"
+      }
+    ]
+  }
+}

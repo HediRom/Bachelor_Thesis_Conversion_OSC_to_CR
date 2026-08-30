@@ -1,0 +1,87 @@
+{
+  "LaneChange1Event": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "LaneChange1Condition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 5.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "LaneChange2Event": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "LaneChange2Condition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 7.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "TargetBrakeEvent": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "BrakeCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 11.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "TargetAccelerateEvent": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "BrakeCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 17.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "TargetBrake2Event": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "Brake2Condition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 20.0,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

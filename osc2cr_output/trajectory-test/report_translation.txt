@@ -1,0 +1,9 @@
+=== Translation Report ===
+Time goals (1):
+  'starttrigger' → time_step ∈ [1, 999999]  ([0.1, ∞])
+Skipped (5):
+  'FollowTrajectoryPLineTrigger' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'FollowTrajectoryClothoidTrigger' — storyboard meta-condition — no CR analogue
+  'FollowTrajectory2Trigger' — storyboard meta-condition — no CR analogue
+  'AlignHeadingTrigger' — storyboard meta-condition — no CR analogue
+  'FollowTrajectory2Trigger' — storyboard meta-condition — no CR analogue

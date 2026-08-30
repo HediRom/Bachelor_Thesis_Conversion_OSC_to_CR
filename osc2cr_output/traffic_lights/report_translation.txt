@@ -1,0 +1,14 @@
+=== Translation Report ===
+Time goals (2):
+  'StartTrigger' → time_step ∈ [1, 999999]  ([0.1, ∞])
+  'StopCondition' → time_step ∈ [301, 999999]  ([30.1, ∞])
+Skipped (9):
+  'PositionCondition' — DistanceCondition — not yet handled
+  'TrafficLightYellow' — DeclaredCondition — not yet handled
+  'TrafficLightRed' — DeclaredCondition — not yet handled
+  'TrafficLightRed' — DeclaredCondition — not yet handled
+  'TrafficLightRed2' — DeclaredCondition — not yet handled
+  'TrafficLightYellow' — DeclaredCondition — not yet handled
+  'TrafficLightGreen' — DeclaredCondition — not yet handled
+  'PedestrianLightGreen' — DeclaredCondition — not yet handled
+  'PedestrianLightGreen' — DeclaredCondition — not yet handled

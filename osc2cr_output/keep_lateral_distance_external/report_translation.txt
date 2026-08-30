@@ -1,0 +1,9 @@
+=== Translation Report ===
+Time goals (5):
+  'LateralDistanceActStart' → time_step ∈ [1, 999999]  ([0.1, ∞])
+  'LateralDistanceStartCondition' → time_step ∈ [11, 999999]  ([1.1, ∞])
+  'LateralDistanceSwitchSideCondition' → time_step ∈ [40, 999999]  ([4.1, ∞])
+  'LateralDistanceFinalSnapCondition' → time_step ∈ [80, 999999]  ([8.1, ∞])
+  'StopSimulationCondition' → time_step ∈ [201, 999999]  ([20.1, ∞])
+Skipped (1):
+  'StopCondition' — storyboard meta-condition — no CR analogue

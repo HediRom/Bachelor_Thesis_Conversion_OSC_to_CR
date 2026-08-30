@@ -1,0 +1,14 @@
+[
+  {
+    "time_s": 1.9,
+    "time_step": 19,
+    "story": "mystory",
+    "act": "my_act",
+    "event": "FollowTrajectoryPLineEvent",
+    "actors": [
+      "Target"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

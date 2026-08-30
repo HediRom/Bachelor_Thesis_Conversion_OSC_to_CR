@@ -1,0 +1,158 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "trajectory-test",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/trajectory-test.xosc",
+  "generated_at": "2026-08-18T07:51:22+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 4,
+    "conditions": 4,
+    "translation_mapped": 1,
+    "translation_skipped": 4,
+    "interpretation_fired": 1,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "FollowTrajectoryPLineEvent",
+      "story": "mystory",
+      "act": "my_act",
+      "actors": [
+        "Target"
+      ],
+      "conditions": [
+        {
+          "name": "FollowTrajectoryPLineTrigger",
+          "type": "TimeHeadwayCondition",
+          "text": "Target vs Ego: headway lessThan 0.5 s",
+          "edge": "rising",
+          "delay_s": 0.2,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 1.9,
+            "time_step": 19,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "FollowTrajectoryClothoidEvent",
+      "story": "mystory",
+      "act": "my_act",
+      "actors": [
+        "Target"
+      ],
+      "conditions": [
+        {
+          "name": "FollowTrajectoryClothoidTrigger",
+          "type": "StoryboardElementStateCondition",
+          "text": "event 'FollowTrajectoryPLineEvent' reaches state endTransition",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "FollowTrajectoryNurbsEvent",
+      "story": "mystory",
+      "act": "my_act",
+      "actors": [
+        "Target"
+      ],
+      "conditions": [
+        {
+          "name": "FollowTrajectory2Trigger",
+          "type": "StoryboardElementStateCondition",
+          "text": "event 'FollowTrajectoryClothoidEvent' reaches state endTransition",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "AlignEvent",
+      "story": "mystory",
+      "act": "my_act",
+      "actors": [
+        "Target"
+      ],
+      "conditions": [
+        {
+          "name": "AlignHeadingTrigger",
+          "type": "StoryboardElementStateCondition",
+          "text": "event 'FollowTrajectoryNurbsEvent' reaches state endTransition",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "starttrigger",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 6,
+    "parsed_conditions": 6,
+    "source_types": {
+      "TimeHeadwayCondition": 1,
+      "StoryboardElementStateCondition": 4,
+      "SimulationTimeCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 6,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

@@ -1,0 +1,90 @@
+{
+ "scenario": "distance_test",
+ "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/distance_test",
+ "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/distance_test.xosc",
+ "driver": "planner",
+ "dt": 0.1,
+ "id_to_name": {
+  "1": "Ego",
+  "2": "Dummy"
+ },
+ "ego": "Ego",
+ "entities": [
+  "Dummy",
+  "Ego"
+ ],
+ "externalization": null,
+ "planner": {
+  "status": "failed",
+  "reason": "no lanelet network in the bundle \u2014 the planner has no reference path (see the bundle's road_network.error)"
+ },
+ "events": [],
+ "collisions": [],
+ "ego_trajectory": [],
+ "storyboard_elements": [],
+ "entity_trajectories": {},
+ "entity_shapes": {},
+ "esmini_conditions": [],
+ "shadow_conditions": [],
+ "timeline": {
+  "dt": 0.1,
+  "time_steps": [],
+  "conditions": [
+   {
+    "key": "NonContinuousDistEvent::OverTakerStartSpeedCondition::0",
+    "name": "OverTakerStartSpeedCondition",
+    "type": "ReachPositionCondition",
+    "story": "Story_DistTest",
+    "act": "Act_DistTest",
+    "event": "NonContinuousDistEvent",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "::QuitCondition::1",
+    "name": "QuitCondition",
+    "type": "StoryboardElementStateCondition",
+    "story": "",
+    "act": "",
+    "event": "",
+    "scope": "storyboard_stop",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "::StopSimulationCondition::2",
+    "name": "StopSimulationCondition",
+    "type": "SimulationTimeCondition",
+    "story": "",
+    "act": "",
+    "event": "",
+    "scope": "storyboard_stop",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   }
+  ]
+ },
+ "differential": {
+  "summary": {
+   "compared": 0,
+   "agreement_pct": 0.0
+  },
+  "conditions": []
+ },
+ "unevaluable": [],
+ "written_to": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/distance_test/cosim_trace_planner.json",
+ "commonroad": {}
+}

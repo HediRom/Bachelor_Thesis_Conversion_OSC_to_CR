@@ -1,0 +1,55 @@
+{
+  "LaneChangeEvent1": {
+    "story": "LaneChangeStory",
+    "act": "LaneChangeAct",
+    "actors": [
+      "Car"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "LaneChangeCondition1",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 2.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "LaneChangeEvent2": {
+    "story": "LaneChangeStory",
+    "act": "LaneChangeAct",
+    "actors": [
+      "Car"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "LaneChangeCondition2",
+        "delay_s": 0.0,
+        "edge": "none",
+        "element_ref": "LaneChangeEvent1",
+        "element_type": "event",
+        "state": "completeState"
+      }
+    ]
+  },
+  "LaneChangeEvent3": {
+    "story": "LaneChangeStory",
+    "act": "LaneChangeAct",
+    "actors": [
+      "Car"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "LaneChangeCondition3",
+        "delay_s": 0.0,
+        "edge": "none",
+        "element_ref": "LaneChangeEvent2",
+        "element_type": "event",
+        "state": "completeState"
+      }
+    ]
+  }
+}

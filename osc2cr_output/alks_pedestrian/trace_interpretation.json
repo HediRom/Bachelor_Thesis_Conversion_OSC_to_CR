@@ -1,0 +1,14 @@
+[
+  {
+    "time_s": 2.1,
+    "time_step": 21,
+    "story": "MyStory",
+    "act": "CutInAndBrakeAct",
+    "event": "PedestrianWalkEvent",
+    "actors": [
+      "Pedestrian"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

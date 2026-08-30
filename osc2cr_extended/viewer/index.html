@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>osc2cr — Interactive CommonRoad Simulator with Triggers</title>
+  <link rel="stylesheet" href="/viewer/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">osc2cr</span>
+    <span class="brand-sub">OpenSCENARIO → CommonRoad, triggers intact</span>
+  </div>
+
+  <div class="controls">
+    <label class="field">
+      <span>Scenario</span>
+      <select id="scenario-select"><option value="">— loading —</option></select>
+    </label>
+
+    <label class="field">
+      <span>Convert .xosc</span>
+      <select id="corpus-select"><option value="">— pick a source file —</option></select>
+    </label>
+
+    <button id="convert-btn" class="btn btn-primary" disabled>Convert</button>
+    <button id="cosim-btn" class="btn btn-primary" disabled
+            title="Run the loaded bundle closed-loop — the CommonRoad reactive planner drives the ego inside esmini">
+      Run co-sim
+    </button>
+    <button id="fit-btn" class="btn">Fit view</button>
+
+    <div class="runs" role="group" aria-label="Which run to show">
+      <button id="run-replay" class="btn btn-run" aria-pressed="true"
+              title="The converted scenario — esmini simulated every actor, the ego included">
+        esmini
+      </button>
+      <button id="run-cosim" class="btn btn-run" aria-pressed="false" disabled
+              title="Closed loop — the CommonRoad reactive planner drove the ego inside esmini">
+        co-sim
+      </button>
+    </div>
+  </div>
+
+  <div id="status" class="status" role="status">ready</div>
+</header>
+
+<main class="layout">
+
+  <section class="stage">
+    <canvas id="scene"></canvas>
+    <div class="legend" id="legend"></div>
+    <div class="hud" id="hud"></div>
+    <div class="diffbar" id="diffbar" hidden></div>
+  </section>
+
+  <aside class="panel">
+    <div class="panel-head">
+      <h2>Triggers</h2>
+      <span id="trigger-origin" class="origin-badge" title="Where the trigger data came from">—</span>
+    </div>
+    <div id="stats" class="stats"></div>
+    <div id="triggers" class="triggers"></div>
+  </aside>
+
+</main>
+
+<footer class="timeline">
+  <div class="transport">
+    <button id="play-btn" class="btn btn-play" title="Play / pause">▶</button>
+    <button id="step-back" class="btn btn-icon" title="Step back">◀</button>
+    <button id="step-fwd" class="btn btn-icon" title="Step forward">▶|</button>
+    <label class="field speed">
+      <span>Speed</span>
+      <select id="speed-select">
+        <option value="0.25">0.25×</option>
+        <option value="0.5">0.5×</option>
+        <option value="1" selected>1×</option>
+        <option value="2">2×</option>
+        <option value="4">4×</option>
+      </select>
+    </label>
+    <div class="clock"><span id="clock-time">0.00 s</span><span id="clock-step">step 0</span></div>
+  </div>
+
+  <div class="scrub">
+    <input id="scrub" type="range" min="0" max="0" value="0" step="1">
+    <canvas id="fires" class="fires" title="Event fires"></canvas>
+  </div>
+
+  <div class="strips" id="strips"></div>
+</footer>
+
+<script src="/viewer/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+{
+  "name": "pedestrian_collision",
+  "xosc_path": "/home/hedi_rom/Bachelor_thesis/commonroad-openscenario-converter/scenarios/from_esmini/xosc/pedestrian_collision.xosc",
+  "ok": true,
+  "error": null,
+  "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_collision",
+  "timings_s": {
+    "cr_conversion": 1.4944,
+    "storyboard_parse": 0.0028,
+    "strategy_transcription": 0.0,
+    "strategy_translation": 0.0001,
+    "strategy_interpretation": 0.0,
+    "interpretation_replay": 0.0025,
+    "trigger_merge": 0.0006,
+    "timeline": 0.002,
+    "write_embed": 0.5927,
+    "total": 2.0976,
+    "trigger_preservation": 0.0081
+  },
+  "discarded_cosim": [],
+  "stats": {
+    "dt": 0.1,
+    "obstacles": 2,
+    "lanelets": 28,
+    "time_steps": 93,
+    "duration_s": 9.2,
+    "events": 3,
+    "conditions": 3,
+    "translation_mapped": 1,
+    "translation_skipped": 4,
+    "interpretation_fired": 2,
+    "timeline_conditions": 5,
+    "entity_refs_resolved": 0,
+    "entity_refs_unresolved": [],
+    "coverage": {
+      "source_conditions": 5,
+      "parsed_conditions": 5,
+      "source_types": {
+        "TraveledDistanceCondition": 1,
+        "CollisionCondition": 1,
+        "StoryboardElementStateCondition": 2,
+        "SimulationTimeCondition": 1
+      },
+      "unsupported": {},
+      "unsupported_conditions": 0,
+      "declared_only": {},
+      "declared_conditions": 0,
+      "modelled_conditions": 5,
+      "preserved_pct": 100.0,
+      "evaluable_pct": 100.0,
+      "declared_reasons": {},
+      "events_without_trigger": [],
+      "unconditional_fires_possible": false
+    },
+    "road_network": {
+      "xodr_file": "/home/hedi_rom/Bachelor_thesis/commonroad-openscenario-converter/scenarios/from_esmini/xosc/../xodr/fabriksgatan.xodr",
+      "error": null,
+      "repairs": []
+    },
+    "interpretation_fired_unconditional": 0
+  },
+  "files": {
+    "triggers_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_collision/triggers.json",
+    "conditions_transcription_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_collision/conditions_transcription.json",
+    "conditions_translation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_collision/conditions_translation.json",
+    "report_translation_txt": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_collision/report_translation.txt",
+    "trace_interpretation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_collision/trace_interpretation.json",
+    "timeline_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_collision/timeline.json",
+    "scenario_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_collision/scenario.xml",
+    "scenario_plain_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/pedestrian_collision/scenario_plain.xml"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "Lane change event": {
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "ReachPositionCondition",
+        "name": "Lane change condition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "extension": true,
+        "entity_ref": "Ego",
+        "tolerance_m": 1.0,
+        "position": {
+          "kind": "LanePosition",
+          "x": 50.0,
+          "y": -1.534999966621399,
+          "road_id": 0,
+          "lane_id": -1,
+          "s": 50.0,
+          "resolved": true
+        },
+        "text": "Ego reaches road 0 lane -1 at s=50.0 m \u2192 (50.0, -1.5) (tolerance 1.0 m)"
+      }
+    ]
+  },
+  "End Of Road teleport event": {
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "EndOfRoadCondition",
+        "name": "End Of Road condition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "extension": true,
+        "entity_ref": "Ego",
+        "unevaluable_reason": "needs OpenDRIVE road topology; a CommonRoad lanelet network does not record where a road ends versus where the map is simply cut off",
+        "attributes": {
+          "duration": "2.5"
+        },
+        "text": "Ego: EndOfRoadCondition (declared, not evaluable \u2014 needs OpenDRIVE road topology; a CommonRoad lanelet network does not record where a road ends versus where the map is simply cut off)"
+      }
+    ]
+  },
+  "End Of Road speed event": {
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "EndOfRoadCondition",
+        "name": "End Of Road condition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "extension": true,
+        "entity_ref": "Ego",
+        "unevaluable_reason": "needs OpenDRIVE road topology; a CommonRoad lanelet network does not record where a road ends versus where the map is simply cut off",
+        "attributes": {
+          "duration": "2.5"
+        },
+        "text": "Ego: EndOfRoadCondition (declared, not evaluable \u2014 needs OpenDRIVE road topology; a CommonRoad lanelet network does not record where a road ends versus where the map is simply cut off)"
+      }
+    ]
+  },
+  "Act 2 init event": {
+    "story": "Lane change story",
+    "act": "Lane change act 2",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": []
+  },
+  "Act 2 Lane change event": {
+    "story": "Lane change story",
+    "act": "Lane change act 2",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "ReachPositionCondition",
+        "name": "Lane change condition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "extension": true,
+        "entity_ref": "Ego",
+        "tolerance_m": 1.0,
+        "position": {
+          "kind": "LanePosition",
+          "x": null,
+          "y": null,
+          "road_id": 0,
+          "lane_id": -1,
+          "s": 50.0,
+          "resolved": false
+        },
+        "text": "Ego reaches road 0 lane -1 at s=50.0 m (tolerance 1.0 m)"
+      }
+    ]
+  },
+  "Act 2 End Of Road teleport event": {
+    "story": "Lane change story",
+    "act": "Lane change act 2",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "EndOfRoadCondition",
+        "name": "End Of Road condition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "extension": true,
+        "entity_ref": "Ego",
+        "unevaluable_reason": "needs OpenDRIVE road topology; a CommonRoad lanelet network does not record where a road ends versus where the map is simply cut off",
+        "attributes": {
+          "duration": "0.0"
+        },
+        "text": "Ego: EndOfRoadCondition (declared, not evaluable \u2014 needs OpenDRIVE road topology; a CommonRoad lanelet network does not record where a road ends versus where the map is simply cut off)"
+      }
+    ]
+  }
+}

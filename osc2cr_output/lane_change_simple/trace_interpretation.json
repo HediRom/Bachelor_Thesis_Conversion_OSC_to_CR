@@ -1,0 +1,26 @@
+[
+  {
+    "time_s": 4.5,
+    "time_step": 45,
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "event": "Lane change event",
+    "actors": [
+      "Ego"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  },
+  {
+    "time_s": 37.2,
+    "time_step": 372,
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "event": "Lane change event",
+    "actors": [
+      "Ego"
+    ],
+    "fire_count": 2,
+    "unconditional": false
+  }
+]

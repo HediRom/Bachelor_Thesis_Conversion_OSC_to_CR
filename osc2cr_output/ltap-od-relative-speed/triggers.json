@@ -1,0 +1,98 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "ltap-od-relative-speed",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/ltap-od-relative-speed.xosc",
+  "generated_at": "2026-08-18T07:47:48+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 1,
+    "conditions": 1,
+    "translation_mapped": 2,
+    "translation_skipped": 2,
+    "interpretation_fired": 0,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "SyncEvent",
+      "story": "LTAPStory",
+      "act": "LTAPActNPC",
+      "actors": [
+        "NPC"
+      ],
+      "conditions": [
+        {
+          "name": "SyncConditionNPC",
+          "type": "StoryboardElementStateCondition",
+          "text": "act 'LTAPActNPC' reaches state startTransition",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "LtapActStartConditionNPC",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "StopSimulationCondition",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 1200.1,
+          "end": null
+        },
+        "time_step_interval": [
+          12000,
+          null
+        ]
+      }
+    },
+    {
+      "name": "QuitCondition",
+      "translation": {
+        "status": "skipped",
+        "reason": "ReachPositionCondition \u2014 not yet handled"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 4,
+    "parsed_conditions": 4,
+    "source_types": {
+      "StoryboardElementStateCondition": 1,
+      "SimulationTimeCondition": 2,
+      "ReachPositionCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 4,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

@@ -1,0 +1,11 @@
+=== Translation Report ===
+Time goals (4):
+  'CutInActStart' → time_step ∈ [1, 999999]  ([0.1, ∞])
+  'VisibilityHideForSensorsCondition' → time_step ∈ [40, 999999]  ([4.1, ∞])
+  'VisibilityHideCondition' → time_step ∈ [70, 999999]  ([7.1, ∞])
+  'VisibilityReappearCondition' → time_step ∈ [100, 999999]  ([10.1, ∞])
+Skipped (4):
+  'OverTakerStartSpeedCondition' — storyboard meta-condition — no CR analogue
+  'CutInStartCondition' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'BrakeCondition' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'ActStopCondition' — storyboard meta-condition — no CR analogue

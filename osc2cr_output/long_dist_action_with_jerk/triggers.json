@@ -1,0 +1,127 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "long_dist_action_with_jerk",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/long_dist_action_with_jerk.xosc",
+  "generated_at": "2026-08-18T07:47:41+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 2,
+    "conditions": 2,
+    "translation_mapped": 2,
+    "translation_skipped": 2,
+    "interpretation_fired": 2,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "Egoevent",
+      "story": "story_act",
+      "act": "act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "triggerEgo",
+          "type": "RelativeDistanceCondition",
+          "text": "Ego vs Target: distance lessOrEqual 50.0 m (longitudinal)",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 1.0,
+            "time_step": 10,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "ego jerkevent",
+      "story": "story_act",
+      "act": "act",
+      "actors": [
+        "ego jerk"
+      ],
+      "conditions": [
+        {
+          "name": "triggerego jerk",
+          "type": "RelativeDistanceCondition",
+          "text": "ego jerk vs Target: distance lessOrEqual 50.0 m (longitudinal)",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 1.0,
+            "time_step": 10,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "act_start",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "stop_simulation",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 20.1,
+          "end": null
+        },
+        "time_step_interval": [
+          201,
+          null
+        ]
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 4,
+    "parsed_conditions": 4,
+    "source_types": {
+      "RelativeDistanceCondition": 2,
+      "SimulationTimeCondition": 2
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 4,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Event1": {
+    "story": "Story",
+    "act": "Act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "start_trigger1",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 15.0,
+        "rule": "greaterOrEqual"
+      }
+    ]
+  }
+}

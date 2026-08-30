@@ -1,0 +1,106 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "velodrome",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/velodrome.xosc",
+  "generated_at": "2026-08-18T07:51:45+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 2,
+    "conditions": 2,
+    "translation_mapped": 0,
+    "translation_skipped": 3,
+    "interpretation_fired": 2,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "ChangeSpeedEvent",
+      "story": "Velodrome story",
+      "act": "Velodrome act",
+      "actors": [
+        "Car2"
+      ],
+      "conditions": [
+        {
+          "name": "ChangeSpeedCondition",
+          "type": "TimeHeadwayCondition",
+          "text": "Car2 vs Car1: headway greaterOrEqual 0.65 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 20.8,
+            "time_step": 208,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChangeLaneEvent",
+      "story": "Velodrome story",
+      "act": "Velodrome act",
+      "actors": [
+        "Car3"
+      ],
+      "conditions": [
+        {
+          "name": "ChangeLaneStartCondition",
+          "type": "ReachPositionCondition",
+          "text": "Car3 reaches road 1 lane -3 at s=1600.0 m \u2192 (-101.4, 252.3) (tolerance 5.0 m)",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ReachPositionCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 32.8,
+            "time_step": 328,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "QuitTrigger",
+      "translation": {
+        "status": "skipped",
+        "reason": "ReachPositionCondition \u2014 not yet handled"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 3,
+    "parsed_conditions": 3,
+    "source_types": {
+      "TimeHeadwayCondition": 1,
+      "ReachPositionCondition": 2
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 3,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

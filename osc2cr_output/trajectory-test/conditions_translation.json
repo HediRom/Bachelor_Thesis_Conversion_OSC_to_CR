@@ -1,0 +1,29 @@
+{
+  "starttrigger": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.1,
+      "end": null
+    },
+    "time_step_interval": [
+      1,
+      999999
+    ]
+  },
+  "FollowTrajectoryPLineTrigger": {
+    "status": "skipped",
+    "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+  },
+  "FollowTrajectoryClothoidTrigger": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "FollowTrajectory2Trigger": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "AlignHeadingTrigger": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  }
+}

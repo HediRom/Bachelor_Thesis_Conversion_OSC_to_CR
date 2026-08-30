@@ -1,0 +1,75 @@
+{
+  "name": "traffic_lights",
+  "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/traffic_lights.xosc",
+  "ok": true,
+  "error": null,
+  "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/traffic_lights",
+  "timings_s": {
+    "cr_conversion": 2.3007,
+    "storyboard_parse": 0.0029,
+    "strategy_transcription": 0.0,
+    "strategy_translation": 0.0,
+    "strategy_interpretation": 0.0,
+    "interpretation_replay": 0.0324,
+    "trigger_merge": 0.0008,
+    "timeline": 0.0073,
+    "write_embed": 0.5353,
+    "total": 2.8833,
+    "trigger_preservation": 0.0435
+  },
+  "discarded_cosim": [],
+  "stats": {
+    "dt": 0.1,
+    "obstacles": 3,
+    "lanelets": 28,
+    "time_steps": 301,
+    "duration_s": 30.0,
+    "events": 9,
+    "conditions": 9,
+    "translation_mapped": 2,
+    "translation_skipped": 6,
+    "interpretation_fired": 1,
+    "timeline_conditions": 11,
+    "entity_refs_resolved": 0,
+    "entity_refs_unresolved": [],
+    "coverage": {
+      "source_conditions": 11,
+      "parsed_conditions": 11,
+      "source_types": {
+        "DistanceCondition": 1,
+        "TrafficSignalCondition": 8,
+        "SimulationTimeCondition": 2
+      },
+      "unsupported": {},
+      "unsupported_conditions": 0,
+      "declared_only": {
+        "TrafficSignalCondition": 8
+      },
+      "declared_conditions": 8,
+      "modelled_conditions": 3,
+      "preserved_pct": 100.0,
+      "evaluable_pct": 27.3,
+      "declared_reasons": {
+        "TrafficSignalCondition": "the converter does not carry esmini's traffic-signal state into the CommonRoad scenario"
+      },
+      "events_without_trigger": [],
+      "unconditional_fires_possible": false
+    },
+    "road_network": {
+      "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/fabriksgatan_traffic_lights.xodr",
+      "error": null,
+      "repairs": []
+    },
+    "interpretation_fired_unconditional": 0
+  },
+  "files": {
+    "triggers_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/traffic_lights/triggers.json",
+    "conditions_transcription_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/traffic_lights/conditions_transcription.json",
+    "conditions_translation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/traffic_lights/conditions_translation.json",
+    "report_translation_txt": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/traffic_lights/report_translation.txt",
+    "trace_interpretation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/traffic_lights/trace_interpretation.json",
+    "timeline_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/traffic_lights/timeline.json",
+    "scenario_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/traffic_lights/scenario.xml",
+    "scenario_plain_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/traffic_lights/scenario_plain.xml"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Lane change": {
+    "story": "StoryPlaceholder",
+    "act": "Lane change",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "RelativeDistanceCondition",
+        "name": "Lane change",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "triggering_entity": "Ego",
+        "reference_entity": "OverTaker",
+        "distance_type": "longitudinal",
+        "value": 10.0,
+        "freespace": true,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

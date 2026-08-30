@@ -1,0 +1,110 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "synch_with_steady_state",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/synch_with_steady_state.xosc",
+  "generated_at": "2026-08-18T07:50:31+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 2,
+    "conditions": 2,
+    "translation_mapped": 1,
+    "translation_skipped": 2,
+    "interpretation_fired": 0,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "SetTargetSpeedEvent",
+      "story": "Story",
+      "act": "TargetAct",
+      "actors": [
+        "Target"
+      ],
+      "conditions": [
+        {
+          "name": "SyncConditionTarget",
+          "type": "TimeToCollisionCondition",
+          "text": "Ego vs : TTC lessThan 10.0 s (freespace)",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "SyncEvent",
+      "story": "Story",
+      "act": "TargetAct",
+      "actors": [
+        "Target"
+      ],
+      "conditions": [
+        {
+          "name": "SyncConditionTarget",
+          "type": "StoryboardElementStateCondition",
+          "text": "event 'SetTargetSpeedEvent' reaches state endTransition",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "LtapActStartConditionTarget",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "QuitCondition",
+      "translation": {
+        "status": "skipped",
+        "reason": "ReachPositionCondition \u2014 not yet handled"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 4,
+    "parsed_conditions": 4,
+    "source_types": {
+      "TimeToCollisionCondition": 1,
+      "StoryboardElementStateCondition": 1,
+      "SimulationTimeCondition": 1,
+      "ReachPositionCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 4,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<OpenSCENARIO>
+   <FileHeader revMajor="1" revMinor="1" date="2020-10-02T10:00:00" description="Pedestrian involved in a critical situation" author="esmini-team" />
+   <ParameterDeclarations />
+   <CatalogLocations>
+      <RouteCatalog>
+         <Directory path="/Catalogs/Routes" />
+      </RouteCatalog>
+      <VehicleCatalog>
+         <Directory path="/Catalogs/Vehicles" />
+      </VehicleCatalog>
+      <ControllerCatalog>
+         <Directory path="/Catalogs/Controllers" />
+      </ControllerCatalog>
+   </CatalogLocations>
+   <RoadNetwork>
+      <LogicFile filepath="/home/hedi_rom/Bachelor_thesis/commonroad-openscenario-converter/scenarios/from_esmini/xodr/fabriksgatan.xodr" />
+   </RoadNetwork>
+   <Entities>
+       <ScenarioObject name="Ego">
+            <CatalogReference catalogName="VehicleCatalog" entryName="car_white" />
+            <ObjectController><Controller name="osc2crExternalController"><Properties><Property name="esminiController" value="ExternalController" /><Property name="useGhost" value="false" /><Property name="mode" value="override" /></Properties></Controller></ObjectController></ScenarioObject>
+    </Entities>
+   <Storyboard>
+      <Init>
+         <Actions>
+            <Private entityRef="Ego">
+               <PrivateAction>
+                  <TeleportAction>
+                     <Position>
+                        <LanePosition roadId="0" laneId="-1" offset="0" s="50" />
+                     </Position>
+                  </TeleportAction>
+               </PrivateAction>
+               <PrivateAction>
+                   <ActivateControllerAction longitudinal="true" lateral="true" />
+               </PrivateAction>
+            </Private>
+         </Actions>
+      </Init>
+      <Story>
+         <Act name="DummyAct">
+         </Act>
+      </Story>
+   </Storyboard>
+</OpenSCENARIO>

@@ -1,0 +1,101 @@
+image: continuumio/miniconda3
+
+stages:
+- style
+- test
+- deploy
+- publish
+
+.install-and-run: &install-and-run
+  # - echo "$DOCKER_REGISTRY_PASS" | docker login $CI_REGISTRY -u ${DOCKER_REGISTRY_USER:-gitlab-ci-token} -p ${DOCKER_REGISTRY_PASS:-$CI_BUILD_TOKEN}
+  # - docker info
+  # installation of the osi
+  - pip install -e .
+  - git clone https://github.com/OpenSimulationInterface/open-simulation-interface.git
+  - cd open-simulation-interface
+  - python3 -m pip install .
+  - pip install tox coverage
+  - git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.lrz.de/".insteadOf "git@gitlab.lrz.de:"
+  - cd $CI_PROJECT_DIR/tests && python -m unittest
+  - coverage report -m || true
+
+before_script:
+    - apt-get update && apt-get install -y build-essential git pkg-config ca-certificates wget libomp-dev libeigen3-dev libboost-all-dev uuid-dev libcgal-dev
+    - apt-get install -y libgl1 libxkbcommon-x11-0 libegl1 libdbus-1-3 libxrandr2 libxinerama1
+    - apt-get install -y libprotobuf-dev protobuf-compiler
+    - apt-get install -y python3-pip python3-setuptools
+    - export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+
+test_python39:
+  stage: test
+  script:
+    - conda create -n cr39 python=3.9 -y
+    - source activate cr39
+    - echo $(python --version)
+    - *install-and-run
+
+test_python10:
+  stage: test
+  script:
+    - conda create -n cr10 python=3.10 -y
+    - source activate cr10
+    - echo $(python --version)
+    - *install-and-run
+
+test_python11:
+  stage: test
+  script:
+    - conda create -n cr11 python=3.11 -y
+    - source activate cr11
+    - echo $(python --version)
+    - *install-and-run
+
+black:
+  stage: style
+  needs: []
+  image: pyfound/black:23.1.0
+  before_script: []
+  cache: []
+  allow_failure: true
+  script:
+    - black --check --verbose --diff --color osc_cr_converter
+    - black --check --verbose --diff --color tests
+
+pages:
+  # Push the latest documentation of the development branch to the GitLab Pages
+  # at https://cps.pages.gitlab.lrz.de/commonroad-openscenario-converter/
+  stage: deploy
+  when: manual
+  only:
+    - master
+  script:
+    - pip install -r ./docs/requirements_doc.txt
+    - cd docs/sphinx
+    - make html
+    - mv ./build/html ../../public
+  artifacts:
+    paths:
+      - public
+  environment:
+    name: Gitlab Pages
+    url: https://cps.pages.gitlab.lrz.de/commonroad/commonroad-openscenario-converter/
+
+push_to_external_pipy_test_registry:
+  stage: publish
+  when: manual
+  only:
+    - master
+  script:
+    - python -m pip install --upgrade setuptools wheel twine
+    - python setup.py sdist bdist_wheel
+    - TWINE_PASSWORD=${CR_PYPI_TEST_API_TOKEN} TWINE_USERNAME=__token__ python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* --verbose
+
+push_to_external_pipy_release_registry:
+  stage: publish
+  when: manual
+  only:
+    - master
+  script:
+    - python -m pip install --upgrade setuptools wheel twine
+    - python setup.py sdist bdist_wheel
+    - TWINE_PASSWORD=${CR_PYPI_RELEASE_API_TOKEN} TWINE_USERNAME=__token__ python -m twine upload dist/* --verbose

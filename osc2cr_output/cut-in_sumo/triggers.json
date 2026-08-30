@@ -1,0 +1,158 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "cut-in_sumo",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/cut-in_sumo.xosc",
+  "generated_at": "2026-08-18T07:45:06+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 3,
+    "conditions": 3,
+    "translation_mapped": 2,
+    "translation_skipped": 1,
+    "interpretation_fired": 3,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "targetspeedincrease",
+      "story": "mystory",
+      "act": "my act",
+      "actors": [
+        "Target1"
+      ],
+      "conditions": [
+        {
+          "name": "starttrigger",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 13.0 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 13.1,
+              "end": null
+            },
+            "time_step_interval": [
+              131,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 13.1,
+            "time_step": 131,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "first_lane_change",
+      "story": "mystory",
+      "act": "my act",
+      "actors": [
+        "Target1"
+      ],
+      "conditions": [
+        {
+          "name": "redtrigger",
+          "type": "TimeHeadwayCondition",
+          "text": "Ego vs Target1: headway greaterThan 0.1 s (freespace)",
+          "edge": "rising",
+          "delay_s": 0.2,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 0.1,
+            "time_step": 1,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "egospeedincrease",
+      "story": "mystory",
+      "act": "my act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "starttrigger",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 13.0 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 13.1,
+              "end": null
+            },
+            "time_step_interval": [
+              131,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 13.1,
+            "time_step": 131,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "stop_simulation",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 40.1,
+          "end": null
+        },
+        "time_step_interval": [
+          401,
+          null
+        ]
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 5,
+    "parsed_conditions": 5,
+    "source_types": {
+      "SimulationTimeCondition": 4,
+      "TimeHeadwayCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 5,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

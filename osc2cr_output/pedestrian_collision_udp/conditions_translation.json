@@ -1,0 +1,29 @@
+{
+  "ActStartCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.1,
+      "end": null
+    },
+    "time_step_interval": [
+      1,
+      999999
+    ]
+  },
+  "QuitCondition": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "ped_walk_event": {
+    "status": "skipped",
+    "reason": "entity traveled distance \u2014 no CR goal analogue"
+  },
+  "ped_fall_condition": {
+    "status": "skipped",
+    "reason": "CollisionCondition \u2014 not yet handled"
+  },
+  "ped_raise_condition": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  }
+}

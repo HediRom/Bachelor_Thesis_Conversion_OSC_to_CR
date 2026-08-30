@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osc2cr-extended"
+version = "1.0.0"
+description = "Trigger-preserving OpenSCENARIO → CommonRoad conversion, replay and co-simulation — an extension package for commonroad-openscenario-converter"
+readme = "README.md"
+license = { text = "BSD-3-Clause" }
+requires-python = ">=3.9"
+keywords = ["openscenario", "commonroad", "scenario description", "autonomous driving", "esmini"]
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: POSIX :: Linux",
+]
+
+dependencies = [
+    "commonroad-openscenario-converter>=0.1.1",
+    "commonroad-io>=2024.2",
+    "numpy>=1.19.0",
+]
+
+[project.optional-dependencies]
+# Closed-loop co-simulation with the CommonRoad reactive planner.
+cosim = [
+    "commonroad-reactive-planner>=2024.1",
+    "commonroad-route-planner>=2024.1",
+    "commonroad-drivability-checker>=2024.1",
+]
+# The Frenetix planner backend (cosim/frenetix/). Pins conflict with `cosim` —
+# install one or the other, not both, and convert scenarios in the environment
+# holding the converter (see cosim/frenetix/convert_scenario.py).
+frenetix = ["frenetix>=0.4.0"]
+# Rendering replays and co-simulation animations to GIF.
+viz = ["matplotlib>=3.5", "imageio>=2.28.1"]
+dev = ["pytest>=7.1"]
+
+[project.scripts]
+osc2cr-ext = "osc2cr_extended.cli:main"
+
+# This directory *is* the import package `osc2cr_extended`, so that dropping it
+# into the converter's repository root makes `import osc2cr_extended` work with
+# no install at all — and so the converter's own `find_packages()` picks it up
+# when the converter is installed from that checkout.
+#
+# That rules out package auto-discovery (there is no `osc2cr_extended/`
+# subdirectory to find), hence the explicit list and the `.` mapping below,
+# which is what lets the same directory also build as a standalone wheel.
+[tool.setuptools]
+include-package-data = true
+packages = [
+    "osc2cr_extended",
+    "osc2cr_extended.strategies",
+    "osc2cr_extended.strategies.shared",
+    "osc2cr_extended.cosim",
+    "osc2cr_extended.cosim.frenetix",
+    "osc2cr_extended.examples",
+    "osc2cr_extended.web",
+]
+
+[tool.setuptools.package-dir]
+"osc2cr_extended" = "."
+
+[tool.setuptools.package-data]
+osc2cr_extended = [
+    "viewer/*",
+    "web/**/*",
+    "data/**/*",
+    "benchmarks/*",
+    "patches/*.patch",
+]

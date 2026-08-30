@@ -1,0 +1,32 @@
+{
+  "act_start": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.1,
+      "end": null
+    },
+    "time_step_interval": [
+      1,
+      999999
+    ]
+  },
+  "stop_simulation": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 20.1,
+      "end": null
+    },
+    "time_step_interval": [
+      201,
+      999999
+    ]
+  },
+  "triggerEgo": {
+    "status": "skipped",
+    "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+  },
+  "triggerego jerk": {
+    "status": "skipped",
+    "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "time_s": 4.1,
+    "time_step": 41,
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "VisibilityHideForSensorsEvent",
+    "actors": [
+      "OverTaker"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  },
+  {
+    "time_s": 7.1,
+    "time_step": 71,
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "CutInEvent",
+    "actors": [
+      "OverTaker"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  },
+  {
+    "time_s": 7.1,
+    "time_step": 71,
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "VisibilityHideEvent",
+    "actors": [
+      "OverTaker"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  },
+  {
+    "time_s": 8.6,
+    "time_step": 86,
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "OvertakerBrakeEvent",
+    "actors": [
+      "OverTaker"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  },
+  {
+    "time_s": 10.1,
+    "time_step": 101,
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "VisibilityReappearEvent",
+    "actors": [
+      "OverTaker"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

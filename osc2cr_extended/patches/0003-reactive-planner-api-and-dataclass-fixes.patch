@@ -1,0 +1,111 @@
+diff --git a/commonroad_rp/utility/config.py b/commonroad_rp/utility/config.py
+index f213d3a..d68cae4 100644
+--- a/commonroad_rp/utility/config.py
++++ b/commonroad_rp/utility/config.py
+@@ -191,32 +191,37 @@ class DebugConfiguration(BaseConfiguration):
+     num_workers: int = 6
+ 
+ 
++_default_vehicle_parameters = VehicleParameterMapping.from_vehicle_type(VehicleType(2))
++
++
+ @dataclass
+ class VehicleConfiguration(BaseConfiguration):
+     """Class to store vehicle configurations"""
+ 
+     id_type_vehicle: int = 2
+     # get vehicle parameters from CommonRoad vehicle models given cr_vehicle_id
+-    vehicle_parameters: VehicleParameters = VehicleParameterMapping.from_vehicle_type(VehicleType(id_type_vehicle))
++    vehicle_parameters: VehicleParameters = field(
++        default_factory=lambda: VehicleParameterMapping.from_vehicle_type(VehicleType(2))
++    )
+ 
+     # get dimensions from given vehicle ID
+-    length: float = vehicle_parameters.l
+-    width: float = vehicle_parameters.w
++    length: float = _default_vehicle_parameters.l
++    width: float = _default_vehicle_parameters.w
+ 
+     # distances front/rear axle to vehicle center
+-    wb_front_axle: float = vehicle_parameters.a
+-    wb_rear_axle: float = vehicle_parameters.b
++    wb_front_axle: float = _default_vehicle_parameters.a
++    wb_rear_axle: float = _default_vehicle_parameters.b
+ 
+     # get constraints from given vehicle ID
+-    a_max: float = vehicle_parameters.longitudinal.a_max
+-    v_switch: float = vehicle_parameters.longitudinal.v_switch
+-    delta_min: float = vehicle_parameters.steering.min
+-    delta_max: float = vehicle_parameters.steering.max
+-    v_delta_min: float = vehicle_parameters.steering.v_min
+-    v_delta_max: float = vehicle_parameters.steering.v_max
++    a_max: float = _default_vehicle_parameters.longitudinal.a_max
++    v_switch: float = _default_vehicle_parameters.longitudinal.v_switch
++    delta_min: float = _default_vehicle_parameters.steering.min
++    delta_max: float = _default_vehicle_parameters.steering.max
++    v_delta_min: float = _default_vehicle_parameters.steering.v_min
++    v_delta_max: float = _default_vehicle_parameters.steering.v_max
+ 
+     # wheelbase
+-    wheelbase: float = vehicle_parameters.a + vehicle_parameters.b
++    wheelbase: float = _default_vehicle_parameters.a + _default_vehicle_parameters.b
+ 
+     def __post_init__(self):
+         self.kappa_max = np.tan(self.delta_max) / self.wheelbase
+diff --git a/commonroad_rp/utility/utils_coordinate_system.py b/commonroad_rp/utility/utils_coordinate_system.py
+index 1eb65fa..56ebc07 100644
+--- a/commonroad_rp/utility/utils_coordinate_system.py
++++ b/commonroad_rp/utility/utils_coordinate_system.py
+@@ -11,8 +11,8 @@ import numpy as np
+ from scipy.interpolate import splprep, splev
+ import logging
+ 
+-from commonroad_dc.pycrccosy import CurvilinearCoordinateSystem
+-from commonroad_dc.geometry.util import compute_pathlength_from_polyline,compute_curvature_from_polyline, \
++from commonroad_clcs.pycrccosy import CurvilinearCoordinateSystem
++from commonroad_clcs.util import compute_pathlength_from_polyline,compute_curvature_from_polyline, \
+     compute_orientation_from_polyline, resample_polyline, chaikins_corner_cutting
+ 
+ from commonroad.common.util import make_valid_orientation
+diff --git a/configurations/ZAM_Over-1_1.yaml b/configurations/ZAM_Over-1_1.yaml
+index b4972d7..fb6b0a6 100644
+--- a/configurations/ZAM_Over-1_1.yaml
++++ b/configurations/ZAM_Over-1_1.yaml
+@@ -8,11 +8,11 @@ vehicle:
+   id_type_vehicle: 2
+ 
+ debug:
+-  show_plots: False
+-  save_plots: False
+-  draw_traj_set: False
++  show_plots: True
++  save_plots: True
++  draw_traj_set: True
+   draw_icons: True
+-  multiproc: True
++  multiproc: False
+   num_workers: 6
+ 
+ sampling:
+diff --git a/run_planner.py b/run_planner.py
+index 49175f7..8b68f70 100644
+--- a/run_planner.py
++++ b/run_planner.py
+@@ -40,7 +40,7 @@ logger = logging.getLogger("RP_LOGGER")
+ # Initialize Planner
+ # *************************************
+ # run route planner and add reference path to config
+-route_planner = RoutePlanner(config.scenario, config.planning_problem)
++route_planner = RoutePlanner(config.scenario.lanelet_network, config.planning_problem, scenario=config.scenario)
+ route = route_planner.plan_routes().retrieve_first_route()
+ 
+ # initialize reactive planner
+@@ -115,7 +115,7 @@ while not planner.goal_reached():
+                                       ref_path=planner.reference_path, timestep=current_count, config=config)
+ 
+ # make gif
+-# make_gif(config, range(0, planner.record_state_list[-1].time_step))
++make_gif(config, range(0, planner.record_state_list[-1].time_step))
+ 
+ 
+ # **************************

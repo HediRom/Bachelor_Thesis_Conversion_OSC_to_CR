@@ -1,0 +1,241 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "keep_lateral_distance",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/keep_lateral_distance.xosc",
+  "generated_at": "2026-08-18T07:46:31+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 6,
+    "conditions": 6,
+    "translation_mapped": 3,
+    "translation_skipped": 5,
+    "interpretation_fired": 3,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "LaneChange1Event",
+      "story": "LateralDistanceStory",
+      "act": "LateralDistanceAct",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "LaneChange1StartCondition",
+          "type": "RelativeDistanceCondition",
+          "text": "Ego vs OverTaker: distance lessThan 0.6 m (lateral) (freespace)",
+          "edge": "none",
+          "delay_s": 1.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 0.1,
+            "time_step": 1,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "LaneChange2Event",
+      "story": "LateralDistanceStory",
+      "act": "LateralDistanceAct",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "LaneChange2StartCondition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 8.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 8.1,
+              "end": null
+            },
+            "time_step_interval": [
+              80,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 8.1,
+            "time_step": 81,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "LaneChange3Event",
+      "story": "LateralDistanceStory",
+      "act": "LateralDistanceAct",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "LaneChange3StartCondition",
+          "type": "StoryboardElementStateCondition",
+          "text": "maneuver 'LaneChange2Maneuver' reaches state endTransition",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "LateralDistanceMaxSpeedEvent",
+      "story": "LateralDistanceStory",
+      "act": "LateralDistanceAct",
+      "actors": [
+        "OverTaker"
+      ],
+      "conditions": [
+        {
+          "name": "LateralDistanceStartCondition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 1.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 1.1,
+              "end": null
+            },
+            "time_step_interval": [
+              11,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 1.1,
+            "time_step": 11,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "LateralDistanceMaxSpeedAndAccEvent",
+      "story": "LateralDistanceStory",
+      "act": "LateralDistanceAct",
+      "actors": [
+        "OverTaker"
+      ],
+      "conditions": [
+        {
+          "name": "EgoLaneChangeCompleteCondition",
+          "type": "StoryboardElementStateCondition",
+          "text": "event 'LaneChange1Event' reaches state endTransition",
+          "edge": "none",
+          "delay_s": 1.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "LateralDistanceMaxAccEvent",
+      "story": "LateralDistanceStory",
+      "act": "LateralDistanceAct",
+      "actors": [
+        "OverTaker"
+      ],
+      "conditions": [
+        {
+          "name": "EgoLaneChange3CompleteCondition",
+          "type": "StoryboardElementStateCondition",
+          "text": "maneuver 'LaneChange3Maneuver' reaches state endTransition",
+          "edge": "none",
+          "delay_s": 3.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "LateralDistanceActStart",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "StopCondition",
+      "translation": {
+        "status": "skipped",
+        "reason": "storyboard meta-condition \u2014 no CR analogue"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 8,
+    "parsed_conditions": 8,
+    "source_types": {
+      "RelativeDistanceCondition": 1,
+      "SimulationTimeCondition": 3,
+      "StoryboardElementStateCondition": 4
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 8,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "TargetChangeSpeedCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 10.1,
+      "end": null
+    },
+    "time_step_interval": [
+      100,
+      999999
+    ]
+  },
+  "TargetChangeSpeedCondition2": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 20.1,
+      "end": null
+    },
+    "time_step_interval": [
+      201,
+      999999
+    ]
+  },
+  "ActivateACCCondition": {
+    "status": "skipped",
+    "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+  },
+  "ActivateInteractiveDriverCondition": {
+    "status": "skipped",
+    "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+  },
+  "EndOfRoadCondition": {
+    "status": "skipped",
+    "reason": "DeclaredCondition \u2014 not yet handled"
+  }
+}

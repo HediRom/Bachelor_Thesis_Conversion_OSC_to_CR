@@ -1,0 +1,15 @@
+# Closed-loop co-simulation against the CommonRoad reactive planner:
+#     osc2cr-ext cosim <bundle> --driver planner
+#
+# Install AFTER requirements.txt.  The planner itself is installed from
+# ./deps/reactive-planner by setup.sh — it carries patch 0003 (mutable
+# dataclass defaults, the commonroad_dc → commonroad_clcs import migration,
+# and the RoutePlanner signature change) and will not run without it.
+
+commonroad-route-planner==2025.1.0
+commonroad-drivability-checker==2025.3.1
+commonroad-clcs==2025.2.0
+commonroad-vehicle-models==3.0.2
+omegaconf==2.3.0
+methodtools==0.4.7
+networkx==3.6.1

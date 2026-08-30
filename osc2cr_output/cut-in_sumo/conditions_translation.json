@@ -1,0 +1,28 @@
+{
+  "starttrigger": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 13.1,
+      "end": null
+    },
+    "time_step_interval": [
+      131,
+      999999
+    ]
+  },
+  "stop_simulation": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 40.1,
+      "end": null
+    },
+    "time_step_interval": [
+      401,
+      999999
+    ]
+  },
+  "redtrigger": {
+    "status": "skipped",
+    "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+  }
+}

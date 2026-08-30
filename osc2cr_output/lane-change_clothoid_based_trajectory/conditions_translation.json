@@ -1,0 +1,43 @@
+{
+  "CutInActStart": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.1,
+      "end": null
+    },
+    "time_step_interval": [
+      1,
+      999999
+    ]
+  },
+  "LaneChangeCondition1": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 2.1,
+      "end": null
+    },
+    "time_step_interval": [
+      21,
+      999999
+    ]
+  },
+  "StopCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.0,
+      "end": 6.9
+    },
+    "time_step_interval": [
+      0,
+      69
+    ]
+  },
+  "LaneChangeCondition2": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "LaneChangeCondition3": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  }
+}

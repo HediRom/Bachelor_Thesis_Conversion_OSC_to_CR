@@ -1,0 +1,118 @@
+{
+ "scenario": "lane-change_clothoid_based_trajectory",
+ "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane-change_clothoid_based_trajectory",
+ "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/lane-change_clothoid_based_trajectory.xosc",
+ "driver": "planner",
+ "dt": 0.1,
+ "id_to_name": {
+  "6": "Car"
+ },
+ "ego": "Car",
+ "entities": [
+  "Car"
+ ],
+ "externalization": null,
+ "planner": {
+  "status": "failed",
+  "reason": "planner setup failed (ValueError: Planner <commonroad_route_planner.planners.networkx.NetworkxRoutePlanner object at 0x701200500450> could not find a single route)"
+ },
+ "events": [],
+ "collisions": [],
+ "ego_trajectory": [],
+ "storyboard_elements": [],
+ "entity_trajectories": {},
+ "entity_shapes": {},
+ "esmini_conditions": [],
+ "shadow_conditions": [],
+ "timeline": {
+  "dt": 0.1,
+  "time_steps": [],
+  "conditions": [
+   {
+    "key": "LaneChangeAct::CutInActStart::0",
+    "name": "CutInActStart",
+    "type": "SimulationTimeCondition",
+    "story": "LaneChangeStory",
+    "act": "LaneChangeAct",
+    "event": "",
+    "scope": "act_start",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "LaneChangeEvent1::LaneChangeCondition1::1",
+    "name": "LaneChangeCondition1",
+    "type": "SimulationTimeCondition",
+    "story": "LaneChangeStory",
+    "act": "LaneChangeAct",
+    "event": "LaneChangeEvent1",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "LaneChangeEvent2::LaneChangeCondition2::2",
+    "name": "LaneChangeCondition2",
+    "type": "StoryboardElementStateCondition",
+    "story": "LaneChangeStory",
+    "act": "LaneChangeAct",
+    "event": "LaneChangeEvent2",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "LaneChangeEvent3::LaneChangeCondition3::3",
+    "name": "LaneChangeCondition3",
+    "type": "StoryboardElementStateCondition",
+    "story": "LaneChangeStory",
+    "act": "LaneChangeAct",
+    "event": "LaneChangeEvent3",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "::StopCondition::4",
+    "name": "StopCondition",
+    "type": "SimulationTimeCondition",
+    "story": "",
+    "act": "",
+    "event": "",
+    "scope": "storyboard_stop",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   }
+  ]
+ },
+ "differential": {
+  "summary": {
+   "compared": 0,
+   "agreement_pct": 0.0
+  },
+  "conditions": []
+ },
+ "unevaluable": [],
+ "written_to": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane-change_clothoid_based_trajectory/cosim_trace_planner.json",
+ "commonroad": {}
+}

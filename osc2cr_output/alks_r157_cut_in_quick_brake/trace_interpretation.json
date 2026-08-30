@@ -1,0 +1,14 @@
+[
+  {
+    "time_s": 2.1,
+    "time_step": 21,
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "LaneChange1Event",
+    "actors": [
+      "Target"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

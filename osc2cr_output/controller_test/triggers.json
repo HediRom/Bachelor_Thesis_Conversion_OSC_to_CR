@@ -1,0 +1,262 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "controller_test",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/controller_test.xosc",
+  "generated_at": "2026-08-18T07:43:44+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 5,
+    "conditions": 5,
+    "translation_mapped": 7,
+    "translation_skipped": 1,
+    "interpretation_fired": 5,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "SloppyDriverEvent",
+      "story": "Story",
+      "act": "Act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "SloppyDriverCondition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 2.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 2.1,
+              "end": null
+            },
+            "time_step_interval": [
+              21,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 2.1,
+            "time_step": 21,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "LateralnteractiveEvent",
+      "story": "Story",
+      "act": "Act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "InteractiveDriverLateralCondition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 10.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 10.1,
+              "end": null
+            },
+            "time_step_interval": [
+              100,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 10.1,
+            "time_step": 101,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "LongitudinalInteractiveInteractiveEvent",
+      "story": "Story",
+      "act": "Act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "InteractiveDriverLongitudinalCondition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 20.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 20.1,
+              "end": null
+            },
+            "time_step_interval": [
+              201,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 20.1,
+            "time_step": 201,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "BetterSloppyDriverEvent",
+      "story": "Story",
+      "act": "Act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "BetterSloppyDriverCondition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 30.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 30.1,
+              "end": null
+            },
+            "time_step_interval": [
+              301,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 30.1,
+            "time_step": 301,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "DefaultControllerEvent",
+      "story": "Story",
+      "act": "Act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "DefaultControllerCondition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 40.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 40.1,
+              "end": null
+            },
+            "time_step_interval": [
+              401,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 40.1,
+            "time_step": 401,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "ActStart",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "StopSimulationCondition",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 1200.1,
+          "end": null
+        },
+        "time_step_interval": [
+          12000,
+          null
+        ]
+      }
+    },
+    {
+      "name": "QuitWhenReachPositionCondition",
+      "translation": {
+        "status": "skipped",
+        "reason": "ReachPositionCondition \u2014 not yet handled"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 8,
+    "parsed_conditions": 8,
+    "source_types": {
+      "SimulationTimeCondition": 7,
+      "ReachPositionCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 8,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "traffic_lights",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/traffic_lights.xosc",
+  "generated_at": "2026-08-18T07:50:59+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 9,
+    "conditions": 9,
+    "translation_mapped": 2,
+    "translation_skipped": 6,
+    "interpretation_fired": 1,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "StopLightEvent",
+      "story": "DummyStory",
+      "act": "StopLightsAct",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "PositionCondition",
+          "type": "DistanceCondition",
+          "text": "Ego: distance to road 3 lane -1 at s=109.0 m \u2192 (13.0, -6.3) lessThan 50.0 m",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "DistanceCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 3.5,
+            "time_step": 35,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "StopLightEvent2",
+      "story": "DummyStory",
+      "act": "StopLightsAct",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "TrafficLightYellow",
+          "type": "TrafficSignalCondition",
+          "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)",
+          "edge": "none",
+          "delay_s": 3.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "DeclaredCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "StopLightEvent3",
+      "story": "DummyStory",
+      "act": "StopLightsAct",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "TrafficLightRed",
+          "type": "TrafficSignalCondition",
+          "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)",
+          "edge": "none",
+          "delay_s": 10.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "DeclaredCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "PedestrianLightEvent",
+      "story": "DummyStory",
+      "act": "StopLightsAct",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "TrafficLightRed",
+          "type": "TrafficSignalCondition",
+          "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)",
+          "edge": "none",
+          "delay_s": 3.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "DeclaredCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "PedestrianLightEvent2",
+      "story": "DummyStory",
+      "act": "StopLightsAct",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "TrafficLightRed2",
+          "type": "TrafficSignalCondition",
+          "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)",
+          "edge": "none",
+          "delay_s": 9.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "DeclaredCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "StopOnRedEvent",
+      "story": "DummyStory",
+      "act": "StopLightsAct",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "TrafficLightYellow",
+          "type": "TrafficSignalCondition",
+          "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "DeclaredCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "DriveOnGreenEvent",
+      "story": "DummyStory",
+      "act": "StopLightsAct",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "TrafficLightGreen",
+          "type": "TrafficSignalCondition",
+          "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)",
+          "edge": "rising",
+          "delay_s": 0.5,
+          "translation": {
+            "status": "skipped",
+            "reason": "DeclaredCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "WalkOnGreenEvent1",
+      "story": "DummyStory",
+      "act": "StopLightsAct",
+      "actors": [
+        "Pedestrian_1"
+      ],
+      "conditions": [
+        {
+          "name": "PedestrianLightGreen",
+          "type": "TrafficSignalCondition",
+          "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)",
+          "edge": "none",
+          "delay_s": 0.5,
+          "translation": {
+            "status": "skipped",
+            "reason": "DeclaredCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "WalkOnGreenEvent2",
+      "story": "DummyStory",
+      "act": "StopLightsAct",
+      "actors": [
+        "Pedestrian_2"
+      ],
+      "conditions": [
+        {
+          "name": "PedestrianLightGreen",
+          "type": "TrafficSignalCondition",
+          "text": "TrafficSignalCondition (declared, not evaluable \u2014 the converter does not carry esmini's traffic-signal state into the CommonRoad scenario)",
+          "edge": "none",
+          "delay_s": 1.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "DeclaredCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "StartTrigger",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "StopCondition",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 30.1,
+          "end": null
+        },
+        "time_step_interval": [
+          301,
+          null
+        ]
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 11,
+    "parsed_conditions": 11,
+    "source_types": {
+      "DistanceCondition": 1,
+      "TrafficSignalCondition": 8,
+      "SimulationTimeCondition": 2
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {
+      "TrafficSignalCondition": 8
+    },
+    "declared_conditions": 8,
+    "modelled_conditions": 3,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 27.3,
+    "declared_reasons": {
+      "TrafficSignalCondition": "the converter does not carry esmini's traffic-signal state into the CommonRoad scenario"
+    },
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

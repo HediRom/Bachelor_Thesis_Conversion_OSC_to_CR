@@ -1,0 +1,58 @@
+{
+ "scenario": "truck_with_rotating_axle",
+ "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/truck_with_rotating_axle",
+ "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/truck_with_rotating_axle.xosc",
+ "driver": "planner",
+ "dt": 0.1,
+ "id_to_name": {
+  "1": "Truck"
+ },
+ "ego": "Truck",
+ "entities": [
+  "Truck"
+ ],
+ "externalization": null,
+ "planner": {
+  "status": "failed",
+  "reason": "no lanelet network in the bundle \u2014 the planner has no reference path (see the bundle's road_network.error)"
+ },
+ "events": [],
+ "collisions": [],
+ "ego_trajectory": [],
+ "storyboard_elements": [],
+ "entity_trajectories": {},
+ "entity_shapes": {},
+ "esmini_conditions": [],
+ "shadow_conditions": [],
+ "timeline": {
+  "dt": 0.1,
+  "time_steps": [],
+  "conditions": [
+   {
+    "key": "::starttrigger::0",
+    "name": "starttrigger",
+    "type": "SimulationTimeCondition",
+    "story": "",
+    "act": "",
+    "event": "",
+    "scope": "storyboard_stop",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   }
+  ]
+ },
+ "differential": {
+  "summary": {
+   "compared": 0,
+   "agreement_pct": 0.0
+  },
+  "conditions": []
+ },
+ "unevaluable": [],
+ "written_to": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/truck_with_rotating_axle/cosim_trace_planner.json",
+ "commonroad": {}
+}

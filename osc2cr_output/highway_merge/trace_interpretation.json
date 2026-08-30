@@ -1,0 +1,14 @@
+[
+  {
+    "time_s": 7.0,
+    "time_step": 70,
+    "story": "Highway_Merge_Story",
+    "act": "Act1",
+    "event": "EgoLaneChangeEvent",
+    "actors": [
+      "Ego"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "targetspeedincrease": {
+    "story": "mystory",
+    "act": "my act",
+    "actors": [
+      "Target1"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "starttrigger",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 13.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "first_lane_change": {
+    "story": "mystory",
+    "act": "my act",
+    "actors": [
+      "Target1"
+    ],
+    "conditions": [
+      {
+        "type": "TimeHeadwayCondition",
+        "name": "redtrigger",
+        "delay_s": 0.2,
+        "edge": "rising",
+        "triggering_entity": "Ego",
+        "reference_entity": "Target1",
+        "value": 0.1,
+        "freespace": true,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "egospeedincrease": {
+    "story": "mystory",
+    "act": "my act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "starttrigger",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 13.0,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

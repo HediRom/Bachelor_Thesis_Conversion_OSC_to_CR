@@ -1,0 +1,147 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "pedestrian_collision",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/commonroad-openscenario-converter/scenarios/from_esmini/xosc/pedestrian_collision.xosc",
+  "generated_at": "2026-08-18T07:49:12+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 3,
+    "conditions": 3,
+    "translation_mapped": 1,
+    "translation_skipped": 4,
+    "interpretation_fired": 2,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "ped_walk_event",
+      "story": "LTAPStory",
+      "act": "LTAPActNPC",
+      "actors": [
+        "pedestrian_adult"
+      ],
+      "conditions": [
+        {
+          "name": "ped_walk_event",
+          "type": "EntityTraveledDistanceCondition",
+          "text": "Ego traveled distance  1.0 m",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "entity traveled distance \u2014 no CR goal analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 0.2,
+            "time_step": 2,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "ped_collide_event",
+      "story": "LTAPStory",
+      "act": "LTAPActNPC",
+      "actors": [
+        "pedestrian_adult"
+      ],
+      "conditions": [
+        {
+          "name": "ped_fall_condition",
+          "type": "CollisionCondition",
+          "text": "Ego collides with pedestrian_adult",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "CollisionCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 5.3,
+            "time_step": 53,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "ped_raise_event",
+      "story": "LTAPStory",
+      "act": "LTAPActNPC",
+      "actors": [
+        "pedestrian_adult"
+      ],
+      "conditions": [
+        {
+          "name": "ped_raise_condition",
+          "type": "StoryboardElementStateCondition",
+          "text": "action 'be_still_action' reaches state endTransition",
+          "edge": "rising",
+          "delay_s": 0.8,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "ActStartCondition",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "QuitCondition",
+      "translation": {
+        "status": "skipped",
+        "reason": "storyboard meta-condition \u2014 no CR analogue"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 5,
+    "parsed_conditions": 5,
+    "source_types": {
+      "TraveledDistanceCondition": 1,
+      "CollisionCondition": 1,
+      "StoryboardElementStateCondition": 2,
+      "SimulationTimeCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 5,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

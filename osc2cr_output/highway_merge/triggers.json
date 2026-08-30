@@ -1,0 +1,154 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "highway_merge",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/highway_merge.xosc",
+  "generated_at": "2026-08-18T07:46:13+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 3,
+    "conditions": 3,
+    "translation_mapped": 2,
+    "translation_skipped": 3,
+    "interpretation_fired": 1,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "EgoLaneChangeEvent",
+      "story": "Highway_Merge_Story",
+      "act": "Act1",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "EgoLaneChangeCondition",
+          "type": "ReachPositionCondition",
+          "text": "Ego reaches road 0 lane -3 at s=20.0 m \u2192 (27.8, 12.9) (tolerance 1.0 m)",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ReachPositionCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 7.0,
+            "time_step": 70,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "A2DistEvent",
+      "story": "Highway_Merge_Story",
+      "act": "Act1",
+      "actors": [
+        "A2"
+      ],
+      "conditions": [
+        {
+          "name": "A2DistCondition",
+          "type": "StoryboardElementStateCondition",
+          "text": "act 'Act1' reaches state startTransition",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "A3DistEvent",
+      "story": "Highway_Merge_Story",
+      "act": "Act1",
+      "actors": [
+        "A3"
+      ],
+      "conditions": [
+        {
+          "name": "A2DistCondition",
+          "type": "StoryboardElementStateCondition",
+          "text": "act 'Act1' reaches state startTransition",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "StopSimulationCondition",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 20.1,
+          "end": null
+        },
+        "time_step_interval": [
+          201,
+          null
+        ]
+      }
+    },
+    {
+      "name": "StoryBoardStopCondition",
+      "translation": {
+        "status": "skipped",
+        "reason": "ReachPositionCondition \u2014 not yet handled"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 6,
+    "parsed_conditions": 6,
+    "source_types": {
+      "ReachPositionCondition": 2,
+      "StoryboardElementStateCondition": 2,
+      "SimulationTimeCondition": 2
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 6,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

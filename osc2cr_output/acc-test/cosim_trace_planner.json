@@ -1,0 +1,144 @@
+{
+ "scenario": "acc-test",
+ "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/acc-test",
+ "xosc_path": "/home/hedi_rom/Bachelor_thesis/commonroad-openscenario-converter/scenarios/from_esmini/xosc/acc-test.xosc",
+ "driver": "planner",
+ "dt": 0.1,
+ "id_to_name": {
+  "4": "Ego",
+  "5": "Target"
+ },
+ "ego": "Ego",
+ "entities": [
+  "Ego",
+  "Target"
+ ],
+ "externalization": {
+  "ego": "Ego",
+  "xosc_out": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/acc-test/external/from_esmini/xosc/acc-test_external.xosc",
+  "controller_replaced": "UDPDriverController",
+  "activate_action_added": false,
+  "voided_maneuver_groups": [],
+  "absolutized_paths": 4
+ },
+ "planner": {
+  "status": "goal-already-satisfied"
+ },
+ "events": [],
+ "collisions": [],
+ "ego_trajectory": [],
+ "storyboard_elements": [],
+ "entity_trajectories": {},
+ "entity_shapes": {},
+ "steps": 0,
+ "esmini_conditions": [],
+ "shadow_conditions": [],
+ "timeline": {
+  "dt": 0.1,
+  "time_steps": [],
+  "conditions": [
+   {
+    "key": "CutInAndBrakeAct::CutInActStart::0",
+    "name": "CutInActStart",
+    "type": "SimulationTimeCondition",
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "",
+    "scope": "act_start",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "LaneChange1Event::LaneChange1Condition::1",
+    "name": "LaneChange1Condition",
+    "type": "SimulationTimeCondition",
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "LaneChange1Event",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "LaneChange2Event::LaneChange2Condition::2",
+    "name": "LaneChange2Condition",
+    "type": "SimulationTimeCondition",
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "LaneChange2Event",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "TargetBrakeEvent::BrakeCondition::3",
+    "name": "BrakeCondition",
+    "type": "SimulationTimeCondition",
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "TargetBrakeEvent",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "TargetAccelerateEvent::BrakeCondition::4",
+    "name": "BrakeCondition",
+    "type": "SimulationTimeCondition",
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "TargetAccelerateEvent",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "TargetBrake2Event::Brake2Condition::5",
+    "name": "Brake2Condition",
+    "type": "SimulationTimeCondition",
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "TargetBrake2Event",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   }
+  ]
+ },
+ "differential": {
+  "summary": {
+   "compared": 0,
+   "conclusive": 0,
+   "agreement_pct": null,
+   "divergent_declaring_delay": 0
+  },
+  "conditions": []
+ },
+ "unevaluable": [],
+ "written_to": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/acc-test/cosim_trace_planner.json",
+ "commonroad": {}
+}

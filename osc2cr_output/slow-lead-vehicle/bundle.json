@@ -1,0 +1,71 @@
+{
+  "name": "slow-lead-vehicle",
+  "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/slow-lead-vehicle.xosc",
+  "ok": true,
+  "error": null,
+  "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/slow-lead-vehicle",
+  "timings_s": {
+    "cr_conversion": 0.3221,
+    "storyboard_parse": 0.0011,
+    "strategy_transcription": 0.0,
+    "strategy_translation": 0.0,
+    "strategy_interpretation": 0.0,
+    "interpretation_replay": 0.0014,
+    "trigger_merge": 0.0002,
+    "timeline": 0.0014,
+    "write_embed": 0.0371,
+    "total": 0.3653,
+    "trigger_preservation": 0.0042
+  },
+  "discarded_cosim": [],
+  "stats": {
+    "dt": 0.1,
+    "obstacles": 2,
+    "lanelets": 0,
+    "time_steps": 114,
+    "duration_s": 11.3,
+    "events": 1,
+    "conditions": 1,
+    "translation_mapped": 1,
+    "translation_skipped": 2,
+    "interpretation_fired": 0,
+    "timeline_conditions": 3,
+    "entity_refs_resolved": 2,
+    "entity_refs_unresolved": [],
+    "coverage": {
+      "source_conditions": 3,
+      "parsed_conditions": 3,
+      "source_types": {
+        "TimeToCollisionCondition": 1,
+        "SimulationTimeCondition": 1,
+        "RelativeSpeedCondition": 1
+      },
+      "unsupported": {},
+      "unsupported_conditions": 0,
+      "declared_only": {},
+      "declared_conditions": 0,
+      "modelled_conditions": 3,
+      "preserved_pct": 100.0,
+      "evaluable_pct": 100.0,
+      "declared_reasons": {},
+      "events_without_trigger": [],
+      "unconditional_fires_possible": false
+    },
+    "road_network": {
+      "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m_signs.xodr",
+      "error": "'SWE'",
+      "repairs": []
+    },
+    "interpretation_fired_unconditional": 0
+  },
+  "files": {
+    "triggers_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/slow-lead-vehicle/triggers.json",
+    "conditions_transcription_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/slow-lead-vehicle/conditions_transcription.json",
+    "conditions_translation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/slow-lead-vehicle/conditions_translation.json",
+    "report_translation_txt": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/slow-lead-vehicle/report_translation.txt",
+    "trace_interpretation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/slow-lead-vehicle/trace_interpretation.json",
+    "timeline_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/slow-lead-vehicle/timeline.json",
+    "scenario_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/slow-lead-vehicle/scenario.xml",
+    "scenario_plain_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/slow-lead-vehicle/scenario_plain.xml"
+  }
+}

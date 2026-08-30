@@ -1,0 +1,187 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "highway_merge_advanced",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/highway_merge_advanced.xosc",
+  "generated_at": "2026-08-18T07:46:21+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 3,
+    "conditions": 5,
+    "translation_mapped": 2,
+    "translation_skipped": 5,
+    "interpretation_fired": 3,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "EgoLaneChangeEvent",
+      "story": "Highway_Merge_Story",
+      "act": "EgoAct",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "EgoLaneChangeCondition",
+          "type": "ReachPositionCondition",
+          "text": "Ego reaches road 0 lane -3 at s=20.0 m \u2192 (27.8, 12.9) (tolerance 1.0 m)",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ReachPositionCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "A3CloseEvent",
+      "story": "Highway_Merge_Story",
+      "act": "EgoAct",
+      "actors": [
+        "A3"
+      ],
+      "conditions": [
+        {
+          "name": "A3CloseGapStartCondition",
+          "type": "RelativeDistanceCondition",
+          "text": "A3 vs Ego: distance lessThan 3.25 m (lateral)",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        },
+        {
+          "name": "LongitudinalDistanceCondition",
+          "type": "RelativeDistanceCondition",
+          "text": "A3 vs Ego: distance lessThan 30.0 m (cartesianDistance) (freespace)",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "A3OpenEvent",
+      "story": "Highway_Merge_Story",
+      "act": "EgoAct",
+      "actors": [
+        "A3"
+      ],
+      "conditions": [
+        {
+          "name": "A3OpenGapStartCondition",
+          "type": "RelativeDistanceCondition",
+          "text": "A3 vs Ego: distance greaterThan 3.25 m (lateral)",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        },
+        {
+          "name": "LongitudinalDistanceCondition",
+          "type": "RelativeDistanceCondition",
+          "text": "A3 vs Ego: distance lessThan 30.0 m (cartesianDistance) (freespace)",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 0.1,
+            "time_step": 1,
+            "fire_count": 1
+          },
+          {
+            "time_s": 0.2,
+            "time_step": 2,
+            "fire_count": 2
+          },
+          {
+            "time_s": 0.3,
+            "time_step": 3,
+            "fire_count": 3
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "StopSimulationCondition",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 1200.1,
+          "end": null
+        },
+        "time_step_interval": [
+          12000,
+          null
+        ]
+      }
+    },
+    {
+      "name": "QuitCondition",
+      "translation": {
+        "status": "skipped",
+        "reason": "storyboard meta-condition \u2014 no CR analogue"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 8,
+    "parsed_conditions": 8,
+    "source_types": {
+      "ReachPositionCondition": 1,
+      "RelativeDistanceCondition": 4,
+      "SimulationTimeCondition": 2,
+      "StoryboardElementStateCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 8,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

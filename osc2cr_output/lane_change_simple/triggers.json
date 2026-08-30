@@ -1,0 +1,215 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "lane_change_simple",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/lane_change_simple.xosc",
+  "generated_at": "2026-08-18T07:47:11+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 6,
+    "conditions": 5,
+    "translation_mapped": 1,
+    "translation_skipped": 3,
+    "interpretation_fired": 2,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "Lane change event",
+      "story": "Lane change story",
+      "act": "Lane change act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "Lane change condition",
+          "type": "ReachPositionCondition",
+          "text": "Ego reaches road 0 lane -1 at s=50.0 m \u2192 (50.0, -1.5) (tolerance 1.0 m)",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ReachPositionCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 4.5,
+            "time_step": 45,
+            "fire_count": 1
+          },
+          {
+            "time_s": 37.2,
+            "time_step": 372,
+            "fire_count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "End Of Road teleport event",
+      "story": "Lane change story",
+      "act": "Lane change act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "End Of Road condition",
+          "type": "EndOfRoadCondition",
+          "text": "Ego: EndOfRoadCondition (declared, not evaluable \u2014 needs OpenDRIVE road topology; a CommonRoad lanelet network does not record where a road ends versus where the map is simply cut off)",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "DeclaredCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "End Of Road speed event",
+      "story": "Lane change story",
+      "act": "Lane change act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "End Of Road condition",
+          "type": "EndOfRoadCondition",
+          "text": "Ego: EndOfRoadCondition (declared, not evaluable \u2014 needs OpenDRIVE road topology; a CommonRoad lanelet network does not record where a road ends versus where the map is simply cut off)",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "DeclaredCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "Act 2 init event",
+      "story": "Lane change story",
+      "act": "Lane change act 2",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "Act 2 Lane change event",
+      "story": "Lane change story",
+      "act": "Lane change act 2",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "Lane change condition",
+          "type": "ReachPositionCondition",
+          "text": "Ego reaches road 0 lane -1 at s=50.0 m (tolerance 1.0 m)",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ReachPositionCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "Act 2 End Of Road teleport event",
+      "story": "Lane change story",
+      "act": "Lane change act 2",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "End Of Road condition",
+          "type": "EndOfRoadCondition",
+          "text": "Ego: EndOfRoadCondition (declared, not evaluable \u2014 needs OpenDRIVE road topology; a CommonRoad lanelet network does not record where a road ends versus where the map is simply cut off)",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "DeclaredCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "CutInActStart",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "QuitCondition",
+      "translation": {
+        "status": "skipped",
+        "reason": "storyboard meta-condition \u2014 no CR analogue"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 8,
+    "parsed_conditions": 8,
+    "source_types": {
+      "ReachPositionCondition": 2,
+      "EndOfRoadCondition": 3,
+      "SimulationTimeCondition": 1,
+      "StoryboardElementStateCondition": 2
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {
+      "EndOfRoadCondition": 3
+    },
+    "declared_conditions": 3,
+    "modelled_conditions": 5,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 62.5,
+    "declared_reasons": {
+      "EndOfRoadCondition": "needs OpenDRIVE road topology; a CommonRoad lanelet network does not record where a road ends versus where the map is simply cut off"
+    },
+    "events_without_trigger": [
+      "Act 2 init event"
+    ],
+    "unconditional_fires_possible": false
+  }
+}

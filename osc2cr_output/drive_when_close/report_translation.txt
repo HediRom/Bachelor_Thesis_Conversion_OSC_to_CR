@@ -1,0 +1,6 @@
+=== Translation Report ===
+Time goals (1):
+  'StopCondition' → time_step ∈ [401, 999999]  ([40.1, ∞])
+Skipped (2):
+  'DriveCondition' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'StopCondition' — ByEntity — needs runtime state comparison (→ Interpretation)

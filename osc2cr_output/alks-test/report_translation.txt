@@ -1,0 +1,10 @@
+=== Translation Report ===
+Time goals (6):
+  'CutInActStart' → time_step ∈ [1, 999999]  ([0.1, ∞])
+  'LaneChange1Condition' → time_step ∈ [50, 999999]  ([5.1, ∞])
+  'LaneChange2Condition' → time_step ∈ [70, 999999]  ([7.1, ∞])
+  'BrakeCondition' → time_step ∈ [110, 999999]  ([11.1, ∞])
+  'BrakeCondition' → time_step ∈ [171, 999999]  ([17.1, ∞])
+  'Brake2Condition' → time_step ∈ [201, 999999]  ([20.1, ∞])
+Skipped (1):
+  'ActStopCondition' — storyboard meta-condition — no CR analogue

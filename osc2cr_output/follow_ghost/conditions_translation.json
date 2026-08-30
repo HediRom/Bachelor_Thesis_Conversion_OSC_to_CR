@@ -1,0 +1,47 @@
+{
+  "LaneChangeCondition1": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 6.1,
+      "end": null
+    },
+    "time_step_interval": [
+      60,
+      999999
+    ]
+  },
+  "LaneChangeCondition2": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 9.1,
+      "end": null
+    },
+    "time_step_interval": [
+      90,
+      999999
+    ]
+  },
+  "SpeedCondition1": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 12.1,
+      "end": null
+    },
+    "time_step_interval": [
+      120,
+      999999
+    ]
+  },
+  "StopCondition": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "ActStart": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "FirstSpeedCondition": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  }
+}

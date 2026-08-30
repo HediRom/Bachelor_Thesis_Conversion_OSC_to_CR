@@ -1,0 +1,39 @@
+{
+  "ActStartCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.1,
+      "end": null
+    },
+    "time_step_interval": [
+      1,
+      999999
+    ]
+  },
+  "ped_follow_trajectory_condition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.1,
+      "end": null
+    },
+    "time_step_interval": [
+      1,
+      999999
+    ]
+  },
+  "drive_ManeuverCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.1,
+      "end": null
+    },
+    "time_step_interval": [
+      1,
+      999999
+    ]
+  },
+  "QuitCondition": {
+    "status": "skipped",
+    "reason": "ReachPositionCondition \u2014 not yet handled"
+  }
+}

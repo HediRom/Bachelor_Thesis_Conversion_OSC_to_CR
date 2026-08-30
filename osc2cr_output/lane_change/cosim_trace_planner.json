@@ -1,0 +1,150 @@
+{
+ "scenario": "lane_change",
+ "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane_change",
+ "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/lane_change.xosc",
+ "driver": "planner",
+ "dt": 0.1,
+ "id_to_name": {
+  "4": "Ego",
+  "5": "Truck"
+ },
+ "ego": "Ego",
+ "entities": [
+  "Ego",
+  "Truck"
+ ],
+ "externalization": null,
+ "planner": {
+  "status": "failed",
+  "reason": "planner setup failed (ValueError: Planner <commonroad_route_planner.planners.networkx.NetworkxRoutePlanner object at 0x7b5fb23b01d0> could not find a single route)"
+ },
+ "events": [],
+ "collisions": [],
+ "ego_trajectory": [],
+ "storyboard_elements": [],
+ "entity_trajectories": {},
+ "entity_shapes": {},
+ "esmini_conditions": [],
+ "shadow_conditions": [],
+ "timeline": {
+  "dt": 0.1,
+  "time_steps": [],
+  "conditions": [
+   {
+    "key": "Lane change act::CutInActStart::0",
+    "name": "CutInActStart",
+    "type": "SimulationTimeCondition",
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "event": "",
+    "scope": "act_start",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "Lane change Ego event::Lane change Ego condition::1",
+    "name": "Lane change Ego condition",
+    "type": "SimulationTimeCondition",
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "event": "Lane change Ego event",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "EgoGoOffRoadEvent::EgoGoOffRoadCondition::2",
+    "name": "EgoGoOffRoadCondition",
+    "type": "StoryboardElementStateCondition",
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "event": "EgoGoOffRoadEvent",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "EgoGoOnRoadEvent::EgoGoOnRoadCondition::3",
+    "name": "EgoGoOnRoadCondition",
+    "type": "OffroadCondition",
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "event": "EgoGoOnRoadEvent",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "Lane change Target event::Lane change Target condition::4",
+    "name": "Lane change Target condition",
+    "type": "ParameterCondition",
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "event": "Lane change Target event",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "Dummy parameter event::Lane change Target condition::5",
+    "name": "Lane change Target condition",
+    "type": "SimulationTimeCondition",
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "event": "Dummy parameter event",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "::QuitCondition::6",
+    "name": "QuitCondition",
+    "type": "StoryboardElementStateCondition",
+    "story": "",
+    "act": "",
+    "event": "",
+    "scope": "storyboard_stop",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   }
+  ]
+ },
+ "differential": {
+  "summary": {
+   "compared": 0,
+   "agreement_pct": 0.0
+  },
+  "conditions": []
+ },
+ "unevaluable": [],
+ "written_to": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/lane_change/cosim_trace_planner.json",
+ "commonroad": {}
+}

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<OpenSCENARIO>
+    <FileHeader revMajor="1" revMinor="1" date="2020-10-04T10:00:00" description="Just put a vehicle on the road and drive" author="esmini team" />
+    <ParameterDeclarations>
+        <ParameterDeclaration name="CarDimX" parameterType="double" value="5.0" />
+        <ParameterDeclaration name="CarDimY" parameterType="double" value="2.0" />
+    </ParameterDeclarations>
+    <CatalogLocations>
+        <VehicleCatalog>
+            <Directory path="/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/Catalogs/Vehicles" />
+        </VehicleCatalog>
+    </CatalogLocations>
+    <RoadNetwork>
+        <LogicFile filepath="/home/hedi_rom/Bachelor_thesis/esmini/resources/xodr/straight_500m.xodr" />
+    </RoadNetwork>
+    <Entities>
+        <ScenarioObject name="Ego">
+            <CatalogReference catalogName="VehicleCatalog" entryName="car_blue">
+                <ParameterAssignments>
+                    <ParameterAssignment parameterRef="DimX" value="$CarDimX" />
+                    <ParameterAssignment parameterRef="DimY" value="$CarDimY" />
+                </ParameterAssignments>
+            </CatalogReference>
+        <ObjectController><Controller name="osc2crExternalController"><Properties><Property name="esminiController" value="ExternalController" /><Property name="useGhost" value="false" /><Property name="mode" value="override" /></Properties></Controller></ObjectController></ScenarioObject>
+    </Entities>
+    <Storyboard>
+        <Init>
+            <Actions>
+                <Private entityRef="Ego">
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="1" laneId="-1" s="100.0" offset="0.0" />
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="linear" dynamicsDimension="time" value="0.0" />
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="${90.0/3.6}" />
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                <PrivateAction><ControllerAction><ActivateControllerAction longitudinal="true" lateral="true" /></ControllerAction></PrivateAction></Private>
+            </Actions>
+        </Init>
+        <Story name="story">
+            <Act name="MyAct">
+                <ManeuverGroup maximumExecutionCount="1" name="MG">
+                    <Actors selectTriggeringEntities="false" />
+                </ManeuverGroup>
+                <StartTrigger />
+            </Act>
+        </Story>
+        <StopTrigger>
+            <ConditionGroup>
+                <Condition name="StopSimulationCondition" delay="0" conditionEdge="rising">
+                    <ByValueCondition>
+                        <SimulationTimeCondition value="1200" rule="greaterThan" />
+                    </ByValueCondition>
+                </Condition>
+            </ConditionGroup>
+        </StopTrigger>
+    </Storyboard>
+</OpenSCENARIO>

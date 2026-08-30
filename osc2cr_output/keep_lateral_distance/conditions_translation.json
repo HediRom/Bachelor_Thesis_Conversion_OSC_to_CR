@@ -1,0 +1,55 @@
+{
+  "LateralDistanceActStart": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.1,
+      "end": null
+    },
+    "time_step_interval": [
+      1,
+      999999
+    ]
+  },
+  "LaneChange2StartCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 8.1,
+      "end": null
+    },
+    "time_step_interval": [
+      80,
+      999999
+    ]
+  },
+  "LateralDistanceStartCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 1.1,
+      "end": null
+    },
+    "time_step_interval": [
+      11,
+      999999
+    ]
+  },
+  "LaneChange1StartCondition": {
+    "status": "skipped",
+    "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+  },
+  "LaneChange3StartCondition": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "EgoLaneChangeCompleteCondition": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "EgoLaneChange3CompleteCondition": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "StopCondition": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  }
+}

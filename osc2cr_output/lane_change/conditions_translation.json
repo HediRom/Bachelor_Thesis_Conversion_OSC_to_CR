@@ -1,0 +1,40 @@
+{
+  "CutInActStart": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.1,
+      "end": null
+    },
+    "time_step_interval": [
+      1,
+      999999
+    ]
+  },
+  "Lane change Ego condition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 4.1,
+      "end": null
+    },
+    "time_step_interval": [
+      40,
+      999999
+    ]
+  },
+  "Lane change Target condition": {
+    "status": "skipped",
+    "reason": "ParameterCondition \u2014 not yet handled"
+  },
+  "EgoGoOffRoadCondition": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "EgoGoOnRoadCondition": {
+    "status": "skipped",
+    "reason": "DeclaredCondition \u2014 not yet handled"
+  },
+  "QuitCondition": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  }
+}

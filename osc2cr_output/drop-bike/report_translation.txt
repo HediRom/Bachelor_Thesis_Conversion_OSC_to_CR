@@ -1,0 +1,5 @@
+=== Translation Report ===
+Time goals (3):
+  'act_start' → time_step ∈ [1, 999999]  ([0.1, ∞])
+  'drop trigger' → time_step ∈ [50, 999999]  ([5.1, ∞])
+  'start_trigger ' → time_step ∈ [100, 999999]  ([10.1, ∞])

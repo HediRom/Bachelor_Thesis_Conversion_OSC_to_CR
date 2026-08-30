@@ -1,0 +1,13 @@
+diff --git a/osc_cr_converter/converter/osc2cr.py b/osc_cr_converter/converter/osc2cr.py
+index 008c9ec..5f51f86 100644
+--- a/osc_cr_converter/converter/osc2cr.py
++++ b/osc_cr_converter/converter/osc2cr.py
+@@ -101,7 +101,7 @@ class Osc2CrConverter(Converter):
+         self.odr_file_override: Optional[
+             str
+         ] = config.esmini.odr_file_override  # User-defined OpenDRIVE map to be used
+-        self.ego_filter: Optional[
++        self.ego_filter: Union[
+             re.Pattern, str
+         ] = config.esmini.ego_filter  # Pattern of recognizing the ego vehicle
+ 

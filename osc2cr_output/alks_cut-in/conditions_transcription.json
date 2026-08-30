@@ -1,0 +1,22 @@
+{
+  "CutInEvent": {
+    "story": "MyStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "TargetCutIn"
+    ],
+    "conditions": [
+      {
+        "type": "TimeToCollisionCondition",
+        "name": "CutInStartCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "triggering_entity": "Ego",
+        "reference_entity": "",
+        "value": 2.85,
+        "freespace": true,
+        "rule": "lessThan"
+      }
+    ]
+  }
+}

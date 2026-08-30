@@ -1,0 +1,71 @@
+{
+  "name": "cut-in_visibility",
+  "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/cut-in_visibility.xosc",
+  "ok": true,
+  "error": null,
+  "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_visibility",
+  "timings_s": {
+    "cr_conversion": 4.3254,
+    "storyboard_parse": 0.0019,
+    "strategy_transcription": 0.0,
+    "strategy_translation": 0.0,
+    "strategy_interpretation": 0.0,
+    "interpretation_replay": 0.0074,
+    "trigger_merge": 0.0005,
+    "timeline": 0.0052,
+    "write_embed": 1.5663,
+    "total": 5.9096,
+    "trigger_preservation": 0.0151
+  },
+  "discarded_cosim": [],
+  "stats": {
+    "dt": 0.1,
+    "obstacles": 2,
+    "lanelets": 6,
+    "time_steps": 226,
+    "duration_s": 22.5,
+    "events": 6,
+    "conditions": 6,
+    "translation_mapped": 4,
+    "translation_skipped": 4,
+    "interpretation_fired": 5,
+    "timeline_conditions": 8,
+    "entity_refs_resolved": 3,
+    "entity_refs_unresolved": [],
+    "coverage": {
+      "source_conditions": 8,
+      "parsed_conditions": 8,
+      "source_types": {
+        "StoryboardElementStateCondition": 2,
+        "TimeHeadwayCondition": 2,
+        "SimulationTimeCondition": 4
+      },
+      "unsupported": {},
+      "unsupported_conditions": 0,
+      "declared_only": {},
+      "declared_conditions": 0,
+      "modelled_conditions": 8,
+      "preserved_pct": 100.0,
+      "evaluable_pct": 100.0,
+      "declared_reasons": {},
+      "events_without_trigger": [],
+      "unconditional_fires_possible": false
+    },
+    "road_network": {
+      "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/e6mini.xodr",
+      "error": null,
+      "repairs": []
+    },
+    "interpretation_fired_unconditional": 0
+  },
+  "files": {
+    "triggers_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_visibility/triggers.json",
+    "conditions_transcription_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_visibility/conditions_transcription.json",
+    "conditions_translation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_visibility/conditions_translation.json",
+    "report_translation_txt": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_visibility/report_translation.txt",
+    "trace_interpretation_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_visibility/trace_interpretation.json",
+    "timeline_json": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_visibility/timeline.json",
+    "scenario_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_visibility/scenario.xml",
+    "scenario_plain_xml": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/cut-in_visibility/scenario_plain.xml"
+  }
+}

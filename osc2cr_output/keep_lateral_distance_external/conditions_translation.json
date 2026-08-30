@@ -1,0 +1,61 @@
+{
+  "LateralDistanceActStart": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.1,
+      "end": null
+    },
+    "time_step_interval": [
+      1,
+      999999
+    ]
+  },
+  "LateralDistanceStartCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 1.1,
+      "end": null
+    },
+    "time_step_interval": [
+      11,
+      999999
+    ]
+  },
+  "LateralDistanceSwitchSideCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 4.1,
+      "end": null
+    },
+    "time_step_interval": [
+      40,
+      999999
+    ]
+  },
+  "LateralDistanceFinalSnapCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 8.1,
+      "end": null
+    },
+    "time_step_interval": [
+      80,
+      999999
+    ]
+  },
+  "StopSimulationCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 20.1,
+      "end": null
+    },
+    "time_step_interval": [
+      201,
+      999999
+    ]
+  },
+  "StopCondition": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "time_s": 0.1,
+    "time_step": 1,
+    "story": "Highway_Merge_Story",
+    "act": "EgoAct",
+    "event": "A3OpenEvent",
+    "actors": [
+      "A3"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  },
+  {
+    "time_s": 0.2,
+    "time_step": 2,
+    "story": "Highway_Merge_Story",
+    "act": "EgoAct",
+    "event": "A3OpenEvent",
+    "actors": [
+      "A3"
+    ],
+    "fire_count": 2,
+    "unconditional": false
+  },
+  {
+    "time_s": 0.3,
+    "time_step": 3,
+    "story": "Highway_Merge_Story",
+    "act": "EgoAct",
+    "event": "A3OpenEvent",
+    "actors": [
+      "A3"
+    ],
+    "fire_count": 3,
+    "unconditional": false
+  }
+]

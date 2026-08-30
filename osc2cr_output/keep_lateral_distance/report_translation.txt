@@ -1,0 +1,11 @@
+=== Translation Report ===
+Time goals (3):
+  'LateralDistanceActStart' → time_step ∈ [1, 999999]  ([0.1, ∞])
+  'LaneChange2StartCondition' → time_step ∈ [80, 999999]  ([8.1, ∞])
+  'LateralDistanceStartCondition' → time_step ∈ [11, 999999]  ([1.1, ∞])
+Skipped (5):
+  'LaneChange1StartCondition' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'LaneChange3StartCondition' — storyboard meta-condition — no CR analogue
+  'EgoLaneChangeCompleteCondition' — storyboard meta-condition — no CR analogue
+  'EgoLaneChange3CompleteCondition' — storyboard meta-condition — no CR analogue
+  'StopCondition' — storyboard meta-condition — no CR analogue

@@ -1,0 +1,90 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "lane_change_crest",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/lane_change_crest.xosc",
+  "generated_at": "2026-08-18T07:47:06+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 1,
+    "conditions": 1,
+    "translation_mapped": 1,
+    "translation_skipped": 2,
+    "interpretation_fired": 1,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "LaneChangeEvent",
+      "story": "Lane change story",
+      "act": "Lane change act",
+      "actors": [
+        "Target2"
+      ],
+      "conditions": [
+        {
+          "name": "CutInStartCondition",
+          "type": "TimeHeadwayCondition",
+          "text": "Target1 vs Target2: headway greaterThan 0.25 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 4.5,
+            "time_step": 45,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "CutInActStart",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "StopTrigger",
+      "translation": {
+        "status": "skipped",
+        "reason": "ReachPositionCondition \u2014 not yet handled"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 3,
+    "parsed_conditions": 3,
+    "source_types": {
+      "TimeHeadwayCondition": 1,
+      "SimulationTimeCondition": 1,
+      "ReachPositionCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 3,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

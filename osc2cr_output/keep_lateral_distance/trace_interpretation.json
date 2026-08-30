@@ -1,0 +1,38 @@
+[
+  {
+    "time_s": 0.1,
+    "time_step": 1,
+    "story": "LateralDistanceStory",
+    "act": "LateralDistanceAct",
+    "event": "LaneChange1Event",
+    "actors": [
+      "Ego"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  },
+  {
+    "time_s": 1.1,
+    "time_step": 11,
+    "story": "LateralDistanceStory",
+    "act": "LateralDistanceAct",
+    "event": "LateralDistanceMaxSpeedEvent",
+    "actors": [
+      "OverTaker"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  },
+  {
+    "time_s": 8.1,
+    "time_step": 81,
+    "story": "LateralDistanceStory",
+    "act": "LateralDistanceAct",
+    "event": "LaneChange2Event",
+    "actors": [
+      "Ego"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

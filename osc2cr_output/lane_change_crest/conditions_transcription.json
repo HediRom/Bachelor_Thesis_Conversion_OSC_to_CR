@@ -1,0 +1,22 @@
+{
+  "LaneChangeEvent": {
+    "story": "Lane change story",
+    "act": "Lane change act",
+    "actors": [
+      "Target2"
+    ],
+    "conditions": [
+      {
+        "type": "TimeHeadwayCondition",
+        "name": "CutInStartCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "triggering_entity": "Target1",
+        "reference_entity": "Target2",
+        "value": 0.25,
+        "freespace": false,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

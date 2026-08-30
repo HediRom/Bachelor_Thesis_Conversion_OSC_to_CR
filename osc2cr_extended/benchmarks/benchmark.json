@@ -1,0 +1,5403 @@
+{
+  "schema": "osc2cr-benchmark/1",
+  "generated_at": "2026-08-18T08:07:05+00:00",
+  "environment": {
+    "python": "3.11.6",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "processor": "x86_64",
+    "dt": 0.1,
+    "repeat": 1,
+    "warmup_s": 5.215,
+    "isolated_subprocesses": true
+  },
+  "totals": {
+    "scenarios": 72,
+    "succeeded": 54,
+    "failed": 18,
+    "wall_clock_s": 292.28,
+    "cr_conversion_s": 247.52,
+    "trigger_preservation_s": 1.627,
+    "events": 135,
+    "conditions": 132,
+    "interpretation_fired": 77,
+    "interpretation_fired_unconditional": 3,
+    "source_conditions": 240,
+    "parsed_conditions": 239
+  },
+  "scenarios": [
+    {
+      "name": "acc-test",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 2,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 5,
+        "conditions": 5,
+        "translation_mapped": 5,
+        "translation_skipped": 0,
+        "interpretation_fired": 5,
+        "timeline_conditions": 6,
+        "entity_refs_resolved": 1,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 6,
+          "parsed_conditions": 6,
+          "source_types": {
+            "SimulationTimeCondition": 6
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 6,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/commonroad-openscenario-converter/scenarios/from_esmini/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 50.2437,
+        "cr_conversion": 49.8129,
+        "trigger_preservation": 0.0258,
+        "write_embed": 0.4002,
+        "storyboard_parse": 0.0016,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0142,
+        "trigger_merge": 0.0005,
+        "timeline": 0.0095
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.1,
+      "runs_s": [
+        {
+          "cr_conversion": 49.8129,
+          "storyboard_parse": 0.0016,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0142,
+          "trigger_merge": 0.0005,
+          "timeline": 0.0095,
+          "write_embed": 0.4002,
+          "total": 50.2437,
+          "trigger_preservation": 0.0258
+        }
+      ]
+    },
+    {
+      "name": "acc-toggle",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 2,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 4,
+        "conditions": 4,
+        "translation_mapped": 2,
+        "translation_skipped": 3,
+        "interpretation_fired": 3,
+        "timeline_conditions": 5,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 5,
+          "parsed_conditions": 5,
+          "source_types": {
+            "TimeHeadwayCondition": 2,
+            "SimulationTimeCondition": 2,
+            "EndOfRoadCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {
+            "EndOfRoadCondition": 1
+          },
+          "declared_conditions": 1,
+          "modelled_conditions": 4,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 80.0,
+          "declared_reasons": {
+            "EndOfRoadCondition": "needs OpenDRIVE road topology; a CommonRoad lanelet network does not record where a road ends versus where the map is simply cut off"
+          },
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/curves_elevation.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 3.1498,
+        "cr_conversion": 2.4803,
+        "trigger_preservation": 0.0244,
+        "write_embed": 0.6414,
+        "storyboard_parse": 0.0017,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0132,
+        "trigger_merge": 0.0005,
+        "timeline": 0.0089
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 1.0,
+      "runs_s": [
+        {
+          "cr_conversion": 2.4803,
+          "storyboard_parse": 0.0017,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0132,
+          "trigger_merge": 0.0005,
+          "timeline": 0.0089,
+          "write_embed": 0.6414,
+          "total": 3.1498,
+          "trigger_preservation": 0.0244
+        }
+      ]
+    },
+    {
+      "name": "alks-test",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 2,
+        "time_steps": 283,
+        "duration_s": 28.2,
+        "events": 5,
+        "conditions": 5,
+        "translation_mapped": 5,
+        "translation_skipped": 1,
+        "interpretation_fired": 5,
+        "timeline_conditions": 7,
+        "entity_refs_resolved": 1,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 7,
+          "parsed_conditions": 7,
+          "source_types": {
+            "SimulationTimeCondition": 6,
+            "StoryboardElementStateCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 7,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/curve_r100.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.5411,
+        "cr_conversion": 1.1491,
+        "trigger_preservation": 0.0149,
+        "write_embed": 0.3748,
+        "storyboard_parse": 0.0018,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.007,
+        "trigger_merge": 0.0006,
+        "timeline": 0.0054
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 1.3,
+      "runs_s": [
+        {
+          "cr_conversion": 1.1491,
+          "storyboard_parse": 0.0018,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.007,
+          "trigger_merge": 0.0006,
+          "timeline": 0.0054,
+          "write_embed": 0.3748,
+          "total": 1.5411,
+          "trigger_preservation": 0.0149
+        }
+      ]
+    },
+    {
+      "name": "alks_cut-in",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 4,
+        "time_steps": 101,
+        "duration_s": 10.0,
+        "events": 1,
+        "conditions": 1,
+        "translation_mapped": 1,
+        "translation_skipped": 1,
+        "interpretation_fired": 0,
+        "timeline_conditions": 2,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 2,
+          "parsed_conditions": 2,
+          "source_types": {
+            "TimeToCollisionCondition": 1,
+            "SimulationTimeCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 2,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.4307,
+        "cr_conversion": 1.0652,
+        "trigger_preservation": 0.0042,
+        "write_embed": 0.3592,
+        "storyboard_parse": 0.0012,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0013,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0012
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.4,
+      "runs_s": [
+        {
+          "cr_conversion": 1.0652,
+          "storyboard_parse": 0.0012,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0013,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0012,
+          "write_embed": 0.3592,
+          "total": 1.4307,
+          "trigger_preservation": 0.0042
+        }
+      ]
+    },
+    {
+      "name": "alks_cut-out",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 3,
+        "lanelets": 4,
+        "time_steps": 101,
+        "duration_s": 10.0,
+        "events": 1,
+        "conditions": 1,
+        "translation_mapped": 1,
+        "translation_skipped": 1,
+        "interpretation_fired": 1,
+        "timeline_conditions": 2,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 2,
+          "parsed_conditions": 2,
+          "source_types": {
+            "ReachPositionCondition": 1,
+            "SimulationTimeCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 2,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.4959,
+        "cr_conversion": 1.0914,
+        "trigger_preservation": 0.0227,
+        "write_embed": 0.3799,
+        "storyboard_parse": 0.0014,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0194,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0014
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 2.1,
+      "runs_s": [
+        {
+          "cr_conversion": 1.0914,
+          "storyboard_parse": 0.0014,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0194,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0014,
+          "write_embed": 0.3799,
+          "total": 1.4959,
+          "trigger_preservation": 0.0227
+        }
+      ]
+    },
+    {
+      "name": "alks_decelerate",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 4,
+        "time_steps": 101,
+        "duration_s": 10.0,
+        "events": 1,
+        "conditions": 1,
+        "translation_mapped": 2,
+        "translation_skipped": 0,
+        "interpretation_fired": 1,
+        "timeline_conditions": 2,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 2,
+          "parsed_conditions": 2,
+          "source_types": {
+            "SimulationTimeCondition": 2
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 2,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.4299,
+        "cr_conversion": 1.0545,
+        "trigger_preservation": 0.0039,
+        "write_embed": 0.3694,
+        "storyboard_parse": 0.0012,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0013,
+        "trigger_merge": 0.0002,
+        "timeline": 0.0011
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.4,
+      "runs_s": [
+        {
+          "cr_conversion": 1.0545,
+          "storyboard_parse": 0.0012,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0013,
+          "trigger_merge": 0.0002,
+          "timeline": 0.0011,
+          "write_embed": 0.3694,
+          "total": 1.4299,
+          "trigger_preservation": 0.0039
+        }
+      ]
+    },
+    {
+      "name": "alks_pedestrian",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 4,
+        "time_steps": 101,
+        "duration_s": 10.0,
+        "events": 1,
+        "conditions": 1,
+        "translation_mapped": 2,
+        "translation_skipped": 0,
+        "interpretation_fired": 1,
+        "timeline_conditions": 2,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 2,
+          "parsed_conditions": 2,
+          "source_types": {
+            "SimulationTimeCondition": 2
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 2,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.4773,
+        "cr_conversion": 1.0891,
+        "trigger_preservation": 0.0042,
+        "write_embed": 0.3821,
+        "storyboard_parse": 0.0012,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0014,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0012
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.4,
+      "runs_s": [
+        {
+          "cr_conversion": 1.0891,
+          "storyboard_parse": 0.0012,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0014,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0012,
+          "write_embed": 0.3821,
+          "total": 1.4773,
+          "trigger_preservation": 0.0042
+        }
+      ]
+    },
+    {
+      "name": "alks_r157_cut_in_quick_brake",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 4,
+        "time_steps": 100,
+        "duration_s": 9.9,
+        "events": 2,
+        "conditions": 2,
+        "translation_mapped": 2,
+        "translation_skipped": 3,
+        "interpretation_fired": 1,
+        "timeline_conditions": 5,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 5,
+          "parsed_conditions": 5,
+          "source_types": {
+            "SimulationTimeCondition": 2,
+            "StoryboardElementStateCondition": 2,
+            "CollisionCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 5,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.4543,
+        "cr_conversion": 1.0744,
+        "trigger_preservation": 0.0051,
+        "write_embed": 0.3727,
+        "storyboard_parse": 0.0014,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0016,
+        "trigger_merge": 0.0003,
+        "timeline": 0.0017
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.5,
+      "runs_s": [
+        {
+          "cr_conversion": 1.0744,
+          "storyboard_parse": 0.0014,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0016,
+          "trigger_merge": 0.0003,
+          "timeline": 0.0017,
+          "write_embed": 0.3727,
+          "total": 1.4543,
+          "trigger_preservation": 0.0051
+        }
+      ]
+    },
+    {
+      "name": "bicycle_fall_over",
+      "ok": false,
+      "error": "esmini produced no time steps, so every obstacle got an empty trajectory. Cause: its storyboard declares no <Act> (Init-only scenario), and the bundled esmini v2.29.3 quits such scenarios at t=0 (\"All acts are done, quit now\") instead of honouring the storyboard StopTrigger. The converter vendors esmini v2.29.3; this scenario needs a newer one. Nothing is wrong with the .xosc \u2014 it runs under the esmini checkout in esmini/bin.",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "car_walk",
+      "ok": false,
+      "error": "converter failed: SIMULATION_FAILED_CREATING_OUTPUT",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "controller_test",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 1,
+        "lanelets": 2,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 5,
+        "conditions": 5,
+        "translation_mapped": 7,
+        "translation_skipped": 1,
+        "interpretation_fired": 5,
+        "timeline_conditions": 8,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 8,
+          "parsed_conditions": 8,
+          "source_types": {
+            "SimulationTimeCondition": 7,
+            "ReachPositionCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 8,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/curve_r100.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.775,
+        "cr_conversion": 1.3534,
+        "trigger_preservation": 0.039,
+        "write_embed": 0.3803,
+        "storyboard_parse": 0.0016,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0128,
+        "trigger_merge": 0.0005,
+        "timeline": 0.024
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 2.9,
+      "runs_s": [
+        {
+          "cr_conversion": 1.3534,
+          "storyboard_parse": 0.0016,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0128,
+          "trigger_merge": 0.0005,
+          "timeline": 0.024,
+          "write_embed": 0.3803,
+          "total": 1.775,
+          "trigger_preservation": 0.039
+        }
+      ]
+    },
+    {
+      "name": "cut-in",
+      "ok": false,
+      "error": "esmini crashed the interpreter (SIGSEGV)",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "cut-in_cr",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 2,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 3,
+        "conditions": 2,
+        "translation_mapped": 1,
+        "translation_skipped": 3,
+        "interpretation_fired": 3,
+        "timeline_conditions": 4,
+        "entity_refs_resolved": 2,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 4,
+          "parsed_conditions": 4,
+          "source_types": {
+            "TimeHeadwayCondition": 2,
+            "SimulationTimeCondition": 1,
+            "StoryboardElementStateCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 4,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [
+            "OverTakerStartSpeedEvent"
+          ],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/curves_elevation.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 1
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 3.306,
+        "cr_conversion": 2.6254,
+        "trigger_preservation": 0.0198,
+        "write_embed": 0.6578,
+        "storyboard_parse": 0.0013,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0098,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0082
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.8,
+      "runs_s": [
+        {
+          "cr_conversion": 2.6254,
+          "storyboard_parse": 0.0013,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0098,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0082,
+          "write_embed": 0.6578,
+          "total": 3.306,
+          "trigger_preservation": 0.0198
+        }
+      ]
+    },
+    {
+      "name": "cut-in_environment",
+      "ok": false,
+      "error": "esmini crashed the interpreter (SIGSEGV)",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "cut-in_external",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 6,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 3,
+        "conditions": 3,
+        "translation_mapped": 2,
+        "translation_skipped": 4,
+        "interpretation_fired": 0,
+        "timeline_conditions": 6,
+        "entity_refs_resolved": 3,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 6,
+          "parsed_conditions": 6,
+          "source_types": {
+            "StoryboardElementStateCondition": 2,
+            "TimeHeadwayCondition": 2,
+            "SimulationTimeCondition": 2
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 6,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/e6mini.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 7.1268,
+        "cr_conversion": 5.4704,
+        "trigger_preservation": 0.0228,
+        "write_embed": 1.6308,
+        "storyboard_parse": 0.0015,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0108,
+        "trigger_merge": 0.0008,
+        "timeline": 0.0097
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.4,
+      "runs_s": [
+        {
+          "cr_conversion": 5.4704,
+          "storyboard_parse": 0.0015,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0108,
+          "trigger_merge": 0.0008,
+          "timeline": 0.0097,
+          "write_embed": 1.6308,
+          "total": 7.1268,
+          "trigger_preservation": 0.0228
+        }
+      ]
+    },
+    {
+      "name": "cut-in_interactive",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 6,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 3,
+        "conditions": 3,
+        "translation_mapped": 2,
+        "translation_skipped": 4,
+        "interpretation_fired": 0,
+        "timeline_conditions": 6,
+        "entity_refs_resolved": 3,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 6,
+          "parsed_conditions": 6,
+          "source_types": {
+            "StoryboardElementStateCondition": 2,
+            "TimeHeadwayCondition": 2,
+            "SimulationTimeCondition": 2
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 6,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/e6mini.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 7.0509,
+        "cr_conversion": 5.478,
+        "trigger_preservation": 0.0232,
+        "write_embed": 1.5466,
+        "storyboard_parse": 0.0016,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0107,
+        "trigger_merge": 0.0005,
+        "timeline": 0.0103
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.4,
+      "runs_s": [
+        {
+          "cr_conversion": 5.478,
+          "storyboard_parse": 0.0016,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0107,
+          "trigger_merge": 0.0005,
+          "timeline": 0.0103,
+          "write_embed": 1.5466,
+          "total": 7.0509,
+          "trigger_preservation": 0.0232
+        }
+      ]
+    },
+    {
+      "name": "cut-in_parameter_set",
+      "ok": false,
+      "error": "converter failed: SCENARIO_FILE_IS_PARAMETER_VALUE_DISTRIBUTION",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "cut-in_simple",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 2,
+        "time_steps": 102,
+        "duration_s": 10.1,
+        "events": 2,
+        "conditions": 2,
+        "translation_mapped": 2,
+        "translation_skipped": 3,
+        "interpretation_fired": 2,
+        "timeline_conditions": 5,
+        "entity_refs_resolved": 3,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 5,
+          "parsed_conditions": 5,
+          "source_types": {
+            "TimeHeadwayCondition": 2,
+            "SimulationTimeCondition": 2,
+            "AccelerationCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 5,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/commonroad-openscenario-converter/scenarios/from_esmini/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 0.8607,
+        "cr_conversion": 0.6586,
+        "trigger_preservation": 0.0057,
+        "write_embed": 0.1947,
+        "storyboard_parse": 0.0015,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0019,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0019
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.9,
+      "runs_s": [
+        {
+          "cr_conversion": 0.6586,
+          "storyboard_parse": 0.0015,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0019,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0019,
+          "write_embed": 0.1947,
+          "total": 0.8607,
+          "trigger_preservation": 0.0057
+        }
+      ]
+    },
+    {
+      "name": "cut-in_sloppy",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 6,
+        "time_steps": 276,
+        "duration_s": 27.5,
+        "events": 3,
+        "conditions": 3,
+        "translation_mapped": 1,
+        "translation_skipped": 4,
+        "interpretation_fired": 2,
+        "timeline_conditions": 5,
+        "entity_refs_resolved": 3,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 5,
+          "parsed_conditions": 5,
+          "source_types": {
+            "StoryboardElementStateCondition": 2,
+            "TimeHeadwayCondition": 2,
+            "SimulationTimeCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 5,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/e6mini.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 5.8329,
+        "cr_conversion": 4.3691,
+        "trigger_preservation": 0.0121,
+        "write_embed": 1.4494,
+        "storyboard_parse": 0.0018,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0054,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0044
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.3,
+      "runs_s": [
+        {
+          "cr_conversion": 4.3691,
+          "storyboard_parse": 0.0018,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0054,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0044,
+          "write_embed": 1.4494,
+          "total": 5.8329,
+          "trigger_preservation": 0.0121
+        }
+      ]
+    },
+    {
+      "name": "cut-in_sumo",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 8,
+        "lanelets": 6,
+        "time_steps": 401,
+        "duration_s": 40.0,
+        "events": 3,
+        "conditions": 3,
+        "translation_mapped": 2,
+        "translation_skipped": 1,
+        "interpretation_fired": 3,
+        "timeline_conditions": 5,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 5,
+          "parsed_conditions": 5,
+          "source_types": {
+            "SimulationTimeCondition": 4,
+            "TimeHeadwayCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 5,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/e6mini.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 16.2914,
+        "cr_conversion": 14.0893,
+        "trigger_preservation": 0.1405,
+        "write_embed": 2.055,
+        "storyboard_parse": 0.0017,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0001,
+        "strategy_interpretation": 0.0001,
+        "interpretation_replay": 0.1247,
+        "trigger_merge": 0.0006,
+        "timeline": 0.0133
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 1.0,
+      "runs_s": [
+        {
+          "cr_conversion": 14.0893,
+          "storyboard_parse": 0.0017,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0001,
+          "strategy_interpretation": 0.0001,
+          "interpretation_replay": 0.1247,
+          "trigger_merge": 0.0006,
+          "timeline": 0.0133,
+          "write_embed": 2.055,
+          "total": 16.2914,
+          "trigger_preservation": 0.1405
+        }
+      ]
+    },
+    {
+      "name": "cut-in_visibility",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 6,
+        "time_steps": 226,
+        "duration_s": 22.5,
+        "events": 6,
+        "conditions": 6,
+        "translation_mapped": 4,
+        "translation_skipped": 4,
+        "interpretation_fired": 5,
+        "timeline_conditions": 8,
+        "entity_refs_resolved": 3,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 8,
+          "parsed_conditions": 8,
+          "source_types": {
+            "StoryboardElementStateCondition": 2,
+            "TimeHeadwayCondition": 2,
+            "SimulationTimeCondition": 4
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 8,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/e6mini.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 5.9096,
+        "cr_conversion": 4.3254,
+        "trigger_preservation": 0.0151,
+        "write_embed": 1.5663,
+        "storyboard_parse": 0.0019,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0074,
+        "trigger_merge": 0.0005,
+        "timeline": 0.0052
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.3,
+      "runs_s": [
+        {
+          "cr_conversion": 4.3254,
+          "storyboard_parse": 0.0019,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0074,
+          "trigger_merge": 0.0005,
+          "timeline": 0.0052,
+          "write_embed": 1.5663,
+          "total": 5.9096,
+          "trigger_preservation": 0.0151
+        }
+      ]
+    },
+    {
+      "name": "distance_test",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 0,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 2,
+        "conditions": 1,
+        "translation_mapped": 1,
+        "translation_skipped": 2,
+        "interpretation_fired": 1,
+        "timeline_conditions": 3,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 3,
+          "parsed_conditions": 3,
+          "source_types": {
+            "ReachPositionCondition": 1,
+            "StoryboardElementStateCondition": 1,
+            "SimulationTimeCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 3,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [
+            "ContinuousDistEvent"
+          ],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m_signs.xodr",
+          "error": "'SWE'",
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 1
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.7121,
+        "cr_conversion": 1.3934,
+        "trigger_preservation": 0.0352,
+        "write_embed": 0.2809,
+        "storyboard_parse": 0.003,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0001,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0217,
+        "trigger_merge": 0.0008,
+        "timeline": 0.0096
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 2.5,
+      "runs_s": [
+        {
+          "cr_conversion": 1.3934,
+          "storyboard_parse": 0.003,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0001,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0217,
+          "trigger_merge": 0.0008,
+          "timeline": 0.0096,
+          "write_embed": 0.2809,
+          "total": 1.7121,
+          "trigger_preservation": 0.0352
+        }
+      ]
+    },
+    {
+      "name": "drive_when_close",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 4,
+        "time_steps": 401,
+        "duration_s": 40.0,
+        "events": 2,
+        "conditions": 2,
+        "translation_mapped": 0,
+        "translation_skipped": 2,
+        "interpretation_fired": 1,
+        "timeline_conditions": 3,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 3,
+          "parsed_conditions": 3,
+          "source_types": {
+            "RelativeDistanceCondition": 2,
+            "SimulationTimeCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 3,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 2.1114,
+        "cr_conversion": 1.6901,
+        "trigger_preservation": 0.0141,
+        "write_embed": 0.4042,
+        "storyboard_parse": 0.0014,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0067,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0055
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.8,
+      "runs_s": [
+        {
+          "cr_conversion": 1.6901,
+          "storyboard_parse": 0.0014,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0067,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0055,
+          "write_embed": 0.4042,
+          "total": 2.1114,
+          "trigger_preservation": 0.0141
+        }
+      ]
+    },
+    {
+      "name": "drop-bike",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 4,
+        "lanelets": 2,
+        "time_steps": 101,
+        "duration_s": 10.0,
+        "events": 1,
+        "conditions": 1,
+        "translation_mapped": 3,
+        "translation_skipped": 0,
+        "interpretation_fired": 1,
+        "timeline_conditions": 3,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 3,
+          "parsed_conditions": 3,
+          "source_types": {
+            "SimulationTimeCondition": 3
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 3,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/commonroad-openscenario-converter/scenarios/from_esmini/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 0.9912,
+        "cr_conversion": 0.7392,
+        "trigger_preservation": 0.0067,
+        "write_embed": 0.2433,
+        "storyboard_parse": 0.0019,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.002,
+        "trigger_merge": 0.0003,
+        "timeline": 0.0024
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.9,
+      "runs_s": [
+        {
+          "cr_conversion": 0.7392,
+          "storyboard_parse": 0.0019,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.002,
+          "trigger_merge": 0.0003,
+          "timeline": 0.0024,
+          "write_embed": 0.2433,
+          "total": 0.9912,
+          "trigger_preservation": 0.0067
+        }
+      ]
+    },
+    {
+      "name": "follow_ghost",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 6,
+        "time_steps": 196,
+        "duration_s": 19.5,
+        "events": 5,
+        "conditions": 5,
+        "translation_mapped": 3,
+        "translation_skipped": 3,
+        "interpretation_fired": 0,
+        "timeline_conditions": 7,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 7,
+          "parsed_conditions": 7,
+          "source_types": {
+            "StoryboardElementStateCondition": 3,
+            "SimulationTimeCondition": 4
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 7,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/e6mini.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 5.795,
+        "cr_conversion": 4.2652,
+        "trigger_preservation": 0.0086,
+        "write_embed": 1.5186,
+        "storyboard_parse": 0.0016,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0028,
+        "trigger_merge": 0.0005,
+        "timeline": 0.0035
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.2,
+      "runs_s": [
+        {
+          "cr_conversion": 4.2652,
+          "storyboard_parse": 0.0016,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0028,
+          "trigger_merge": 0.0005,
+          "timeline": 0.0035,
+          "write_embed": 1.5186,
+          "total": 5.795,
+          "trigger_preservation": 0.0086
+        }
+      ]
+    },
+    {
+      "name": "follow_reference",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 1,
+        "lanelets": 4,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 6,
+        "conditions": 5,
+        "translation_mapped": 1,
+        "translation_skipped": 6,
+        "interpretation_fired": 1,
+        "timeline_conditions": 8,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 8,
+          "parsed_conditions": 8,
+          "source_types": {
+            "SimulationTimeCondition": 2,
+            "StoryboardElementStateCondition": 6
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 8,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [
+            "EventSpeedChange1"
+          ],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 2.3257,
+        "cr_conversion": 1.9198,
+        "trigger_preservation": 0.0242,
+        "write_embed": 0.3791,
+        "storyboard_parse": 0.0015,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0128,
+        "trigger_merge": 0.0005,
+        "timeline": 0.0093
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 1.3,
+      "runs_s": [
+        {
+          "cr_conversion": 1.9198,
+          "storyboard_parse": 0.0015,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0128,
+          "trigger_merge": 0.0005,
+          "timeline": 0.0093,
+          "write_embed": 0.3791,
+          "total": 2.3257,
+          "trigger_preservation": 0.0242
+        }
+      ]
+    },
+    {
+      "name": "follow_reference_interactive",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 0,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 1,
+        "conditions": 1,
+        "translation_mapped": 2,
+        "translation_skipped": 0,
+        "interpretation_fired": 1,
+        "timeline_conditions": 2,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 2,
+          "parsed_conditions": 2,
+          "source_types": {
+            "SimulationTimeCondition": 2
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 2,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": null,
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.4398,
+        "cr_conversion": 1.1609,
+        "trigger_preservation": 0.0154,
+        "write_embed": 0.2612,
+        "storyboard_parse": 0.0012,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0075,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0063
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 1.3,
+      "runs_s": [
+        {
+          "cr_conversion": 1.1609,
+          "storyboard_parse": 0.0012,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0075,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0063,
+          "write_embed": 0.2612,
+          "total": 1.4398,
+          "trigger_preservation": 0.0154
+        }
+      ]
+    },
+    {
+      "name": "follow_trajectory_by_front_axle",
+      "ok": false,
+      "error": "esmini produced no time steps, so every obstacle got an empty trajectory. Cause: its storyboard declares no <Act> (Init-only scenario), and the bundled esmini v2.29.3 quits such scenarios at t=0 (\"All acts are done, quit now\") instead of honouring the storyboard StopTrigger. The converter vendors esmini v2.29.3; this scenario needs a newer one. Nothing is wrong with the .xosc \u2014 it runs under the esmini checkout in esmini/bin.",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "highway_driver",
+      "ok": false,
+      "error": "esmini produced no time steps, so every obstacle got an empty trajectory. Cause: its storyboard declares no <Act> (Init-only scenario), and the bundled esmini v2.29.3 quits such scenarios at t=0 (\"All acts are done, quit now\") instead of honouring the storyboard StopTrigger; it uses controller(s) NaturalDriver, added to esmini after the bundled v2.29.3. The converter vendors esmini v2.29.3; this scenario needs a newer one. Nothing is wrong with the .xosc \u2014 it runs under the esmini checkout in esmini/bin.",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "highway_merge",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 6,
+        "lanelets": 0,
+        "time_steps": 143,
+        "duration_s": 14.2,
+        "events": 3,
+        "conditions": 3,
+        "translation_mapped": 2,
+        "translation_skipped": 3,
+        "interpretation_fired": 1,
+        "timeline_conditions": 6,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 6,
+          "parsed_conditions": 6,
+          "source_types": {
+            "ReachPositionCondition": 2,
+            "StoryboardElementStateCondition": 2,
+            "SimulationTimeCondition": 2
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 6,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/soderleden.xodr",
+          "error": "int() argument must be a string, a bytes-like object or a real number, not 'NoneType'",
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 0.861,
+        "cr_conversion": 0.5439,
+        "trigger_preservation": 0.0884,
+        "write_embed": 0.2265,
+        "storyboard_parse": 0.002,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0807,
+        "trigger_merge": 0.0007,
+        "timeline": 0.005
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 16.3,
+      "runs_s": [
+        {
+          "cr_conversion": 0.5439,
+          "storyboard_parse": 0.002,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0807,
+          "trigger_merge": 0.0007,
+          "timeline": 0.005,
+          "write_embed": 0.2265,
+          "total": 0.861,
+          "trigger_preservation": 0.0884
+        }
+      ]
+    },
+    {
+      "name": "highway_merge_advanced",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 6,
+        "lanelets": 0,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 3,
+        "conditions": 5,
+        "translation_mapped": 2,
+        "translation_skipped": 5,
+        "interpretation_fired": 3,
+        "timeline_conditions": 8,
+        "entity_refs_resolved": 4,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 8,
+          "parsed_conditions": 8,
+          "source_types": {
+            "ReachPositionCondition": 1,
+            "RelativeDistanceCondition": 4,
+            "SimulationTimeCondition": 2,
+            "StoryboardElementStateCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 8,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/soderleden.xodr",
+          "error": "int() argument must be a string, a bytes-like object or a real number, not 'NoneType'",
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 4.4662,
+        "cr_conversion": 3.1956,
+        "trigger_preservation": 0.1185,
+        "write_embed": 1.1486,
+        "storyboard_parse": 0.0024,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0953,
+        "trigger_merge": 0.0007,
+        "timeline": 0.0201
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 3.7,
+      "runs_s": [
+        {
+          "cr_conversion": 3.1956,
+          "storyboard_parse": 0.0024,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0953,
+          "trigger_merge": 0.0007,
+          "timeline": 0.0201,
+          "write_embed": 1.1486,
+          "total": 4.4662,
+          "trigger_preservation": 0.1185
+        }
+      ]
+    },
+    {
+      "name": "keep_lateral_distance",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 6,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 6,
+        "conditions": 6,
+        "translation_mapped": 3,
+        "translation_skipped": 5,
+        "interpretation_fired": 3,
+        "timeline_conditions": 8,
+        "entity_refs_resolved": 1,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 8,
+          "parsed_conditions": 8,
+          "source_types": {
+            "RelativeDistanceCondition": 1,
+            "SimulationTimeCondition": 3,
+            "StoryboardElementStateCondition": 4
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 8,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/e6mini.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 7.4368,
+        "cr_conversion": 5.7394,
+        "trigger_preservation": 0.034,
+        "write_embed": 1.6601,
+        "storyboard_parse": 0.0027,
+        "strategy_transcription": 0.0001,
+        "strategy_translation": 0.0001,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.018,
+        "trigger_merge": 0.0006,
+        "timeline": 0.0126
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.6,
+      "runs_s": [
+        {
+          "cr_conversion": 5.7394,
+          "storyboard_parse": 0.0027,
+          "strategy_transcription": 0.0001,
+          "strategy_translation": 0.0001,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.018,
+          "trigger_merge": 0.0006,
+          "timeline": 0.0126,
+          "write_embed": 1.6601,
+          "total": 7.4368,
+          "trigger_preservation": 0.034
+        }
+      ]
+    },
+    {
+      "name": "keep_lateral_distance_external",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 6,
+        "time_steps": 131,
+        "duration_s": 13.0,
+        "events": 3,
+        "conditions": 3,
+        "translation_mapped": 5,
+        "translation_skipped": 1,
+        "interpretation_fired": 3,
+        "timeline_conditions": 6,
+        "entity_refs_resolved": 1,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 6,
+          "parsed_conditions": 6,
+          "source_types": {
+            "SimulationTimeCondition": 5,
+            "StoryboardElementStateCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 6,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/e6mini.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 5.4596,
+        "cr_conversion": 3.9609,
+        "trigger_preservation": 0.0067,
+        "write_embed": 1.4889,
+        "storyboard_parse": 0.0015,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0025,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0023
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.2,
+      "runs_s": [
+        {
+          "cr_conversion": 3.9609,
+          "storyboard_parse": 0.0015,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0025,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0023,
+          "write_embed": 1.4889,
+          "total": 5.4596,
+          "trigger_preservation": 0.0067
+        }
+      ]
+    },
+    {
+      "name": "lane-change_clothoid_based_trajectory",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 1,
+        "lanelets": 4,
+        "time_steps": 81,
+        "duration_s": 8.0,
+        "events": 3,
+        "conditions": 3,
+        "translation_mapped": 3,
+        "translation_skipped": 2,
+        "interpretation_fired": 1,
+        "timeline_conditions": 5,
+        "entity_refs_resolved": 1,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 5,
+          "parsed_conditions": 5,
+          "source_types": {
+            "SimulationTimeCondition": 3,
+            "StoryboardElementStateCondition": 2
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 5,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.4078,
+        "cr_conversion": 1.018,
+        "trigger_preservation": 0.0052,
+        "write_embed": 0.3828,
+        "storyboard_parse": 0.0016,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0019,
+        "trigger_merge": 0.0005,
+        "timeline": 0.0012
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.5,
+      "runs_s": [
+        {
+          "cr_conversion": 1.018,
+          "storyboard_parse": 0.0016,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0019,
+          "trigger_merge": 0.0005,
+          "timeline": 0.0012,
+          "write_embed": 0.3828,
+          "total": 1.4078,
+          "trigger_preservation": 0.0052
+        }
+      ]
+    },
+    {
+      "name": "lane-change_clothoid_spline_based_trajectory",
+      "ok": false,
+      "error": "converter failed: SIMULATION_FAILED_CREATING_OUTPUT",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "lane-change_trajectory_wp",
+      "ok": false,
+      "error": "esmini produced no time steps, so every obstacle got an empty trajectory. Cause: its storyboard declares no <Act> (Init-only scenario), and the bundled esmini v2.29.3 quits such scenarios at t=0 (\"All acts are done, quit now\") instead of honouring the storyboard StopTrigger. The converter vendors esmini v2.29.3; this scenario needs a newer one. Nothing is wrong with the .xosc \u2014 it runs under the esmini checkout in esmini/bin.",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "lane_change",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 2,
+        "time_steps": 171,
+        "duration_s": 17.0,
+        "events": 5,
+        "conditions": 5,
+        "translation_mapped": 2,
+        "translation_skipped": 4,
+        "interpretation_fired": 2,
+        "timeline_conditions": 7,
+        "entity_refs_resolved": 1,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 7,
+          "parsed_conditions": 7,
+          "source_types": {
+            "SimulationTimeCondition": 3,
+            "StoryboardElementStateCondition": 2,
+            "OffroadCondition": 1,
+            "ParameterCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {
+            "OffroadCondition": 1
+          },
+          "declared_conditions": 1,
+          "modelled_conditions": 6,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 85.7,
+          "declared_reasons": {
+            "OffroadCondition": "needs lane-level containment against the source OpenDRIVE, not the converted lanelets"
+          },
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/jolengatan.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.4205,
+        "cr_conversion": 1.111,
+        "trigger_preservation": 0.0099,
+        "write_embed": 0.2975,
+        "storyboard_parse": 0.0017,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0043,
+        "trigger_merge": 0.0006,
+        "timeline": 0.0032
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.9,
+      "runs_s": [
+        {
+          "cr_conversion": 1.111,
+          "storyboard_parse": 0.0017,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0043,
+          "trigger_merge": 0.0006,
+          "timeline": 0.0032,
+          "write_embed": 0.2975,
+          "total": 1.4205,
+          "trigger_preservation": 0.0099
+        }
+      ]
+    },
+    {
+      "name": "lane_change_crest",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 3,
+        "lanelets": 2,
+        "time_steps": 121,
+        "duration_s": 12.0,
+        "events": 1,
+        "conditions": 1,
+        "translation_mapped": 1,
+        "translation_skipped": 2,
+        "interpretation_fired": 1,
+        "timeline_conditions": 3,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 3,
+          "parsed_conditions": 3,
+          "source_types": {
+            "TimeHeadwayCondition": 1,
+            "SimulationTimeCondition": 1,
+            "ReachPositionCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 3,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/crest-curve.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.0204,
+        "cr_conversion": 0.7467,
+        "trigger_preservation": 0.0183,
+        "write_embed": 0.2532,
+        "storyboard_parse": 0.0015,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.002,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0143
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 2.5,
+      "runs_s": [
+        {
+          "cr_conversion": 0.7467,
+          "storyboard_parse": 0.0015,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.002,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0143,
+          "write_embed": 0.2532,
+          "total": 1.0204,
+          "trigger_preservation": 0.0183
+        }
+      ]
+    },
+    {
+      "name": "lane_change_simple",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 1,
+        "lanelets": 2,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 6,
+        "conditions": 5,
+        "translation_mapped": 1,
+        "translation_skipped": 3,
+        "interpretation_fired": 2,
+        "timeline_conditions": 8,
+        "entity_refs_resolved": 2,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 8,
+          "parsed_conditions": 8,
+          "source_types": {
+            "ReachPositionCondition": 2,
+            "EndOfRoadCondition": 3,
+            "SimulationTimeCondition": 1,
+            "StoryboardElementStateCondition": 2
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {
+            "EndOfRoadCondition": 3
+          },
+          "declared_conditions": 3,
+          "modelled_conditions": 5,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 62.5,
+          "declared_reasons": {
+            "EndOfRoadCondition": "needs OpenDRIVE road topology; a CommonRoad lanelet network does not record where a road ends versus where the map is simply cut off"
+          },
+          "events_without_trigger": [
+            "Act 2 init event"
+          ],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/curve_r100.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.8739,
+        "cr_conversion": 1.4026,
+        "trigger_preservation": 0.0358,
+        "write_embed": 0.4332,
+        "storyboard_parse": 0.0019,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0239,
+        "trigger_merge": 0.0007,
+        "timeline": 0.0093
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 2.6,
+      "runs_s": [
+        {
+          "cr_conversion": 1.4026,
+          "storyboard_parse": 0.0019,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0239,
+          "trigger_merge": 0.0007,
+          "timeline": 0.0093,
+          "write_embed": 0.4332,
+          "total": 1.8739,
+          "trigger_preservation": 0.0358
+        }
+      ]
+    },
+    {
+      "name": "left-hand-traffic_by_heading",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 6,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 1,
+        "conditions": 1,
+        "translation_mapped": 1,
+        "translation_skipped": 2,
+        "interpretation_fired": 1,
+        "timeline_conditions": 3,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 3,
+          "parsed_conditions": 3,
+          "source_types": {
+            "RelativeDistanceCondition": 1,
+            "SimulationTimeCondition": 1,
+            "StoryboardElementStateCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 3,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/e6mini.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 6.7441,
+        "cr_conversion": 5.0762,
+        "trigger_preservation": 0.0162,
+        "write_embed": 1.6485,
+        "storyboard_parse": 0.0012,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0072,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0074
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.3,
+      "runs_s": [
+        {
+          "cr_conversion": 5.0762,
+          "storyboard_parse": 0.0012,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0072,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0074,
+          "write_embed": 1.6485,
+          "total": 6.7441,
+          "trigger_preservation": 0.0162
+        }
+      ]
+    },
+    {
+      "name": "left-hand-traffic_using_road_rule",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 6,
+        "time_steps": 98,
+        "duration_s": 9.7,
+        "events": 1,
+        "conditions": 1,
+        "translation_mapped": 1,
+        "translation_skipped": 2,
+        "interpretation_fired": 1,
+        "timeline_conditions": 3,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 3,
+          "parsed_conditions": 3,
+          "source_types": {
+            "RelativeDistanceCondition": 1,
+            "SimulationTimeCondition": 1,
+            "StoryboardElementStateCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 3,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/e6mini-lht.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 5.6943,
+        "cr_conversion": 3.8352,
+        "trigger_preservation": 0.0053,
+        "write_embed": 1.8512,
+        "storyboard_parse": 0.0018,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0017,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0014
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.1,
+      "runs_s": [
+        {
+          "cr_conversion": 3.8352,
+          "storyboard_parse": 0.0018,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0017,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0014,
+          "write_embed": 1.8512,
+          "total": 5.6943,
+          "trigger_preservation": 0.0053
+        }
+      ]
+    },
+    {
+      "name": "light_state",
+      "ok": false,
+      "error": "converter failed: SIMULATION_FAILED_CREATING_OUTPUT",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "long_dist_action_with_jerk",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 3,
+        "lanelets": 4,
+        "time_steps": 201,
+        "duration_s": 20.0,
+        "events": 2,
+        "conditions": 2,
+        "translation_mapped": 2,
+        "translation_skipped": 2,
+        "interpretation_fired": 2,
+        "timeline_conditions": 4,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 4,
+          "parsed_conditions": 4,
+          "source_types": {
+            "RelativeDistanceCondition": 2,
+            "SimulationTimeCondition": 2
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 4,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.824,
+        "cr_conversion": 1.3631,
+        "trigger_preservation": 0.0091,
+        "write_embed": 0.4493,
+        "storyboard_parse": 0.0018,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0037,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0032
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.7,
+      "runs_s": [
+        {
+          "cr_conversion": 1.3631,
+          "storyboard_parse": 0.0018,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0037,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0032,
+          "write_embed": 0.4493,
+          "total": 1.824,
+          "trigger_preservation": 0.0091
+        }
+      ]
+    },
+    {
+      "name": "ltap-od-relative-speed",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 28,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 1,
+        "conditions": 1,
+        "translation_mapped": 2,
+        "translation_skipped": 2,
+        "interpretation_fired": 0,
+        "timeline_conditions": 4,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 4,
+          "parsed_conditions": 4,
+          "source_types": {
+            "StoryboardElementStateCondition": 1,
+            "SimulationTimeCondition": 2,
+            "ReachPositionCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 4,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/fabriksgatan.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 3.3809,
+        "cr_conversion": 2.6383,
+        "trigger_preservation": 0.0395,
+        "write_embed": 0.7,
+        "storyboard_parse": 0.0017,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0069,
+        "trigger_merge": 0.0006,
+        "timeline": 0.0301
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 1.5,
+      "runs_s": [
+        {
+          "cr_conversion": 2.6383,
+          "storyboard_parse": 0.0017,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0069,
+          "trigger_merge": 0.0006,
+          "timeline": 0.0301,
+          "write_embed": 0.7,
+          "total": 3.3809,
+          "trigger_preservation": 0.0395
+        }
+      ]
+    },
+    {
+      "name": "ltap-od",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 28,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 1,
+        "conditions": 1,
+        "translation_mapped": 2,
+        "translation_skipped": 2,
+        "interpretation_fired": 0,
+        "timeline_conditions": 4,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 5,
+          "parsed_conditions": 4,
+          "source_types": {
+            "StoryboardElementStateCondition": 2,
+            "SimulationTimeCondition": 2,
+            "SpeedCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 5,
+          "preserved_pct": 80.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/fabriksgatan.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 3.9971,
+        "cr_conversion": 3.3195,
+        "trigger_preservation": 0.0185,
+        "write_embed": 0.6551,
+        "storyboard_parse": 0.0016,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0078,
+        "trigger_merge": 0.0006,
+        "timeline": 0.0085
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.6,
+      "runs_s": [
+        {
+          "cr_conversion": 3.3195,
+          "storyboard_parse": 0.0016,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0078,
+          "trigger_merge": 0.0006,
+          "timeline": 0.0085,
+          "write_embed": 0.6551,
+          "total": 3.9971,
+          "trigger_preservation": 0.0185
+        }
+      ]
+    },
+    {
+      "name": "offroad_follower",
+      "ok": false,
+      "error": "esmini produced no time steps, so every obstacle got an empty trajectory. Cause: its storyboard declares no <Act> (Init-only scenario), and the bundled esmini v2.29.3 quits such scenarios at t=0 (\"All acts are done, quit now\") instead of honouring the storyboard StopTrigger. The converter vendors esmini v2.29.3; this scenario needs a newer one. Nothing is wrong with the .xosc \u2014 it runs under the esmini checkout in esmini/bin.",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "override_bb",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 1,
+        "lanelets": 4,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 0,
+        "conditions": 0,
+        "translation_mapped": 1,
+        "translation_skipped": 0,
+        "interpretation_fired": 0,
+        "timeline_conditions": 1,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 1,
+          "parsed_conditions": 1,
+          "source_types": {
+            "SimulationTimeCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 1,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 2.0767,
+        "cr_conversion": 1.6087,
+        "trigger_preservation": 0.0077,
+        "write_embed": 0.4576,
+        "storyboard_parse": 0.0011,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0028,
+        "trigger_merge": 0.0003,
+        "timeline": 0.0034
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.5,
+      "runs_s": [
+        {
+          "cr_conversion": 1.6087,
+          "storyboard_parse": 0.0011,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0028,
+          "trigger_merge": 0.0003,
+          "timeline": 0.0034,
+          "write_embed": 0.4576,
+          "total": 2.0767,
+          "trigger_preservation": 0.0077
+        }
+      ]
+    },
+    {
+      "name": "parking_lot",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 1,
+        "lanelets": 0,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 0,
+        "conditions": 0,
+        "translation_mapped": 2,
+        "translation_skipped": 0,
+        "interpretation_fired": 0,
+        "timeline_conditions": 2,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 2,
+          "parsed_conditions": 2,
+          "source_types": {
+            "SimulationTimeCondition": 2
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 2,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": null,
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 0.9502,
+        "cr_conversion": 0.7605,
+        "trigger_preservation": 0.0083,
+        "write_embed": 0.1793,
+        "storyboard_parse": 0.0008,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0025,
+        "trigger_merge": 0.0003,
+        "timeline": 0.0047
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 1.1,
+      "runs_s": [
+        {
+          "cr_conversion": 0.7605,
+          "storyboard_parse": 0.0008,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0025,
+          "trigger_merge": 0.0003,
+          "timeline": 0.0047,
+          "write_embed": 0.1793,
+          "total": 0.9502,
+          "trigger_preservation": 0.0083
+        }
+      ]
+    },
+    {
+      "name": "pedestrian",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 1,
+        "lanelets": 28,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 0,
+        "conditions": 0,
+        "translation_mapped": 0,
+        "translation_skipped": 0,
+        "interpretation_fired": 0,
+        "timeline_conditions": 0,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 0,
+          "parsed_conditions": 0,
+          "source_types": {},
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 0,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/commonroad-openscenario-converter/scenarios/from_esmini/xosc/../xodr/fabriksgatan.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 50.8483,
+        "cr_conversion": 50.2506,
+        "trigger_preservation": 0.0081,
+        "write_embed": 0.587,
+        "storyboard_parse": 0.0013,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0001,
+        "interpretation_replay": 0.0043,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0021
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": [
+        {
+          "cr_conversion": 50.2506,
+          "storyboard_parse": 0.0013,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0001,
+          "interpretation_replay": 0.0043,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0021,
+          "write_embed": 0.587,
+          "total": 50.8483,
+          "trigger_preservation": 0.0081
+        }
+      ]
+    },
+    {
+      "name": "pedestrian_collision",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 28,
+        "time_steps": 93,
+        "duration_s": 9.2,
+        "events": 3,
+        "conditions": 3,
+        "translation_mapped": 1,
+        "translation_skipped": 4,
+        "interpretation_fired": 2,
+        "timeline_conditions": 5,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 5,
+          "parsed_conditions": 5,
+          "source_types": {
+            "TraveledDistanceCondition": 1,
+            "CollisionCondition": 1,
+            "StoryboardElementStateCondition": 2,
+            "SimulationTimeCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 5,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/commonroad-openscenario-converter/scenarios/from_esmini/xosc/../xodr/fabriksgatan.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 2.0976,
+        "cr_conversion": 1.4944,
+        "trigger_preservation": 0.0081,
+        "write_embed": 0.5927,
+        "storyboard_parse": 0.0028,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0001,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0025,
+        "trigger_merge": 0.0006,
+        "timeline": 0.002
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.5,
+      "runs_s": [
+        {
+          "cr_conversion": 1.4944,
+          "storyboard_parse": 0.0028,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0001,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0025,
+          "trigger_merge": 0.0006,
+          "timeline": 0.002,
+          "write_embed": 0.5927,
+          "total": 2.0976,
+          "trigger_preservation": 0.0081
+        }
+      ]
+    },
+    {
+      "name": "pedestrian_traj_synch",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 28,
+        "time_steps": 107,
+        "duration_s": 10.6,
+        "events": 3,
+        "conditions": 2,
+        "translation_mapped": 3,
+        "translation_skipped": 1,
+        "interpretation_fired": 3,
+        "timeline_conditions": 4,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 4,
+          "parsed_conditions": 4,
+          "source_types": {
+            "SimulationTimeCondition": 3,
+            "ReachPositionCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 4,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [
+            "ped_synch_event"
+          ],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/fabriksgatan.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 1
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.8896,
+        "cr_conversion": 1.4305,
+        "trigger_preservation": 0.0071,
+        "write_embed": 0.4493,
+        "storyboard_parse": 0.0021,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0021,
+        "trigger_merge": 0.0007,
+        "timeline": 0.0021
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.5,
+      "runs_s": [
+        {
+          "cr_conversion": 1.4305,
+          "storyboard_parse": 0.0021,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0021,
+          "trigger_merge": 0.0007,
+          "timeline": 0.0021,
+          "write_embed": 0.4493,
+          "total": 1.8896,
+          "trigger_preservation": 0.0071
+        }
+      ]
+    },
+    {
+      "name": "routing-test",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 1,
+        "lanelets": 112,
+        "time_steps": 474,
+        "duration_s": 47.3,
+        "events": 2,
+        "conditions": 2,
+        "translation_mapped": 1,
+        "translation_skipped": 3,
+        "interpretation_fired": 2,
+        "timeline_conditions": 4,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 4,
+          "parsed_conditions": 4,
+          "source_types": {
+            "ReachPositionCondition": 2,
+            "SimulationTimeCondition": 1,
+            "StoryboardElementStateCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 4,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/multi_intersections.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 8.8749,
+        "cr_conversion": 6.6486,
+        "trigger_preservation": 0.1499,
+        "write_embed": 2.0731,
+        "storyboard_parse": 0.0015,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.142,
+        "trigger_merge": 0.0006,
+        "timeline": 0.0057
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 2.3,
+      "runs_s": [
+        {
+          "cr_conversion": 6.6486,
+          "storyboard_parse": 0.0015,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.142,
+          "trigger_merge": 0.0006,
+          "timeline": 0.0057,
+          "write_embed": 2.0731,
+          "total": 8.8749,
+          "trigger_preservation": 0.1499
+        }
+      ]
+    },
+    {
+      "name": "slow-lead-vehicle",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 0,
+        "time_steps": 114,
+        "duration_s": 11.3,
+        "events": 1,
+        "conditions": 1,
+        "translation_mapped": 1,
+        "translation_skipped": 2,
+        "interpretation_fired": 0,
+        "timeline_conditions": 3,
+        "entity_refs_resolved": 2,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 3,
+          "parsed_conditions": 3,
+          "source_types": {
+            "TimeToCollisionCondition": 1,
+            "SimulationTimeCondition": 1,
+            "RelativeSpeedCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 3,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m_signs.xodr",
+          "error": "'SWE'",
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 0.3653,
+        "cr_conversion": 0.3221,
+        "trigger_preservation": 0.0042,
+        "write_embed": 0.0371,
+        "storyboard_parse": 0.0011,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0014,
+        "trigger_merge": 0.0002,
+        "timeline": 0.0014
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 1.3,
+      "runs_s": [
+        {
+          "cr_conversion": 0.3221,
+          "storyboard_parse": 0.0011,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0014,
+          "trigger_merge": 0.0002,
+          "timeline": 0.0014,
+          "write_embed": 0.0371,
+          "total": 0.3653,
+          "trigger_preservation": 0.0042
+        }
+      ]
+    },
+    {
+      "name": "speed-profile",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 4,
+        "time_steps": 141,
+        "duration_s": 14.0,
+        "events": 2,
+        "conditions": 2,
+        "translation_mapped": 3,
+        "translation_skipped": 0,
+        "interpretation_fired": 2,
+        "timeline_conditions": 3,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 3,
+          "parsed_conditions": 3,
+          "source_types": {
+            "SimulationTimeCondition": 3
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 3,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.5483,
+        "cr_conversion": 1.1363,
+        "trigger_preservation": 0.0068,
+        "write_embed": 0.4028,
+        "storyboard_parse": 0.0014,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0021,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0028
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.6,
+      "runs_s": [
+        {
+          "cr_conversion": 1.1363,
+          "storyboard_parse": 0.0014,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0021,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0028,
+          "write_embed": 0.4028,
+          "total": 1.5483,
+          "trigger_preservation": 0.0068
+        }
+      ]
+    },
+    {
+      "name": "straight_500m",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 4,
+        "time_steps": 301,
+        "duration_s": 30.0,
+        "events": 0,
+        "conditions": 0,
+        "translation_mapped": 2,
+        "translation_skipped": 0,
+        "interpretation_fired": 0,
+        "timeline_conditions": 2,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 2,
+          "parsed_conditions": 2,
+          "source_types": {
+            "SimulationTimeCondition": 2
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 2,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 2.5084,
+        "cr_conversion": 1.8789,
+        "trigger_preservation": 0.0087,
+        "write_embed": 0.6164,
+        "storyboard_parse": 0.0014,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0025,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0043
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.5,
+      "runs_s": [
+        {
+          "cr_conversion": 1.8789,
+          "storyboard_parse": 0.0014,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0025,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0043,
+          "write_embed": 0.6164,
+          "total": 2.5084,
+          "trigger_preservation": 0.0087
+        }
+      ]
+    },
+    {
+      "name": "straight_500m_pedestrian",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 4,
+        "lanelets": 4,
+        "time_steps": 301,
+        "duration_s": 30.0,
+        "events": 0,
+        "conditions": 0,
+        "translation_mapped": 2,
+        "translation_skipped": 0,
+        "interpretation_fired": 0,
+        "timeline_conditions": 2,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 2,
+          "parsed_conditions": 2,
+          "source_types": {
+            "SimulationTimeCondition": 2
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 2,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/straight_500m.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 2.295,
+        "cr_conversion": 1.5879,
+        "trigger_preservation": 0.1056,
+        "write_embed": 0.5982,
+        "storyboard_parse": 0.0014,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0035,
+        "trigger_merge": 0.0004,
+        "timeline": 0.1003
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 6.7,
+      "runs_s": [
+        {
+          "cr_conversion": 1.5879,
+          "storyboard_parse": 0.0014,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0035,
+          "trigger_merge": 0.0004,
+          "timeline": 0.1003,
+          "write_embed": 0.5982,
+          "total": 2.295,
+          "trigger_preservation": 0.1056
+        }
+      ]
+    },
+    {
+      "name": "sumo-test",
+      "ok": false,
+      "error": "esmini produced no time steps, so every obstacle got an empty trajectory. Cause: its storyboard declares no <Act> (Init-only scenario), and the bundled esmini v2.29.3 quits such scenarios at t=0 (\"All acts are done, quit now\") instead of honouring the storyboard StopTrigger. The converter vendors esmini v2.29.3; this scenario needs a newer one. Nothing is wrong with the .xosc \u2014 it runs under the esmini checkout in esmini/bin.",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "swarm",
+      "ok": false,
+      "error": "esmini crashed the interpreter (SIGSEGV)",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "synch_with_steady_state",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 112,
+        "time_steps": 148,
+        "duration_s": 14.7,
+        "events": 2,
+        "conditions": 2,
+        "translation_mapped": 1,
+        "translation_skipped": 2,
+        "interpretation_fired": 0,
+        "timeline_conditions": 4,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 4,
+          "parsed_conditions": 4,
+          "source_types": {
+            "TimeToCollisionCondition": 1,
+            "StoryboardElementStateCondition": 1,
+            "SimulationTimeCondition": 1,
+            "ReachPositionCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 4,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/multi_intersections.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 8.3306,
+        "cr_conversion": 6.3082,
+        "trigger_preservation": 0.1458,
+        "write_embed": 1.8738,
+        "storyboard_parse": 0.0016,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0023,
+        "trigger_merge": 0.0004,
+        "timeline": 0.1414
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 2.3,
+      "runs_s": [
+        {
+          "cr_conversion": 6.3082,
+          "storyboard_parse": 0.0016,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0023,
+          "trigger_merge": 0.0004,
+          "timeline": 0.1414,
+          "write_embed": 1.8738,
+          "total": 8.3306,
+          "trigger_preservation": 0.1458
+        }
+      ]
+    },
+    {
+      "name": "synchronize",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 7,
+        "lanelets": 6,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 0,
+        "conditions": 0,
+        "translation_mapped": 2,
+        "translation_skipped": 2,
+        "interpretation_fired": 0,
+        "timeline_conditions": 4,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 4,
+          "parsed_conditions": 4,
+          "source_types": {
+            "SimulationTimeCondition": 2,
+            "TraveledDistanceCondition": 1,
+            "StandStillCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 4,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/e6mini.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 15.4429,
+        "cr_conversion": 12.9802,
+        "trigger_preservation": 0.0343,
+        "write_embed": 2.4214,
+        "storyboard_parse": 0.002,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.014,
+        "trigger_merge": 0.0007,
+        "timeline": 0.0174
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.3,
+      "runs_s": [
+        {
+          "cr_conversion": 12.9802,
+          "storyboard_parse": 0.002,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.014,
+          "trigger_merge": 0.0007,
+          "timeline": 0.0174,
+          "write_embed": 2.4214,
+          "total": 15.4429,
+          "trigger_preservation": 0.0343
+        }
+      ]
+    },
+    {
+      "name": "traffic_lights",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 3,
+        "lanelets": 28,
+        "time_steps": 301,
+        "duration_s": 30.0,
+        "events": 9,
+        "conditions": 9,
+        "translation_mapped": 2,
+        "translation_skipped": 6,
+        "interpretation_fired": 1,
+        "timeline_conditions": 11,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 11,
+          "parsed_conditions": 11,
+          "source_types": {
+            "DistanceCondition": 1,
+            "TrafficSignalCondition": 8,
+            "SimulationTimeCondition": 2
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {
+            "TrafficSignalCondition": 8
+          },
+          "declared_conditions": 8,
+          "modelled_conditions": 3,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 27.3,
+          "declared_reasons": {
+            "TrafficSignalCondition": "the converter does not carry esmini's traffic-signal state into the CommonRoad scenario"
+          },
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/fabriksgatan_traffic_lights.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 2.8833,
+        "cr_conversion": 2.3007,
+        "trigger_preservation": 0.0435,
+        "write_embed": 0.5353,
+        "storyboard_parse": 0.0029,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0324,
+        "trigger_merge": 0.0008,
+        "timeline": 0.0073
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 1.9,
+      "runs_s": [
+        {
+          "cr_conversion": 2.3007,
+          "storyboard_parse": 0.0029,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0324,
+          "trigger_merge": 0.0008,
+          "timeline": 0.0073,
+          "write_embed": 0.5353,
+          "total": 2.8833,
+          "trigger_preservation": 0.0435
+        }
+      ]
+    },
+    {
+      "name": "trailer_connect",
+      "ok": false,
+      "error": "converter failed: SIMULATION_FAILED_CREATING_OUTPUT",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "trailers",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 7,
+        "lanelets": 112,
+        "time_steps": 151,
+        "duration_s": 15.0,
+        "events": 0,
+        "conditions": 0,
+        "translation_mapped": 1,
+        "translation_skipped": 0,
+        "interpretation_fired": 0,
+        "timeline_conditions": 1,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 1,
+          "parsed_conditions": 1,
+          "source_types": {
+            "SimulationTimeCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 1,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/multi_intersections.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 8.6518,
+        "cr_conversion": 6.5072,
+        "trigger_preservation": 0.0088,
+        "write_embed": 2.1312,
+        "storyboard_parse": 0.0014,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0033,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0036
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.1,
+      "runs_s": [
+        {
+          "cr_conversion": 6.5072,
+          "storyboard_parse": 0.0014,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0033,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0036,
+          "write_embed": 2.1312,
+          "total": 8.6518,
+          "trigger_preservation": 0.0088
+        }
+      ]
+    },
+    {
+      "name": "trajectory-test",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 2,
+        "time_steps": 293,
+        "duration_s": 29.2,
+        "events": 4,
+        "conditions": 4,
+        "translation_mapped": 1,
+        "translation_skipped": 4,
+        "interpretation_fired": 1,
+        "timeline_conditions": 6,
+        "entity_refs_resolved": 1,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 6,
+          "parsed_conditions": 6,
+          "source_types": {
+            "TimeHeadwayCondition": 1,
+            "StoryboardElementStateCondition": 4,
+            "SimulationTimeCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 6,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/curves_elevation.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 2.1751,
+        "cr_conversion": 1.6852,
+        "trigger_preservation": 0.014,
+        "write_embed": 0.4734,
+        "storyboard_parse": 0.0021,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0063,
+        "trigger_merge": 0.0007,
+        "timeline": 0.0049
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.8,
+      "runs_s": [
+        {
+          "cr_conversion": 1.6852,
+          "storyboard_parse": 0.0021,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0063,
+          "trigger_merge": 0.0007,
+          "timeline": 0.0049,
+          "write_embed": 0.4734,
+          "total": 2.1751,
+          "trigger_preservation": 0.014
+        }
+      ]
+    },
+    {
+      "name": "truck_with_rotating_axle",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 1,
+        "lanelets": 0,
+        "time_steps": 381,
+        "duration_s": 38.0,
+        "events": 0,
+        "conditions": 0,
+        "translation_mapped": 1,
+        "translation_skipped": 0,
+        "interpretation_fired": 0,
+        "timeline_conditions": 1,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 1,
+          "parsed_conditions": 1,
+          "source_types": {
+            "SimulationTimeCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 1,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": null,
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 0.5346,
+        "cr_conversion": 0.4701,
+        "trigger_preservation": 0.0059,
+        "write_embed": 0.0566,
+        "storyboard_parse": 0.0008,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0021,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0025
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 1.3,
+      "runs_s": [
+        {
+          "cr_conversion": 0.4701,
+          "storyboard_parse": 0.0008,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0021,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0025,
+          "write_embed": 0.0566,
+          "total": 0.5346,
+          "trigger_preservation": 0.0059
+        }
+      ]
+    },
+    {
+      "name": "tunnels",
+      "ok": false,
+      "error": "esmini produced no time steps, so every obstacle got an empty trajectory. Cause: its storyboard declares no <Act> (Init-only scenario), and the bundled esmini v2.29.3 quits such scenarios at t=0 (\"All acts are done, quit now\") instead of honouring the storyboard StopTrigger. The converter vendors esmini v2.29.3; this scenario needs a newer one. Nothing is wrong with the .xosc \u2014 it runs under the esmini checkout in esmini/bin.",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "two_plus_one_road",
+      "ok": false,
+      "error": "converter failed: SIMULATION_FAILED_CREATING_OUTPUT",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "velodrome",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 3,
+        "lanelets": 3,
+        "time_steps": 466,
+        "duration_s": 46.5,
+        "events": 2,
+        "conditions": 2,
+        "translation_mapped": 0,
+        "translation_skipped": 3,
+        "interpretation_fired": 2,
+        "timeline_conditions": 3,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 3,
+          "parsed_conditions": 3,
+          "source_types": {
+            "TimeHeadwayCondition": 1,
+            "ReachPositionCondition": 2
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 3,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/../xodr/velodrome.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 5.5593,
+        "cr_conversion": 4.0778,
+        "trigger_preservation": 0.0555,
+        "write_embed": 1.4221,
+        "storyboard_parse": 0.0013,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0464,
+        "trigger_merge": 0.0004,
+        "timeline": 0.0073
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 1.4,
+      "runs_s": [
+        {
+          "cr_conversion": 4.0778,
+          "storyboard_parse": 0.0013,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0464,
+          "trigger_merge": 0.0004,
+          "timeline": 0.0073,
+          "write_embed": 1.4221,
+          "total": 5.5593,
+          "trigger_preservation": 0.0555
+        }
+      ]
+    },
+    {
+      "name": "drop-bike-udp",
+      "ok": false,
+      "error": "timed out after 900s",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "follow_trajectory",
+      "ok": false,
+      "error": "converter failed: SIMULATION_FAILED_CREATING_OUTPUT",
+      "stats": {},
+      "n_runs": 0,
+      "median_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.0,
+      "runs_s": []
+    },
+    {
+      "name": "pedestrian_collision_udp",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 28,
+        "time_steps": 600,
+        "duration_s": 59.9,
+        "events": 3,
+        "conditions": 3,
+        "translation_mapped": 1,
+        "translation_skipped": 4,
+        "interpretation_fired": 0,
+        "timeline_conditions": 5,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 5,
+          "parsed_conditions": 5,
+          "source_types": {
+            "TraveledDistanceCondition": 1,
+            "CollisionCondition": 1,
+            "StoryboardElementStateCondition": 2,
+            "SimulationTimeCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 5,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/commonroad-openscenario-converter/scenarios/from_esmini/xosc/../xodr/fabriksgatan.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 3.041,
+        "cr_conversion": 2.3461,
+        "trigger_preservation": 0.1051,
+        "write_embed": 0.5863,
+        "storyboard_parse": 0.0018,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0106,
+        "trigger_merge": 0.0006,
+        "timeline": 0.0921
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 4.5,
+      "runs_s": [
+        {
+          "cr_conversion": 2.3461,
+          "storyboard_parse": 0.0018,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0106,
+          "trigger_merge": 0.0006,
+          "timeline": 0.0921,
+          "write_embed": 0.5863,
+          "total": 3.041,
+          "trigger_preservation": 0.1051
+        }
+      ]
+    },
+    {
+      "name": "pedestrian_udp",
+      "ok": true,
+      "error": null,
+      "stats": {
+        "dt": 0.1,
+        "obstacles": 2,
+        "lanelets": 28,
+        "time_steps": 93,
+        "duration_s": 9.2,
+        "events": 3,
+        "conditions": 3,
+        "translation_mapped": 1,
+        "translation_skipped": 4,
+        "interpretation_fired": 2,
+        "timeline_conditions": 5,
+        "entity_refs_resolved": 0,
+        "entity_refs_unresolved": [],
+        "coverage": {
+          "source_conditions": 5,
+          "parsed_conditions": 5,
+          "source_types": {
+            "TraveledDistanceCondition": 1,
+            "CollisionCondition": 1,
+            "StoryboardElementStateCondition": 2,
+            "SimulationTimeCondition": 1
+          },
+          "unsupported": {},
+          "unsupported_conditions": 0,
+          "declared_only": {},
+          "declared_conditions": 0,
+          "modelled_conditions": 5,
+          "preserved_pct": 100.0,
+          "evaluable_pct": 100.0,
+          "declared_reasons": {},
+          "events_without_trigger": [],
+          "unconditional_fires_possible": false
+        },
+        "road_network": {
+          "xodr_file": "/home/hedi_rom/Bachelor_thesis/commonroad-openscenario-converter/scenarios/from_esmini/xosc/../xodr/fabriksgatan.xodr",
+          "error": null,
+          "repairs": []
+        },
+        "interpretation_fired_unconditional": 0
+      },
+      "n_runs": 1,
+      "median_s": {
+        "total": 1.8659,
+        "cr_conversion": 1.4234,
+        "trigger_preservation": 0.0063,
+        "write_embed": 0.4341,
+        "storyboard_parse": 0.0019,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0019,
+        "trigger_merge": 0.0005,
+        "timeline": 0.0019
+      },
+      "spread_s": {
+        "total": 0.0,
+        "cr_conversion": 0.0,
+        "trigger_preservation": 0.0,
+        "write_embed": 0.0,
+        "storyboard_parse": 0.0,
+        "strategy_transcription": 0.0,
+        "strategy_translation": 0.0,
+        "strategy_interpretation": 0.0,
+        "interpretation_replay": 0.0,
+        "trigger_merge": 0.0,
+        "timeline": 0.0
+      },
+      "overhead_pct": 0.4,
+      "runs_s": [
+        {
+          "cr_conversion": 1.4234,
+          "storyboard_parse": 0.0019,
+          "strategy_transcription": 0.0,
+          "strategy_translation": 0.0,
+          "strategy_interpretation": 0.0,
+          "interpretation_replay": 0.0019,
+          "trigger_merge": 0.0005,
+          "timeline": 0.0019,
+          "write_embed": 0.4341,
+          "total": 1.8659,
+          "trigger_preservation": 0.0063
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "SpeedEvent1": {
+    "story": "Story",
+    "act": "Act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "FirstSpeedCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "element_ref": "Story",
+        "element_type": "story",
+        "state": "runningState"
+      }
+    ]
+  },
+  "LaneChange1": {
+    "story": "Story",
+    "act": "Act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "LaneChangeCondition1",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 6.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "LaneChange2": {
+    "story": "Story",
+    "act": "Act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "LaneChangeCondition2",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 9.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "SpeedEvent2": {
+    "story": "Story",
+    "act": "Act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "SpeedCondition1",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 12.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "StopEvent": {
+    "story": "Story",
+    "act": "Act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "StopCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 15.0,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

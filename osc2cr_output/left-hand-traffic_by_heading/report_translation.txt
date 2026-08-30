@@ -1,0 +1,6 @@
+=== Translation Report ===
+Time goals (1):
+  'CutInActStart' → time_step ∈ [1, 999999]  ([0.1, ∞])
+Skipped (2):
+  'Lane change' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'QuitCondition' — storyboard meta-condition — no CR analogue

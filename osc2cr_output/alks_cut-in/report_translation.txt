@@ -1,0 +1,5 @@
+=== Translation Report ===
+Time goals (1):
+  'stop_trigger ' → time_step ∈ [100, 999999]  ([10.1, ∞])
+Skipped (1):
+  'CutInStartCondition' — ByEntity — needs runtime state comparison (→ Interpretation)

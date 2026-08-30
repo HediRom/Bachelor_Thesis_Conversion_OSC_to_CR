@@ -1,0 +1,13 @@
+{
+  "time_trigger": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 15.1,
+      "end": null
+    },
+    "time_step_interval": [
+      151,
+      999999
+    ]
+  }
+}

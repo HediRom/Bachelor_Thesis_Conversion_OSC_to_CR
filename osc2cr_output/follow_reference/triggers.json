@@ -1,0 +1,204 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "follow_reference",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/follow_reference.xosc",
+  "generated_at": "2026-08-18T07:45:50+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 6,
+    "conditions": 5,
+    "translation_mapped": 1,
+    "translation_skipped": 6,
+    "interpretation_fired": 1,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "Event1",
+      "story": "Story",
+      "act": "Act1",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "startTrigger1",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterOrEqual 0.0 s",
+          "edge": "none",
+          "delay_s": 2.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 0.0,
+              "end": null
+            },
+            "time_step_interval": [
+              0,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 0.0,
+            "time_step": 0,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Event2",
+      "story": "Story",
+      "act": "Act1",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "startTrigger2",
+          "type": "StoryboardElementStateCondition",
+          "text": "event 'Event1' reaches state endTransition",
+          "edge": "none",
+          "delay_s": 4.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "Event3",
+      "story": "Story",
+      "act": "Act1",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "startTrigger3",
+          "type": "StoryboardElementStateCondition",
+          "text": "event 'Event2' reaches state endTransition",
+          "edge": "none",
+          "delay_s": 2.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "Event4",
+      "story": "Story",
+      "act": "Act1",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "startTrigger4",
+          "type": "StoryboardElementStateCondition",
+          "text": "event 'Event3' reaches state endTransition",
+          "edge": "none",
+          "delay_s": 2.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "EventSpeedChange1",
+      "story": "Story",
+      "act": "Act2",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "EventSpeedChange2",
+      "story": "Story",
+      "act": "Act2",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "startTrigger6",
+          "type": "StoryboardElementStateCondition",
+          "text": "event 'EventSpeedChange1' reaches state endTransition",
+          "edge": "none",
+          "delay_s": 2.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "ActStartTrigger",
+      "translation": {
+        "status": "skipped",
+        "reason": "storyboard meta-condition \u2014 no CR analogue"
+      }
+    },
+    {
+      "name": "StopTrigger",
+      "translation": {
+        "status": "skipped",
+        "reason": "storyboard meta-condition \u2014 no CR analogue"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 8,
+    "parsed_conditions": 8,
+    "source_types": {
+      "SimulationTimeCondition": 2,
+      "StoryboardElementStateCondition": 6
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 8,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [
+      "EventSpeedChange1"
+    ],
+    "unconditional_fires_possible": false
+  }
+}

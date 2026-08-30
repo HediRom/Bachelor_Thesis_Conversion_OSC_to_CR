@@ -1,0 +1,21 @@
+{
+  "CutInActStart": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.1,
+      "end": null
+    },
+    "time_step_interval": [
+      1,
+      999999
+    ]
+  },
+  "CutInStartCondition": {
+    "status": "skipped",
+    "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+  },
+  "StopTrigger": {
+    "status": "skipped",
+    "reason": "ReachPositionCondition \u2014 not yet handled"
+  }
+}

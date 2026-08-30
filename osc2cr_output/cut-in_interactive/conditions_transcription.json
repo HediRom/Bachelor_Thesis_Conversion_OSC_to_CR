@@ -1,0 +1,60 @@
+{
+  "OverTakerStartSpeedEvent": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "OverTakerStartSpeedCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "element_ref": "CutInAndBrakeAct",
+        "element_type": "act",
+        "state": "startTransition"
+      }
+    ]
+  },
+  "CutInEvent": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "TimeHeadwayCondition",
+        "name": "CutInStartCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "triggering_entity": "Ego",
+        "reference_entity": "OverTaker",
+        "value": 0.4,
+        "freespace": false,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "OvertakerBrakeEvent": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "TimeHeadwayCondition",
+        "name": "BrakeCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "triggering_entity": "Ego",
+        "reference_entity": "OverTaker",
+        "value": 0.7,
+        "freespace": true,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

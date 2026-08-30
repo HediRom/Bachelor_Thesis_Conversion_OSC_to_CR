@@ -1,0 +1,76 @@
+{
+  "FollowTrajectoryPLineEvent": {
+    "story": "mystory",
+    "act": "my_act",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "TimeHeadwayCondition",
+        "name": "FollowTrajectoryPLineTrigger",
+        "delay_s": 0.2,
+        "edge": "rising",
+        "triggering_entity": "Target",
+        "reference_entity": "Ego",
+        "value": 0.5,
+        "freespace": false,
+        "rule": "lessThan"
+      }
+    ]
+  },
+  "FollowTrajectoryClothoidEvent": {
+    "story": "mystory",
+    "act": "my_act",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "FollowTrajectoryClothoidTrigger",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "element_ref": "FollowTrajectoryPLineEvent",
+        "element_type": "event",
+        "state": "endTransition"
+      }
+    ]
+  },
+  "FollowTrajectoryNurbsEvent": {
+    "story": "mystory",
+    "act": "my_act",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "FollowTrajectory2Trigger",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "element_ref": "FollowTrajectoryClothoidEvent",
+        "element_type": "event",
+        "state": "endTransition"
+      }
+    ]
+  },
+  "AlignEvent": {
+    "story": "mystory",
+    "act": "my_act",
+    "actors": [
+      "Target"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "AlignHeadingTrigger",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "element_ref": "FollowTrajectoryNurbsEvent",
+        "element_type": "event",
+        "state": "endTransition"
+      }
+    ]
+  }
+}

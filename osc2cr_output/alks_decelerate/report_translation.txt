@@ -1,0 +1,4 @@
+=== Translation Report ===
+Time goals (2):
+  'DecelerateTrigger ' → time_step ∈ [21, 999999]  ([2.1, ∞])
+  'start_trigger ' → time_step ∈ [100, 999999]  ([10.1, ∞])

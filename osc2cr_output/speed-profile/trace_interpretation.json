@@ -1,0 +1,26 @@
+[
+  {
+    "time_s": 2.0,
+    "time_step": 20,
+    "story": "SpeedProfileStory",
+    "act": "SpeedProfileAct",
+    "event": "SpeedProfileEvent1",
+    "actors": [
+      "Car1"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  },
+  {
+    "time_s": 2.0,
+    "time_step": 20,
+    "story": "SpeedProfileStory",
+    "act": "SpeedProfileAct",
+    "event": "SpeedProfileEvent",
+    "actors": [
+      "Car2"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

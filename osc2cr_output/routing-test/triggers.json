@@ -1,0 +1,121 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "routing-test",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/routing-test.xosc",
+  "generated_at": "2026-08-18T07:49:30+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 2,
+    "conditions": 2,
+    "translation_mapped": 1,
+    "translation_skipped": 3,
+    "interpretation_fired": 2,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "AquirePosition event",
+      "story": "Story",
+      "act": "AquirePosition act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "AquirePosition condition",
+          "type": "ReachPositionCondition",
+          "text": "Ego reaches road 197 lane -1 at s=20.0 m \u2192 (288.1, -32.0) (tolerance 2.0 m)",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ReachPositionCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 25.5,
+            "time_step": 255,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stop event",
+      "story": "Story",
+      "act": "AquirePosition act",
+      "actors": [
+        "Ego"
+      ],
+      "conditions": [
+        {
+          "name": "Stop condition",
+          "type": "ReachPositionCondition",
+          "text": "Ego reaches road 230 lane 1 at s=10.0 m \u2192 (531.9, -21.0) (tolerance 2.0 m)",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ReachPositionCondition \u2014 not yet handled"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 38.3,
+            "time_step": 383,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "AquirePosition act start condition",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "QuitCondition",
+      "translation": {
+        "status": "skipped",
+        "reason": "storyboard meta-condition \u2014 no CR analogue"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 4,
+    "parsed_conditions": 4,
+    "source_types": {
+      "ReachPositionCondition": 2,
+      "SimulationTimeCondition": 1,
+      "StoryboardElementStateCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 4,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

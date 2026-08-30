@@ -1,0 +1,14 @@
+[
+  {
+    "time_s": 2.1,
+    "time_step": 21,
+    "story": "LaneChangeStory",
+    "act": "LaneChangeAct",
+    "event": "LaneChangeEvent1",
+    "actors": [
+      "Car"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

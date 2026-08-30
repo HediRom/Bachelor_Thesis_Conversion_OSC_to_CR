@@ -1,0 +1,431 @@
+/* osc2cr interactive viewer — layout modelled on the TUM CommonRoad
+   Scenario Designer: map stage on the left, inspector on the right,
+   transport controls along the bottom. */
+
+:root {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --surface-2: #eef1f5;
+  --border: #d5dbe3;
+  --text: #1b2430;
+  --text-dim: #63707f;
+  --accent: #0a5cb8;
+  --accent-soft: #e3edfa;
+  --ego: #1565c0;
+  --actor: #e07b28;
+  --goal: #2e9e60;
+  --fire: #d63a3a;
+  --armed: #f0a92b;
+  --diff: #8e44c8;
+  --road: #dfe4ea;
+  --road-line: #b6bfcb;
+  --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12161c;
+    --surface: #1a2029;
+    --surface-2: #222a35;
+    --border: #2f3a48;
+    --text: #e6ecf3;
+    --text-dim: #93a1b1;
+    --accent: #5aa2ff;
+    --accent-soft: #1d2c42;
+    --ego: #62a8ff;
+    --actor: #ffa14a;
+    --goal: #4cc98a;
+    --fire: #ff6b6b;
+    --armed: #ffc357;
+    --diff: #c48dff;
+    --road: #2a323d;
+    --road-line: #454f5d;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* App shell: header / work area / transport.
+   The middle row is minmax(0, 1fr) rather than 1fr so it can shrink below its
+   content — a bare `1fr` track has an automatic minimum, which made the work
+   area refuse to shrink and overflow *underneath* the footer on small windows.
+   Every pane below sets min-height: 0 for the same reason: a grid/flex item
+   defaults to min-height:auto, so a child with overflow-y:auto grows instead of
+   scrolling. */
+body {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ---------------- top bar ---------------- */
+
+/* The header wraps, and on a narrow window that wrapping grew it from 69px to
+   218px — vertical space taken straight out of the map and the trigger panel.
+   Capping it keeps the work area usable; the controls scroll if they overflow. */
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  max-height: 25vh;
+  overflow-y: auto;
+}
+
+.brand { display: flex; flex-direction: column; line-height: 1.15; }
+.brand-mark { font-weight: 700; font-size: 16px; letter-spacing: -0.01em; }
+.brand-sub { font-size: 11px; color: var(--text-dim); }
+
+.controls { display: flex; align-items: flex-end; gap: 10px; flex-wrap: wrap; }
+
+.field { display: flex; flex-direction: column; gap: 3px; font-size: 11px; color: var(--text-dim); }
+.field select {
+  font: inherit;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 8px;
+  min-width: 180px;
+}
+
+.btn {
+  font: inherit;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.btn:hover:not(:disabled) { border-color: var(--accent); }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.btn-icon { padding: 6px 9px; }
+.btn-play { min-width: 42px; font-size: 15px; }
+
+.status {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--text-dim);
+  font-family: var(--mono);
+  max-width: 40ch;
+  text-align: right;
+}
+.status.busy { color: var(--accent); }
+.status.error { color: var(--fire); }
+
+/* ---------------- layout ---------------- */
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.stage { position: relative; min-width: 0; min-height: 0; background: var(--bg); }
+#scene { width: 100%; height: 100%; display: block; cursor: grab; }
+#scene.dragging { cursor: grabbing; }
+
+.legend, .hud {
+  position: absolute;
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 9px;
+  font-size: 11px;
+  font-family: var(--mono);
+  color: var(--text-dim);
+  pointer-events: none;
+}
+.legend { left: 12px; top: 12px; display: grid; gap: 3px; }
+.hud { right: 12px; bottom: 12px; }
+/* lifted when the divergence bar is showing, so neither is covered */
+.stage:has(.diffbar:not([hidden])) .hud { bottom: 58px; }
+.hud.warn {
+  color: var(--armed);
+  border-color: var(--armed);
+  cursor: help;
+  pointer-events: auto;
+}
+
+/* run switch — two mutually exclusive views of the same scenario */
+.runs {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  overflow: hidden;
+}
+.btn-run {
+  border: 0;
+  border-radius: 0;
+  min-width: 68px;
+  font-family: var(--mono);
+  font-size: 11px;
+}
+.btn-run + .btn-run { border-left: 1px solid var(--border); }
+.btn-run[aria-pressed="true"] {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+#run-cosim[aria-pressed="true"] { background: var(--diff); }
+
+/* live readout of how far the two runs have drifted apart */
+.diffbar {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 14px;
+  background: color-mix(in srgb, var(--surface) 95%, transparent);
+  border: 1px solid var(--diff);
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--text);
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.18);
+  pointer-events: none;
+  z-index: 4;
+}
+.diffbar[hidden] { display: none; }
+.diff-key {
+  font-weight: 600;
+  color: var(--ego);
+}
+.diff-key.alt { color: var(--diff); }
+
+.legend .swatch { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 6px; }
+
+/* ---------------- trigger panel ---------------- */
+
+.panel {
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.panel-head h2 { margin: 0; font-size: 14px; }
+
+.origin-badge {
+  font-size: 10px;
+  font-family: var(--mono);
+  color: var(--text-dim);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 8px;
+  cursor: help;
+}
+.origin-badge.stale {
+  color: var(--armed);
+  border-color: var(--armed);
+  background: color-mix(in srgb, var(--armed) 14%, transparent);
+}
+
+.stats {
+  padding: 8px 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.stat { text-align: center; }
+.stat b { display: block; font-size: 16px; font-variant-numeric: tabular-nums; }
+.stat span { font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; }
+
+.coverage-warn {
+  grid-column: 1 / -1;
+  margin-top: 4px;
+  font-size: 10.5px;
+  line-height: 1.35;
+  color: var(--armed);
+  background: color-mix(in srgb, var(--armed) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--armed) 40%, transparent);
+  border-radius: 6px;
+  padding: 5px 8px;
+}
+
+.triggers {
+  overflow-y: auto;
+  min-height: 0;          /* scroll instead of pushing the panel past the fold */
+  flex: 1 1 auto;
+  padding: 10px 12px 24px;
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.event {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-2);
+  padding: 9px 11px;
+}
+.event.fired-now { border-color: var(--fire); box-shadow: 0 0 0 2px color-mix(in srgb, var(--fire) 22%, transparent); }
+.event.has-fired { border-color: color-mix(in srgb, var(--fire) 45%, var(--border)); }
+
+.event-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.event-name { font-weight: 600; font-size: 13px; }
+.event-path { font-size: 10px; color: var(--text-dim); font-family: var(--mono); }
+.event-actors { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+
+.cond {
+  margin-top: 7px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--border);
+}
+.cond.holds { border-left-color: var(--goal); background: color-mix(in srgb, var(--goal) 8%, var(--surface)); }
+.cond.armed { border-left-color: var(--armed); }
+.cond-text { font-size: 12px; }
+.cond-meta { margin-top: 3px; display: flex; flex-wrap: wrap; gap: 4px; }
+
+.tag {
+  font-size: 9.5px;
+  font-family: var(--mono);
+  padding: 1px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+.tag.b { border-color: var(--accent); color: var(--accent); }
+.tag.translation { border-color: var(--goal); color: var(--goal); }
+.tag.translation-skip { border-color: var(--border); color: var(--text-dim); }
+.tag.interpretation { border-color: var(--fire); color: var(--fire); }
+.tag.live-true { background: var(--goal); border-color: var(--goal); color: #fff; }
+.tag.live-false { opacity: 0.55; }
+.tag.declared {
+  border-color: var(--armed);
+  color: var(--armed);
+  cursor: help;
+}
+
+.empty { color: var(--text-dim); font-size: 12px; padding: 16px 4px; text-align: center; }
+
+/* ---------------- timeline ---------------- */
+
+.timeline {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 8px 16px 10px;
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+  gap: 6px;
+  min-height: 0;
+  max-height: 34vh;
+  overflow: hidden;
+}
+
+/* The transport must survive any window size — it is how you play, step and
+   scrub. It wraps rather than letting its buttons be squeezed away. */
+.transport { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.transport .btn { flex: none; }
+.speed select { min-width: 72px; }
+.clock {
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 12px;
+  display: flex;
+  gap: 12px;
+  color: var(--text-dim);
+}
+#clock-time { color: var(--text); font-size: 13px; }
+
+.scrub { position: relative; display: grid; gap: 2px; }
+#scrub { width: 100%; accent-color: var(--accent); }
+.fires { width: 100%; height: 14px; display: block; }
+
+.strips {
+  overflow-y: auto;
+  min-height: 0;
+  display: grid;
+  gap: 3px;
+  align-content: start;
+  padding-right: 4px;
+}
+.strip-row { display: grid; grid-template-columns: 190px 1fr; align-items: center; gap: 8px; }
+.strip-label {
+  font-size: 11px;
+  font-family: var(--mono);
+  color: var(--text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.strip-row.active .strip-label { color: var(--goal); }
+.strip-canvas { width: 100%; height: 12px; display: block; border-radius: 3px; background: var(--surface-2); }
+
+@media (max-width: 1000px) {
+  /* Stacked: the map keeps a usable minimum and the panel takes what is left,
+     both able to shrink to zero rather than overflowing past the fold. */
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(140px, 1fr) minmax(0, 40vh);
+  }
+  .panel { border-left: none; border-top: 1px solid var(--border); }
+}
+
+/* Below this the app-shell model stops being honest: there is not enough room
+   for a map, an inspector and a transport at once. Let the page scroll, keep
+   the transport pinned to the bottom so play/step/scrub are always reachable,
+   and give each region a real height instead of a clipped one. */
+@media (max-height: 560px), (max-width: 720px) {
+  body { height: auto; min-height: 100vh; overflow-y: auto; }
+  .layout { grid-template-rows: auto auto; overflow: visible; }
+  .stage { height: 55vh; min-height: 260px; }
+  .panel { max-height: none; }
+  .triggers { overflow-y: visible; }
+  .topbar { max-height: none; overflow: visible; }
+  .timeline {
+    position: sticky;
+    bottom: 0;
+    z-index: 5;
+    max-height: 45vh;
+    box-shadow: 0 -4px 14px rgb(0 0 0 / 0.16);
+  }
+}
+
+/* how a trigger moved between the two runs */
+.tag.shift {
+  background: color-mix(in srgb, var(--diff) 18%, transparent);
+  border-color: var(--diff);
+  color: var(--diff);
+}
+.tag.shift-same {
+  border-color: var(--border);
+  color: var(--text-dim);
+}

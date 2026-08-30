@@ -1,0 +1,38 @@
+{
+  "ContinuousDistEvent": {
+    "story": "Story_DistTest",
+    "act": "Act_DistTest",
+    "actors": [
+      "Dummy"
+    ],
+    "conditions": []
+  },
+  "NonContinuousDistEvent": {
+    "story": "Story_DistTest",
+    "act": "Act_DistTest",
+    "actors": [
+      "Dummy"
+    ],
+    "conditions": [
+      {
+        "type": "ReachPositionCondition",
+        "name": "OverTakerStartSpeedCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "extension": true,
+        "entity_ref": "Ego",
+        "tolerance_m": 2.0,
+        "position": {
+          "kind": "LanePosition",
+          "x": 250.0,
+          "y": -1.534999966621399,
+          "road_id": 1,
+          "lane_id": -1,
+          "s": 250.0,
+          "resolved": true
+        },
+        "text": "Ego reaches road 1 lane -1 at s=250.0 m \u2192 (250.0, -1.5) (tolerance 2.0 m)"
+      }
+    ]
+  }
+}

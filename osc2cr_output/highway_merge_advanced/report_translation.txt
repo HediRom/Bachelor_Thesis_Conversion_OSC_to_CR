@@ -1,0 +1,11 @@
+=== Translation Report ===
+Time goals (2):
+  '' → time_step ∈ [1, 999999]  ([0.1, ∞])
+  'StopSimulationCondition' → time_step ∈ [12000, 999999]  ([1200.1, ∞])
+Skipped (6):
+  'EgoLaneChangeCondition' — ReachPositionCondition — not yet handled
+  'A3CloseGapStartCondition' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'LongitudinalDistanceCondition' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'A3OpenGapStartCondition' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'LongitudinalDistanceCondition' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'QuitCondition' — storyboard meta-condition — no CR analogue

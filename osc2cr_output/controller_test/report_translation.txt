@@ -1,0 +1,11 @@
+=== Translation Report ===
+Time goals (7):
+  'ActStart' → time_step ∈ [1, 999999]  ([0.1, ∞])
+  'SloppyDriverCondition' → time_step ∈ [21, 999999]  ([2.1, ∞])
+  'InteractiveDriverLateralCondition' → time_step ∈ [100, 999999]  ([10.1, ∞])
+  'InteractiveDriverLongitudinalCondition' → time_step ∈ [201, 999999]  ([20.1, ∞])
+  'BetterSloppyDriverCondition' → time_step ∈ [301, 999999]  ([30.1, ∞])
+  'DefaultControllerCondition' → time_step ∈ [401, 999999]  ([40.1, ∞])
+  'StopSimulationCondition' → time_step ∈ [12000, 999999]  ([1200.1, ∞])
+Skipped (1):
+  'QuitWhenReachPositionCondition' — ReachPositionCondition — not yet handled

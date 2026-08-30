@@ -1,0 +1,7 @@
+=== Translation Report ===
+Time goals (2):
+  'Synchronize_Condition' → time_step ∈ [1, 999999]  ([0.1, ∞])
+  'StopSimulationCondition' → time_step ∈ [12000, 999999]  ([1200.1, ∞])
+Skipped (2):
+  'EndCondition1' — entity traveled distance — no CR goal analogue
+  'EndCondition2' — StandStillCondition — not yet handled

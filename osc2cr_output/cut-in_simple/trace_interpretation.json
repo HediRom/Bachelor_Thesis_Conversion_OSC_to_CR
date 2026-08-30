@@ -1,0 +1,26 @@
+[
+  {
+    "time_s": 6.6,
+    "time_step": 66,
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "CutInEvent",
+    "actors": [
+      "OverTaker"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  },
+  {
+    "time_s": 9.1,
+    "time_step": 91,
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "event": "BrakeEvent",
+    "actors": [
+      "OverTaker"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

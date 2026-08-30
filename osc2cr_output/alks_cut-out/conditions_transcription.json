@@ -1,0 +1,30 @@
+{
+  "CutOutEvent": {
+    "story": "MyStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "TargetCutOut"
+    ],
+    "conditions": [
+      {
+        "type": "ReachPositionCondition",
+        "name": "CutOutStartCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "extension": true,
+        "entity_ref": "TargetCutOut",
+        "tolerance_m": 1.0,
+        "position": {
+          "kind": "LanePosition",
+          "x": 96.0,
+          "y": -1.534999966621399,
+          "road_id": 1,
+          "lane_id": -1,
+          "s": 96.0,
+          "resolved": true
+        },
+        "text": "TargetCutOut reaches road 1 lane -1 at s=96.0 m \u2192 (96.0, -1.5) (tolerance 1.0 m)"
+      }
+    ]
+  }
+}

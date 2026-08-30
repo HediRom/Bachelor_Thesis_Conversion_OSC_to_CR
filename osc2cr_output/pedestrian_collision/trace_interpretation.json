@@ -1,0 +1,26 @@
+[
+  {
+    "time_s": 0.2,
+    "time_step": 2,
+    "story": "LTAPStory",
+    "act": "LTAPActNPC",
+    "event": "ped_walk_event",
+    "actors": [
+      "pedestrian_adult"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  },
+  {
+    "time_s": 5.3,
+    "time_step": 53,
+    "story": "LTAPStory",
+    "act": "LTAPActNPC",
+    "event": "ped_collide_event",
+    "actors": [
+      "pedestrian_adult"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

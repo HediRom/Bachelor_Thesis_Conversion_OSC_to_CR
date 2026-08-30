@@ -1,0 +1,173 @@
+{
+ "scenario": "highway_merge_advanced",
+ "bundle_dir": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/highway_merge_advanced",
+ "xosc_path": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/highway_merge_advanced.xosc",
+ "driver": "planner",
+ "dt": 0.1,
+ "id_to_name": {
+  "1": "Ego",
+  "2": "A1",
+  "3": "A2",
+  "4": "A3",
+  "5": "A4",
+  "6": "A5"
+ },
+ "ego": "Ego",
+ "entities": [
+  "A1",
+  "A2",
+  "A3",
+  "A4",
+  "A5",
+  "Ego"
+ ],
+ "externalization": null,
+ "planner": {
+  "status": "failed",
+  "reason": "no lanelet network in the bundle \u2014 the planner has no reference path (see the bundle's road_network.error)"
+ },
+ "events": [],
+ "collisions": [],
+ "ego_trajectory": [],
+ "storyboard_elements": [],
+ "entity_trajectories": {},
+ "entity_shapes": {},
+ "esmini_conditions": [],
+ "shadow_conditions": [],
+ "timeline": {
+  "dt": 0.1,
+  "time_steps": [],
+  "conditions": [
+   {
+    "key": "EgoAct::SimulationTimeCondition::0",
+    "name": "SimulationTimeCondition",
+    "type": "SimulationTimeCondition",
+    "story": "Highway_Merge_Story",
+    "act": "EgoAct",
+    "event": "",
+    "scope": "act_start",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "EgoLaneChangeEvent::EgoLaneChangeCondition::1",
+    "name": "EgoLaneChangeCondition",
+    "type": "ReachPositionCondition",
+    "story": "Highway_Merge_Story",
+    "act": "EgoAct",
+    "event": "EgoLaneChangeEvent",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "A3CloseEvent::A3CloseGapStartCondition::2",
+    "name": "A3CloseGapStartCondition",
+    "type": "RelativeDistanceCondition",
+    "story": "Highway_Merge_Story",
+    "act": "EgoAct",
+    "event": "A3CloseEvent",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "A3CloseEvent::LongitudinalDistanceCondition::3",
+    "name": "LongitudinalDistanceCondition",
+    "type": "RelativeDistanceCondition",
+    "story": "Highway_Merge_Story",
+    "act": "EgoAct",
+    "event": "A3CloseEvent",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "A3OpenEvent::A3OpenGapStartCondition::4",
+    "name": "A3OpenGapStartCondition",
+    "type": "RelativeDistanceCondition",
+    "story": "Highway_Merge_Story",
+    "act": "EgoAct",
+    "event": "A3OpenEvent",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "A3OpenEvent::LongitudinalDistanceCondition::5",
+    "name": "LongitudinalDistanceCondition",
+    "type": "RelativeDistanceCondition",
+    "story": "Highway_Merge_Story",
+    "act": "EgoAct",
+    "event": "A3OpenEvent",
+    "scope": "event",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "::QuitCondition::6",
+    "name": "QuitCondition",
+    "type": "StoryboardElementStateCondition",
+    "story": "",
+    "act": "",
+    "event": "",
+    "scope": "storyboard_stop",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   },
+   {
+    "key": "::StopSimulationCondition::7",
+    "name": "StopSimulationCondition",
+    "type": "SimulationTimeCondition",
+    "story": "",
+    "act": "",
+    "event": "",
+    "scope": "storyboard_stop",
+    "values": [],
+    "first_true_step": null,
+    "true_steps": 0,
+    "evaluable": true,
+    "text": null,
+    "unevaluable_reason": null
+   }
+  ]
+ },
+ "differential": {
+  "summary": {
+   "compared": 0,
+   "agreement_pct": 0.0
+  },
+  "conditions": []
+ },
+ "unevaluable": [],
+ "written_to": "/home/hedi_rom/Bachelor_thesis/osc2cr_output/highway_merge_advanced/cosim_trace_planner.json",
+ "commonroad": {}
+}

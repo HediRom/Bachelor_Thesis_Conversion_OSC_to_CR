@@ -1,0 +1,62 @@
+{
+  "CutInActStart": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 0.1,
+      "end": null
+    },
+    "time_step_interval": [
+      1,
+      999999
+    ]
+  },
+  "VisibilityHideForSensorsCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 4.1,
+      "end": null
+    },
+    "time_step_interval": [
+      40,
+      999999
+    ]
+  },
+  "VisibilityHideCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 7.1,
+      "end": null
+    },
+    "time_step_interval": [
+      70,
+      999999
+    ]
+  },
+  "VisibilityReappearCondition": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 10.1,
+      "end": null
+    },
+    "time_step_interval": [
+      100,
+      999999
+    ]
+  },
+  "OverTakerStartSpeedCondition": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  },
+  "CutInStartCondition": {
+    "status": "skipped",
+    "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+  },
+  "BrakeCondition": {
+    "status": "skipped",
+    "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+  },
+  "ActStopCondition": {
+    "status": "skipped",
+    "reason": "storyboard meta-condition \u2014 no CR analogue"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "LaneChange1Event": {
+    "story": "LateralDistanceStory",
+    "act": "LateralDistanceAct",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "RelativeDistanceCondition",
+        "name": "LaneChange1StartCondition",
+        "delay_s": 1.0,
+        "edge": "none",
+        "triggering_entity": "Ego",
+        "reference_entity": "OverTaker",
+        "distance_type": "lateral",
+        "value": 0.6,
+        "freespace": true,
+        "rule": "lessThan"
+      }
+    ]
+  },
+  "LaneChange2Event": {
+    "story": "LateralDistanceStory",
+    "act": "LateralDistanceAct",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "LaneChange2StartCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 8.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "LaneChange3Event": {
+    "story": "LateralDistanceStory",
+    "act": "LateralDistanceAct",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "LaneChange3StartCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "element_ref": "LaneChange2Maneuver",
+        "element_type": "maneuver",
+        "state": "endTransition"
+      }
+    ]
+  },
+  "LateralDistanceMaxSpeedEvent": {
+    "story": "LateralDistanceStory",
+    "act": "LateralDistanceAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "LateralDistanceStartCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 1.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "LateralDistanceMaxSpeedAndAccEvent": {
+    "story": "LateralDistanceStory",
+    "act": "LateralDistanceAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "EgoLaneChangeCompleteCondition",
+        "delay_s": 1.0,
+        "edge": "none",
+        "element_ref": "LaneChange1Event",
+        "element_type": "event",
+        "state": "endTransition"
+      }
+    ]
+  },
+  "LateralDistanceMaxAccEvent": {
+    "story": "LateralDistanceStory",
+    "act": "LateralDistanceAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "EgoLaneChange3CompleteCondition",
+        "delay_s": 3.0,
+        "edge": "none",
+        "element_ref": "LaneChange3Maneuver",
+        "element_type": "maneuver",
+        "state": "endTransition"
+      }
+    ]
+  }
+}

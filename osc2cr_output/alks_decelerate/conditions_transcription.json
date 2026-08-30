@@ -1,0 +1,19 @@
+{
+  "DecelerateEvent": {
+    "story": "MyStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "TargetDecelerate"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "DecelerateTrigger ",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 2.0,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

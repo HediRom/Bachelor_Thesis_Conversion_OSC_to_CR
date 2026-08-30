@@ -1,0 +1,44 @@
+{
+  "Egoevent": {
+    "story": "story_act",
+    "act": "act",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "RelativeDistanceCondition",
+        "name": "triggerEgo",
+        "delay_s": 0.0,
+        "edge": "none",
+        "triggering_entity": "Ego",
+        "reference_entity": "Target",
+        "distance_type": "longitudinal",
+        "value": 50.0,
+        "freespace": false,
+        "rule": "lessOrEqual"
+      }
+    ]
+  },
+  "ego jerkevent": {
+    "story": "story_act",
+    "act": "act",
+    "actors": [
+      "ego jerk"
+    ],
+    "conditions": [
+      {
+        "type": "RelativeDistanceCondition",
+        "name": "triggerego jerk",
+        "delay_s": 0.0,
+        "edge": "none",
+        "triggering_entity": "ego jerk",
+        "reference_entity": "Target",
+        "distance_type": "longitudinal",
+        "value": 50.0,
+        "freespace": false,
+        "rule": "lessOrEqual"
+      }
+    ]
+  }
+}

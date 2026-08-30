@@ -1,0 +1,150 @@
+diff --git a/examples/example_single.py b/examples/example_single.py
+index 661cd4a..70a3462 100644
+--- a/examples/example_single.py
++++ b/examples/example_single.py
+@@ -1,13 +1,14 @@
+ import os
+ from osc_cr_converter.utility.configuration import ConverterParams
+ from osc_cr_converter.converter.osc2cr import Osc2CrConverter
++from osc_cr_converter.converter.base import EFailureReason
+ from osc_cr_converter.utility.visualization import visualize_scenario
+ import osc_cr_converter.utility.logger as util_logger
+ 
+ scenario_path = (
+     os.path.dirname(os.path.realpath(__file__)) + "/../scenarios/from_esmini/xosc/"
+ )
+-openscenario = "pedestrian_collision.xosc"
++openscenario = "drop-bike.xosc"
+ config = ConverterParams.load(
+     os.path.dirname(os.path.realpath(__file__))
+     + "/../configurations/"
+@@ -17,4 +18,6 @@ util_logger.initialize_logger(config)
+ 
+ converter = Osc2CrConverter(config)
+ scenario = converter.run_conversion(scenario_path + openscenario)
++if isinstance(scenario, EFailureReason):
++    raise RuntimeError(f"Conversion failed: {scenario}")
+ visualize_scenario(scenario, config)
+diff --git a/examples/example_single_interact.py b/examples/example_single_interact.py
+index 1d70022..f0acc9d 100644
+--- a/examples/example_single_interact.py
++++ b/examples/example_single_interact.py
+@@ -1,6 +1,7 @@
+ import os
+ from osc_cr_converter.utility.configuration import ConverterParams
+ from osc_cr_converter.converter.osc2cr import Osc2CrConverter
++from osc_cr_converter.converter.base import EFailureReason
+ from osc_cr_converter.utility.visualization import visualize_scenario
+ 
+ scenario_path = (
+@@ -20,6 +21,8 @@ config.debug.write_to_xml = True
+ converter = Osc2CrConverter(config)
+ 
+ scenario = converter.run_conversion(scenario_path + openscenario)
++if isinstance(scenario, EFailureReason):
++    raise RuntimeError(f"Conversion failed: {scenario}")
+ config.debug.time_steps = [0, 100, 150]
+ 
+ visualize_scenario(scenario, config)
+diff --git a/examples/example_udp_controller.py b/examples/example_udp_controller.py
+index 26b0f1f..1d55a2a 100644
+--- a/examples/example_udp_controller.py
++++ b/examples/example_udp_controller.py
+@@ -47,38 +47,35 @@ if __name__ == "__main__":
+     osiReceiver.receive()
+     print("STARTING PLANNER")
+ 
+-    done = False
+     throttle = 0.0  # range in [0, 1]
+     brake = 0.2  # range in [0, 1]
+     steering = 0.0  # range in [0, 1]
+ 
+     counter = 0
+-    object_id = 0  #
++    object_id = 0
+ 
+-    while not done:
+-        udp_sender.send(
+-            struct.pack(
+-                "iiiiddd",
+-                1,  # version
+-                input_modes["driverInput"],
+-                object_id,  # object ID
+-                counter,  # frame nr
+-                throttle,  # throttle
+-                brake,  # brake
+-                steering,  # steering angle
++    try:
++        while True:
++            udp_sender.send(
++                struct.pack(
++                    "iiiiddd",
++                    1,  # version
++                    input_modes["driverInput"],
++                    object_id,  # object ID
++                    counter,  # frame nr
++                    throttle,  # throttle
++                    brake,  # brake
++                    steering,  # steering angle
++                )
+             )
+-        )
+-        if KeyboardInterrupt:
+-            done = True
+-        print(
+-            "{} throttle {:.2f} brake {:.2f} steer_angle {:.2f}".format(
+-                counter, throttle, brake, steering
++            print(
++                "{} throttle {:.2f} brake {:.2f} steer_angle {:.2f}".format(
++                    counter, throttle, brake, steering
++                )
+             )
+-        )
+-
+-        counter += 1
+-
+-        # close
++            counter += 1
++    except KeyboardInterrupt:
++        pass
++    finally:
+         udp_sender.close()
+-
+-    run_thread = False
++        run_thread = False
+diff --git a/scenarios/from_esmini/xosc/follow_trajectory.xosc b/scenarios/from_esmini/xosc/follow_trajectory.xosc
+index 68444da..4b9015e 100644
+--- a/scenarios/from_esmini/xosc/follow_trajectory.xosc
++++ b/scenarios/from_esmini/xosc/follow_trajectory.xosc
+@@ -67,7 +67,7 @@
+ 	  <Story name="FollowTrajectoryStory">
+          <Act name="FollowTrajectoryAct">
+             <ManeuverGroup maximumExecutionCount="1" name="FollowTrajectoryManeuvergroup">
+-                <Actors selectTriggeringEntities="False">
++                <Actors selectTriggeringEntities="false">
+                     <EntityRef entityRef="Car1"/>
+                 </Actors>
+                 <Maneuver name="FollowTrajectoryManeuver">
+@@ -76,7 +76,7 @@
+                             <PrivateAction>
+                                 <RoutingAction>
+                                     <FollowTrajectoryAction>
+-                                        <Trajectory closed="False" name="TrajectoryPLine">
++                                        <Trajectory closed="false" name="TrajectoryPLine">
+                                             <ParameterDeclarations/>
+                                             <Shape>
+                                                 <Polyline>
+diff --git a/scenarios/from_esmini/xosc/pedestrian_udp.xosc b/scenarios/from_esmini/xosc/pedestrian_udp.xosc
+index bfd49db..b269c78 100644
+--- a/scenarios/from_esmini/xosc/pedestrian_udp.xosc
++++ b/scenarios/from_esmini/xosc/pedestrian_udp.xosc
+@@ -24,6 +24,9 @@
+       <PedestrianCatalog>
+          <Directory path="../xosc/Catalogs/Pedestrians"/>
+       </PedestrianCatalog>
++      <ControllerCatalog>
++         <Directory path="../xosc/Catalogs/Controllers"/>
++      </ControllerCatalog>
+    </CatalogLocations>
+    <RoadNetwork>
+       <LogicFile filepath="../xodr/fabriksgatan.xodr"/>

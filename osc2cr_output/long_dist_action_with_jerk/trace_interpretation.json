@@ -1,0 +1,26 @@
+[
+  {
+    "time_s": 1.0,
+    "time_step": 10,
+    "story": "story_act",
+    "act": "act",
+    "event": "Egoevent",
+    "actors": [
+      "Ego"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  },
+  {
+    "time_s": 1.0,
+    "time_step": 10,
+    "story": "story_act",
+    "act": "act",
+    "event": "ego jerkevent",
+    "actors": [
+      "ego jerk"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

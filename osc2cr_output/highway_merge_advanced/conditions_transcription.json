@@ -1,0 +1,96 @@
+{
+  "EgoLaneChangeEvent": {
+    "story": "Highway_Merge_Story",
+    "act": "EgoAct",
+    "actors": [
+      "Ego"
+    ],
+    "conditions": [
+      {
+        "type": "ReachPositionCondition",
+        "name": "EgoLaneChangeCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "extension": true,
+        "entity_ref": "Ego",
+        "tolerance_m": 1.0,
+        "position": {
+          "kind": "LanePosition",
+          "x": 27.83329200744629,
+          "y": 12.898900032043457,
+          "road_id": 0,
+          "lane_id": -3,
+          "s": 20.0,
+          "resolved": true
+        },
+        "text": "Ego reaches road 0 lane -3 at s=20.0 m \u2192 (27.8, 12.9) (tolerance 1.0 m)"
+      }
+    ]
+  },
+  "A3CloseEvent": {
+    "story": "Highway_Merge_Story",
+    "act": "EgoAct",
+    "actors": [
+      "A3"
+    ],
+    "conditions": [
+      {
+        "type": "RelativeDistanceCondition",
+        "name": "A3CloseGapStartCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "triggering_entity": "A3",
+        "reference_entity": "Ego",
+        "distance_type": "lateral",
+        "value": 3.25,
+        "freespace": false,
+        "rule": "lessThan"
+      },
+      {
+        "type": "RelativeDistanceCondition",
+        "name": "LongitudinalDistanceCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "triggering_entity": "A3",
+        "reference_entity": "Ego",
+        "distance_type": "cartesianDistance",
+        "value": 30.0,
+        "freespace": true,
+        "rule": "lessThan"
+      }
+    ]
+  },
+  "A3OpenEvent": {
+    "story": "Highway_Merge_Story",
+    "act": "EgoAct",
+    "actors": [
+      "A3"
+    ],
+    "conditions": [
+      {
+        "type": "RelativeDistanceCondition",
+        "name": "A3OpenGapStartCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "triggering_entity": "A3",
+        "reference_entity": "Ego",
+        "distance_type": "lateral",
+        "value": 3.25,
+        "freespace": false,
+        "rule": "greaterThan"
+      },
+      {
+        "type": "RelativeDistanceCondition",
+        "name": "LongitudinalDistanceCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "triggering_entity": "A3",
+        "reference_entity": "Ego",
+        "distance_type": "cartesianDistance",
+        "value": 30.0,
+        "freespace": true,
+        "rule": "lessThan"
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+=== Translation Report ===
+Time goals (3):
+  'EventTrigger1' → time_step ∈ [20, 999999]  ([2.0, ∞])
+  'EventTrigger2' → time_step ∈ [20, 999999]  ([2.0, ∞])
+  'StopSimulationCondition' → time_step ∈ [141, 999999]  ([14.1, ∞])

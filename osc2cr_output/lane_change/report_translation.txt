@@ -1,0 +1,10 @@
+=== Translation Report ===
+Time goals (3):
+  'CutInActStart' → time_step ∈ [1, 999999]  ([0.1, ∞])
+  'Lane change Ego condition' → time_step ∈ [40, 999999]  ([4.1, ∞])
+  'Lane change Target condition' → time_step ∈ [31, 999999]  ([3.1, ∞])
+Skipped (4):
+  'EgoGoOffRoadCondition' — storyboard meta-condition — no CR analogue
+  'EgoGoOnRoadCondition' — DeclaredCondition — not yet handled
+  'Lane change Target condition' — ParameterCondition — not yet handled
+  'QuitCondition' — storyboard meta-condition — no CR analogue

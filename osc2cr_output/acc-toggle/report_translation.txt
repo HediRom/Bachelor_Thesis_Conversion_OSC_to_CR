@@ -1,0 +1,8 @@
+=== Translation Report ===
+Time goals (2):
+  'TargetChangeSpeedCondition' → time_step ∈ [100, 999999]  ([10.1, ∞])
+  'TargetChangeSpeedCondition2' → time_step ∈ [201, 999999]  ([20.1, ∞])
+Skipped (3):
+  'ActivateACCCondition' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'ActivateInteractiveDriverCondition' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'EndOfRoadCondition' — DeclaredCondition — not yet handled

@@ -1,0 +1,17 @@
+{
+  "stop_trigger ": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 10.1,
+      "end": null
+    },
+    "time_step_interval": [
+      100,
+      999999
+    ]
+  },
+  "CutInStartCondition": {
+    "status": "skipped",
+    "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+  }
+}

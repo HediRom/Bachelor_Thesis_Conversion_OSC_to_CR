@@ -1,0 +1,111 @@
+{
+  "OverTakerStartSpeedEvent": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "StoryboardElementStateCondition",
+        "name": "OverTakerStartSpeedCondition",
+        "delay_s": 0.0,
+        "edge": "none",
+        "element_ref": "CutInAndBrakeAct",
+        "element_type": "act",
+        "state": "startTransition"
+      }
+    ]
+  },
+  "CutInEvent": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "TimeHeadwayCondition",
+        "name": "CutInStartCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "triggering_entity": "Ego",
+        "reference_entity": "OverTaker",
+        "value": 0.4,
+        "freespace": true,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "OvertakerBrakeEvent": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "TimeHeadwayCondition",
+        "name": "BrakeCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "triggering_entity": "Ego",
+        "reference_entity": "OverTaker",
+        "value": 0.7,
+        "freespace": true,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "VisibilityHideForSensorsEvent": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "VisibilityHideForSensorsCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 4.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "VisibilityHideEvent": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "VisibilityHideCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 7.0,
+        "rule": "greaterThan"
+      }
+    ]
+  },
+  "VisibilityReappearEvent": {
+    "story": "CutInAndBrakeStory",
+    "act": "CutInAndBrakeAct",
+    "actors": [
+      "OverTaker"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "VisibilityReappearCondition",
+        "delay_s": 0.0,
+        "edge": "rising",
+        "value_s": 10.0,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

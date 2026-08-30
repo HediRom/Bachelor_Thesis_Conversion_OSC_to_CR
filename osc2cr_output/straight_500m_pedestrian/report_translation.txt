@@ -1,0 +1,4 @@
+=== Translation Report ===
+Time goals (2):
+  'StartTrigger' → time_step ∈ [1, 999999]  ([0.1, ∞])
+  'StopCondition' → time_step ∈ [301, 999999]  ([30.1, ∞])

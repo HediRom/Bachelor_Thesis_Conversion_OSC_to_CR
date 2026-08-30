@@ -1,0 +1,19 @@
+{
+  "drop of bike": {
+    "story": "story_act_maneuvuergroup_drop maneuver",
+    "act": "act_maneuvuergroup_drop maneuver",
+    "actors": [
+      "bike"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "drop trigger",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 5.0,
+        "rule": "greaterThan"
+      }
+    ]
+  }
+}

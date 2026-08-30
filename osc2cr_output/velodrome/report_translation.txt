@@ -1,0 +1,5 @@
+=== Translation Report ===
+Skipped (3):
+  'ChangeSpeedCondition' — ByEntity — needs runtime state comparison (→ Interpretation)
+  'ChangeLaneStartCondition' — ReachPositionCondition — not yet handled
+  'QuitTrigger' — ReachPositionCondition — not yet handled

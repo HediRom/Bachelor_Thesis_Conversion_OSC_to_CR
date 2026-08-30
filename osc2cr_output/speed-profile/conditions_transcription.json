@@ -1,0 +1,36 @@
+{
+  "SpeedProfileEvent1": {
+    "story": "SpeedProfileStory",
+    "act": "SpeedProfileAct",
+    "actors": [
+      "Car1"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "EventTrigger1",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 2.0,
+        "rule": "greaterOrEqual"
+      }
+    ]
+  },
+  "SpeedProfileEvent": {
+    "story": "SpeedProfileStory",
+    "act": "SpeedProfileAct",
+    "actors": [
+      "Car2"
+    ],
+    "conditions": [
+      {
+        "type": "SimulationTimeCondition",
+        "name": "EventTrigger2",
+        "delay_s": 0.0,
+        "edge": "none",
+        "value_s": 2.0,
+        "rule": "greaterOrEqual"
+      }
+    ]
+  }
+}

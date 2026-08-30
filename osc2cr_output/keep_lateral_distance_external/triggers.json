@@ -1,0 +1,186 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "keep_lateral_distance_external",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/keep_lateral_distance_external.xosc",
+  "generated_at": "2026-08-18T07:46:41+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 3,
+    "conditions": 3,
+    "translation_mapped": 5,
+    "translation_skipped": 1,
+    "interpretation_fired": 3,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "LateralDistanceMaxSpeedEvent",
+      "story": "LateralDistanceStory",
+      "act": "LateralDistanceAct",
+      "actors": [
+        "OverTaker"
+      ],
+      "conditions": [
+        {
+          "name": "LateralDistanceStartCondition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 1.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 1.1,
+              "end": null
+            },
+            "time_step_interval": [
+              11,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 1.1,
+            "time_step": 11,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "LateralDistanceMaxSpeedAndAccEvent",
+      "story": "LateralDistanceStory",
+      "act": "LateralDistanceAct",
+      "actors": [
+        "OverTaker"
+      ],
+      "conditions": [
+        {
+          "name": "LateralDistanceSwitchSideCondition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 4.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 4.1,
+              "end": null
+            },
+            "time_step_interval": [
+              40,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 4.1,
+            "time_step": 41,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "LateralDistanceMaxAccEvent",
+      "story": "LateralDistanceStory",
+      "act": "LateralDistanceAct",
+      "actors": [
+        "OverTaker"
+      ],
+      "conditions": [
+        {
+          "name": "LateralDistanceFinalSnapCondition",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 8.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 8.1,
+              "end": null
+            },
+            "time_step_interval": [
+              80,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 8.1,
+            "time_step": 81,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "LateralDistanceActStart",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "StopSimulationCondition",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 20.1,
+          "end": null
+        },
+        "time_step_interval": [
+          201,
+          null
+        ]
+      }
+    },
+    {
+      "name": "StopCondition",
+      "translation": {
+        "status": "skipped",
+        "reason": "storyboard meta-condition \u2014 no CR analogue"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 6,
+    "parsed_conditions": 6,
+    "source_types": {
+      "SimulationTimeCondition": 5,
+      "StoryboardElementStateCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 6,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

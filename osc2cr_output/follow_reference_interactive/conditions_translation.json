@@ -1,0 +1,24 @@
+{
+  "start_trigger1": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 15.0,
+      "end": null
+    },
+    "time_step_interval": [
+      150,
+      999999
+    ]
+  },
+  "StopTrigger": {
+    "status": "mapped_time",
+    "time_interval_s": {
+      "start": 120.0,
+      "end": null
+    },
+    "time_step_interval": [
+      1200,
+      999999
+    ]
+  }
+}

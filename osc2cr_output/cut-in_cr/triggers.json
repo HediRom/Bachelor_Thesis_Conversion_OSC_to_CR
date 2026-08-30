@@ -1,0 +1,142 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "cut-in_cr",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/cut-in_cr.xosc",
+  "generated_at": "2026-08-18T07:44:00+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 3,
+    "conditions": 2,
+    "translation_mapped": 1,
+    "translation_skipped": 3,
+    "interpretation_fired": 3,
+    "interpretation_fired_unconditional": 1
+  },
+  "events": [
+    {
+      "name": "OverTakerStartSpeedEvent",
+      "story": "CutInStory",
+      "act": "CutInAct",
+      "actors": [
+        "Truck"
+      ],
+      "conditions": [],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 0.1,
+            "time_step": 1,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "LaneChangeEvent",
+      "story": "CutInStory",
+      "act": "CutInAct",
+      "actors": [
+        "Truck"
+      ],
+      "conditions": [
+        {
+          "name": "LaneChangeCondition",
+          "type": "TimeHeadwayCondition",
+          "text": "Truck vs Ego: headway lessThan 1.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 2.8,
+            "time_step": 28,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "CutInEvent",
+      "story": "CutInStory",
+      "act": "CutInAct",
+      "actors": [
+        "Truck"
+      ],
+      "conditions": [
+        {
+          "name": "CutInCondition",
+          "type": "TimeHeadwayCondition",
+          "text": "Ego vs Truck: headway greaterThan 1.2 s",
+          "edge": "rising",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "ByEntity \u2014 needs runtime state comparison (\u2192 Interpretation)"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 10.7,
+            "time_step": 107,
+            "fire_count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "CutInActStart",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "StopCondition",
+      "translation": {
+        "status": "skipped",
+        "reason": "storyboard meta-condition \u2014 no CR analogue"
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 4,
+    "parsed_conditions": 4,
+    "source_types": {
+      "TimeHeadwayCondition": 2,
+      "SimulationTimeCondition": 1,
+      "StoryboardElementStateCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 4,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [
+      "OverTakerStartSpeedEvent"
+    ],
+    "unconditional_fires_possible": false
+  }
+}

@@ -1,0 +1,8 @@
+=== Translation Report ===
+Time goals (1):
+  'ActStartCondition' → time_step ∈ [1, 999999]  ([0.1, ∞])
+Skipped (4):
+  'QuitCondition' — storyboard meta-condition — no CR analogue
+  'ped_walk_event' — entity traveled distance — no CR goal analogue
+  'ped_fall_condition' — CollisionCondition — not yet handled
+  'ped_raise_condition' — storyboard meta-condition — no CR analogue

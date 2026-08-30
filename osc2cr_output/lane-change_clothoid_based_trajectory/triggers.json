@@ -1,0 +1,153 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "lane-change_clothoid_based_trajectory",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/lane-change_clothoid_based_trajectory.xosc",
+  "generated_at": "2026-08-18T07:46:47+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 3,
+    "conditions": 3,
+    "translation_mapped": 3,
+    "translation_skipped": 2,
+    "interpretation_fired": 1,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [
+    {
+      "name": "LaneChangeEvent1",
+      "story": "LaneChangeStory",
+      "act": "LaneChangeAct",
+      "actors": [
+        "Car"
+      ],
+      "conditions": [
+        {
+          "name": "LaneChangeCondition1",
+          "type": "SimulationTimeCondition",
+          "text": "simulation time greaterThan 2.0 s",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "mapped_time",
+            "time_interval_s": {
+              "start": 2.1,
+              "end": null
+            },
+            "time_step_interval": [
+              21,
+              null
+            ]
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": true,
+        "fires": [
+          {
+            "time_s": 2.1,
+            "time_step": 21,
+            "fire_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "LaneChangeEvent2",
+      "story": "LaneChangeStory",
+      "act": "LaneChangeAct",
+      "actors": [
+        "Car"
+      ],
+      "conditions": [
+        {
+          "name": "LaneChangeCondition2",
+          "type": "StoryboardElementStateCondition",
+          "text": "event 'LaneChangeEvent1' reaches state completeState",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    },
+    {
+      "name": "LaneChangeEvent3",
+      "story": "LaneChangeStory",
+      "act": "LaneChangeAct",
+      "actors": [
+        "Car"
+      ],
+      "conditions": [
+        {
+          "name": "LaneChangeCondition3",
+          "type": "StoryboardElementStateCondition",
+          "text": "event 'LaneChangeEvent2' reaches state completeState",
+          "edge": "none",
+          "delay_s": 0.0,
+          "translation": {
+            "status": "skipped",
+            "reason": "storyboard meta-condition \u2014 no CR analogue"
+          }
+        }
+      ],
+      "interpretation": {
+        "fired": false,
+        "fires": []
+      }
+    }
+  ],
+  "storyboard_triggers": [
+    {
+      "name": "CutInActStart",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.1,
+          "end": null
+        },
+        "time_step_interval": [
+          1,
+          null
+        ]
+      }
+    },
+    {
+      "name": "StopCondition",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 0.0,
+          "end": 6.9
+        },
+        "time_step_interval": [
+          0,
+          69
+        ]
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 5,
+    "parsed_conditions": 5,
+    "source_types": {
+      "SimulationTimeCondition": 3,
+      "StoryboardElementStateCondition": 2
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 5,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "time_s": 3.5,
+    "time_step": 35,
+    "story": "DummyStory",
+    "act": "StopLightsAct",
+    "event": "StopLightEvent",
+    "actors": [
+      "Ego"
+    ],
+    "fire_count": 1,
+    "unconditional": false
+  }
+]

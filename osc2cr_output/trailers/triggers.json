@@ -1,0 +1,49 @@
+{
+  "schema": "storyboard-triggers/2",
+  "scenario": "trailers",
+  "source_xosc": "/home/hedi_rom/Bachelor_thesis/esmini/resources/xosc/trailers.xosc",
+  "generated_at": "2026-08-18T07:51:14+00:00",
+  "dt": 0.1,
+  "counts": {
+    "events": 0,
+    "conditions": 0,
+    "translation_mapped": 1,
+    "translation_skipped": 0,
+    "interpretation_fired": 0,
+    "interpretation_fired_unconditional": 0
+  },
+  "events": [],
+  "storyboard_triggers": [
+    {
+      "name": "time_trigger",
+      "translation": {
+        "status": "mapped_time",
+        "time_interval_s": {
+          "start": 15.1,
+          "end": null
+        },
+        "time_step_interval": [
+          151,
+          null
+        ]
+      }
+    }
+  ],
+  "coverage": {
+    "source_conditions": 1,
+    "parsed_conditions": 1,
+    "source_types": {
+      "SimulationTimeCondition": 1
+    },
+    "unsupported": {},
+    "unsupported_conditions": 0,
+    "declared_only": {},
+    "declared_conditions": 0,
+    "modelled_conditions": 1,
+    "preserved_pct": 100.0,
+    "evaluable_pct": 100.0,
+    "declared_reasons": {},
+    "events_without_trigger": [],
+    "unconditional_fires_possible": false
+  }
+}

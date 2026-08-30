@@ -1,0 +1,31 @@
+# Core requirements — conversion, trigger extraction, replay, viewer, HTTP API.
+#
+# Pinned to the versions every number in osc2cr_output/ and
+# osc2cr_extended/benchmarks/ was produced with.  Transitive dependencies
+# (crdesigner pulls in PyQt6, sumolib, pyproj, …) are resolved by pip; use
+# requirements-lock.txt instead if you want the environment reproduced exactly.
+#
+# Python 3.11 is required — see README.md ("Why Python 3.11").
+#
+# The two dependencies that are NOT here are installed from ./deps/ by
+# setup.sh, because both need source patches:
+#   commonroad-openscenario-converter  (deps/commonroad-openscenario-converter)
+#   commonroad-reactive-planner        (deps/reactive-planner)
+
+commonroad-io==2024.3
+commonroad-scenario-designer==0.8.5
+
+numpy==2.4.6
+scipy==1.17.1
+lxml==6.1.1
+shapely==2.1.2
+pyproj==3.7.2
+
+# converter runtime: esmini download, .xosc handling, progress bars
+requests==2.34.2
+scenariogeneration==0.16.5
+tqdm==4.67.3
+
+# replay / co-simulation rendering (`--viewer`, GIF output)
+matplotlib==3.10.9
+imageio==2.37.3
