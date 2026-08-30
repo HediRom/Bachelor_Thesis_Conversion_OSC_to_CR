@@ -25,7 +25,6 @@ This folder is a self-contained export. It contains no LaTeX.
 | `osc2cr_extended/benchmarks/` | timed conversion + co-simulation reports over that corpus |
 | `deps/` | the two dependencies that need source patches, **already patched**, plus esmini's scenario corpus |
 | `scripts/` | `fetch_esmini.py`, `verify_install.py` |
-| `thesis/THESIS.md` | the thesis text (Markdown) |
 | `setup.sh` | one-shot installer |
 | `requirements*.txt`, `environment.yml` | pinned dependencies |
 
