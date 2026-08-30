@@ -283,7 +283,6 @@ which pins the exact 85-package environment these results came from.
 ## Not included
 
 * **The LaTeX sources** of the thesis, and the figure-generation scripts.
-  `thesis/THESIS.md` is the thesis text in Markdown.
 * **esmini's 3D models** (106 MB). Headless conversion never loads them. Clone
   [esmini](https://github.com/esmini/esmini) and point `OSC2CR_ESMINI_HOME` at
   it if you want the rendered viewer.
