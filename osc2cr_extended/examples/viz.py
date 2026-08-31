@@ -1,7 +1,7 @@
 """
 viz.py
 ======
-Renders a converted CR Scenario for the VS Code extension's results panel.
+Renders a converted CR Scenario for the pipeline's result views.
 Same MPRenderer/Agg approach as cosim/visualize.py, but operating
 on an in-memory scenario (no intermediate file) and split into two views:
 
@@ -11,7 +11,7 @@ on an in-memory scenario (no intermediate file) and split into two views:
   render_replay(scenario, path)   -> full tick-by-tick GIF across every
                                       time step (the "during simulation" view)
 
-Both are best-effort: failures are caught by the caller (vscode_bridge.py)
+Both are best-effort: failures are caught by the caller (run_pipeline.py)
 so a rendering problem never blocks the actual Transcription/Translation/Interpretation pipeline output.
 """
 from __future__ import annotations

@@ -1,23 +1,22 @@
 """
-vscode_bridge.py
-=================
-Single-file entry point for the VS Code extension. Wraps merge.run_pipeline()
-(see merge.py) so the extension can run the full Transcription/Translation/Interpretation pipeline on whichever
-.xosc file is active in the editor, then hand back a compact JSON summary
-the webview can render.
+run_pipeline.py
+===============
+Single-file entry point that wraps merge.run_pipeline() (see merge.py) so the
+full Transcription/Translation/Interpretation pipeline can be run on one .xosc
+file from the command line, and hands back a compact JSON summary.
 
 Usage
 -----
-    python -m osc2cr_extended.web.vscode_bridge <path/to/scenario.xosc> [output_dir]
+    python -m osc2cr_extended.web.run_pipeline <path/to/scenario.xosc> [output_dir]
 
 Writes the usual per-strategy files (scenario_transcription.xml, conditions_transcription.json, ...)
-into output_dir (default: output/<scenario-name>/), plus vscode_summary.json
-describing what was produced. Progress lines go to stdout for the extension's
-output channel; on success the last stdout line is the path to the summary
-JSON, prefixed with "SUMMARY_JSON:". As soon as the scenario is converted
-(before Transcription/Translation/Interpretation and before the replay GIF, which takes the longest), a
-preview.png is rendered and announced via a "PREVIEW_PNG:" line, so the
-extension can show the initial layout while the rest keeps running.
+into output_dir (default: output/<scenario-name>/), plus summary.json
+describing what was produced. Progress lines go to stdout; on success the last
+stdout line is the path to the summary JSON, prefixed with "SUMMARY_JSON:".
+As soon as the scenario is converted (before Transcription/Translation/Interpretation
+and before the replay GIF, which takes the longest), a preview.png is rendered
+and announced via a "PREVIEW_PNG:" line, so a caller can show the initial layout
+while the rest keeps running.
 """
 from __future__ import annotations
 
@@ -35,7 +34,7 @@ OUTPUT_DIR = paths.OUTPUT_DIR
 
 def main() -> int:
     if len(sys.argv) < 2:
-        print("Usage: python -m osc2cr_extended.web.vscode_bridge "
+        print("Usage: python -m osc2cr_extended.web.run_pipeline "
               "<scenario.xosc> [output_dir]", file=sys.stderr)
         return 2
 
@@ -121,7 +120,7 @@ def main() -> int:
         },
     }
 
-    summary_json = out_dir / "vscode_summary.json"
+    summary_json = out_dir / "summary.json"
     summary_json.write_text(json.dumps(result, indent=2))
 
     print(f"Done. Outputs in {out_dir}", flush=True)

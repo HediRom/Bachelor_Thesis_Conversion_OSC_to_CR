@@ -76,7 +76,7 @@ Generated 2026-08-18T08:07:05+00:00 · Python 3.11.6 · Linux-6.6.87.2-microsoft
 
 ## What was recovered
 
-| Scenario | Actors | Lanelets | Steps | Duration [s] | Events | Conditions | C mapped | C skipped | D fires |
+| Scenario | Actors | Lanelets | Steps | Duration [s] | Events | Conditions | Translation mapped | Translation skipped | Interpretation fires |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | `acc-test` | 2 | 2 | 600 | 59.9 | 5 | 5 | 5 | 0 | 5 |
 | `acc-toggle` | 2 | 2 | 600 | 59.9 | 4 | 4 | 2 | 3 | 3 |

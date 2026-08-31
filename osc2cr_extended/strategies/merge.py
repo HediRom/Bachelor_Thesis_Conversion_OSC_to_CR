@@ -6,9 +6,9 @@ Merges the two pipeline paths described in the thesis workflow:
   Blue path (existing converter)
       .xosc → esmini simulation → flat CR Scenario (trajectories only)
 
-  Teal path (this contribution)
+  Red path (this contribution)
       .xosc → StoryboardParser → ParsedStoryboard
-            → Representation strategy (B / C / D)
+            → Representation strategy (Transcription / Translation / Interpretation)
 
   Merge
       EnrichedScenario = flat trajectories + preserved conditional structure
@@ -247,7 +247,7 @@ class EnrichedScenario:
 
     def _replay_trajectories(self) -> List[Dict]:
         """
-        Step the D executor through the actual converted trajectories.
+        Step the Interpretation executor through the actual converted trajectories.
 
         Maps CR obstacle IDs to storyboard actor names by order (first obstacle
         → first actor name found in the storyboard, etc.), then feeds each
@@ -395,7 +395,7 @@ def merge(
     dt: float = 0.1,
 ) -> EnrichedScenario:
     """
-    Merge the flat CR Scenario (blue path) with the parsed storyboard (teal path).
+    Merge the flat CR Scenario (blue path) with the parsed storyboard (red path).
 
     Parameters
     ----------
@@ -408,7 +408,7 @@ def merge(
     strategies
         Which representation strategies to apply.  Any subset of
         {"transcription", "translation", "interpretation"}.
-        B is always computed regardless — it's the safe floor.
+        Transcription is always computed regardless — it's the safe floor.
     dt
         Simulation timestep [s] used by the CR scenario.
 
@@ -416,9 +416,9 @@ def merge(
     -------
     EnrichedScenario
     """
-    strategies = set(strategies) | {"transcription"}   # B is always the floor
+    strategies = set(strategies) | {"transcription"}   # Transcription is the floor
 
-    # Parse the storyboard (teal path input)
+    # Parse the storyboard (red path input)
     storyboard: ParsedStoryboard = StoryboardParser(xosc_path).parse()
 
     # Transcription — annotate (always)
@@ -472,7 +472,7 @@ def run_pipeline(
     Run the full thesis pipeline from a single .xosc file.
 
     1. Blue path : run Osc2CrConverter → flat CR Scenario + PlanningProblemSet
-    2. Teal path : run StoryboardParser → ParsedStoryboard
+    2. Red path  : run StoryboardParser → ParsedStoryboard
     3. Merge     : apply requested strategies → EnrichedScenario
 
     Parameters
@@ -483,7 +483,8 @@ def run_pipeline(
         Optional ConverterParams instance.  If None, uses default config
         (no output file written, dt_cr=0.1).
     strategies
-        Subset of {"transcription","translation","interpretation"}.  B is always included.
+        Subset of {"transcription","translation","interpretation"}.
+        Transcription is always included.
     dt
         Simulation timestep [s].  Should match converter_config.scenario.dt_cr.
 

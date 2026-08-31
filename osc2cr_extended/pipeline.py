@@ -7,7 +7,7 @@ What the stock converter does (the "blue path"): esmini executes the
 storyboard, every trigger is evaluated and thrown away, and what lands in the
 CommonRoad file is a set of flat trajectories.
 
-What this pipeline adds (the "teal path"): the same ``.xosc`` is parsed a
+What this pipeline adds (the "red path"): the same ``.xosc`` is parsed a
 second time, this time for its storyboard, and the resulting condition model is
 carried through three representation strategies and written *into* the
 CommonRoad file:
@@ -66,7 +66,7 @@ class StageTimings:
     """Wall-clock seconds per pipeline stage."""
 
     cr_conversion: float = 0.0      # blue path: esmini simulation + CR build
-    storyboard_parse: float = 0.0   # teal path: .xosc → ParsedStoryboard
+    storyboard_parse: float = 0.0   # red path: .xosc → ParsedStoryboard
     strategy_transcription: float = 0.0    # triggers as metadata
     strategy_translation: float = 0.0      # map onto native CR constructs
     strategy_interpretation: float = 0.0   # build executor
@@ -451,7 +451,7 @@ class TriggerPreservingConverter:
             "repairs": list(xodr_repair.LAST_REPAIRS),
         }
 
-        # ── Teal path — storyboard → condition model ──────────────────────
+        # ── Red path — storyboard → condition model ───────────────────────
         with _timed(timings, "storyboard_parse"):
             storyboard = StoryboardParser(str(xosc_path)).parse()
             # Entity names may be parameterised ($owner); resolve them or every

@@ -84,7 +84,7 @@ def _fmt_interval(interval: Any) -> Optional[str]:
     """
     Render an interval as ``"start..end"``, with an open end left blank.
 
-    Accepts both shapes the C report emits: a two-element list
+    Accepts both shapes the Translation report emits: a two-element list
     (``time_step_interval``) and a ``{"start": ..., "end": ...}`` dict
     (``time_interval_s``, ``velocity_interval_ms``).
     """

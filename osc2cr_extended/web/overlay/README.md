@@ -33,7 +33,7 @@ and `trace_interpretation.json` by `shared/triggers_export.py`).
 1. Run the pipeline as usual, e.g.
 
    ```bash
-   python vscode_bridge.py <scenario>.xosc
+   python -m osc2cr_extended.web.run_pipeline <scenario>.xosc
    ```
 
    This writes `output/<scenario>/triggers.json` along with the other files.

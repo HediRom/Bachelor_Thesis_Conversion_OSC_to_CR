@@ -1,7 +1,7 @@
 # Command reference
 
 Every runnable entry point in `osc2cr_extended/`. See [README.md](README.md)
-for what the tool does and [REPORT.md](REPORT.md) for why.
+for what the tool does and why.
 
 ## Setting up the shell
 
@@ -242,26 +242,14 @@ python3 -m osc2cr_extended.examples.view_cr osc2cr_output/cut-in_simple/scenario
 
 ## 6. Web surfaces
 
-### VS Code extension
+### One-shot pipeline run
+
+Runs all three strategies on a single `.xosc` and writes `summary.json`,
+`preview.png` and `replay.gif` alongside the per-strategy files:
 
 ```bash
-cd osc2cr_extended/web/vscode-extension
-npm install
-npm run compile
-npx vsce package                    # → storyboard-parsing-x.y.z.vsix
-code --install-extension storyboard-parsing-*.vsix
-```
-
-Then set `storyboard.pythonPath` to an interpreter that can import
-`osc2cr_extended`. Leave `storyboard.storyboardParsingPath` empty and the
-extension runs the bridge as a module; set it to an absolute path to
-`osc2cr_extended/web` for a checkout that is not installed.
-
-The bridge also runs on its own:
-
-```bash
-python3 -m osc2cr_extended.web.vscode_bridge path/to/scenario.xosc
-python3 -m osc2cr_extended.web.vscode_bridge path/to/scenario.xosc ./out
+python3 -m osc2cr_extended.web.run_pipeline path/to/scenario.xosc
+python3 -m osc2cr_extended.web.run_pipeline path/to/scenario.xosc ./out
 ```
 
 ### crdesigner overlay

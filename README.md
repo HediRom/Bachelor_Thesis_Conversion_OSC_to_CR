@@ -1,7 +1,8 @@
-# Bachelor_Conversion
+# Conversion from OpenSCENARIO to CommonRoad
 
-Trigger-preserving conversion of **OpenSCENARIO** scenarios to **CommonRoad** —
-the code, the results, and everything needed to run both.
+**Bachelor's thesis.** Trigger-preserving conversion of **OpenSCENARIO**
+scenarios to **CommonRoad** — the code, the results, and everything needed to
+run both.
 
 The stock [commonroad-openscenario-converter](https://commonroad.in.tum.de/tools/openscenario-converter)
 flattens a scenario: esmini executes the storyboard, evaluates every trigger,
@@ -12,7 +13,7 @@ the storyboard a second time for its conditions, writes them **into** the
 CommonRoad XML, replays them, and co-simulates the result against a motion
 planner so the triggers fire against what the planner actually does.
 
-This folder is a self-contained export. It contains no LaTeX.
+This folder is a self-contained export.
 
 ---
 
@@ -20,12 +21,11 @@ This folder is a self-contained export. It contains no LaTeX.
 
 | Path | What it is |
 |---|---|
-| `osc2cr_extended/` | **the code** — the whole package, plus its own `README.md`, `COMMANDS.md` (full command reference) and `REPORT.md` (technical report) |
+| `osc2cr_extended/` | **the code** — the whole package, plus its own `README.md` and `COMMANDS.md` (full command reference) |
 | `osc2cr_output/` | **the results** — 58 converted scenario bundles, 311 MB, exactly as measured |
 | `osc2cr_extended/benchmarks/` | timed conversion + co-simulation reports over that corpus |
 | `deps/` | the two dependencies that need source patches, **already patched**, plus esmini's scenario corpus |
 | `scripts/` | `fetch_esmini.py`, `verify_install.py` |
-| `thesis/THESIS.md` | the thesis text (Markdown) |
 | `setup.sh` | one-shot installer |
 | `requirements*.txt`, `environment.yml` | pinned dependencies |
 
@@ -107,7 +107,7 @@ Expected output from the first two:
 
 ```
 ✓ cut-in_simple: 2 obstacles, 2 lanelets, 102 steps | 2 events / 2 conditions,
-  C: 2 mapped / 3 skipped, D: 2 fires | 0.91s
+  translation: 2 mapped / 3 skipped, interpretation: 2 fires | 0.91s
 
 cut-in_simple  [planner]
   planner   : goal-reached after 89 steps
@@ -124,8 +124,7 @@ every condition that could be decided agrees with esmini's own evaluation.
 **[`osc2cr_extended/COMMANDS.md`](osc2cr_extended/COMMANDS.md) is the complete
 command reference** — every entry point, flag and script.
 [`osc2cr_extended/README.md`](osc2cr_extended/README.md) is the operating
-manual, and [`REPORT.md`](osc2cr_extended/REPORT.md) explains the design,
-the correctness findings and the limitations.
+manual.
 
 ---
 
@@ -283,8 +282,6 @@ which pins the exact 85-package environment these results came from.
 
 ## Not included
 
-* **The LaTeX sources** of the thesis, and the figure-generation scripts.
-  `thesis/THESIS.md` is the thesis text in Markdown.
 * **esmini's 3D models** (106 MB). Headless conversion never loads them. Clone
   [esmini](https://github.com/esmini/esmini) and point `OSC2CR_ESMINI_HOME` at
   it if you want the rendered viewer.

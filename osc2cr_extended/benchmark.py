@@ -356,7 +356,8 @@ def render_markdown(report: Dict[str, Any]) -> str:
         ])
     out.append(_md_table(
         ["Scenario", "Actors", "Lanelets", "Steps", "Duration [s]",
-         "Events", "Conditions", "C mapped", "C skipped", "D fires"],
+         "Events", "Conditions", "Translation mapped", "Translation skipped",
+         "Interpretation fires"],
         rows, align="_rrrrrrrrr",
     ))
 

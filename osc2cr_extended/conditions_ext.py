@@ -12,7 +12,7 @@ than editing it, exactly as ``params.py`` (entity-reference resolution) and
 ``live.py`` (edge semantics, obstacle mapping) do.  Everything here is written
 so it can be lifted into ``strategies/shared/condition_model.py`` +
 ``strategies/shared/storyboard_parser.py`` + ``strategies/condition_evaluator.py`` verbatim
-if the thesis wants it upstream — the recipe is in REPORT.md §7.4.
+if it is ever wanted upstream.
 
 What it adds
 ------------

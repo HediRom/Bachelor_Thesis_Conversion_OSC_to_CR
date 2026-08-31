@@ -122,7 +122,7 @@ def build_triggers(
     translation_conditions = translation_conditions or {}
     interpretation_trace = interpretation_trace or []
 
-    # Group D trace entries by event name (an event may fire more than once)
+    # Group Interpretation trace entries by event name (an event may fire more than once)
     interpretation_by_event: Dict[str, List[Dict[str, Any]]] = {}
     for fired in interpretation_trace:
         interpretation_by_event.setdefault(fired.get("event", ""), []).append(fired)
@@ -164,7 +164,8 @@ def build_triggers(
             "interpretation": {"fired": bool(fires), "fires": fires},
         })
 
-    # C entries that belong to no B event condition: act/storyboard-level triggers
+    # Translation entries that belong to no Transcription event condition:
+    # act/storyboard-level triggers
     storyboard_triggers = [
         {"name": name, "translation": _normalise_translation_entry(entry)}
         for name, entry in translation_conditions.items()

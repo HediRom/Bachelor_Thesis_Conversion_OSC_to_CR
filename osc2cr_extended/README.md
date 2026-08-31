@@ -17,8 +17,6 @@ its conditions, writes them **into** the CommonRoad XML, replays them, and
 co-simulates the result against a motion planner so the triggers fire against
 what the planner actually does.
 
-> **[REPORT.md](REPORT.md)** is the full technical report — motivation,
-> architecture, correctness findings, benchmark analysis, limitations.
 > **[COMMANDS.md](COMMANDS.md)** is the complete command reference — every
 > entry point, flag and script. This file is the operating manual.
 
@@ -168,8 +166,7 @@ osc2cr_extended/
   web/
     overlay/            Tampermonkey userscript overlaying triggers on
                         crdesigner.cps.cit.tum.de
-    vscode-extension/   VS Code extension source (run `npm install` to build)
-    vscode_bridge.py    the extension's Python side
+    run_pipeline.py     one-shot CLI: .xosc → all three strategies + summary
 
   data/
     configurations/     co-simulation + converter YAML
@@ -247,4 +244,4 @@ does not declare one, so an enriched file fails XSD validation until
 `strip_triggers()` is called — and a read/write round trip through
 `commonroad-io` drops the block, because `Scenario` has nowhere to hold it.
 Both are exercised as explicit tests in `tests/test_embed.py` rather than left
-as surprises. See [REPORT.md](REPORT.md) for the rest.
+as surprises.

@@ -298,10 +298,10 @@
   function translationBadge(c) {
     if (!c) return "";
     if (String(c.status || "").startsWith("mapped")) {
-      return `<span class="crtp-badge crtp-b-mapped" data-role="cwin">C ${
+      return `<span class="crtp-badge crtp-b-mapped" data-role="cwin">Translation ${
         windowLabel(c.time_step_interval)}</span>`;
     }
-    return `<span class="crtp-badge crtp-b-skip" title="${esc(c.reason)}">C skipped → D</span>`;
+    return `<span class="crtp-badge crtp-b-skip" title="${esc(c.reason)}">Translation skipped → Interpretation</span>`;
   }
 
   function render() {

@@ -4,8 +4,8 @@ run_examples.py
 Full pipeline for each .xosc in input/:
 
   Blue path  : Osc2CrConverter  → CR Scenario + PlanningProblemSet (trajectories)
-  Teal path  : StoryboardParser → ParsedStoryboard → Transcription, Translation, Interpretation
-  Merge      : EnrichedScenario.save() writes per-TranslationR files to output/
+  Red path   : StoryboardParser → ParsedStoryboard → Transcription, Translation, Interpretation
+  Merge      : EnrichedScenario.save() writes per-strategy files to output/
 
 Output layout for each scenario
 --------------------------------
@@ -15,8 +15,8 @@ Output layout for each scenario
     scenario_translation.xml       CR scenario with PPS enriched by trigger-derived goal intervals
     report_translation.txt         which conditions mapped to CR goals, which were skipped
     conditions_translation.json    same mapping outcome, keyed by condition name (like conditions_transcription.json)
-    scenario_interpretation.xml       CR scenario (original PPS) — same as B
-    trace_interpretation.json         events that fired when replaying actual trajectories through D
+    scenario_interpretation.xml       CR scenario (original PPS) — same as Transcription
+    trace_interpretation.json         events that fired when replaying actual trajectories through Interpretation
 
 Run with the cr-osc-converter conda environment:
     python run_examples.py
@@ -94,8 +94,8 @@ def process(xosc_path: Path) -> None:
 
     print(f"  ✓ Converted: {n_obs} obstacles, {duration_s:.1f} s trajectory")
 
-    # ── Teal path + merge ─────────────────────────────────────────────
-    print("  [2/3] Parsing storyboard + applying B / C / D …")
+    # ── Red path + merge ──────────────────────────────────────────────
+    print("  [2/3] Parsing storyboard + applying Transcription / Translation / Interpretation …")
     from osc2cr_extended.strategies.merge import merge
 
     enriched = merge(
